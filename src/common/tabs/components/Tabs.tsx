@@ -10,13 +10,13 @@ export const Tabs = ({ label, tabs }: TabsProps) => {
 
   return (
     <div className="grid gap-6">
-      {/* scrolls only when the labels outgrow the column; the segments meet, so they carry no gap */}
+      {/* the track hugs its segments and scrolls inside itself once the labels outgrow the column */}
       <div
         role="tablist"
         aria-label={label}
-        className="grid scrollbar-none grid-flow-col justify-start overflow-x-auto border-b border-line"
+        className="grid w-fit max-w-full scroll-p-1 scrollbar-none grid-flow-col justify-start overflow-x-auto rounded-full border border-line bg-surface-panel p-1"
       >
-        {tabs.map(({ key, label }) => (
+        {tabs.map(({ key, label }, index) => (
           <button
             key={key}
             id={`${id}-tab-${key}`}
@@ -24,13 +24,20 @@ export const Tabs = ({ label, tabs }: TabsProps) => {
             role="tab"
             aria-selected={active === key}
             aria-controls={`${id}-panel-${key}`}
-            onClick={() => setActive(key)}
-            /* the edge is always there, transparent when unchosen, so no tab changes height */
-            /* 12px, under the radius roles' 16px floor, which rounds a tab this short too far */
-            className={`rounded-t-xl border-t-2 px-5 py-3 transition-colors *:transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-light ${
-              active === key ? "border-primary bg-surface-panel" : "border-transparent"
+            /* a tap never scrolls its container, so the chosen one brings itself into view */
+            onClick={(event) => {
+              setActive(key);
+              event.currentTarget.scrollIntoView({ inline: "nearest", block: "nearest" });
+            }}
+            /* the chip tone the cards use for their icons, so the chosen one sinks into the track */
+            className={`relative rounded-full px-5 py-3 transition-colors *:transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-light ${
+              active === key ? "bg-surface-muted" : ""
             }`}
           >
+            {/* hairline between two unchosen segments; next to the chosen one the pill divides them */}
+            {index > 0 && active !== key && active !== tabs[index - 1]!.key && (
+              <span aria-hidden className="absolute top-1/2 left-0 h-6 w-px -translate-y-1/2 bg-line" />
+            )}
             <Text
               as="span"
               size="subhead"
