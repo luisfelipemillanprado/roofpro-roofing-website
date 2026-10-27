@@ -14,7 +14,7 @@ export const ProductAssuranceStrip = ({ items }: ProductAssuranceStripProps) => 
         {/* caps the measure so the description always reads as two lines, never one long one */}
         <div className="grid max-w-56">
           <Text as="span" size="subhead" weight="bold" text={title} />
-          <Text as="span" size="note" tone="muted" text={description} />
+          <Text as="span" size="body" tone="muted" text={description} />
         </div>
       </div>
     ))}
