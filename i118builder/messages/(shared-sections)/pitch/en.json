@@ -1,0 +1,173 @@
+{
+  "why-choose": {
+    "eyebrow": "WHY CHOOSE US.",
+    "titleLead": "Our Roofing Fits You",
+    "titleAccent": "Every Shingle Time",
+    "description": "We tailor every roofing solution to your property, delivering expert craftsmanship, lasting protection, and dependable quality from the beginning always.",
+    "stats": {
+      "years": {
+        "label": "Years of Experience."
+      },
+      "projects": {
+        "label": "Roofs Completed."
+      },
+      "roofers": {
+        "label": "Certified Roofers."
+      },
+      "rating": {
+        "label": "Customer Rating."
+      }
+    },
+    "action": {
+      "viewDetails": "View More Details"
+    },
+    "items": {
+      "emergency": {
+        "title": "Emergency Service",
+        "description": "Our crews respond around the clock to storm damage, leaks, and urgent repairs.",
+        "highlights": {
+          "label": "READY",
+          "accent": "ANYTIME"
+        }
+      },
+      "materials": {
+        "title": "Premium Materials",
+        "description": "We install premium materials from trusted brands, backed by warranties for lasting protection.",
+        "highlights": {
+          "label": "TRUSTED",
+          "accent": "QUALITY"
+        }
+      },
+      "pricing": {
+        "title": "Transparent Pricing",
+        "description": "You get a clear, detailed estimate upfront, with no hidden fees or surprises.",
+        "highlights": {
+          "label": "DETAILED",
+          "accent": "UPFRONT"
+        }
+      },
+      "licensed": {
+        "title": "Licensed & Insured",
+        "description": "Our team is fully licensed and insured, with liability and workers' compensation coverage.",
+        "highlights": {
+          "label": "LIABILITY",
+          "accent": "COVERAGE"
+        }
+      }
+    }
+  },
+  "process": {
+    "eyebrow": "HOW WE WORK",
+    "titleLead": "Our Trusted Process",
+    "titleAccent": "Engineered For You",
+    "description": "We follow a simple roofing process with clear communication, accurate estimates, and professional installation for your dependable results every time.",
+    "action": {
+      "contact": "Contact Us Now"
+    },
+    "stats": {
+      "inspection": {
+        "label": "Free Inspection"
+      },
+      "scheduling": {
+        "label": "Scheduling"
+      },
+      "warranty": {
+        "label": "Years Warranty"
+      },
+      "completion": {
+        "label": "Timely Completion"
+      }
+    },
+    "items": {
+      "inspection": {
+        "title": "Free Inspection",
+        "description": "We assess your roof on site, documenting its condition and what needs attention.",
+        "highlights": {
+          "label": "FREE",
+          "accent": "ONSITE"
+        }
+      },
+      "quote": {
+        "title": "Transparent Quote",
+        "description": "You receive a clear itemized quote with zero hidden fees before work begins.",
+        "highlights": {
+          "label": "ZERO",
+          "accent": "SURPRISES"
+        }
+      },
+      "installation": {
+        "title": "Expert Installation",
+        "description": "Our certified roofers install premium materials on schedule, leaving a tidy job site.",
+        "highlights": {
+          "label": "CLEAN",
+          "accent": "FINISH"
+        }
+      },
+      "warranty": {
+        "title": "Warranty & Aftercare",
+        "description": "Every job includes our full workmanship warranty, a final walkthrough and ongoing support.",
+        "highlights": {
+          "label": "SUPPORT",
+          "accent": "ONGOING"
+        }
+      }
+    }
+  },
+  "values": {
+    "eyebrow": "OUR VALUES.",
+    "titleLead": "Our Enduring Values",
+    "titleAccent": "On Every Roof Built",
+    "description": "Our shared values inspire excellent results, offering secure roofing solutions through true integrity, flawless execution, and attentive customer care daily.",
+    "action": {
+      "contact": "Contact Us Now"
+    },
+    "stats": {
+      "years": {
+        "label": "Years Experience."
+      },
+      "bbb": {
+        "label": "BBB Accredited."
+      },
+      "reviews": {
+        "label": "Verified Reviews."
+      },
+      "referrals": {
+        "label": "Client Referrals."
+      }
+    },
+    "items": {
+      "quality": {
+        "title": "Quality Craftsmanship",
+        "description": "Our experts deliver careful workmanship on every roofing job, with no shortcuts taken.",
+        "highlights": {
+          "label": "MASTER",
+          "accent": "CRAFT"
+        }
+      },
+      "safety": {
+        "title": "Safety First",
+        "description": "We put people first, with strict safety habits protecting your family and crew.",
+        "highlights": {
+          "label": "PEOPLE",
+          "accent": "FIRST"
+        }
+      },
+      "integrity": {
+        "title": "Unwavering Integrity",
+        "description": "We uphold the highest ethical standards, treating your home with respect and care.",
+        "highlights": {
+          "label": "SOLID",
+          "accent": "ETHICS"
+        }
+      },
+      "community": {
+        "title": "Community Focused",
+        "description": "We protect the homes and businesses across neighborhoods where we live and work.",
+        "highlights": {
+          "label": "LOCAL",
+          "accent": "ROOTS"
+        }
+      }
+    }
+  }
+}

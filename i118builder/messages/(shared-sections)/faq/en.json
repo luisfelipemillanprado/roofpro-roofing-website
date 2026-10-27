@@ -1,0 +1,489 @@
+{
+  "eyebrow": "SOME ANSWERS.",
+  "titleLead": "Things To Know First",
+  "titleAccent": "Before Choosing Us",
+  "description": "Browse helpful answers to important questions, providing the clarity you need before choosing roofing services for your home confidently today.",
+  "action": {
+    "contact": "Contact Us Now"
+  },
+  "services": {
+    "items": {
+      "assessment": {
+        "q": "How do you decide between a repair and full replacement?",
+        "a": "It depends on your roof's age, the extent of the damage, and its overall condition. During the inspection we determine whether a targeted repair restores it safely or a full replacement is the smarter investment."
+      },
+      "crew": {
+        "q": "Who will be working on my roof during the project?",
+        "a": "Your roof is installed by our own trained and experienced crew, not day labor. A project lead oversees the work from start to finish, keeps the site organized, and makes sure every detail meets our standards."
+      },
+      "presence": {
+        "q": "Do I need to be home during my roofing project?",
+        "a": "In most cases, no. As long as we have access to the property and have reviewed the project details beforehand, our crew can complete the work while you continue with your daily routine."
+      },
+      "preparation": {
+        "q": "How should I prepare my home before the project starts?",
+        "a": "Very little is needed on your part. We ask that you move vehicles from the driveway, take down fragile items from interior walls, and keep pets and children indoors while the crew is actively working."
+      },
+      "protection": {
+        "q": "How do you protect my property during the roof installation?",
+        "a": "We take extra precautions to shield your landscaping, siding, windows, and outdoor areas throughout the job. Once the work is complete, we perform a thorough cleanup with magnetic sweeps to collect nails and debris."
+      },
+      "weather": {
+        "q": "What happens if bad weather delays my roofing project?",
+        "a": "Safety always comes first. If severe weather affects the schedule, we notify you right away, secure your roof when needed, and resume the work as soon as conditions allow without compromising quality."
+      },
+      "scheduling": {
+        "q": "How far in advance should I book my roofing project?",
+        "a": "It depends on the project scope and our current demand. Once the work is approved, we confirm the earliest available window, reserve your place on our schedule, and keep you updated through the final walkthrough."
+      }
+    }
+  },
+  "projects": {
+    "items": {
+      "similar": {
+        "q": "Can you build a roofing project like one shown here?",
+        "a": "Absolutely. Every roofing project is fully customized to your property's structure, architectural style, and budget. If you see one you like here, we can tailor a similar solution for your home or business."
+      },
+      "duration": {
+        "q": "How long does a roofing project usually take?",
+        "a": "Most residential roofing projects are completed in one to three days, while larger or more complex commercial projects may require additional time depending on the roofing system, weather conditions, and project scope."
+      },
+      "materials": {
+        "q": "What roofing materials do you use for projects like these?",
+        "a": "We work with a variety of roofing materials, including shingles, metal, and flat roof systems. We recommend the right option based on your property's design, performance needs, budget, and local conditions."
+      },
+      "matching": {
+        "q": "Can you match the style and color of my existing roof?",
+        "a": "Yes. We offer a wide range of roofing materials, colors, and profiles to complement your property's architecture while meeting your durability, performance, and budget requirements."
+      },
+      "florida": {
+        "q": "Are these roofs suited to South Florida's weather?",
+        "a": "Yes. We select roofing systems and installation methods suited to South Florida's heat, heavy rain, and strong winds. Each roof is built to withstand our toughest weather and perform reliably throughout the year."
+      },
+      "hidden": {
+        "q": "What if unexpected issues come up during the job?",
+        "a": "If hidden damage or structural issues are found, we'll explain the situation, provide clear recommendations, and discuss all available options before performing any additional work."
+      },
+      "start": {
+        "q": "How do I get started with a new roofing project with your team?",
+        "a": "Getting started is simple. Contact our team to schedule a roof inspection, and we'll evaluate your property, discuss your goals, and provide a detailed proposal with the best solution for your project."
+      }
+    }
+  },
+  "about": {
+    "items": {
+      "experience": {
+        "q": "How long has your company been in the roofing business?",
+        "a": "We have proudly served local homeowners for many years, earning a strong reputation for dependable workmanship. Our experienced team brings deep knowledge of roofing systems and the demands of our local climate to every project."
+      },
+      "areas": {
+        "q": "What areas and communities do you currently serve?",
+        "a": "We serve homeowners and businesses across the region, including the surrounding cities and nearby communities. If you are unsure whether your property falls within our service area, contact us and our team will gladly confirm."
+      },
+      "licensed": {
+        "q": "Are you a licensed and insured Florida contractor?",
+        "a": "Yes. We are fully licensed and insured to operate across Florida, carrying comprehensive general liability and workers compensation coverage. This protects you, your property, and our crew throughout every stage of the project."
+      },
+      "brands": {
+        "q": "What roofing brands do you work with?",
+        "a": "We partner with leading, factory certified roofing manufacturers. Those direct relationships give you access to proven products, extended manufacturer warranties, and the assurance that every roof meets factory specifications."
+      },
+      "estimates": {
+        "q": "Do you offer free estimates before starting any project?",
+        "a": "Yes. Every project begins with a free, no obligation estimate. After inspecting your roof we explain our findings and provide a clear, written breakdown of the recommended work before you decide to move forward."
+      },
+      "warranty": {
+        "q": "What warranties do you provide on your roofing work?",
+        "a": "Every project includes our written workmanship warranty, and most roofing systems also carry extended manufacturer warranties on the materials. Together they protect both the quality of our installation and the products for years."
+      },
+      "financing": {
+        "q": "Do you offer financing or flexible monthly payment options?",
+        "a": "Yes. We offer flexible financing and payment options to help make your roofing project more manageable. Our team will walk you through the available plans so you can choose what best fits your budget."
+      }
+    }
+  },
+  "repair": {
+    "items": {
+      "assessment": {
+        "q": "How do I know if my roof needs a repair instead of a replacement?",
+        "a": "The answer depends on the age of your roof, the extent of the damage, and its overall condition. During our inspection, we determine whether a professional repair can safely restore your roof or if a full replacement is the better long term solution."
+      },
+      "damage": {
+        "q": "What types of roof damage can usually be repaired?",
+        "a": "Many roofing issues can be repaired, including roof leaks, missing shingles, cracked tiles, damaged flashing, loose ridge components, and storm related damage. Every repair begins with a thorough inspection to identify the source of the problem."
+      },
+      "leak": {
+        "q": "Can you repair an active roof leak without replacing the entire roof?",
+        "a": "Yes. In many cases, leaks are caused by damaged roofing materials, flashing, or roof penetrations rather than the entire roofing system. We identify the source of the leak and perform the necessary repairs whenever replacement is not required."
+      },
+      "duration": {
+        "q": "How long does a typical roof repair take to complete?",
+        "a": "Most roof repairs can be completed within a single visit, depending on the type of damage, weather conditions, and material availability. Larger or more complex repairs may require additional time."
+      },
+      "extend": {
+        "q": "Will a roof repair help extend the life of my existing roof?",
+        "a": "Yes. Addressing damage early helps prevent water intrusion and additional deterioration, allowing your existing roofing system to continue performing as intended for a longer period."
+      },
+      "matching": {
+        "q": "Can you match my existing roofing materials and color?",
+        "a": "We make every effort to match your existing roofing materials, profile, and color as closely as possible. Availability depends on the age of your roof and the products currently offered by manufacturers."
+      },
+      "warranty": {
+        "q": "Is your roof repair work backed by a warranty?",
+        "a": "Yes. Our roof repairs include a written workmanship warranty covering the completed repair, giving you added confidence in the quality of the work performed."
+      }
+    }
+  },
+  "replacement": {
+    "items": {
+      "duration": {
+        "q": "How long does a full roof replacement take?",
+        "a": "Most residential roof replacements are completed within one to two days. The timeline can vary depending on the size of your home, roofing material, permit requirements, weather conditions, and any additional repairs discovered during the replacement process."
+      },
+      "presence": {
+        "q": "Do I need to leave the house during a roof replacement?",
+        "a": "No. Most homeowners can stay at home during the project. Our team works to minimize disruption while maintaining a safe work area, and we recommend keeping pets and children away from active installation zones."
+      },
+      "cost": {
+        "q": "What factors affect the cost of a roof replacement?",
+        "a": "The total investment depends on your roof size, selected materials, existing roof conditions, decking repairs, flashing requirements, and project complexity. We provide a detailed written estimate outlining the complete scope before installation begins."
+      },
+      "warranty": {
+        "q": "Is the warranty on materials or workmanship?",
+        "a": "A roof replacement includes manufacturer warranty coverage for the roofing materials and our written workmanship warranty for the installation. This provides protection for both the products used and the quality of the work performed."
+      },
+      "leaks": {
+        "q": "Will a roof replacement fix my existing leaks?",
+        "a": "A complete roof replacement removes the old roofing system and addresses the underlying issues affecting your home's protection. With proper installation, your new system is designed to provide reliable performance and long term weather protection."
+      },
+      "rain": {
+        "q": "What happens if it rains during my roof replacement?",
+        "a": "We monitor weather conditions throughout the project and take the necessary precautions to protect your home. If severe weather creates unsafe conditions, installation is temporarily paused until work can continue safely."
+      },
+      "permit": {
+        "q": "Do you handle permits and inspections?",
+        "a": "Yes. We manage the required permits and coordinate inspections throughout the replacement process. This helps ensure your new roofing system is installed according to local building requirements and project standards."
+      }
+    }
+  },
+  "storm": {
+    "items": {
+      "signs": {
+        "q": "How can I tell if my roof has storm damage after severe weather?",
+        "a": "Storm damage is not always visible from the ground. Missing shingles, cracked tiles, lifted flashing, dents, water stains, or interior leaks are common warning signs. A professional inspection helps identify both visible and hidden damage before it leads to more expensive repairs."
+      },
+      "inspect": {
+        "q": "Should I schedule a roof inspection even if I don't see a leak?",
+        "a": "Yes. High winds, hail, and flying debris can weaken roofing materials without causing an immediate leak. An inspection allows us to identify hidden damage early and recommend repairs before moisture reaches the underlying roofing system."
+      },
+      "insurance": {
+        "q": "Can you provide documentation for my insurance claim?",
+        "a": "Yes. We document storm related damage with detailed photos and a written assessment that clearly identifies the affected areas. This information can help support your insurance claim and provide a clear record of your roof's condition."
+      },
+      "leak": {
+        "q": "What should I do if my roof starts leaking after a storm?",
+        "a": "Contact us as soon as possible. We evaluate the damaged areas, recommend immediate protection when necessary, and perform the required repairs to help prevent additional water intrusion and further damage to your home."
+      },
+      "types": {
+        "q": "What types of storm damage can usually be repaired?",
+        "a": "We repair damage caused by hurricanes, tropical storms, hail, high winds, and wind driven debris. This includes replacing damaged roofing materials, repairing flashing, sealing vulnerable areas, and restoring the roof's protective performance."
+      },
+      "urgency": {
+        "q": "How quickly should storm damage be repaired after the weather clears?",
+        "a": "Storm damage should be addressed as soon as conditions are safe. Prompt repairs help prevent leaks, structural deterioration, mold growth, and additional damage that can develop when water continues entering the roofing system."
+      },
+      "matching": {
+        "q": "Will the repaired areas match my existing roofing materials?",
+        "a": "We make every effort to match your existing roofing material, profile, and color as closely as possible. Material availability depends on the age of your roof and current manufacturer offerings, but our goal is always a consistent and professional appearance."
+      }
+    }
+  },
+  "inspections": {
+    "items": {
+      "includes": {
+        "q": "What does a professional roof inspection include?",
+        "a": "Our inspection evaluates the overall condition of your roofing system, including shingles or tiles, flashing, roof penetrations, and other vulnerable areas. We also document our findings with photos and provide a detailed written report."
+      },
+      "frequency": {
+        "q": "How often should I have my roof professionally inspected?",
+        "a": "Most homeowners benefit from a professional roof inspection at least once a year and after major storms. Regular inspections help identify developing problems before they become costly repairs or shorten the life of your roofing system."
+      },
+      "hidden": {
+        "q": "Can a roof inspection identify hidden leaks or damage?",
+        "a": "Yes. While some conditions are immediately visible, a professional inspection often identifies early signs of water intrusion, damaged flashing, deteriorated roofing materials, and other issues that may not be obvious from the ground."
+      },
+      "report": {
+        "q": "Will I receive photos and a written inspection report?",
+        "a": "Yes. Every inspection includes photo documentation and a detailed written report explaining the roof's condition, any areas of concern, and our professional recommendations for repairs or future maintenance."
+      },
+      "insurance": {
+        "q": "Can a roof inspection help with an insurance claim?",
+        "a": "Yes. A documented inspection provides a clear record of your roof's condition and can help support insurance related discussions by identifying storm damage or other issues requiring professional attention."
+      },
+      "buying": {
+        "q": "Do I need a roof inspection before buying or selling a home?",
+        "a": "A professional inspection helps buyers understand the condition of the roofing system before closing, while sellers can identify and address potential concerns that may arise during the transaction."
+      },
+      "recommendations": {
+        "q": "Will the inspection include repair recommendations if problems are found?",
+        "a": "Absolutely. If we identify damage or areas of concern, we explain the findings, recommend the appropriate solution, and provide clear guidance so you can make an informed decision about your roof."
+      }
+    }
+  },
+  "gutters": {
+    "items": {
+      "replace": {
+        "q": "How do I know if my gutters need to be replaced?",
+        "a": "Signs of failing gutters include frequent overflowing, sagging sections, visible cracks, rust, loose connections, water pooling near your foundation, or gutters that no longer move water away from your home properly."
+      },
+      "flashing": {
+        "q": "Why is proper flashing important for my home?",
+        "a": "Flashing protects vulnerable areas where water can enter, including roof edges, walls, valleys, chimneys, and other roof penetrations. Properly installed flashing helps prevent leaks and long term moisture damage."
+      },
+      "damage": {
+        "q": "Can damaged gutters cause problems beyond water overflow?",
+        "a": "Yes. Poorly functioning gutters can allow water to collect near your foundation, damage exterior surfaces, affect landscaping, and contribute to moisture issues around your home."
+      },
+      "areas": {
+        "q": "What areas of my home need flashing protection?",
+        "a": "Flashing is commonly installed around areas where roofing materials meet walls, chimneys, vents, valleys, and other transitions. These areas require proper sealing to help prevent water intrusion."
+      },
+      "combined": {
+        "q": "Can you replace gutters and repair flashing at the same time?",
+        "a": "Yes. Combining gutter and flashing services allows us to address multiple water management issues at once and create better protection around your home's most vulnerable areas."
+      },
+      "drainage": {
+        "q": "How do you make sure new gutters drain correctly?",
+        "a": "We evaluate the roof water flow, gutter slope, downspout placement, and drainage points to ensure water is directed away from your home efficiently."
+      },
+      "lifespan": {
+        "q": "How long do new gutters and flashing systems last?",
+        "a": "The lifespan depends on the materials used, installation quality, weather exposure, and maintenance. Properly installed systems provide reliable water protection for many years."
+      }
+    }
+  },
+  "commercial": {
+    "items": {
+      "systems": {
+        "q": "What types of commercial roofing systems do you install and replace?",
+        "a": "We work with a variety of commercial roofing systems based on your building's design, performance requirements, and long term goals. During the evaluation, we recommend the most appropriate solution for your specific property."
+      },
+      "disruption": {
+        "q": "Can roofing work be completed without interrupting business operations?",
+        "a": "In many cases, yes. We carefully plan the project schedule and coordinate the work to minimize disruption whenever possible while maintaining a safe environment for employees, customers, and visitors."
+      },
+      "assessment": {
+        "q": "How do you determine whether a commercial roof needs repair or replacement?",
+        "a": "Our inspection evaluates the roof's overall condition, age, existing damage, drainage performance, and remaining service life. Based on those findings, we recommend the most practical and cost effective solution."
+      },
+      "duration": {
+        "q": "How long does a commercial roofing project usually take?",
+        "a": "Project timelines vary depending on the building size, roofing system, weather conditions, and project complexity. We provide a detailed schedule before work begins so you know what to expect."
+      },
+      "managers": {
+        "q": "Can you work with property managers and HOA communities?",
+        "a": "Yes. We regularly coordinate with property managers, facility managers, and HOA representatives to help ensure projects meet scheduling requirements, property standards, and operational needs."
+      },
+      "inspection": {
+        "q": "Do you provide roof inspections before recommending a solution?",
+        "a": "Absolutely. Every commercial project begins with a comprehensive inspection to identify existing issues, evaluate the roofing system, and determine the most appropriate course of action."
+      },
+      "warranty": {
+        "q": "Does your commercial roofing work include a warranty?",
+        "a": "Yes. Our commercial roofing projects include a written workmanship warranty, and applicable manufacturer warranty coverage is provided for the roofing materials used during the installation."
+      }
+    }
+  },
+  "residential": {
+    "items": {
+      "assessment": {
+        "q": "How do I know if my roof needs replacement instead of repair?",
+        "a": "Our inspection looks at the roof's age, structural condition, leaks, missing materials, and overall performance. If a repair is still a safe and cost effective option, we'll recommend it instead of a replacement."
+      },
+      "materials": {
+        "q": "What roofing materials are available for my home?",
+        "a": "We install asphalt shingles, clay and concrete tile, metal roofing, and flat roofing systems. We'll help you choose the best option based on your home's style, budget, and long term performance."
+      },
+      "permits": {
+        "q": "Will you handle permits and code requirements?",
+        "a": "Yes. We obtain the required permits and complete your project according to current local building codes and inspection requirements."
+      },
+      "duration": {
+        "q": "How long does a residential roof replacement take?",
+        "a": "Most residential roof replacements are completed in one to two days. Larger homes, specialty materials, and weather conditions may extend the schedule."
+      },
+      "weather": {
+        "q": "What happens if bad weather arrives during installation?",
+        "a": "Our crew closely monitors weather conditions and protects your home throughout the project. If needed, installation is safely paused until conditions improve."
+      },
+      "property": {
+        "q": "Will my property be protected during the project?",
+        "a": "Yes. We protect landscaping, perform daily cleanup, use magnetic nail sweeps, remove all debris, and complete a final walkthrough before the project is finished."
+      },
+      "warranty": {
+        "q": "What warranties are included with a new roof?",
+        "a": "Every project includes a written workmanship warranty along with the manufacturer's material warranty, giving you long term protection and peace of mind."
+      }
+    }
+  },
+  "metal": {
+    "items": {
+      "suitable": {
+        "q": "Is metal roofing a good choice for homes in Florida?",
+        "a": "Yes. Metal roofing is designed to handle Florida's heat, heavy rain, and severe weather conditions while providing long term durability and protection."
+      },
+      "lifespan": {
+        "q": "How long can I expect a properly installed metal roof to last?",
+        "a": "A properly installed metal roofing system can provide decades of performance with minimal maintenance compared to many traditional roofing materials."
+      },
+      "efficiency": {
+        "q": "Will installing a metal roof help improve my home's energy efficiency?",
+        "a": "Yes. Metal roofing can help reflect solar heat and improve energy performance when combined with proper insulation and ventilation."
+      },
+      "overlay": {
+        "q": "Can a metal roofing system be installed over my existing roof?",
+        "a": "It depends on the current roof condition, local requirements, and the selected system. We evaluate your property and recommend the proper installation method."
+      },
+      "options": {
+        "q": "What metal roofing styles, finishes, and colors are available?",
+        "a": "We offer different metal profiles, finishes, and colors to match your home's design while providing the durability and performance you expect."
+      },
+      "noise": {
+        "q": "Will rain and storms make a metal roof noisy inside my home?",
+        "a": "With proper underlayment, insulation, and installation methods, metal roofing provides comfortable sound levels during rain and severe weather."
+      },
+      "warranty": {
+        "q": "What warranty protection comes with a new metal roof?",
+        "a": "Your metal roofing system includes applicable manufacturer coverage along with our written workmanship warranty for installation quality."
+      }
+    }
+  },
+  "tile": {
+    "items": {
+      "materials": {
+        "q": "What is the difference between concrete and clay roof tiles?",
+        "a": "Both concrete and clay tiles provide outstanding durability and weather resistance. Clay tiles are known for their traditional appearance and color retention, while concrete tiles offer excellent strength, a wide variety of profiles, and outstanding value for Florida homes."
+      },
+      "hurricane": {
+        "q": "Is tile roofing a good choice for Florida's hurricane season?",
+        "a": "Yes. Properly installed tile roofing systems are designed to perform well in Florida's demanding climate. Using the correct fastening methods, underlayment, and flashing helps improve wind resistance and long term weather protection."
+      },
+      "lifespan": {
+        "q": "How long does a professionally installed tile roof typically last?",
+        "a": "Tile roofing is one of the longest lasting residential roofing systems available. The actual lifespan depends on the quality of the installation, underlayment, maintenance, and environmental conditions, but it can provide reliable protection for decades."
+      },
+      "repair": {
+        "q": "Can individual broken or cracked roof tiles be replaced?",
+        "a": "Yes. Individual damaged tiles can often be replaced without removing the entire roofing system, provided the surrounding roof remains in good condition. We evaluate the damage and recommend the most appropriate repair solution."
+      },
+      "underlayment": {
+        "q": "Does a tile roof require a special underlayment system?",
+        "a": "Yes. Because roof tiles serve as the outer protective layer, a high quality underlayment plays a critical role in protecting your home from water intrusion. We install underlayment systems designed for Florida's climate and building requirements."
+      },
+      "value": {
+        "q": "Will a tile roof increase the value and appearance of my home?",
+        "a": "Many homeowners choose tile roofing because it offers a distinctive architectural appearance, exceptional durability, and long service life. A professionally installed tile roof can significantly enhance both curb appeal and overall property value."
+      },
+      "warranty": {
+        "q": "Does your tile roofing installation include a workmanship warranty?",
+        "a": "Yes. Every tile roofing project includes our written workmanship warranty covering the quality of the installation, along with applicable manufacturer warranty coverage for the roofing materials used."
+      }
+    }
+  },
+  "flat": {
+    "items": {
+      "buildings": {
+        "q": "What types of buildings are best suited for flat roofing systems?",
+        "a": "Flat roofing systems are commonly installed on commercial buildings, modern homes, garages, additions, and low slope structures. The right system depends on the building's design, drainage requirements, and long term performance goals."
+      },
+      "drainage": {
+        "q": "How do flat roofs prevent water from collecting on the surface?",
+        "a": "Although they appear level, flat roofs are built with a slight slope that directs water toward drains, scuppers, or gutters. Proper drainage design and professional installation are essential to preventing standing water and extending the roof's service life."
+      },
+      "durability": {
+        "q": "Are flat roofing systems durable enough for Florida's weather?",
+        "a": "Yes. Professionally installed flat roofing systems are designed to withstand Florida's intense sun, heavy rainfall, and severe weather. Selecting the appropriate roofing system and maintaining proper drainage are key to long term performance."
+      },
+      "lifespan": {
+        "q": "How long does a flat roofing system typically last?",
+        "a": "The lifespan depends on the roofing system selected, installation quality, weather exposure, and regular maintenance. Routine inspections and timely repairs help maximize the performance and longevity of the roof."
+      },
+      "repair": {
+        "q": "Can a leaking flat roof be repaired without replacing the entire system?",
+        "a": "In many cases, yes. Localized leaks caused by damaged flashing, seams, or roofing materials can often be repaired. A professional inspection allows us to determine whether a repair or a full replacement is the most appropriate solution."
+      },
+      "inspection": {
+        "q": "How often should a flat roof be professionally inspected?",
+        "a": "We recommend scheduling a professional inspection at least once a year and after major storms. Regular inspections help identify drainage issues, membrane damage, and other conditions before they become costly repairs."
+      },
+      "warranty": {
+        "q": "Does your flat roofing installation include a workmanship warranty?",
+        "a": "Yes. Every flat roofing project includes our written workmanship warranty covering the quality of the installation, along with applicable manufacturer warranty coverage for the roofing materials selected."
+      }
+    }
+  },
+  "skylights": {
+    "items": {
+      "existing": {
+        "q": "Can a skylight be installed on my existing roofing system?",
+        "a": "Yes. In many cases, a skylight can be added to an existing roof without requiring a full replacement. We evaluate the roof structure, slope, framing, and roofing material to determine the safest and most effective installation method."
+      },
+      "leak": {
+        "q": "Will a professionally installed skylight leak over time?",
+        "a": "A properly installed skylight should provide reliable long term performance without leaks. Correct flashing, weatherproof sealing, and manufacturer approved installation methods are essential to protecting your home from water intrusion."
+      },
+      "types": {
+        "q": "What skylight options are available for my home?",
+        "a": "We install a variety of skylight styles, including fixed and venting models, to match your home's design and lighting needs. During the consultation, we help you choose the right size, placement, and features for your space."
+      },
+      "duration": {
+        "q": "How long does a typical skylight installation take?",
+        "a": "Most residential skylight installations are completed within a single day. The exact timeline depends on roof accessibility, structural modifications, the skylight model selected, and the complexity of the installation."
+      },
+      "efficiency": {
+        "q": "Will installing a skylight improve my home's energy efficiency?",
+        "a": "Modern skylights allow more natural daylight into your home, reducing the need for artificial lighting during the day. Energy efficient glazing options can also help improve indoor comfort by reducing unwanted heat transfer."
+      },
+      "replace": {
+        "q": "Can you replace an old or leaking skylight with a new one?",
+        "a": "Yes. We remove aging or leaking skylights and replace them with modern units using updated flashing systems and weatherproof sealing. This helps restore reliable protection while improving appearance and natural lighting."
+      },
+      "warranty": {
+        "q": "Does my skylight installation include a workmanship warranty?",
+        "a": "Yes. Every skylight installation includes our written workmanship warranty covering the quality of the installation. The skylight unit is also backed by the applicable manufacturer warranty for the selected product."
+      }
+    }
+  },
+  "solar": {
+    "items": {
+      "replace": {
+        "q": "Should I replace my roof before installing solar panels?",
+        "a": "If your roof is nearing the end of its service life, replacing it before installing solar panels is often the most practical option. This helps avoid the cost of removing and reinstalling the panels when the roof eventually needs replacement."
+      },
+      "compatibility": {
+        "q": "Can solar panels be installed on any type of roof?",
+        "a": "Most residential roofing systems can support solar panels, but the roof's condition, age, structural integrity, and remaining lifespan should be evaluated before installation to ensure long term performance."
+      },
+      "readiness": {
+        "q": "How do you determine if my roof is ready for solar?",
+        "a": "We inspect the roofing materials, flashing, structural condition, and remaining service life. If repairs or upgrades are recommended, we complete that work before the solar installation to provide a dependable roofing system."
+      },
+      "damage": {
+        "q": "Will installing solar panels damage my roof?",
+        "a": "When installed correctly on a properly prepared roof, solar panels should not damage the roofing system. Proper flashing and professional installation methods help protect against water intrusion around mounting points."
+      },
+      "repair": {
+        "q": "Can you repair my roof before my solar contractor begins work?",
+        "a": "Yes. We can complete the necessary roofing repairs or replacement before your solar installation, helping ensure the roof is ready for long term performance once the panels are installed."
+      },
+      "coordination": {
+        "q": "Do you coordinate with my solar installation company?",
+        "a": "Yes. We can coordinate the roofing work with your solar contractor to help streamline the installation process and reduce unnecessary delays between both phases of the project."
+      },
+      "warranty": {
+        "q": "Does the roofing work include a workmanship warranty?",
+        "a": "Yes. All roofing work completed as part of your solar ready project is backed by our written workmanship warranty, with applicable manufacturer warranties covering the roofing materials used."
+      }
+    }
+  }
+}

@@ -1,0 +1,57 @@
+import { getTranslations } from "next-intl/server";
+import { SectionWrapper } from "@/common/section-wrapper/components/SectionWrapper";
+import { Container } from "@/common/container/components/Container";
+import { ShopBrowser } from "@/features/shop/catalog/components/organisms/ShopBrowser";
+import { shopProductsData } from "@/data/features/shop/products";
+import { shopCatalogData } from "@/data/features/shop/catalog";
+import { formatPrice } from "@/utils/helpers/price";
+import type { ShopCatalogProps } from "@/features/shop/catalog/types";
+
+const { categories, sortOrder } = shopCatalogData;
+
+/* shop catalog: search, sort and category chips over the product grid */
+export const ShopCatalog = async ({ tone = "base" }: ShopCatalogProps) => {
+  const t = await getTranslations("shop-page");
+  /* resolve: data literals + i18n labels */
+  const items = shopProductsData.items.map((product) => ({
+    slug: product.slug,
+    href: `/shop/${product.slug}`,
+    title: t(`items.${product.slug}.title`),
+    cardTitle: t(`items.${product.slug}.cardTitle`),
+    brand: product.brand,
+    sku: product.sku,
+    image: product.image,
+    category: product.category,
+    price: product.price,
+    priceLabel: formatPrice(product.price),
+    unit: t(product.unitKey),
+    rating: product.rating,
+    ratingLabel: t("reviewCount", { rating: product.rating, count: product.reviews }),
+    reviews: product.reviews,
+    availability: product.availability,
+    availabilityLabel: t(`availability.${product.availability}`),
+  }));
+  const categoryItems = categories.map(({ key, image }) => ({
+    key,
+    label: t(`categories.${key}`),
+    image,
+  }));
+  const sortItems = sortOrder.map((value) => ({ value, label: t(`sort.${value}`) }));
+
+  return (
+    <SectionWrapper id="catalog" tone={tone}>
+      <Container>
+        <ShopBrowser
+          items={items}
+          categories={categoryItems}
+          viewLabel={t("action.view")}
+          searchLabel={t("search.label")}
+          searchPlaceholder={t("search.placeholder")}
+          searchSubmitLabel={t("action.search")}
+          sortLabel={t("sort.label")}
+          sortOptions={sortItems}
+        />
+      </Container>
+    </SectionWrapper>
+  );
+};

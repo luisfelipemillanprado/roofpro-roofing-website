@@ -1,0 +1,513 @@
+{
+  "overviewEyebrow": "QUÉ INCLUYE",
+  "overviewTitleLead": "Atención Completa",
+  "overviewTitleAccent": "En Cada Proyecto",
+  "overviewDescription": "Cada servicio incluye mano de obra experta, materiales premium y atención al detalle, para que tu techo rinda por años.",
+  "processEyebrow": "NUESTRO PROCESO",
+  "processTitleLead": "Proceso Rápido Y Probado",
+  "processTitleAccent": "De Principio A Fin",
+  "processDescription": "Desde la inspección inicial hasta el recorrido final, cada paso está cuidadosamente diseñado para garantizar una calidad excepcional sin sorpresas inesperadas.",
+  "action": {
+    "contact": "Contáctanos Ahora"
+  },
+  "stats": {
+    "years": {
+      "value": "25+",
+      "label": "Años de Experiencia"
+    },
+    "projects": {
+      "value": "1.5k+",
+      "label": "Techos Completados"
+    },
+    "licensed": {
+      "value": "100%",
+      "label": "Licencia y Seguro"
+    }
+  },
+  "items": {
+    "residential": {
+      "intro": "Soluciones completas de techado residencial con instalación experta, sistemas duraderos y protección respaldada por garantía escrita de mano de obra.",
+      "included": [
+        "Inspección gratuita del techo con fotos",
+        "Estimado detallado por escrito en 24 horas",
+        "Materiales premium certificados para Florida",
+        "Cuadrilla de instalación propia y dedicada",
+        "Limpieza diaria con barrido magnético de clavos",
+        "Documentación de mitigación de viento para seguro",
+        "Recorrido final con garantía de mano de obra"
+      ],
+      "process": {
+        "steps": {
+          "inspect": {
+            "title": "Inspección & Estimado",
+            "description": "Documentamos cada pendiente y el tapajuntas con fotos, y enviamos un estimado por escrito en 24 horas."
+          },
+          "quote": {
+            "title": "Material & Color",
+            "description": "Revisas muestras de materiales en casa y eliges colores, con igualación aprobada por el HOA cuando aplique."
+          },
+          "work": {
+            "title": "Agenda & Permiso",
+            "description": "Sacamos todos los permisos requeridos, agendamos la cuadrilla y confirmamos por escrito la fecha exacta de inicio."
+          },
+          "warranty": {
+            "title": "Instalación & Recorrido",
+            "description": "Instalamos en uno o dos días, con fotos del avance, un recorrido final y tu garantía escrita."
+          }
+        }
+      },
+      "ideal": [
+        "Techos de asfalto o teja envejecidos",
+        "Daño por tormenta o huracán",
+        "Inspecciones de cuatro puntos reprobadas",
+        "Reemplazos relacionados con el seguro",
+        "Mejoras de eficiencia energética del techo",
+        "Casas que se preparan para huracanes"
+      ]
+    },
+    "metal": {
+      "intro": "El techo metálico ofrece durabilidad excepcional, eficiencia energética y desempeño duradero, con una apariencia moderna y elegante e instalación profesional.",
+      "included": [
+        "Inspección completa del sistema de techo metálico",
+        "Asesoría para elegir paneles o junta alzada",
+        "Membrana premium y tapajuntas anticorrosivo",
+        "Instalación y fijación profesional de paneles",
+        "Consideraciones de expansión térmica y ventilación",
+        "Protección del sitio y barrido magnético",
+        "Recorrido final con garantía de obra"
+      ],
+      "process": {
+        "steps": {
+          "inspect": {
+            "title": "Evaluación Estructural",
+            "description": "Evaluamos la estructura, el deck y las sujeciones para confirmar que tu casa soporta un techo metálico."
+          },
+          "quote": {
+            "title": "Selección de Paneles",
+            "description": "Eliges el perfil, color y acabado del panel, y detallamos todo en un estimado claro por escrito."
+          },
+          "work": {
+            "title": "Preparación del Sistema",
+            "description": "Colocamos membrana de alta temperatura y tapajuntas anticorrosivo, preparando cada borde y penetración para recibir los paneles."
+          },
+          "warranty": {
+            "title": "Instalación & Revisión",
+            "description": "La cuadrilla fija cada panel con sujeciones ocultas que permiten expansión térmica, luego revisa techo y garantía."
+          }
+        }
+      },
+      "ideal": [
+        "Dueños que buscan durabilidad a largo plazo",
+        "Propiedades costeras expuestas al salitre",
+        "Casas que necesitan techo resistente a huracanes",
+        "Diseños de casas modernas y arquitectónicas",
+        "Mejoras de techado energéticamente eficientes",
+        "Reemplazar techos viejos de asfalto o teja"
+      ]
+    },
+    "tile": {
+      "intro": "Techado experto de teja que combina sistemas premium de concreto y arcilla con instalación profesional para durabilidad y atractivo duraderos.",
+      "included": [
+        "Inspección completa del techo de teja",
+        "Teja premium de concreto o arcilla",
+        "Membrana sintética de alta temperatura",
+        "Tapajuntas nuevo y penetraciones impermeables",
+        "Fijación reforzada para el viento de Florida",
+        "Limpieza diaria y barrido magnético de clavos",
+        "Recorrido final y garantía de obra"
+      ],
+      "process": {
+        "steps": {
+          "inspect": {
+            "title": "Inspección & Evaluación",
+            "description": "Inspeccionamos el techo actual, evaluamos el deck y determinamos la mejor solución de teja para tu casa."
+          },
+          "quote": {
+            "title": "Selección & Preparación",
+            "description": "Elige el perfil y color de la teja mientras preparamos el techo con underlayment e impermeabilización adecuados."
+          },
+          "work": {
+            "title": "Instalación & Fijación",
+            "description": "Las tejas de concreto o arcilla se instalan profesionalmente con fijación que cumple el código de Florida."
+          },
+          "warranty": {
+            "title": "Revisión & Protección",
+            "description": "Revisamos la calidad, verificamos el tapajuntas y la instalación de teja, limpiamos y entregamos tu garantía escrita."
+          }
+        }
+      },
+      "ideal": [
+        "Techos viejos de concreto o arcilla",
+        "Nuevas instalaciones de teja residencial",
+        "Mejoras de techo resistentes a huracanes",
+        "Casas que requieren protección duradera",
+        "Propiedades que buscan atractivo premium",
+        "Casas de Florida expuestas a clima severo"
+      ]
+    },
+    "flat": {
+      "intro": "Techado plano profesional para propiedades residenciales y comerciales, con protección impermeable confiable, drenaje eficiente y desempeño duradero de baja pendiente.",
+      "included": [
+        "Inspección y evaluación completa del techo plano",
+        "Evaluación del sistema de baja pendiente",
+        "Materiales impermeables de alto desempeño",
+        "Mejoras de tapajuntas y sistema de drenaje",
+        "Penetraciones y transiciones del techo selladas",
+        "Limpieza diaria y retiro de escombros",
+        "Inspección final y garantía de obra"
+      ],
+      "process": {
+        "steps": {
+          "inspect": {
+            "title": "Inspección & Evaluación",
+            "description": "Inspeccionamos el sistema de techo, el drenaje, el tapajuntas y la superficie para identificar cualquier problema existente."
+          },
+          "quote": {
+            "title": "Planeación & Preparación",
+            "description": "Determinamos la solución de techo plano adecuada y preparamos la superficie para una instalación impermeable bien hecha."
+          },
+          "work": {
+            "title": "Instalación & Sellado",
+            "description": "El sistema se instala profesionalmente con uniones, tapajuntas y penetraciones bien selladas para maximizar la protección climática."
+          },
+          "warranty": {
+            "title": "Revisión & Cierre",
+            "description": "Verificamos el drenaje, inspeccionamos todo el trabajo terminado, limpiamos el área y entregamos tu garantía de obra."
+          }
+        }
+      },
+      "ideal": [
+        "Techos residenciales de baja pendiente",
+        "Edificios comerciales de techo plano",
+        "Problemas recurrentes de agua estancada",
+        "Sistemas de techo plano envejecidos",
+        "Techos de baja pendiente dañados por tormenta",
+        "Dueños que buscan protección impermeable duradera"
+      ]
+    },
+    "gutters": {
+      "intro": "Sistemas profesionales de canaletas y tapajuntas que controlan el agua y protegen las zonas vulnerables de tu casa con durabilidad.",
+      "included": [
+        "Inspección de canaletas y evaluación de drenaje",
+        "Instalación de canaletas con pendiente adecuada",
+        "Colocación de bajantes y ajuste de flujo",
+        "Reemplazo de tapajuntas en penetraciones del techo",
+        "Uniones y bordes sellados contra filtraciones",
+        "Reparación de canaletas y tapajuntas por tormenta",
+        "Verificación final del flujo y garantía escrita"
+      ],
+      "process": {
+        "steps": {
+          "inspect": {
+            "title": "Inspección & Evaluación",
+            "description": "Evaluamos con cuidado tus canaletas, bajantes y tapajuntas para identificar problemas de drenaje y riesgos de filtración."
+          },
+          "quote": {
+            "title": "Planeación & Preparación",
+            "description": "Definimos las soluciones correctas de canaletas y tapajuntas según la distribución de tu casa y del agua."
+          },
+          "work": {
+            "title": "Instalación & Sellado",
+            "description": "Instalamos o reemplazamos canaletas y componentes de tapajuntas con alineación correcta, conexiones firmes y zonas vulnerables selladas."
+          },
+          "warranty": {
+            "title": "Prueba & Entrega",
+            "description": "Verificamos el flujo del agua, retiramos escombros, hacemos una revisión final y entregamos tu garantía de obra."
+          }
+        }
+      },
+      "ideal": [
+        "Casas con canaletas desbordadas o dañadas",
+        "Filtraciones o manchas en bordes del techo",
+        "Canaletas viejas con mal drenaje",
+        "Canaletas y tapajuntas dañados por tormenta",
+        "Casas que necesitan mejor manejo de lluvia",
+        "Zonas del techo que necesitan más protección"
+      ]
+    },
+    "replacement": {
+      "intro": "Desde reemplazos hasta reparaciones puntuales, brindamos protección duradera con materiales premium, mano de obra experta y cobertura de garantía completa.",
+      "included": [
+        "Retiro total del techo e inspección de la base",
+        "Reemplazo de base podrida (cotizado aparte, nunca oculto)",
+        "Membrana sintética nueva de alta temperatura",
+        "Metal de valle, respiraderos de cumbrera y tapajuntas escalonado nuevos",
+        "Tejas asfálticas o de arcilla premium",
+        "Retiro total de escombros y barrido magnético de clavos",
+        "Garantía de mano de obra por escrito más garantía del fabricante"
+      ],
+      "process": {
+        "steps": {
+          "inspect": {
+            "title": "Inspección & Estimado",
+            "description": "Documentamos con fotos cada pendiente y detalle, y enviamos un estimado detallado por escrito en 24 horas."
+          },
+          "quote": {
+            "title": "Agenda & Permiso",
+            "description": "Sacamos los permisos, pedimos los materiales, agendamos la cuadrilla y confirmamos por escrito tu fecha de inicio."
+          },
+          "work": {
+            "title": "Retiro & Instalación",
+            "description": "Retiramos el techo existente, inspeccionamos y preparamos el deck, y luego instalamos tu nuevo sistema de techo."
+          },
+          "warranty": {
+            "title": "Limpieza & Recorrido",
+            "description": "Retiramos todos los escombros, barrido magnético de clavos, inspección final y entregamos tu garantía escrita de obra."
+          }
+        }
+      },
+      "ideal": [
+        "Techos de más de 18 años (asfáltico) o 25 años (teja)",
+        "Daño extenso por huracán o granizo",
+        "Reemplazos por reclamo al seguro",
+        "Remediación de techo antes de la venta",
+        "Goteras visibles, tejas faltantes o zonas hundidas",
+        "Casas que preparan una instalación solar"
+      ]
+    },
+    "repair": {
+      "intro": "Las reparaciones profesionales de techo atienden fugas, materiales dañados y áreas vulnerables para restaurar tu protección y extender su vida.",
+      "included": [
+        "Inspección completa de daños del techo",
+        "Detección de fugas y diagnóstico de problemas",
+        "Reemplazo de tejas o materiales dañados",
+        "Reparación de tapajuntas en zonas vulnerables",
+        "Sellado de ductos, botas y penetraciones",
+        "Soluciones para daño de tormenta y emergencias",
+        "Inspección final con garantía de obra"
+      ],
+      "process": {
+        "steps": {
+          "inspect": {
+            "title": "Inspección & Diagnóstico",
+            "description": "Localizamos el origen del daño, identificamos las áreas afectadas y determinamos la solución de reparación más efectiva."
+          },
+          "quote": {
+            "title": "Reparación & Reemplazo",
+            "description": "Reparamos o reemplazamos las tejas, láminas, tapajuntas y cualquier otro componente del techo dañado según sea necesario."
+          },
+          "work": {
+            "title": "Sellado & Protección",
+            "description": "Restauramos las zonas vulnerables con sellado adecuado e impermeabilización para ayudar a prevenir futuras fugas e intrusión."
+          },
+          "warranty": {
+            "title": "Revisión & Garantía",
+            "description": "Hacemos una inspección final, verificamos la reparación, limpiamos el área de trabajo y entregamos tu garantía escrita."
+          }
+        }
+      },
+      "ideal": [
+        "Fugas activas e intrusión de agua",
+        "Materiales faltantes, agrietados o levantados",
+        "Daño de techo por tormenta o viento",
+        "Tapajuntas dañado en ductos o chimeneas",
+        "Problemas menores antes de volverse mayores",
+        "Extender la vida de un techo existente"
+      ]
+    },
+    "skylights": {
+      "intro": "Claraboyas instaladas profesionalmente que traen luz natural a tu hogar manteniendo un techo hermético, con el tapajuntas y sellado adecuados.",
+      "included": [
+        "Evaluación del techo para ubicar la claraboya",
+        "Planeación de tamaño y ubicación de claraboya",
+        "Apertura y enmarcado profesional del techo",
+        "Instalación de tapajuntas aprobado por el fabricante",
+        "Sellado impermeable en todas las conexiones",
+        "Limpieza interior y exterior de la instalación",
+        "Inspección de hermeticidad y garantía de obra"
+      ],
+      "process": {
+        "steps": {
+          "inspect": {
+            "title": "Inspección & Planeación",
+            "description": "Evaluamos tu techo y determinamos la mejor ubicación de la claraboya para máxima luz e instalación correcta."
+          },
+          "quote": {
+            "title": "Preparación & Enmarcado",
+            "description": "Preparamos la abertura, reforzamos el enmarcado cuando se requiere y dejamos la estructura lista para la instalación."
+          },
+          "work": {
+            "title": "Instalación & Sellado",
+            "description": "Instalamos tu claraboya con tapajuntas aprobado por el fabricante y sellado impermeable para ayudar a prevenir filtraciones."
+          },
+          "warranty": {
+            "title": "Entrega & Garantía",
+            "description": "Verificamos la instalación, revisamos las áreas selladas, limpiamos el sitio y entregamos tu garantía de obra escrita."
+          }
+        }
+      },
+      "ideal": [
+        "Cuartos interiores oscuros que necesitan luz",
+        "Pasillos y baños sin ventanas",
+        "Más luz en cocina y sala",
+        "Conversiones de ático o buhardilla",
+        "Dueños que mejoran la eficiencia energética",
+        "Reemplazos de techo con claraboyas nuevas"
+      ]
+    },
+    "storm": {
+      "intro": "Reparaciones rápidas y profesionales de daños por tormenta que restauran tu techo tras huracanes, vientos y granizo, evitando más filtraciones.",
+      "included": [
+        "Inspección completa de daños por tormenta",
+        "Documentación con fotos de las áreas afectadas",
+        "Mitigación de fugas de emergencia cuando aplica",
+        "Reemplazo de materiales dañados por la tormenta",
+        "Reparación de tapajuntas y penetraciones del techo",
+        "Apoyo con documentación del reclamo de seguro",
+        "Inspección final y garantía de obra"
+      ],
+      "process": {
+        "steps": {
+          "inspect": {
+            "title": "Inspección & Documentación",
+            "description": "Inspeccionamos los daños de la tormenta, identificamos las áreas afectadas y documentamos la condición con fotos detalladas."
+          },
+          "quote": {
+            "title": "Evaluación & Planeación",
+            "description": "Determinamos las reparaciones necesarias y preparamos un alcance detallado según el daño y tu sistema de techo."
+          },
+          "work": {
+            "title": "Reparación & Restauración",
+            "description": "Reparamos o reemplazamos profesionalmente los materiales, tapajuntas y áreas vulnerables dañados por la tormenta según se necesite."
+          },
+          "warranty": {
+            "title": "Revisión & Protección",
+            "description": "Hacemos una inspección final, verificamos las reparaciones, limpiamos el área de trabajo y entregamos tu garantía escrita."
+          }
+        }
+      },
+      "ideal": [
+        "Daño por huracán o tormenta tropical",
+        "Daño de techo por viento fuerte",
+        "Materiales dañados por granizo",
+        "Fugas tras clima severo",
+        "Tejas faltantes o rotas",
+        "Reclamos de seguro por daño de tormenta"
+      ]
+    },
+    "commercial": {
+      "intro": "Soluciones de techado comercial que protegen oficinas, locales, bodegas y propiedades multifamiliares con sistemas duraderos y mínima interrupción del negocio.",
+      "included": [
+        "Evaluación completa del techo comercial",
+        "Planeación detallada y propuesta por escrito",
+        "Materiales de techado de grado comercial",
+        "Instalación o reemplazo profesional",
+        "Mejoras de tapajuntas y sistema de drenaje",
+        "Seguridad diaria y retiro de escombros",
+        "Inspección final y garantía de obra"
+      ],
+      "process": {
+        "steps": {
+          "inspect": {
+            "title": "Inspección & Evaluación",
+            "description": "Evaluamos el sistema de techo actual, identificamos las áreas problemáticas y determinamos la mejor solución para ti."
+          },
+          "quote": {
+            "title": "Planeación & Agenda",
+            "description": "Desarrollamos el alcance, coordinamos la agenda y organizamos el trabajo para minimizar la interrupción de tus operaciones."
+          },
+          "work": {
+            "title": "Instalación & Protección",
+            "description": "Nuestra cuadrilla instala o restaura tu techo comercial manteniendo la seguridad del sitio y protegiendo la propiedad."
+          },
+          "warranty": {
+            "title": "Revisión & Entrega",
+            "description": "Hacemos una inspección final, verificamos la calidad, limpiamos el área del proyecto y entregamos tu garantía escrita."
+          }
+        }
+      },
+      "ideal": [
+        "Edificios de oficinas e instalaciones comerciales",
+        "Centros comerciales y tiendas",
+        "Bodegas y edificios industriales",
+        "Propiedades de apartamentos y condominios",
+        "Proyectos de HOA y administración de propiedades",
+        "Reemplazos y mejoras de techo comercial"
+      ]
+    },
+    "inspections": {
+      "intro": "Las inspecciones identifican daños y evalúan tu sistema de techo, con documentación detallada para decisiones de reparación, reemplazo o seguro.",
+      "included": [
+        "Evaluación completa del estado del techo",
+        "Inspección de tejas, tapajuntas y penetraciones",
+        "Evaluación de fugas e intrusión de humedad",
+        "Documentación con fotos de todos los hallazgos",
+        "Informe de inspección escrito y detallado",
+        "Recomendaciones de reparación y mantenimiento",
+        "Consulta profesional con los resultados"
+      ],
+      "process": {
+        "steps": {
+          "inspect": {
+            "title": "Inspección & Documentación",
+            "description": "Realizamos una evaluación minuciosa de tu sistema de techo y documentamos las condiciones visibles con fotos detalladas."
+          },
+          "quote": {
+            "title": "Evaluación & Identificación",
+            "description": "Identificamos materiales dañados, posibles fuentes de fugas, problemas de tapajuntas y otras condiciones que afectan el techo."
+          },
+          "work": {
+            "title": "Informe & Explicación",
+            "description": "Recibes un informe de inspección detallado con fotos, hallazgos y recomendaciones claras según el estado del techo."
+          },
+          "warranty": {
+            "title": "Revisión & Recomendación",
+            "description": "Revisamos los resultados contigo, respondemos tus preguntas y recomendamos los siguientes pasos más adecuados para tu techo."
+          }
+        }
+      },
+      "ideal": [
+        "Dueños que compran o venden una propiedad",
+        "Evaluaciones anuales de mantenimiento del techo",
+        "Requisitos de seguro y mitigación de viento",
+        "Evaluación del techo después de una tormenta",
+        "Fugas recurrentes o problemas de humedad",
+        "Techos viejos que necesitan evaluación profesional"
+      ]
+    },
+    "solar": {
+      "intro": "Prepara tu techo para solar con un sistema duradero que soporta los paneles a largo plazo y evita trabajos costosos.",
+      "included": [
+        "Evaluación del techo antes de instalar solar",
+        "Evaluación de la vida útil restante",
+        "Reemplazo de materiales dañados cuando se necesita",
+        "Mejoras de tapajuntas en anclajes solares",
+        "Preparación del techo para sistemas de montaje",
+        "Coordinación con tu cronograma de instalación solar",
+        "Inspección final y garantía de obra"
+      ],
+      "process": {
+        "steps": {
+          "inspect": {
+            "title": "Inspección & Evaluación",
+            "description": "Evaluamos el estado del techo, su vida útil restante y su idoneidad antes de instalar paneles solares."
+          },
+          "quote": {
+            "title": "Planeación & Preparación",
+            "description": "Identificamos cualquier trabajo de techo necesario para crear una base confiable para tu futuro sistema de paneles."
+          },
+          "work": {
+            "title": "Reparación & Mejora",
+            "description": "Se completan las reparaciones, reemplazos y mejoras de tapajuntas necesarios antes de que comience la instalación solar."
+          },
+          "warranty": {
+            "title": "Revisión & Listo",
+            "description": "Hacemos una inspección final para confirmar que tu techo está listo para solar y entregamos tu garantía."
+          }
+        }
+      },
+      "ideal": [
+        "Casas que planean instalar solar a futuro",
+        "Techos viejos antes de instalar paneles solares",
+        "Reemplazos de techo previos a instalar solar",
+        "Casas que requieren mejoras estructurales del techo",
+        "Preparación para inversiones de energía duraderas",
+        "Evitar retirar paneles durante un reemplazo futuro"
+      ]
+    }
+  },
+  "includedTitle": "Qué Incluye",
+  "includedDescription": "Qué cubre cada servicio de techado profesional.",
+  "idealTitle": "Ideal Para",
+  "idealDescription": "Situaciones recomendadas donde este servicio rinde mejor."
+}

@@ -1,0 +1,77 @@
+import { getTranslations } from "next-intl/server";
+import { Button } from "@/common/call-to-actions/components/Button";
+import { SectionWrapper } from "@/common/section-wrapper/components/SectionWrapper";
+import { SectionHeading } from "@/common/section-header/components/SectionHeading";
+import { Media } from "@/common/media/components/Media";
+import { MediaVideo } from "@/common/media-video/components/MediaVideo";
+import { ProfileSplit } from "@/common/profile-split/components/ProfileSplit";
+import { YearsBadge } from "@/shared-sections/about/components/molecules/YearsBadge";
+import { ContactCard } from "@/shared-sections/about/components/molecules/ContactCard";
+import { StatsRow } from "@/shared-sections/about/components/molecules/StatsRow";
+import { SellingPoints } from "@/shared-sections/about/components/molecules/SellingPoints";
+import { aboutData } from "@/data/shared-sections/about";
+import { Container } from "@/common/container/components/Container";
+import type { AboutProps } from "@/shared-sections/about/types";
+
+const { name, video, image, heading, ctaHref, years, call, points, stats } = aboutData;
+
+/* About section: media + heading, selling points, stats, and CTA */
+export const About = async ({ variant, tone = "base" }: AboutProps) => {
+  const t = await getTranslations("about");
+  /* stats: value from data, label by key */
+  const statItems = stats.map((stat) => ({
+    key: stat.key,
+    value: stat.value,
+    label: t(`stats.${stat.key}`),
+  }));
+  /* points: text by key */
+  const pointItems = points.map((point) => ({ key: point.key, text: t(`points.${point.key}`) }));
+
+  return (
+    <SectionWrapper id="about" tone={tone}>
+      <Container>
+        <ProfileSplit
+          media={
+            /* /about shows the owner portrait; every other page keeps the ambient video */
+            variant === "contact" ? (
+              <Media
+                src={image.src}
+                alt={t(image.altKey, { name })}
+                sizes="(min-width: 1024px) 50vw, 100vw"
+                shape="fill"
+              />
+            ) : (
+              <MediaVideo src={video.src} poster={video.poster} alt={t(video.altKey, { name })} />
+            )
+          }
+          badge={
+            <YearsBadge
+              value={years.value}
+              line1={t(`years.${years.key}.line1`)}
+              line2={t(`years.${years.key}.line2`)}
+            />
+          }
+          contact={<ContactCard label={t(call.key)} phone={call.number} />}
+          heading={
+            /* 20px tablet indent for the left-aligned about heading; flush again from lg */
+            <div className="sm:ml-5 lg:ml-0">
+              <SectionHeading
+                eyebrow={t(heading.eyebrow)}
+                title={t(heading.titleLead)}
+                accent={t(heading.titleAccent)}
+                description={t(heading.description, { name })}
+              />
+            </div>
+          }
+          points={<SellingPoints items={pointItems} />}
+          stats={<StatsRow items={statItems} />}
+          action={
+            <Button href={ctaHref[variant].href} variant="secondary" pulse>
+              {t(ctaHref[variant].key)}
+            </Button>
+          }
+        />
+      </Container>
+    </SectionWrapper>
+  );
+};

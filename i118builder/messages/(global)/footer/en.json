@@ -1,0 +1,24 @@
+{
+  "description": "{name} is committed to providing high quality, durable and reliable roofing solutions designed to protect and enhance your property.",
+  "topLinksTitle": "TOP LINKS",
+  "servicesTitle": "OUR SERVICES",
+  "contactTitle": "GET IN TOUCH",
+  "copyright": "© {year} {name}. All rights reserved.",
+  "builtBy": "Built by",
+  "privacy": "Privacy Policy",
+  "terms": "Terms of Service",
+  "topLinks": {
+    "home": "Home",
+    "services": "Services",
+    "shop": "Shop",
+    "projects": "Projects",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "hours": {
+    "weekdays": "Mon to Fri",
+    "saturday": "Saturday",
+    "sunday": "Sunday"
+  },
+  "closed": "Closed"
+}

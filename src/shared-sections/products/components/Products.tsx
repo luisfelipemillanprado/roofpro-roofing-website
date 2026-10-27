@@ -1,0 +1,64 @@
+import { SectionHeading } from "@/common/section-header/components/SectionHeading";
+import { SectionWrapper } from "@/common/section-wrapper/components/SectionWrapper";
+import { Button } from "@/common/call-to-actions/components/Button";
+import { ProductCardList } from "@/common/product-card-list/components/ProductCardList";
+import { getTranslations } from "next-intl/server";
+import { productsData } from "@/data/shared-sections/products";
+import { shopProductsData } from "@/data/features/shop/products";
+import { formatPrice } from "@/utils/helpers/price";
+import type { ProductsProps } from "@/shared-sections/products/types";
+import { Container } from "@/common/container/components/Container";
+
+const { heading, ctaHref } = productsData;
+const { items } = shopProductsData;
+
+export const Products = async ({ tone = "muted", limit }: ProductsProps) => {
+  const t = await getTranslations("products");
+  const tShop = await getTranslations("shop-page");
+  /* teaser of the shop catalog: product data and labels read from the shop on purpose */
+  /* limit: teaser slice on every route */
+  const products = items.slice(0, limit).map((product) => ({
+    slug: product.slug,
+    href: `/shop/${product.slug}`,
+    title: tShop(`items.${product.slug}.title`),
+    cardTitle: tShop(`items.${product.slug}.cardTitle`),
+    brand: product.brand,
+    image: product.image,
+    priceLabel: formatPrice(product.price),
+    unit: tShop(product.unitKey),
+    rating: product.rating,
+    ratingLabel: tShop("reviewCount", { rating: product.rating, count: product.reviews }),
+    availability: product.availability,
+    availabilityLabel: tShop(`availability.${product.availability}`),
+  }));
+
+  return (
+    <SectionWrapper id="products" tone={tone}>
+      <Container>
+        <div className="grid gap-13">
+          <div className="grid justify-items-center gap-6 md:max-xl:mr-5 md:max-xl:grid-cols-[1fr_auto] md:max-xl:items-center md:max-xl:justify-items-stretch md:max-xl:gap-x-6">
+            <SectionHeading
+              align="center"
+              flushFrom="md"
+              eyebrow={t(heading.eyebrow)}
+              title={t(heading.titleLead)}
+              accent={t(heading.titleAccent)}
+              description={t(heading.description)}
+            />
+            <div className="mt-2 md:max-xl:mt-0">
+              <Button href={ctaHref.href} variant="secondary" pulse>
+                {t(ctaHref.key)}
+              </Button>
+            </div>
+          </div>
+
+          <ProductCardList
+            cards={products}
+            viewLabel={tShop("action.view")}
+            trimLastOnMobile={products.length === 6}
+          />
+        </div>
+      </Container>
+    </SectionWrapper>
+  );
+};

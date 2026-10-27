@@ -1,0 +1,71 @@
+{
+  "detail": {
+    "reviewCount": "{rating} de {count} Reseñas",
+    "viewImage": "Ver Imagen",
+    "thumb": "{title}, Imagen {index} de {total}",
+    "close": "Cerrar",
+    "previous": "Imagen Anterior",
+    "next": "Imagen Siguiente",
+    "trust": {
+      "materials": {
+        "title": "Materiales Profesionales",
+        "description": "Elegimos cada artículo por cómo aguanta en un techo real y exigente.",
+        "highlights": {
+          "label": "ELEGIDOS",
+          "accent": "UNO A UNO"
+        }
+      },
+      "brands": {
+        "title": "Marcas Confiables",
+        "description": "Trabajamos fabricantes como GAF, CertainTeed, Owens Corning, IKO y Malarkey, todos reconocidos.",
+        "highlights": {
+          "label": "VARIOS",
+          "accent": "FABRICANTES"
+        }
+      },
+      "installation": {
+        "title": "Instalación Experta",
+        "description": "Equipos certificados instalan lo que compras siguiendo las instrucciones exactas del fabricante.",
+        "highlights": {
+          "label": "EQUIPOS",
+          "accent": "CERTIFICADOS"
+        }
+      },
+      "warranty": {
+        "title": "Garantía De Fábrica",
+        "description": "Cada producto lleva la cobertura que publica su fabricante, y la explicamos.",
+        "highlights": {
+          "label": "RESPALDO",
+          "accent": "FÁBRICA"
+        }
+      }
+    },
+    "strip": {
+      "category": "Categoría",
+      "unit": "Formato",
+      "sku": "Referencia",
+      "warranty": "Garantía"
+    },
+    "assurance": {
+      "payment": {
+        "title": "Pago Seguro",
+        "description": "Tus depósitos y saldos siempre protegidos."
+      },
+      "delivery": {
+        "title": "Entrega Coordinada",
+        "description": "Entregamos tu material el día acordado."
+      }
+    },
+    "section": {
+      "label": "Detalles Del Producto",
+      "about": "Descripción",
+      "specifications": "Especificaciones",
+      "features": "Características"
+    },
+    "compatible": "Compatible Con",
+    "features": {
+      "install": "Instalación",
+      "coverage": "Cobertura De Garantía"
+    }
+  }
+}

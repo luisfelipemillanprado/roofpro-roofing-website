@@ -1,0 +1,16 @@
+{
+  "action": {
+    "contact": "Contactar"
+  },
+  "toggleMenu": "Abrir menú",
+  "selectLanguage": "Seleccionar idioma",
+  "toggleTheme": "Cambiar tema",
+  "links": {
+    "home": "Inicio",
+    "services": "Servicios",
+    "shop": "Tienda",
+    "projects": "Proyectos",
+    "about": "Nosotros",
+    "areas": "Áreas"
+  }
+}

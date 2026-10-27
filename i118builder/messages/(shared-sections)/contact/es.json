@@ -1,0 +1,15 @@
+{
+  "eyebrow": "EMPIEZA HOY.",
+  "titleLead": "Pide Tu Cotización Gratis",
+  "titleAccent": "Te Contactamos Pronto",
+  "description": "Obtén inspección y cotización gratis sin ningún compromiso. Deja tu correo y nuestro equipo te contactará en un día.",
+  "action": {
+    "submit": "Cotización Gratis",
+    "sending": "Enviando…",
+    "sent": "Solicitud Enviada",
+    "error": "Algo salió mal. Inténtalo de nuevo."
+  },
+  "emailLabel": "Correo electrónico",
+  "emailPlaceholder": "juan.perez@correo.com",
+  "imageAlt": "Casa moderna con techo metálico oscuro y paneles solares"
+}

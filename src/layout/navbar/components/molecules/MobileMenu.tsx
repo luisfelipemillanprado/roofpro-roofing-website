@@ -1,0 +1,99 @@
+"use client";
+
+import type { MouseEvent } from "react";
+import { Menu, X, Home, Info, Wrench, Images, Package, MapPin } from "lucide-react";
+import type { LucideIcon } from "lucide-react";
+import clsx from "clsx";
+import { Link } from "@/i18n/navigation";
+import { Text } from "@/common/text/components/Text";
+import { useEnterExit } from "@/utils/hooks/transition/useEnterExit";
+import type { MobileMenuProps, NavLinkKey } from "@/layout/navbar/types";
+
+/* exit transition duration — drives animation + unmount delay */
+const ANIMATION_MS = 500;
+
+/* semantic key → icon component */
+const ICONS: Record<NavLinkKey, LucideIcon> = {
+  home: Home,
+  services: Wrench,
+  shop: Package,
+  projects: Images,
+  about: Info,
+  areas: MapPin,
+};
+
+/* mobile menu: trigger + full-screen overlay of links */
+export const MobileMenu = ({ navLinks, menuId, toggleMenuLabel }: MobileMenuProps) => {
+  const {
+    isOpen,
+    isVisible,
+    open: handleOpenOptions,
+    close: handleCloseOptions,
+  } = useEnterExit(ANIMATION_MS);
+
+  /* keep clicks inside the panel from closing via the overlay */
+  const handlePropagateOptions = (e: MouseEvent) => e.stopPropagation();
+
+  return (
+    <>
+      <button
+        type="button"
+        aria-expanded={isOpen}
+        aria-controls={menuId}
+        aria-label={toggleMenuLabel}
+        onClick={isOpen ? handleCloseOptions : handleOpenOptions}
+        className="grid size-11 place-items-center rounded-xl bg-contrast lg:hidden"
+      >
+        {isOpen ? <X className="size-5 text-white" /> : <Menu className="size-5 text-white" />}
+      </button>
+
+      {isVisible && (
+        <div
+          /* what the page lock keys on; it is gone from the DOM the moment the menu is */
+          data-mobile-menu
+          onClick={handleCloseOptions}
+          className={clsx(
+            "fixed inset-x-0 top-header z-(--z-overlay) h-dvh transition-colors duration-150 lg:hidden",
+            isOpen ? "bg-contrast/70 backdrop-blur-md" : "bg-transparent",
+          )}
+        >
+          <div
+            id={menuId}
+            onClick={handlePropagateOptions}
+            /* a real relatedTarget means focus moved on; a null one is a click, which the overlay handles */
+            onBlur={(event) =>
+              event.relatedTarget &&
+              !event.currentTarget.contains(event.relatedTarget) &&
+              handleCloseOptions()
+            }
+            style={{ transitionDuration: `${ANIMATION_MS}ms` }}
+            className={clsx(
+              "bg-surface-panel/95 shadow-lg shadow-shade/40 transition-all ease-in-out",
+              isOpen ? "translate-y-0 opacity-100" : "-translate-y-3 opacity-0",
+            )}
+          >
+            <nav className="grid grid-cols-3 gap-2.5 px-4 py-6 sm:grid-cols-4 md:grid-cols-5">
+              {navLinks.map((link) => {
+                const Icon = ICONS[link.icon];
+                return (
+                  <Link
+                    key={link.key}
+                    href={link.href}
+                    onClick={handleCloseOptions}
+                    className="group grid justify-items-center gap-2 rounded-panel border border-line bg-surface-muted px-2 py-5 text-center transition-colors hover:bg-primary sm:gap-3 sm:py-6"
+                  >
+                    <Icon
+                      className="size-6.5 text-primary transition-colors group-hover:text-white sm:size-7"
+                      aria-hidden
+                    />
+                    <Text as="span" size="body" tone="default" weight="semibold" text={link.label} />
+                  </Link>
+                );
+              })}
+            </nav>
+          </div>
+        </div>
+      )}
+    </>
+  );
+};

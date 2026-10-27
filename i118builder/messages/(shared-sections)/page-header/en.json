@@ -1,0 +1,69 @@
+{
+  "imageAlt": "Modern two story home with a dark standing seam metal roof above a reflecting pool at dusk",
+  "imageAltShop": "Roofing supply warehouse with stacked shingles, underlayment rolls, sealant buckets and tool cases",
+  "imageAltAreas": "Modern two story home with a dark standing seam metal roof, balcony and garage at dusk",
+  "badge": "24/7 SERVICE AVAILABLE · {city}",
+  "pages": {
+    "home": {
+      "titleLead": "Secure",
+      "titleAccent": "Roofing.",
+      "description": "Protect your home with trusted roofing solutions, expert craftsmanship, durable materials, and dependable service tailored to your neighborhood needs today."
+    },
+    "about": {
+      "titleLead": "Expert",
+      "titleAccent": "Roofers.",
+      "description": "Committed to protecting homes through skilled craftsmanship, dependable service, premium materials, and roofing solutions tailored for every property we serve."
+    },
+    "services": {
+      "titleLead": "Premium",
+      "titleAccent": "Service.",
+      "description": "From emergency repairs to complete roof replacements, we deliver reliable service, expert craftsmanship, and durable results backed by solid warranties."
+    },
+    "projects": {
+      "titleLead": "Premium",
+      "titleAccent": "Roofs.",
+      "description": "Explore our residential and commercial roofing projects showcasing quality craftsmanship, durable materials, trusted expertise, and exceptional results every single time."
+    },
+    "shop": {
+      "titleLead": "Premium",
+      "titleAccent": "Shop.",
+      "description": "Discover premium roofing materials, trusted brands, competitive prices, and dependable products ready for residential and commercial projects alike today online."
+    },
+    "areas": {
+      "titleLead": "Service",
+      "titleAccent": "Zones.",
+      "description": "Serving homes and businesses across Miami from our local offices with trusted roofing, expert craftsmanship, durable materials, and dependable service."
+    }
+  },
+  "action": {
+    "upgrade": "Upgrade Your Roof",
+    "viewServices": "View Our Services",
+    "viewProjects": "View Our Projects",
+    "viewShop": "Browse the Shop",
+    "viewWork": "View Our Work",
+    "shopNow": "Shop Now",
+    "getQuote": "Get a Quote"
+  },
+  "showcase": {
+    "shingles": {
+      "eyebrow": "SHINGLES",
+      "imageAlt": "Gray architectural shingles on a hip roof with a Timberline HDZ bundle",
+      "specs": "Weather Resistant · Lasting Finish"
+    },
+    "metal": {
+      "eyebrow": "METAL",
+      "imageAlt": "Stack of dark gray corrugated metal roofing panels on a warehouse floor",
+      "specs": "Highly Durable · All Weather"
+    },
+    "underlayment": {
+      "eyebrow": "UNDERLAYMENT",
+      "imageAlt": "DuPont Tyvek Protec synthetic underlayment rolled out on a warehouse floor",
+      "specs": "Moisture Protection · High Traction"
+    },
+    "banner": {
+      "title": "Roofing Materials",
+      "description": "Quality materials for every project."
+    }
+  },
+  "customers": "{count}+ Satisfied Customers"
+}

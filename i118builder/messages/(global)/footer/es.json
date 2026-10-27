@@ -1,0 +1,24 @@
+{
+  "description": "{name} está comprometido a brindar soluciones de techado de alta calidad, duraderas y confiables, diseñadas para proteger y realzar tu propiedad.",
+  "topLinksTitle": "ENLACES",
+  "servicesTitle": "SERVICIOS",
+  "contactTitle": "CONTACTO",
+  "copyright": "© {year} {name}. Todos los derechos reservados.",
+  "builtBy": "Desarrollado por",
+  "privacy": "Política de Privacidad",
+  "terms": "Términos de Servicio",
+  "topLinks": {
+    "home": "Inicio",
+    "services": "Servicios",
+    "shop": "Tienda",
+    "projects": "Proyectos",
+    "about": "Nosotros",
+    "contact": "Contacto"
+  },
+  "hours": {
+    "weekdays": "Lun a Vie",
+    "saturday": "Sábado",
+    "sunday": "Domingo"
+  },
+  "closed": "Cerrado"
+}

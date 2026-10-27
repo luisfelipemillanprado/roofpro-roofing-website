@@ -1,0 +1,109 @@
+import { getTranslations } from "next-intl/server";
+import { SectionWrapper } from "@/common/section-wrapper/components/SectionWrapper";
+import { Container } from "@/common/container/components/Container";
+import { SectionHeading } from "@/common/section-header/components/SectionHeading";
+import { ProductSplit } from "@/common/product-split/components/ProductSplit";
+import { Button } from "@/common/call-to-actions/components/Button";
+import { ProductRating } from "@/common/product-rating/components/ProductRating";
+import { ProductGallery } from "@/features/shop/detail/components/molecules/ProductGallery";
+import { ProductPrice } from "@/features/shop/detail/components/molecules/ProductPrice";
+import { ProductSpecStrip } from "@/features/shop/detail/components/molecules/ProductSpecStrip";
+import { ProductAssuranceStrip } from "@/features/shop/detail/components/molecules/ProductAssuranceStrip";
+import { productDetailData } from "@/data/features/shop/product-detail";
+import { formatPrice } from "@/utils/helpers/price";
+import type { ProductOverviewProps, ProductSpecStripKey } from "@/features/shop/detail/types";
+
+const { ctaHref, specStrip, assuranceStrip, viewer } = productDetailData;
+
+export const ProductOverview = async ({ product, tone = "base" }: ProductOverviewProps) => {
+  const t = await getTranslations("shop-page");
+
+  /* facts under the price: data value + its i18n label */
+  const specRows = specStrip.map((key) => ({
+    key,
+    label: t(`detail.strip.${key}`),
+    /* the data owns the strip; satisfies makes this map match it exactly */
+    value: (
+      {
+        category: t(`categories.${product.category}`),
+        unit: t(product.unitKey),
+        sku: product.sku,
+        /* a warranty measured in years feeds its number into the label; lifetime has none */
+        warranty: t(
+          product.warrantyKey,
+          "warrantyYears" in product ? { years: product.warrantyYears } : undefined,
+        ),
+      } satisfies Record<ProductSpecStripKey, string>
+    )[key],
+  }));
+
+  const title = t(`items.${product.slug}.title`);
+  /* each shot travels with the name its thumb button takes */
+  const images = [product.image, ...product.gallery].map((src, index, all) => ({
+    src,
+    label: t(viewer.thumb, { title, index: index + 1, total: all.length }),
+  }));
+
+  /* promises under the cta: icon from data, title and description by key */
+  const assurances = assuranceStrip.map(({ key, icon }) => ({
+    key,
+    icon,
+    title: t(`detail.assurance.${key}.title`),
+    description: t(`detail.assurance.${key}.description`),
+  }));
+
+  return (
+    <SectionWrapper id="product" tone={tone}>
+      <Container>
+        <ProductSplit
+          media={
+            <ProductGallery
+              images={images}
+              title={title}
+              description={t(`items.${product.slug}.description`)}
+              zoomLabel={t(viewer.zoom)}
+              closeLabel={t(viewer.close)}
+              previousLabel={t(viewer.previous)}
+              nextLabel={t(viewer.next)}
+            />
+          }
+          heading={
+            /* category is not repeated here: the spec strip already carries it */
+            /* the data keeps the card's title case, so the eyebrow shouts it here */
+            <SectionHeading
+              align="left"
+              eyebrow={product.brand.toUpperCase()}
+              title={t(`items.${product.slug}.titleLead`)}
+              accent={t(`items.${product.slug}.titleAccent`)}
+              description={t(`items.${product.slug}.description`)}
+            />
+          }
+          points={
+            /* kept as two children: the split's own gap is what separates the rows */
+            <>
+              <ProductRating
+                rating={product.rating}
+                label={t("detail.reviewCount", { rating: product.rating, count: product.reviews })}
+                size="body"
+              />
+              <ProductPrice
+                price={formatPrice(product.price)}
+                unit={t(product.unitKey)}
+                availability={product.availability}
+                availabilityLabel={t(`availability.${product.availability}`)}
+              />
+            </>
+          }
+          stats={<ProductSpecStrip rows={specRows} />}
+          action={
+            /* calling is covered by the floating contact, so the quote stands alone */
+            <Button href={ctaHref.href} variant="secondary" pulse>
+              {t(ctaHref.key)}
+            </Button>
+          }
+          footer={<ProductAssuranceStrip items={assurances} />}
+        />
+      </Container>
+    </SectionWrapper>
+  );
+};

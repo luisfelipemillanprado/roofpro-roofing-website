@@ -1,0 +1,19 @@
+{
+  "items": {
+    "stormReady": {
+      "label": "RESISTENTE A TORMENTAS"
+    },
+    "licensed": {
+      "label": "CON LICENCIA Y SEGURO"
+    },
+    "years": {
+      "label": "MÁS DE {years} AÑOS"
+    },
+    "builtStrong": {
+      "label": "MÁXIMA RESISTENCIA"
+    },
+    "fullService": {
+      "label": "SERVICIO COMPLETO"
+    }
+  }
+}

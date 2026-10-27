@@ -1,0 +1,173 @@
+{
+  "why-choose": {
+    "eyebrow": "POR QUÉ NOSOTROS.",
+    "titleLead": "Estructura A Medida",
+    "titleAccent": "Para Techos Únicos",
+    "description": "Adaptamos cada solución de techado a tu propiedad, brindando trabajo profesional, protección duradera y calidad confiable desde el principio.",
+    "stats": {
+      "years": {
+        "label": "Años de Experiencia."
+      },
+      "projects": {
+        "label": "Techos Completados."
+      },
+      "roofers": {
+        "label": "Techeros Certificados."
+      },
+      "rating": {
+        "label": "Calificación de Clientes."
+      }
+    },
+    "action": {
+      "viewDetails": "Ver Más Detalles"
+    },
+    "items": {
+      "emergency": {
+        "title": "Servicio de Emergencia",
+        "description": "Atendemos daños por tormentas, goteras y reparaciones de urgencia a toda hora.",
+        "highlights": {
+          "label": "LISTOS",
+          "accent": "SIEMPRE"
+        }
+      },
+      "materials": {
+        "title": "Materiales Premium",
+        "description": "Usamos materiales de alta gama y marcas confiables, con protección duradera garantizada.",
+        "highlights": {
+          "label": "CONFIANZA",
+          "accent": "CALIDAD"
+        }
+      },
+      "pricing": {
+        "title": "Precios Transparentes",
+        "description": "Entregamos un presupuesto claro y detallado por adelantado, sin sorpresas ni sobrecostos.",
+        "highlights": {
+          "label": "DETALLADO",
+          "accent": "ANTICIPADO"
+        }
+      },
+      "licensed": {
+        "title": "Licencia y Seguro",
+        "description": "Cada trabajo cuenta con licencia, seguro de responsabilidad civil y accidentes laborales.",
+        "highlights": {
+          "label": "RESPALDO",
+          "accent": "COBERTURA"
+        }
+      }
+    }
+  },
+  "process": {
+    "eyebrow": "ASÍ TRABAJAMOS",
+    "titleLead": "Proceso Respaldado",
+    "titleAccent": "Y Diseñado Para Ti",
+    "description": "Seguimos un proceso de techado simple con comunicación clara, cotizaciones precisas e instalación profesional para resultados confiables en cada trabajo.",
+    "action": {
+      "contact": "Contáctanos Ahora"
+    },
+    "stats": {
+      "inspection": {
+        "label": "Inspección Gratuita"
+      },
+      "scheduling": {
+        "label": "Programación"
+      },
+      "warranty": {
+        "label": "Años de Garantía"
+      },
+      "completion": {
+        "label": "Entrega Puntual"
+      }
+    },
+    "items": {
+      "inspection": {
+        "title": "Inspección Gratuita",
+        "description": "Evaluamos tu techo en sitio, documentamos su condición y necesidades de atención.",
+        "highlights": {
+          "label": "GRATIS",
+          "accent": "EN SITIO"
+        }
+      },
+      "quote": {
+        "title": "Cotización Transparente",
+        "description": "Recibes una cotización clara y detallada, sin costos ocultos, antes del trabajo.",
+        "highlights": {
+          "label": "CERO",
+          "accent": "SORPRESAS"
+        }
+      },
+      "installation": {
+        "title": "Instalación Experta",
+        "description": "Techadores certificados instalan materiales premium a tiempo, dejando todo limpio y ordenado.",
+        "highlights": {
+          "label": "ACABADO",
+          "accent": "LIMPIO"
+        }
+      },
+      "warranty": {
+        "title": "Garantía y Postventa",
+        "description": "Cada trabajo incluye garantía de obra, una revisión final y soporte continuo.",
+        "highlights": {
+          "label": "SOPORTE",
+          "accent": "CONTINUO"
+        }
+      }
+    }
+  },
+  "values": {
+    "eyebrow": "VALORES.",
+    "titleLead": "Valores Perdurables",
+    "titleAccent": "En Cada Estructura",
+    "description": "Creemos en principios firmes para lograr grandes resultados, construyendo techos confiables con integridad, trabajo sólido y atención cercana a cada cliente.",
+    "action": {
+      "contact": "Contactar Ahora"
+    },
+    "stats": {
+      "years": {
+        "label": "Años de Experiencia."
+      },
+      "bbb": {
+        "label": "Acreditados BBB."
+      },
+      "reviews": {
+        "label": "Reseñas Verificadas."
+      },
+      "referrals": {
+        "label": "Por Recomendación."
+      }
+    },
+    "items": {
+      "quality": {
+        "title": "Oficio de Calidad",
+        "description": "Expertos dedicados entregan mano de obra meticulosa en cada proyecto, sin atajos.",
+        "highlights": {
+          "label": "OFICIO",
+          "accent": "MAESTRO"
+        }
+      },
+      "safety": {
+        "title": "Seguridad Primero",
+        "description": "Ponemos primero a las personas, con hábitos de seguridad que protegen familias.",
+        "highlights": {
+          "label": "PERSONAS",
+          "accent": "PRIMERO"
+        }
+      },
+      "integrity": {
+        "title": "Integridad Inquebrantable",
+        "description": "Mantenemos altos estándares éticos, tratando tu hogar con respeto y cuidado genuino.",
+        "highlights": {
+          "label": "ÉTICA",
+          "accent": "SÓLIDA"
+        }
+      },
+      "community": {
+        "title": "Enfoque Comunitario",
+        "description": "Protegemos los hogares y negocios de los vecindarios donde vivimos y trabajamos.",
+        "highlights": {
+          "label": "RAÍCES",
+          "accent": "LOCALES"
+        }
+      }
+    }
+  }
+}

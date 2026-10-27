@@ -1,0 +1,20 @@
+{
+  "eyebrow": "OUR AREAS.",
+  "titleLead": "Modern Roof Builder",
+  "titleAccent": "Always In Your Area",
+  "description": "Explore office locations near you and connect with dependable roofing experts who truly understand your community, needs, and property requirements.",
+  "mapAlt": "Map of {name} office locations in Miami",
+  "map": {
+    "zoomIn": "Zoom In",
+    "zoomOut": "Zoom Out",
+    "closePopup": "Close",
+    "toggleAttribution": "Map Credits"
+  },
+  "action": {
+    "contact": "Contact Us Now",
+    "viewImage": "View Image",
+    "close": "Close",
+    "previous": "Previous Office",
+    "next": "Next Office"
+  }
+}

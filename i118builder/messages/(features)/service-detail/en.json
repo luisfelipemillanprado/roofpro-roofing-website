@@ -1,0 +1,513 @@
+{
+  "overviewEyebrow": "WHAT'S INCLUDED",
+  "overviewTitleLead": "Complete Care",
+  "overviewTitleAccent": "In Every Project",
+  "overviewDescription": "Every service includes expert workmanship, premium materials, and careful attention to detail, so your roof performs reliably for many years.",
+  "processEyebrow": "OUR WORKFLOW",
+  "processTitleLead": "Fast Proven Process",
+  "processTitleAccent": "Fair From The Start",
+  "processDescription": "From the initial inspection to the final walkthrough, every single step is carefully designed to guarantee outstanding quality without unexpected surprises.",
+  "action": {
+    "contact": "Contact Us Now"
+  },
+  "stats": {
+    "years": {
+      "value": "25+",
+      "label": "Years Experience"
+    },
+    "projects": {
+      "value": "1.5k+",
+      "label": "Roofs Completed"
+    },
+    "licensed": {
+      "value": "100%",
+      "label": "Licensed & Insured"
+    }
+  },
+  "items": {
+    "residential": {
+      "intro": "Complete residential roofing solutions combining expert installation, durable roofing systems, and reliable protection backed by written workmanship and manufacturer warranties.",
+      "included": [
+        "Free roof inspection with documented photos",
+        "Detailed written estimate within 24 hours",
+        "Premium roofing materials rated for Florida",
+        "Dedicated in house installation crew",
+        "Daily cleanup with magnetic nail sweep",
+        "Wind mitigation documentation for insurance",
+        "Final walkthrough with workmanship warranty"
+      ],
+      "process": {
+        "steps": {
+          "inspect": {
+            "title": "Inspect & Estimate",
+            "description": "We document every slope and flashing detail with photos, then send a written estimate within 24 hours."
+          },
+          "quote": {
+            "title": "Material & Color",
+            "description": "You review real material samples on site and choose colors, with HOA approved matching handled where needed."
+          },
+          "work": {
+            "title": "Schedule & Permit",
+            "description": "We pull every required permit, schedule the crew, and confirm your exact project start date in writing."
+          },
+          "warranty": {
+            "title": "Install & Walkthrough",
+            "description": "Most installs finish in one to two days, with photo updates, final walkthrough, and written workmanship warranty."
+          }
+        }
+      },
+      "ideal": [
+        "Aging shingle or tile roofs",
+        "Storm or hurricane damage",
+        "Failed four point inspections",
+        "Insurance related roof replacements",
+        "Energy efficient roof upgrades",
+        "Homes preparing for hurricane season"
+      ]
+    },
+    "metal": {
+      "intro": "Metal roofing delivers exceptional durability, energy efficiency, and long term performance, with a sleek modern appearance and expert professional installation.",
+      "included": [
+        "Complete metal roof system inspection",
+        "Standing seam or metal panel selection guidance",
+        "Premium underlayment and corrosion resistant flashing",
+        "Professional panel installation and fastening",
+        "Thermal expansion and ventilation considerations",
+        "Jobsite protection and magnetic nail sweep",
+        "Final walkthrough with workmanship warranty"
+      ],
+      "process": {
+        "steps": {
+          "inspect": {
+            "title": "Structure Evaluation",
+            "description": "We assess the deck, structure, and fastener layout to confirm your home can support a metal system."
+          },
+          "quote": {
+            "title": "Panel Selection",
+            "description": "You choose the panel profile, color, and finish, and we detail everything in one clear written estimate."
+          },
+          "work": {
+            "title": "System Preparation",
+            "description": "We lay high temperature underlayment and corrosion resistant flashing, prepping every edge and penetration for the panels."
+          },
+          "warranty": {
+            "title": "Installation & Review",
+            "description": "Crews lock each panel with concealed fasteners allowing thermal movement, then review the finished roof and warranty."
+          }
+        }
+      },
+      "ideal": [
+        "Homeowners seeking long term roof durability",
+        "Coastal properties exposed to salt air",
+        "Homes needing hurricane resistant roofing",
+        "Modern architectural home designs",
+        "Energy efficient roofing upgrades",
+        "Replacing aging shingle or tile roofs"
+      ]
+    },
+    "tile": {
+      "intro": "Expert tile roofing combining premium concrete and clay systems with professional installation for lasting durability, weather resistance, and curb appeal.",
+      "included": [
+        "Complete tile roof inspection and evaluation",
+        "Premium concrete or clay roof tiles",
+        "High temperature synthetic underlayment",
+        "New flashing and waterproof roof penetrations",
+        "Proper tile fastening for Florida wind requirements",
+        "Daily cleanup and magnetic nail sweep",
+        "Final walkthrough and workmanship warranty"
+      ],
+      "process": {
+        "steps": {
+          "inspect": {
+            "title": "Inspect & Evaluate",
+            "description": "We inspect the existing roof, evaluate the deck, and determine the best tile roofing solution for you."
+          },
+          "quote": {
+            "title": "Select & Prepare",
+            "description": "Choose your tile profile and color while we prepare the roof with proper underlayment and waterproofing components."
+          },
+          "work": {
+            "title": "Install & Secure",
+            "description": "Concrete or clay tiles are professionally installed with fastening that meets Florida building code and wind requirements."
+          },
+          "warranty": {
+            "title": "Review & Protect",
+            "description": "We inspect quality, verify the flashing and tile work, clean the jobsite, and provide your workmanship warranty."
+          }
+        }
+      },
+      "ideal": [
+        "Aging concrete or clay tile roofs",
+        "New residential tile roof installations",
+        "Hurricane resistant roofing upgrades",
+        "Homes requiring long lasting protection",
+        "Properties seeking premium curb appeal",
+        "Florida homes exposed to harsh weather conditions"
+      ]
+    },
+    "flat": {
+      "intro": "Professional flat roofing for both residential and commercial properties, delivering dependable waterproof protection, efficient drainage, and lasting low slope performance.",
+      "included": [
+        "Comprehensive flat roof inspection and evaluation",
+        "Low slope roofing system assessment",
+        "High performance waterproof roofing materials",
+        "Flashing and drainage system improvements",
+        "Sealed roof penetrations and transition details",
+        "Daily jobsite cleanup and debris removal",
+        "Final inspection and workmanship warranty"
+      ],
+      "process": {
+        "steps": {
+          "inspect": {
+            "title": "Inspect & Evaluate",
+            "description": "We inspect the roofing system, drainage performance, flashing, and surface condition to identify any existing problems clearly."
+          },
+          "quote": {
+            "title": "Plan & Prepare",
+            "description": "We determine the appropriate flat roofing solution and prepare the surface for a proper waterproof system installation."
+          },
+          "work": {
+            "title": "Install & Seal",
+            "description": "The roofing system is professionally installed with carefully sealed seams, flashing, and penetrations to maximize weather protection."
+          },
+          "warranty": {
+            "title": "Review & Finish",
+            "description": "We verify drainage performance, inspect all completed work, clean the project area, and provide your workmanship warranty."
+          }
+        }
+      },
+      "ideal": [
+        "Residential low slope roofs",
+        "Commercial flat roof buildings",
+        "Recurring ponding water issues",
+        "Aging flat roofing systems",
+        "Storm damaged low slope roofs",
+        "Property owners seeking long term waterproof protection"
+      ]
+    },
+    "gutters": {
+      "intro": "Professional gutter and flashing systems that manage water and protect your home's most vulnerable areas, fitted for lasting reliable performance.",
+      "included": [
+        "Gutter inspection and drainage evaluation",
+        "Gutter installation with proper slope alignment",
+        "Downspout placement and water flow adjustments",
+        "Flashing replacement around roof penetrations",
+        "Sealed joints and edges against leaks",
+        "Storm damage repair for gutters and flashing",
+        "Final water flow check and workmanship warranty"
+      ],
+      "process": {
+        "steps": {
+          "inspect": {
+            "title": "Inspect & Assess",
+            "description": "We carefully evaluate your gutters, downspouts, and flashing areas to identify drainage issues and water intrusion risks."
+          },
+          "quote": {
+            "title": "Plan & Prepare",
+            "description": "We determine the right gutter and flashing solutions based on your home's layout and water management needs."
+          },
+          "work": {
+            "title": "Install & Seal",
+            "description": "We install or replace gutters and flashing components with proper alignment, secure connections, and sealed vulnerable areas."
+          },
+          "warranty": {
+            "title": "Test & Complete",
+            "description": "We verify water flow, remove all jobsite debris, complete a final review, and provide your workmanship warranty."
+          }
+        }
+      },
+      "ideal": [
+        "Homes with overflowing or damaged gutters",
+        "Leaks or stains around roof edges",
+        "Aging gutters with poor drainage performance",
+        "Storm damaged gutters and flashing systems",
+        "Homes needing better rainwater control",
+        "Roof areas requiring additional water protection"
+      ]
+    },
+    "replacement": {
+      "intro": "From full roof replacements to targeted repairs, we deliver lasting protection with premium materials, expert craftsmanship, and complete warranty coverage.",
+      "included": [
+        "Full tear off and deck inspection",
+        "Rotted deck replacement (priced separately, never hidden)",
+        "New high temperature synthetic underlayment",
+        "New valley metal, ridge vents, and step flashing",
+        "Premium shingles or tiles",
+        "Full debris haul off and magnetic nail sweep",
+        "Written workmanship guarantee plus manufacturer warranty"
+      ],
+      "process": {
+        "steps": {
+          "inspect": {
+            "title": "Inspect & Estimate",
+            "description": "We photo document every slope and detail, then send a written line item estimate within 24 hours."
+          },
+          "quote": {
+            "title": "Schedule & Permit",
+            "description": "We pull permits, order your materials, schedule the crew, and confirm your exact start date in writing."
+          },
+          "work": {
+            "title": "Tear Off & Install",
+            "description": "We tear off the existing roof, inspect and prepare the deck, then install your new roofing system."
+          },
+          "warranty": {
+            "title": "Cleanup & Walkthrough",
+            "description": "We clear all debris, run a magnetic nail sweep, final inspection, then provide your written workmanship warranty."
+          }
+        }
+      },
+      "ideal": [
+        "Roofs over 18 years (shingle) or 25 years (tile)",
+        "Widespread hurricane or hail damage",
+        "Insurance claim replacements",
+        "Presale roof remediation",
+        "Visible leaks, missing shingles, or sagging areas",
+        "Homes preparing for a solar install"
+      ]
+    },
+    "repair": {
+      "intro": "Professional roof repairs address leaks, damaged materials, and vulnerable areas to restore your home's protection and extend your roof's life.",
+      "included": [
+        "Comprehensive roof damage inspection",
+        "Leak detection and problem area diagnosis",
+        "Replacement of damaged shingles or roof tiles",
+        "Flashing repairs around vulnerable roof areas",
+        "Sealing of vents, pipe boots, and roof penetrations",
+        "Storm damage and emergency repair solutions",
+        "Final repair inspection with workmanship warranty"
+      ],
+      "process": {
+        "steps": {
+          "inspect": {
+            "title": "Inspect & Diagnose",
+            "description": "We locate the source of the damage, identify affected areas, and determine the most effective repair solution."
+          },
+          "quote": {
+            "title": "Repair & Replace",
+            "description": "Damaged shingles, tiles, flashing, or any other affected roofing components are carefully repaired or replaced as needed."
+          },
+          "work": {
+            "title": "Seal & Protect",
+            "description": "We restore vulnerable areas with proper sealing and weatherproofing to help prevent future leaks and water intrusion."
+          },
+          "warranty": {
+            "title": "Review & Warranty",
+            "description": "We complete a final inspection, verify the repair, clean the work area, and provide your workmanship warranty."
+          }
+        }
+      },
+      "ideal": [
+        "Active roof leaks and water intrusion",
+        "Missing, cracked, or lifted roofing materials",
+        "Storm and wind related roof damage",
+        "Damaged flashing around vents or chimneys",
+        "Minor roof issues before they become major repairs",
+        "Extending the life of an existing roof"
+      ]
+    },
+    "skylights": {
+      "intro": "Professionally installed skylights bring natural light into your home while keeping a watertight roof, with proper flashing and weatherproof sealing.",
+      "included": [
+        "Roof evaluation for skylight placement",
+        "Skylight size and location planning",
+        "Professional roof opening and framing",
+        "Manufacturer approved flashing installation",
+        "Weatherproof sealing around all connections",
+        "Interior and exterior installation cleanup",
+        "Final water tightness inspection and workmanship warranty"
+      ],
+      "process": {
+        "steps": {
+          "inspect": {
+            "title": "Inspect & Plan",
+            "description": "We evaluate your roofing system and determine the best skylight location for maximum daylight and proper installation."
+          },
+          "quote": {
+            "title": "Prepare & Frame",
+            "description": "We prepare the opening, reinforce the framing when required, and ensure the structure is ready for installation."
+          },
+          "work": {
+            "title": "Install & Flash",
+            "description": "Your skylight is installed with manufacturer approved flashing and weatherproof sealing to help prevent any water intrusion."
+          },
+          "warranty": {
+            "title": "Finish & Warranty",
+            "description": "We verify the installation, inspect all sealed areas, clean the worksite, and provide your written workmanship warranty."
+          }
+        }
+      },
+      "ideal": [
+        "Dark interior rooms needing natural light",
+        "Hallways and bathrooms without windows",
+        "Kitchen and living area daylight upgrades",
+        "Attic or loft conversions",
+        "Homeowners improving energy efficiency",
+        "Roof replacements including new skylights"
+      ]
+    },
+    "storm": {
+      "intro": "Fast professional storm damage repairs restore your roof after hurricanes, high winds, and hail while preventing further leaks and damage.",
+      "included": [
+        "Comprehensive storm damage inspection",
+        "Photo documentation of affected areas",
+        "Emergency leak mitigation when needed",
+        "Replacement of storm damaged roofing materials",
+        "Flashing and roof penetration repairs",
+        "Insurance claim documentation support",
+        "Final inspection and workmanship warranty"
+      ],
+      "process": {
+        "steps": {
+          "inspect": {
+            "title": "Inspect & Document",
+            "description": "We inspect all storm related damage, identify the affected areas, and document the condition with detailed photos."
+          },
+          "quote": {
+            "title": "Assess & Plan",
+            "description": "We determine the required repairs and prepare a detailed scope based on the damage and roofing system."
+          },
+          "work": {
+            "title": "Repair & Restore",
+            "description": "Storm damaged roofing materials, flashing, and vulnerable areas are professionally repaired or replaced as the damage requires."
+          },
+          "warranty": {
+            "title": "Review & Protect",
+            "description": "We complete a final inspection, verify the repairs, clean the work area, and provide your workmanship warranty."
+          }
+        }
+      },
+      "ideal": [
+        "Hurricane and tropical storm damage",
+        "High wind roof damage",
+        "Hail damaged roofing materials",
+        "Leaks after severe weather",
+        "Missing shingles or broken roof tiles",
+        "Insurance related storm damage claims"
+      ]
+    },
+    "commercial": {
+      "intro": "Professional commercial roofing that protects office buildings, retail spaces, warehouses, and multi family properties with durable systems and minimal disruption.",
+      "included": [
+        "Comprehensive commercial roof assessment",
+        "Detailed project planning and written proposal",
+        "Commercial grade roofing materials",
+        "Professional installation or replacement",
+        "Flashing and drainage system improvements",
+        "Daily jobsite safety and debris removal",
+        "Final inspection and workmanship warranty"
+      ],
+      "process": {
+        "steps": {
+          "inspect": {
+            "title": "Inspect & Evaluate",
+            "description": "We assess the existing roofing system, identify problem areas, and determine the best solution for your property."
+          },
+          "quote": {
+            "title": "Plan & Schedule",
+            "description": "We develop the project scope, coordinate scheduling, and organize the work to minimize disruption to daily operations."
+          },
+          "work": {
+            "title": "Install & Protect",
+            "description": "Our crew installs or restores your commercial roofing system while maintaining jobsite safety and protecting surrounding property."
+          },
+          "warranty": {
+            "title": "Review & Deliver",
+            "description": "We complete a final inspection, verify installation quality, clean the project area, and provide your workmanship warranty."
+          }
+        }
+      },
+      "ideal": [
+        "Office buildings and business facilities",
+        "Retail and shopping centers",
+        "Warehouses and industrial buildings",
+        "Apartment and condominium properties",
+        "HOA and property management projects",
+        "Commercial roof replacements and upgrades"
+      ]
+    },
+    "inspections": {
+      "intro": "Professional roof inspections identify existing damage and evaluate your roofing system, with detailed documentation guiding repair, replacement, or insurance decisions.",
+      "included": [
+        "Comprehensive roof condition assessment",
+        "Inspection of shingles, tiles, flashing, and penetrations",
+        "Leak and moisture intrusion evaluation",
+        "Photo documentation of all findings",
+        "Detailed written inspection report",
+        "Repair and maintenance recommendations",
+        "Professional consultation with inspection results"
+      ],
+      "process": {
+        "steps": {
+          "inspect": {
+            "title": "Inspect & Document",
+            "description": "We perform a thorough evaluation of your roofing system and document all visible conditions with detailed photos."
+          },
+          "quote": {
+            "title": "Assess & Identify",
+            "description": "We identify damaged materials, potential leak sources, flashing issues, and any other conditions affecting overall roof performance."
+          },
+          "work": {
+            "title": "Report & Explain",
+            "description": "You receive a detailed inspection report with photos, findings, and clear recommendations based on your roof's condition."
+          },
+          "warranty": {
+            "title": "Review & Recommend",
+            "description": "We review the results with you, answer your questions, and recommend the most appropriate next steps forward."
+          }
+        }
+      },
+      "ideal": [
+        "Homeowners buying or selling a property",
+        "Annual roof maintenance evaluations",
+        "Insurance and wind mitigation requirements",
+        "Post storm roof condition assessments",
+        "Recurring leaks or moisture concerns",
+        "Aging roofs needing a professional evaluation"
+      ]
+    },
+    "solar": {
+      "intro": "Prepare your roof for solar with a durable system built to support long term panel performance and avoid costly work.",
+      "included": [
+        "Roof condition evaluation before solar installation",
+        "Assessment of remaining roof service life",
+        "Replacement of damaged roofing materials when needed",
+        "Flashing upgrades around future solar attachment points",
+        "Roof preparation for solar mounting systems",
+        "Coordination with your solar installation schedule",
+        "Final inspection and workmanship warranty"
+      ],
+      "process": {
+        "steps": {
+          "inspect": {
+            "title": "Inspect & Evaluate",
+            "description": "We assess your roof's condition, its remaining lifespan, and overall suitability before any solar panels are installed."
+          },
+          "quote": {
+            "title": "Plan & Prepare",
+            "description": "We identify any roofing work needed to create a reliable foundation for your future solar panel system."
+          },
+          "work": {
+            "title": "Repair & Upgrade",
+            "description": "Any required roofing repairs, replacements, and flashing improvements are completed before your solar panel installation ever begins."
+          },
+          "warranty": {
+            "title": "Review & Ready",
+            "description": "We perform a final inspection to confirm your roof is solar ready, then provide your workmanship warranty."
+          }
+        }
+      },
+      "ideal": [
+        "Homes planning a future solar installation",
+        "Older roofs before installing solar panels",
+        "Roof replacements prior to solar upgrades",
+        "Homes requiring structural roof improvements",
+        "Preparing for long term energy investments",
+        "Avoiding future panel removal during reroofing"
+      ]
+    }
+  },
+  "includedTitle": "What's Included",
+  "includedDescription": "What's covered with every professional roofing service.",
+  "idealTitle": "Ideal For",
+  "idealDescription": "Recommended situations where this service delivers best."
+}

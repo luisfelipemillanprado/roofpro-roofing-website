@@ -1,0 +1,22 @@
+{
+  "search": {
+    "label": "Search Products",
+    "placeholder": "Search products, brands and more"
+  },
+  "sort": {
+    "label": "Sort by",
+    "topRated": "Rating: High To Low",
+    "mostReviewed": "Reviews: High To Low",
+    "priceAsc": "Price: Low To High",
+    "priceDesc": "Price: High To Low"
+  },
+  "categories": {
+    "shingles": "Roof Shingles",
+    "metal": "Metal Roofing",
+    "underlayment": "Underlayment",
+    "flashing": "Roof Flashing",
+    "tools": "Tools & Safety",
+    "supplies": "Pro Adhesives",
+    "accessories": "Accessories"
+  }
+}

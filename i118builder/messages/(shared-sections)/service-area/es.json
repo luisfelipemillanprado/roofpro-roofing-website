@@ -1,0 +1,20 @@
+{
+  "eyebrow": "ÁREAS.",
+  "titleLead": "Techadores Modernos",
+  "titleAccent": "Siempre En Tu Zona",
+  "description": "Descubre las oficinas cercanas y conecta con especialistas confiables en techos que conocen tu comunidad, necesidades y requisitos específicos.",
+  "mapAlt": "Mapa de las oficinas de {name} en Miami",
+  "map": {
+    "zoomIn": "Acercar",
+    "zoomOut": "Alejar",
+    "closePopup": "Cerrar",
+    "toggleAttribution": "Créditos Del Mapa"
+  },
+  "action": {
+    "contact": "Contactar Ahora",
+    "viewImage": "Ver Imagen",
+    "close": "Cerrar",
+    "previous": "Oficina Anterior",
+    "next": "Oficina Siguiente"
+  }
+}

@@ -1,0 +1,28 @@
+/* Link button (renders <a>) */
+export type ButtonVariant = "primary" | "secondary" | "ghost";
+
+export interface ButtonProps {
+  href: string;
+  children: string;
+  variant?: ButtonVariant;
+  pulse?: boolean;
+}
+
+/* Action button (renders <button>); fixed submit style */
+export interface ActionButtonProps {
+  label: string;
+  disabled?: boolean;
+}
+
+/* Circular icon link (renders <a>); a card's trailing arrow affordance */
+export interface ArrowLinkProps {
+  href: string;
+  label: string;
+  pulse?: boolean;
+}
+
+/* Square icon button (renders <button>); closes a search field's trailing edge */
+export interface SearchButtonProps {
+  label: string;
+  onClick: () => void;
+}

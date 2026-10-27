@@ -1,0 +1,353 @@
+@import "tailwindcss";
+
+@theme {
+  /* Neutrals — shared (dark & light theme) */
+  --color-night: oklch(0.243 0.014 239.25); /* → --surface-base (dark) */
+  --color-amber-vivid: oklch(0.7552 0.1253 80.01); /* → --amber at ≥1024px (desktop) */
+  --color-amber: oklch(0.78 0.1 72); /* → --primary (accent, mobile base) */
+  --color-amber-deep: oklch(0.6864 0.0941 67.81); /* → --secondary (section button bg) */
+  --color-peach: oklch(0.8789 0.0479 51.54); /* → --primary-light (soft accent) */
+  --color-malachite: oklch(0.761 0.2015 149.74); /* WhatsApp FAB (bg-malachite) + in-stock and hero dots */
+  --color-citrine: oklch(0.85 0.2015 100); /* limited-stock dot (bg-citrine) */
+  --color-cinnabar: oklch(0.7 0.2015 25.331); /* out-of-stock dot (bg-cinnabar) */
+  --color-onyx: oklch(0.2047 0.0121 237.38); /* → --shade (shadows) */
+  --color-white: oklch(1 0 0); /* → --foreground (dark), --primary-foreground, --line */
+
+  /* Neutrals — dark theme */
+  /* graphite == onyx today; unify later */
+  --color-graphite: oklch(0.2047 0.0121 237.38); /* → --contrast (dark fills) */
+  --color-charcoal: oklch(0.2183 0.0133 243.53); /* → --surface-muted (dark) + scrollbar track */
+  --color-steel: oklch(0.2954 0.0237 246.15); /* → --surface-panel (dark) */
+  --color-slate-deep: oklch(0.3262 0.024 243.72); /* → scrollbar thumb */
+  --color-slate: oklch(0.8 0.027 255.6); /* → --foreground-muted (dark) */
+
+  /* Neutrals — light theme */
+  --color-navy: oklch(0.2024 0.0252 256.48); /* → --foreground (light text) */
+  --color-stone: oklch(0.5 0.0276 259.8); /* → --foreground-muted (light) */
+  --color-mist: oklch(0.9339 0.0071 268.55); /* → --line (light) */
+  --color-cream: oklch(0.9676 0.0057 84.57); /* → --surface-muted (light) */
+
+  /* Static semantic roles — theme-switching ones in @theme inline */
+  --color-primary: var(--color-amber); /* accent: buttons, links, eyebrow, icons */
+  --color-primary-light: var(--color-peach); /* CTA input focus (EmailForm) */
+  --color-primary-foreground: var(--color-white); /* text on primary/accent fills */
+  --color-secondary: var(--color-amber-deep); /* secondary button fill (section CTAs) */
+  --color-contrast: var(--color-graphite); /* dark fills: CTA, viewer, gradient scrims */
+
+  /* Typography — --font-sans applied to <html> by Preflight */
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-jakarta), ui-sans-serif, system-ui, sans-serif;
+
+  /* Header height — navbar + mobile-menu offset */
+  --spacing-header: 4.5rem;
+
+  /* Marquee (utility: animate-marquee) */
+  --animate-marquee: marquee 28s linear infinite;
+  @keyframes marquee {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+
+  /* Floating-contact bob (utility: animate-float-y) */
+  --animate-float-y: float-y 4s ease-in-out infinite;
+  @keyframes float-y {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-0.375rem);
+    }
+  }
+
+  /* Pulse ring — expanding box-shadow halo (utility: animate-soft-pulse) */
+  --animate-soft-pulse: soft-pulse 3s ease-in-out infinite;
+  @keyframes soft-pulse {
+    0% {
+      box-shadow: 0 0 0 0 currentColor;
+      opacity: 0.6;
+    }
+    70% {
+      box-shadow: 0 0 0 0.5rem currentColor;
+      opacity: 0;
+    }
+    100% {
+      box-shadow: 0 0 0 0.5rem currentColor;
+      opacity: 0;
+    }
+  }
+
+  /* Floating-contact icon shake (utility: animate-tada) */
+  --animate-tada: tada 1.5s ease-in-out infinite;
+  @keyframes tada {
+    from,
+    to {
+      transform: rotate(0deg);
+    }
+    10%,
+    20%,
+    40%,
+    60%,
+    80% {
+      transform: rotate(-10deg);
+    }
+    30%,
+    50%,
+    70%,
+    90% {
+      transform: rotate(10deg);
+    }
+  }
+}
+
+/* Inline roles (var() references) — theme-switching colors, then per-role radius */
+@theme inline {
+  --color-surface-base: var(--surface-base); /* page + section base background */
+  --color-surface-panel: var(--surface-panel); /* cards/panels: testimonials, navbar, form controls */
+  --color-surface-muted: var(--surface-muted); /* alternating sections, footer, muted chips */
+  --color-foreground: var(--foreground); /* main text */
+  --color-foreground-muted: var(--foreground-muted); /* secondary text */
+  --color-line: var(--line); /* borders & dividers */
+  --color-shade: var(--shade); /* shadow color (shadow-shade) */
+
+  /* Radius per role — large surfaces 20px (off-scale), small & interior 2xl (16px) */
+  --radius-card: 1.25rem; /* content cards */
+  --radius-badge: var(--radius-2xl); /* small info chips & badges */
+  --radius-panel: var(--radius-2xl); /* panels, menus, stat rows, empty states */
+  --radius-media: 1.25rem; /* image & media containers */
+  --radius-control: var(--radius-2xl); /* interactive square controls (toggle, FAB) */
+}
+
+/* Dark theme (default); .theme-dark pins it on a subtree (navbar) */
+:root,
+.theme-dark {
+  color-scheme: dark;
+  --surface-base: var(--color-night); /* page + section background */
+  --surface-panel: var(--color-steel); /* cards & panels */
+  --surface-muted: var(--color-charcoal); /* alternating sections, footer */
+  --foreground: var(--color-white); /* main text */
+  --foreground-muted: var(--color-slate); /* secondary text */
+  --line: color-mix(in oklab, var(--color-white) 9%, transparent); /* borders & dividers */
+  --shade: var(--color-onyx); /* shadows */
+}
+
+/* Light theme (same amber accent) */
+.light {
+  color-scheme: light;
+  --surface-base: var(--color-white); /* page + section background */
+  --surface-panel: var(--color-white); /* cards & panels */
+  --surface-muted: var(--color-cream); /* alternating sections, footer */
+  --foreground: var(--color-navy); /* main text */
+  --foreground-muted: var(--color-stone); /* secondary text */
+  --line: var(--color-mist); /* borders & dividers */
+  --shade: var(--color-onyx); /* shadows */
+}
+
+/* Mobile amber; the desktop amber from lg+ */
+@media (min-width: 64rem) {
+  :root {
+    --color-amber: var(--color-amber-vivid);
+  }
+}
+
+/* Layering scale (theme-independent) — use via z-(--z-*) */
+:root {
+  --z-behind: -10; /* decorative/scrim layer behind content in an isolate context */
+  --z-dropdown: 30; /* popovers & dropdown panels */
+  --z-overlay: 50; /* fixed chrome: navbar, mobile menu, floating contact */
+  --z-modal: 60; /* dialogs above everything (image viewer) */
+}
+
+/* Base element styles (cascade layer so utilities can override) */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    interpolate-size: allow-keywords; /* enables height transitions to/from auto */
+  }
+
+  body {
+    background-color: var(--surface-base);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    font-family: var(--font-display);
+    letter-spacing: 0.025rem;
+  }
+
+  /* Custom scrollbar (single dark style for both themes) */
+  ::-webkit-scrollbar {
+    width: 0.625rem;
+  }
+  ::-webkit-scrollbar-track {
+    background: var(--color-charcoal);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--color-slate-deep);
+    border-radius: 999px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--color-primary);
+  }
+}
+
+/* Page lock — outside any layer, and keyed on the panel itself so no state can contradict it */
+html:has([role="dialog"][aria-modal="true"]) {
+  overflow: hidden;
+  scrollbar-gutter: stable; /* the gutter stays, or the fixed chrome jumps by a scrollbar */
+}
+/* the menu's lock lives in the query that hides the menu, so the two can never disagree */
+@media (width < theme(--breakpoint-lg)) {
+  html:has([data-mobile-menu]) {
+    overflow: hidden;
+    scrollbar-gutter: stable;
+  }
+}
+
+/* Scroll-reveal — <Reveal> adds .is-visible via IntersectionObserver */
+@layer components {
+  @keyframes reveal-fade-up {
+    from {
+      opacity: 0;
+      transform: translateY(1.75rem);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+  @keyframes reveal-fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes reveal-scale-in {
+    from {
+      opacity: 0;
+      transform: scale(0.94);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+
+  [data-reveal] {
+    opacity: 0;
+  }
+  [data-reveal].is-visible {
+    animation: reveal-fade-up 0.6s cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
+  [data-reveal="fade-in"].is-visible {
+    animation-name: reveal-fade-in;
+  }
+  [data-reveal="scale-in"].is-visible {
+    animation-name: reveal-scale-in;
+  }
+
+  /* FAQ accordion — interpolate native details height for a fluid open/close */
+  .faq-accordion::details-content {
+    block-size: 0;
+    overflow: hidden;
+    transition:
+      block-size 0.3s ease,
+      content-visibility 0.3s allow-discrete;
+  }
+  .faq-accordion[open]::details-content {
+    block-size: auto;
+  }
+}
+
+/* Hero scrims (contrast) — side for copy legibility, bottom seats the section */
+@utility overlay-hero-side {
+  background-image: linear-gradient(
+    to right,
+    color-mix(in oklab, var(--color-contrast) 88%, transparent),
+    color-mix(in oklab, var(--color-contrast) 74%, transparent) 50%,
+    color-mix(in oklab, var(--color-contrast) 44%, transparent)
+  );
+}
+@utility overlay-hero-bottom {
+  background-image: linear-gradient(
+    to top,
+    color-mix(in oklab, var(--color-contrast) 70%, transparent),
+    transparent 50%
+  );
+}
+/* masonry caption scrim: hold density under the text, then fade */
+@utility overlay-card-bottom {
+  background-image: linear-gradient(
+    to top,
+    color-mix(in oklab, var(--color-contrast) 86%, transparent),
+    color-mix(in oklab, var(--color-contrast) 52%, transparent) 36%,
+    transparent 60%
+  );
+}
+
+/* Offices map (MapLibre DOM): branded popup; two-class selectors beat the library CSS */
+.office-popup .maplibregl-popup-content {
+  padding: 0.875rem 1rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-card);
+  background-color: var(--surface-panel);
+  color: var(--foreground);
+  font-size: 0.9375rem;
+  box-shadow: 0 12px 28px -12px color-mix(in oklab, var(--shade) 55%, transparent);
+}
+.office-popup .maplibregl-popup-close-button {
+  width: 2.25rem;
+  height: 2.25rem;
+  font-size: 1.25rem;
+  color: var(--foreground-muted);
+}
+.office-popup.maplibregl-popup-anchor-bottom .maplibregl-popup-tip,
+.office-popup.maplibregl-popup-anchor-bottom-left .maplibregl-popup-tip,
+.office-popup.maplibregl-popup-anchor-bottom-right .maplibregl-popup-tip {
+  border-top-color: var(--surface-panel);
+}
+.office-popup.maplibregl-popup-anchor-top .maplibregl-popup-tip,
+.office-popup.maplibregl-popup-anchor-top-left .maplibregl-popup-tip,
+.office-popup.maplibregl-popup-anchor-top-right .maplibregl-popup-tip {
+  border-bottom-color: var(--surface-panel);
+}
+.office-popup.maplibregl-popup-anchor-left .maplibregl-popup-tip {
+  border-right-color: var(--surface-panel);
+}
+.office-popup.maplibregl-popup-anchor-right .maplibregl-popup-tip {
+  border-left-color: var(--surface-panel);
+}
+/* touch: zoom controls at a 44px target (library default is 29px) */
+@media (pointer: coarse) {
+  [data-office-map] .maplibregl-ctrl-group button {
+    width: 2.75rem;
+    height: 2.75rem;
+  }
+}
+
+/* Outside any layer so it overrides components */
+@media (prefers-reduced-motion: reduce) {
+  [data-reveal] {
+    opacity: 1;
+    animation: none;
+  }
+  .animate-marquee,
+  .animate-float-y,
+  .animate-soft-pulse,
+  .animate-tada,
+  .animate-ping {
+    animation: none;
+  }
+  .faq-accordion::details-content {
+    transition: none;
+  }
+}

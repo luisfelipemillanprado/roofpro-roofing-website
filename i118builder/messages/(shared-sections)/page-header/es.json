@@ -1,0 +1,69 @@
+{
+  "imageAlt": "Casa moderna de dos plantas con techo metálico oscuro de junta alzada sobre una piscina al atardecer",
+  "imageAltShop": "Almacén de materiales de techado con tejas apiladas, rollos de membrana, cubetas de sellador y cajas de herramientas",
+  "imageAltAreas": "Casa moderna de dos plantas con techo metálico oscuro de junta alzada, balcón y garaje al atardecer",
+  "badge": "24/7 SERVICIO DISPONIBLE · {city}",
+  "pages": {
+    "home": {
+      "titleLead": "Techos",
+      "titleAccent": "Seguros.",
+      "description": "Protegemos tu hogar con soluciones profesionales de techado, materiales duraderos, instalación y servicio confiable para tu comunidad siempre cerca."
+    },
+    "about": {
+      "titleLead": "Techeros",
+      "titleAccent": "Expertos.",
+      "description": "Comprometidos con proteger hogares mediante trabajo especializado, materiales premium, servicio confiable y soluciones integrales de techado para cada propiedad."
+    },
+    "services": {
+      "titleLead": "Servicio",
+      "titleAccent": "Premium.",
+      "description": "Desde reparaciones de emergencia hasta reemplazos completos, ofrecemos servicio confiable, instalación experta y resultados duraderos respaldados por garantías sólidas."
+    },
+    "projects": {
+      "titleLead": "Techos",
+      "titleAccent": "Premium.",
+      "description": "Explora nuestros proyectos residenciales y comerciales que reflejan calidad superior, experiencia, materiales duraderos y resultados excepcionales en cada trabajo."
+    },
+    "shop": {
+      "titleLead": "Tienda",
+      "titleAccent": "Premium.",
+      "description": "Descubre materiales premium, marcas confiables, precios competitivos y productos listos para proyectos residenciales, comerciales y profesionales siempre disponibles aquí."
+    },
+    "areas": {
+      "titleLead": "Zonas De",
+      "titleAccent": "Servicio.",
+      "description": "Atendemos hogares y negocios de Miami desde oficinas locales, con techado confiable, instalación experta, materiales duraderos y atención cercana."
+    }
+  },
+  "action": {
+    "upgrade": "Renueva Tu Techo",
+    "viewServices": "Nuestros Servicios",
+    "viewProjects": "Nuestros Proyectos",
+    "viewShop": "Ver La Tienda",
+    "viewWork": "Nuestros Trabajos",
+    "shopNow": "Ver Tienda",
+    "getQuote": "Cotizar Ahora"
+  },
+  "showcase": {
+    "shingles": {
+      "eyebrow": "TEJAS",
+      "imageAlt": "Tejas arquitectónicas grises en un techo a cuatro aguas con un paquete Timberline HDZ",
+      "specs": "Resistentes Al Clima · Acabado Duradero"
+    },
+    "metal": {
+      "eyebrow": "METAL",
+      "imageAlt": "Pila de paneles metálicos corrugados gris oscuro sobre el piso de un almacén",
+      "specs": "Muy Duraderos · Todo Clima"
+    },
+    "underlayment": {
+      "eyebrow": "MEMBRANA",
+      "imageAlt": "Membrana sintética DuPont Tyvek Protec desenrollada sobre el piso de un almacén",
+      "specs": "Protección Antihumedad · Alta Tracción"
+    },
+    "banner": {
+      "title": "Materiales de Techado",
+      "description": "Materiales de calidad para cada proyecto."
+    }
+  },
+  "customers": "+{count} Clientes Satisfechos"
+}
