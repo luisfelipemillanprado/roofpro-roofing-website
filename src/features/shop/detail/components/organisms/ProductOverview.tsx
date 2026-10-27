@@ -87,13 +87,14 @@ export const ProductOverview = async ({ product, tone = "base" }: ProductOvervie
                 size="body"
               />
               <ProductPrice
-                price={formatPrice(product.price)}
+                priceLabel={formatPrice(product.price)}
                 unit={t(product.unitKey)}
                 availability={product.availability}
                 availabilityLabel={t(`availability.${product.availability}`)}
               />
             </>
           }
+          assurances={<ProductAssuranceStrip items={assurances} />}
           stats={<ProductSpecStrip rows={specRows} />}
           action={
             /* calling is covered by the floating contact, so the quote stands alone */
@@ -101,7 +102,6 @@ export const ProductOverview = async ({ product, tone = "base" }: ProductOvervie
               {t(ctaHref.key)}
             </Button>
           }
-          footer={<ProductAssuranceStrip items={assurances} />}
         />
       </Container>
     </SectionWrapper>

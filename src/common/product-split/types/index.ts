@@ -6,7 +6,7 @@ export interface ProductSplitProps {
   /* copy side */
   heading: ReactNode;
   points: ReactNode;
+  assurances: ReactNode;
   stats: ReactNode;
   action: ReactNode;
-  footer: ReactNode;
 }

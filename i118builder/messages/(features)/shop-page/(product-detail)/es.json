@@ -1,6 +1,6 @@
 {
   "detail": {
-    "reviewCount": "{rating} de {count} Reseñas",
+    "reviewCount": "{rating} de ({count} Reseñas)",
     "viewImage": "Ver Imagen",
     "thumb": "{title}, Imagen {index} de {total}",
     "close": "Cerrar",
@@ -49,11 +49,11 @@
     "assurance": {
       "payment": {
         "title": "Pago Seguro",
-        "description": "Tus depósitos y saldos siempre protegidos."
+        "description": "Cada pago bien protegido."
       },
       "delivery": {
         "title": "Entrega Coordinada",
-        "description": "Entregamos tu material el día acordado."
+        "description": "Entrega en fecha acordada."
       }
     },
     "section": {
