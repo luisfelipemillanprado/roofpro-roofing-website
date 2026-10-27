@@ -18,7 +18,7 @@ export interface ProductInfoProps {
 }
 
 export interface ProductPriceProps {
-  price: string;
+  priceLabel: string;
   unit: string;
   availability: ProductAvailability;
   availabilityLabel: string;

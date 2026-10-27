@@ -1,6 +1,6 @@
 {
   "detail": {
-    "reviewCount": "{rating} from {count} Reviews",
+    "reviewCount": "{rating} from ({count} Reviews)",
     "viewImage": "View Image",
     "thumb": "{title}, Image {index} of {total}",
     "close": "Close",
@@ -49,11 +49,11 @@
     "assurance": {
       "payment": {
         "title": "Secure Payment",
-        "description": "Deposits and balances are handled safely."
+        "description": "Every payment stays safe."
       },
       "delivery": {
         "title": "Coordinated Delivery",
-        "description": "Your material arrives right on schedule."
+        "description": "Delivered on agreed dates."
       }
     },
     "section": {

@@ -2,19 +2,18 @@ import { IconBadge } from "@/common/icon-badge/components/IconBadge";
 import { Text } from "@/common/text/components/Text";
 import type { ProductAssuranceStripProps } from "@/features/shop/detail/types";
 
-/* promises that close the copy column, over the rule the follow row left behind */
+/* promise row between the price and the data banner */
 export const ProductAssuranceStrip = ({ items }: ProductAssuranceStripProps) => (
-  /* two per row from sm; the third drops to its own row at the same width */
-  <div className="grid gap-4 border-t border-line pt-7 sm:grid-cols-2">
+  /* two per row while the column is wide; at lg it halves, so they stack again */
+  <div className="grid gap-4 sm:max-lg:grid-cols-2 xl:grid-cols-2">
     {items.map(({ key, icon, title, description }) => (
       /* left aligned even where the column centres, and the chip rides level with the pair of lines */
       <div key={key} className="grid grid-cols-[auto_minmax(0,1fr)] items-center gap-3 text-left">
         {/* panel, like the home stat rows: the chip tone for an icon sitting on a base section */}
         <IconBadge icon={icon} size="stat" tone="panel" />
-        {/* caps the measure so the description always reads as two lines, never one long one */}
-        <div className="grid max-w-56">
+        <div className="grid gap-1">
           <Text as="span" size="subhead" weight="bold" text={title} />
-          <Text as="span" size="body" tone="muted" text={description} />
+          <Text as="span" size="caption" tone="muted" text={description} />
         </div>
       </div>
     ))}
