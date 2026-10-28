@@ -42,6 +42,8 @@ export const SectionHeading = ({
       <div
         className={clsx(
           "grid w-fit gap-5.25 sm:max-w-113 lg:max-w-126",
+          /* the row's centring is the eyebrow's alone: a left heading stays flush below sm too */
+          !isCenter && "justify-self-start",
           isCenter
             ? "text-left sm:text-center"
             : size === "banner"
