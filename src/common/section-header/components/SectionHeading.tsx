@@ -8,7 +8,7 @@ import type { SectionHeadingProps } from "@/common/section-header/types";
 const flushJustify = { md: "md:max-xl:justify-items-start", lg: "lg:justify-items-start" } as const;
 const flushText = { md: "md:max-xl:text-left", lg: "lg:text-left" } as const;
 
-/* center: centered from sm; otherwise left-flush from sm (banner keeps its accent on its own line) */
+/* center: centered from sm; left: flush from sm; omit: flush from lg; banner keeps its accent alone */
 export const SectionHeading = ({
   eyebrow,
   title,
@@ -33,9 +33,10 @@ export const SectionHeading = ({
     <div
       className={clsx(
         "grid grid-cols-1 justify-items-center gap-5.25",
-        /* below sm the heading spans its row, so the eyebrow centres against the full width */
+        /* below sm the heading spans its row, so the eyebrow centers against the full width */
         "max-sm:w-full",
-        !isCenter && "sm:justify-items-start",
+        /* a left heading clusters from sm; a stacked split keeps its eyebrow centered until lg */
+        !isCenter && (align ? "sm:justify-items-start" : "lg:justify-items-start"),
         flushFrom && flushJustify[flushFrom],
       )}
     >
@@ -44,8 +45,9 @@ export const SectionHeading = ({
       <div
         className={clsx(
           "grid w-fit gap-5.25 sm:max-w-113 lg:max-w-126",
-          /* below sm the row's centring is the eyebrow's alone; from sm the row decides again */
-          "justify-self-start sm:justify-self-auto",
+          /* the copy hugs the start; only a centered heading hands the row its alignment back */
+          "justify-self-start",
+          isCenter && "sm:justify-self-auto",
           isCenter
             ? "text-left sm:text-center"
             : size === "banner"

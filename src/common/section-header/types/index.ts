@@ -6,6 +6,6 @@ export interface SectionHeadingProps {
   accent: string;
   description: string;
   size?: TitleSize; /* forwarded to Title */
-  align?: "left" | "center"; /* center: left on tablet; left: cluster from sm; omit: About */
+  align?: "left" | "center"; /* center: left on tablet; left: cluster from sm; omit: split bands, from lg */
   flushFrom?: "md" | "lg"; /* stays centered while stacked, goes left-flush once the CTA sits beside it */
 }
