@@ -33,6 +33,8 @@ export const SectionHeading = ({
     <div
       className={clsx(
         "grid grid-cols-1 justify-items-center gap-5.25",
+        /* below sm the heading spans its row, so the eyebrow centres against the full width */
+        "max-sm:w-full",
         !isCenter && "sm:justify-items-start",
         flushFrom && flushJustify[flushFrom],
       )}
@@ -42,8 +44,8 @@ export const SectionHeading = ({
       <div
         className={clsx(
           "grid w-fit gap-5.25 sm:max-w-113 lg:max-w-126",
-          /* the row's centring is the eyebrow's alone: a left heading stays flush below sm too */
-          !isCenter && "justify-self-start",
+          /* below sm the row's centring is the eyebrow's alone; from sm the row decides again */
+          "justify-self-start sm:justify-self-auto",
           isCenter
             ? "text-left sm:text-center"
             : size === "banner"
