@@ -4,10 +4,6 @@ import { Title } from "@/common/title/components/Title";
 import { Eyebrow } from "@/common/eyebrow/components/Eyebrow";
 import type { SectionHeadingProps } from "@/common/section-header/types";
 
-/* flushFrom heading turns left-flush for the row layout; the md row recenters again from xl */
-const flushJustify = { md: "md:max-xl:justify-items-start", lg: "lg:justify-items-start" } as const;
-const flushText = { md: "md:max-xl:text-left", lg: "lg:text-left" } as const;
-
 /* center: centered from sm; left: flush from sm; omit: flush from lg; banner keeps its accent alone */
 export const SectionHeading = ({
   eyebrow,
@@ -37,7 +33,8 @@ export const SectionHeading = ({
         "max-sm:w-full",
         /* a left heading clusters from sm; a stacked split keeps its eyebrow centered until lg */
         !isCenter && (align ? "sm:justify-items-start" : "lg:justify-items-start"),
-        flushFrom && flushJustify[flushFrom],
+        /* the row heading goes left beside its button, and recenters at xl where the row ends */
+        flushFrom && "md:max-xl:justify-items-start",
       )}
     >
       <Eyebrow text={eyebrow} />
@@ -53,9 +50,9 @@ export const SectionHeading = ({
             : size === "banner"
               ? "text-center sm:text-left"
               : "text-left",
-          flushFrom && flushText[flushFrom],
-          /* md-flush headings recenter at xl: drop the cap so the title spans a single line */
-          flushFrom === "md" && "xl:max-w-none",
+          flushFrom && "md:max-xl:text-left",
+          /* a row heading recenters at xl: drop the cap so the title spans a single line */
+          flushFrom && "xl:max-w-none",
         )}
       >
         <Title size={size} text={title} accent={accent} accentInline={accentInline} />
