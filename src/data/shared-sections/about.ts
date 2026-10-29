@@ -17,8 +17,11 @@ export const aboutData = {
     titleAccent: "titleAccent",
     description: "description",
   },
-  /* points: long and short alternate, so every row opens with its widest pill */
-  points: [{ key: "residentialCommercial" }, { key: "team" }, { key: "roofTypes" }, { key: "support" }],
+  /* points per variant: long and short alternate, so every row opens with its widest pill */
+  points: {
+    learnMore: [{ key: "residentialCommercial" }, { key: "team" }, { key: "roofTypes" }, { key: "support" }],
+    contact: [{ key: "ownCrew" }, { key: "noPrep" }, { key: "roofMatch" }, { key: "presence" }],
+  },
   stats: [
     { key: "projects", value: `${company.projectsCompleted}+` },
     { key: "homes", value: `${company.homesProtected}+` },

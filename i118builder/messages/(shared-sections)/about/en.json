@@ -16,7 +16,11 @@
     "residentialCommercial": "Residential & commercial roofing",
     "team": "Expert team",
     "roofTypes": "Full range of roof types",
-    "support": "Project support"
+    "support": "Project support",
+    "ownCrew": "Our crew, never subcontracted",
+    "noPrep": "No prep needed",
+    "roofMatch": "Matched to your roof",
+    "presence": "Stay home or not"
   },
   "stats": {
     "projects": "Projects Completed",

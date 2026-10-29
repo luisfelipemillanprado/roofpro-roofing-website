@@ -16,7 +16,11 @@
     "residentialCommercial": "Techado residencial y comercial",
     "team": "Equipo experto",
     "roofTypes": "Todo tipo de cubiertas",
-    "support": "Apoyo en obra"
+    "support": "Apoyo en obra",
+    "ownCrew": "Equipo propio, sin subcontratas",
+    "noPrep": "Sin preparativos",
+    "roofMatch": "A juego con tu tejado",
+    "presence": "Estés o no en casa"
   },
   "stats": {
     "projects": "Proyectos Completados",
