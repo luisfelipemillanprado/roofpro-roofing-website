@@ -24,8 +24,8 @@ export const About = async ({ variant, tone = "base" }: AboutProps) => {
     value: stat.value,
     label: t(`stats.${stat.key}`),
   }));
-  /* points: text by key */
-  const pointItems = points.map((point) => ({ key: point.key, text: t(`points.${point.key}`) }));
+  /* points: label by key */
+  const pointItems = points.map((point) => ({ key: point.key, label: t(`points.${point.key}`) }));
 
   return (
     <SectionWrapper id="about" tone={tone}>

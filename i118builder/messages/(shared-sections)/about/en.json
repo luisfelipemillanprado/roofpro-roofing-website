@@ -13,9 +13,10 @@
   "titleAccent": "For Quality Roofing",
   "description": "We are a dedicated roofing company committed to total transparency, expert craftsmanship, premium materials, and absolute respect for our clients.",
   "points": {
-    "residentialCommercial": "Residential and commercial roofing experts.",
-    "certified": "Certified professionals with trusted experience.",
-    "materials": "Premium materials from leading manufacturers."
+    "residentialCommercial": "Residential & commercial roofing",
+    "team": "Expert team",
+    "roofTypes": "Full range of roof types",
+    "support": "Project support"
   },
   "stats": {
     "projects": "Projects Completed",

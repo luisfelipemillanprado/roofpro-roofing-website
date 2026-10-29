@@ -13,9 +13,10 @@
   "titleAccent": "Para Un Techo Ideal",
   "description": "Somos un equipo experto en techado comprometido con total transparencia, excelencia profesional, materiales premium y respeto hacia los clientes.",
   "points": {
-    "residentialCommercial": "Expertos en techos residenciales y comerciales.",
-    "certified": "Profesionales certificados con amplia experiencia.",
-    "materials": "Materiales de primera calidad de fabricantes líderes."
+    "residentialCommercial": "Techos residenciales y comerciales",
+    "team": "Equipo experto",
+    "roofTypes": "Todo tipo de tejados",
+    "support": "Apoyo en tu proyecto"
   },
   "stats": {
     "projects": "Proyectos Completados",
