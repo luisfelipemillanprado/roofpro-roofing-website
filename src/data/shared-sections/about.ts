@@ -17,7 +17,8 @@ export const aboutData = {
     titleAccent: "titleAccent",
     description: "description",
   },
-  points: [{ key: "residentialCommercial" }, { key: "certified" }, { key: "materials" }],
+  /* points: long and short alternate, so every row opens with its widest pill */
+  points: [{ key: "residentialCommercial" }, { key: "team" }, { key: "roofTypes" }, { key: "support" }],
   stats: [
     { key: "projects", value: `${company.projectsCompleted}+` },
     { key: "homes", value: `${company.homesProtected}+` },

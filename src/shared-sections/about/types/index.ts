@@ -26,7 +26,7 @@ export interface StatsRowProps {
 
 interface SellingPointItem {
   key: string;
-  text: string;
+  label: string;
 }
 
 export interface SellingPointsProps {
