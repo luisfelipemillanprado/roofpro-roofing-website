@@ -40,11 +40,11 @@ export const layoutData = {
   navbar: {
     links: [
       { key: "home", href: "/", icon: "home" },
-      { key: "services", href: "/services", icon: "services" },
-      { key: "shop", href: "/shop", icon: "shop" },
-      { key: "projects", href: "/projects", icon: "projects" },
       { key: "about", href: "/about", icon: "about" },
+      { key: "services", href: "/services", icon: "services" },
+      { key: "projects", href: "/projects", icon: "projects" },
       { key: "areas", href: "/areas", icon: "areas" },
+      { key: "shop", href: "/shop", icon: "shop" },
     ] satisfies NavLinkData[],
     phone: company.phone,
     ctaHref: { key: "action.contact", href: "#contact" },

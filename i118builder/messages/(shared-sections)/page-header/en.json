@@ -52,17 +52,17 @@
     },
     "metal": {
       "eyebrow": "METAL",
-      "imageAlt": "Stack of dark gray corrugated metal roofing panels on a warehouse floor",
+      "imageAlt": "Stack of dark gray ribbed metal roofing panels on a warehouse floor",
       "specs": "Highly Durable · All Weather"
     },
     "underlayment": {
       "eyebrow": "UNDERLAYMENT",
-      "imageAlt": "DuPont Tyvek Protec synthetic underlayment rolled out on a warehouse floor",
+      "imageAlt": "DuPont Tyvek Protec synthetic underlayment unrolled down a warehouse aisle",
       "specs": "Moisture Protection · High Traction"
     },
     "banner": {
       "title": "Roofing Materials",
-      "description": "Quality materials for every project."
+      "description": "Stocked and ready to go."
     }
   },
   "customers": "{count}+ Satisfied Customers"
