@@ -46,23 +46,23 @@
   },
   "showcase": {
     "shingles": {
-      "eyebrow": "TEJAS",
+      "eyebrow": "TEJAS ASFÁLTICAS",
       "imageAlt": "Tejas arquitectónicas grises en un techo a cuatro aguas con un paquete Timberline HDZ",
-      "specs": "Resistentes Al Clima · Acabado Duradero"
+      "specs": "Resiste El Clima · Acabado Estable"
     },
     "metal": {
       "eyebrow": "METAL",
-      "imageAlt": "Pila de paneles metálicos corrugados gris oscuro sobre el piso de un almacén",
+      "imageAlt": "Pila de paneles metálicos nervados gris oscuro sobre el piso de un almacén",
       "specs": "Muy Duraderos · Todo Clima"
     },
     "underlayment": {
       "eyebrow": "MEMBRANA",
-      "imageAlt": "Membrana sintética DuPont Tyvek Protec desenrollada sobre el piso de un almacén",
+      "imageAlt": "Membrana sintética DuPont Tyvek Protec desenrollada por el pasillo de un almacén",
       "specs": "Protección Antihumedad · Alta Tracción"
     },
     "banner": {
       "title": "Materiales de Techado",
-      "description": "Materiales de calidad para cada proyecto."
+      "description": "En stock y listo para salir."
     }
   },
   "customers": "+{count} Clientes Satisfechos"

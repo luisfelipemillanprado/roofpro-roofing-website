@@ -33,7 +33,7 @@ export const HeroShowcase = async ({ cta }: HeroShowcaseProps) => {
           <Text as="p" size="body" weight="semibold" tone="white" text={t(`${showcase.bannerKey}.title`)} />
           <Text as="p" size="caption" tone="muted" text={t(`${showcase.bannerKey}.description`)} />
         </div>
-        <Button href={cta.href} variant="primary" pulse>
+        <Button href={cta.href} variant="secondary" pulse>
           {cta.label}
         </Button>
       </div>
