@@ -60,6 +60,21 @@
       "imageAlt": "DuPont Tyvek Protec synthetic underlayment unrolled down a warehouse aisle",
       "specs": "Moisture Protection · High Traction"
     },
+    "shinglesProject": {
+      "eyebrow": "SHINGLES",
+      "imageAlt": "Aerial view of a warm coral clay barrel tile roof on a single storey home",
+      "specs": "Clay Barrel Tile · Warm Coral Tone"
+    },
+    "metalProject": {
+      "eyebrow": "METAL",
+      "imageAlt": "Aerial view of a bronze standing seam metal roof on a poolside home",
+      "specs": "Standing Seam · Bronze Finish"
+    },
+    "underlaymentProject": {
+      "eyebrow": "UNDERLAYMENT",
+      "imageAlt": "Glass roof lantern on a grey flat membrane roof between two air units",
+      "specs": "Glass Lantern · Sealed Flat Roof"
+    },
     "banner": {
       "title": "Roofing Materials",
       "description": "Stocked and ready to go."

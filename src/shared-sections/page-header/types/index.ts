@@ -1,6 +1,8 @@
 export interface HeroShowcaseProps {
   /* route aware CTA, already resolved to its label + destination */
   cta: { label: string; href: string };
+  /* shop heroes swap the product shots for finished projects */
+  variant: "default" | "shop";
 }
 
 /* one resolved material teaser card */

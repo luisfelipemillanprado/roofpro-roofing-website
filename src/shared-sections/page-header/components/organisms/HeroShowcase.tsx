@@ -9,9 +9,9 @@ import type { HeroShowcaseProps } from "@/shared-sections/page-header/types";
 const { showcase } = pageHeaderData;
 
 /* hero side panel: fanned material cards + a materials banner (desktop only) */
-export const HeroShowcase = async ({ cta }: HeroShowcaseProps) => {
+export const HeroShowcase = async ({ cta, variant }: HeroShowcaseProps) => {
   const t = await getTranslations("page-header");
-  const items = showcase.materials.map((material) => ({
+  const items = showcase.materials[variant].map((material) => ({
     key: material.key,
     image: material.image,
     linked: "linked" in material ? material.linked : false,
