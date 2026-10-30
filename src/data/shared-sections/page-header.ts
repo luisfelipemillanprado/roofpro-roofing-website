@@ -24,23 +24,32 @@ export const pageHeaderData = {
     shop: { key: "action.viewShop", href: "/shop" },
     work: { key: "action.viewWork", href: "#projects" },
   },
-  /* hero-side material teaser: three cards (central one links out) + a shop banner; images reuse shop product shots */
+  /* hero-side material teaser: three cards (central one links out) + a shop banner */
   showcase: {
-    materials: [
-      {
-        key: "showcase.shingles",
-        image: "/images/products/roof-shingles/timberline-hdz-pewter-gray/timberline-hdz-pewter-gray-1.webp",
-      },
-      {
-        key: "showcase.metal",
-        image: "/images/products/metal-roofing/brakki-19pc/brakki-19pc-1.webp",
-        linked: true,
-      },
-      {
-        key: "showcase.underlayment",
-        image: "/images/products/underlayment/dupont-tyvek-120/dupont-tyvek-120-1.webp",
-      },
-    ],
+    /* per variant: product shots everywhere, finished projects on the shop heroes */
+    materials: {
+      default: [
+        {
+          key: "showcase.shingles",
+          image:
+            "/images/products/roof-shingles/timberline-hdz-pewter-gray/timberline-hdz-pewter-gray-1.webp",
+        },
+        {
+          key: "showcase.metal",
+          image: "/images/products/metal-roofing/brakki-19pc/brakki-19pc-1.webp",
+          linked: true,
+        },
+        {
+          key: "showcase.underlayment",
+          image: "/images/products/underlayment/dupont-tyvek-120/dupont-tyvek-120-1.webp",
+        },
+      ],
+      shop: [
+        { key: "showcase.shinglesProject", image: "/images/projects/project-12.webp" },
+        { key: "showcase.metalProject", image: "/images/projects/project-3.webp", linked: true },
+        { key: "showcase.underlaymentProject", image: "/images/projects/project-19.webp" },
+      ],
+    },
     bannerKey: "showcase.banner",
     /* route-aware CTA: the shop hero funnels to contact, every other hero to the shop */
     shopCta: { key: "action.shopNow", href: "/shop" },

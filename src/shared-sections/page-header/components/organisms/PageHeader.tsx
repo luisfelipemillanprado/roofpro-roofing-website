@@ -82,7 +82,7 @@ export const PageHeader = async ({
 
         {/* material teaser: lg and up, revealing more cards as the width grows */}
         <div className="hidden lg:block">
-          <HeroShowcase cta={showcaseCta} />
+          <HeroShowcase cta={showcaseCta} variant={image === "shop" ? "shop" : "default"} />
         </div>
       </div>
     </HeroWrapper>

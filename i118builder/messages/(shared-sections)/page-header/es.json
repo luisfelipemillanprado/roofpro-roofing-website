@@ -60,6 +60,21 @@
       "imageAlt": "Membrana sintética DuPont Tyvek Protec desenrollada por el pasillo de un almacén",
       "specs": "Protección Antihumedad · Alta Tracción"
     },
+    "shinglesProject": {
+      "eyebrow": "TEJAS DE ARCILLA",
+      "imageAlt": "Vista aérea de un techo de teja barril de barro coral en una casa de una planta",
+      "specs": "Teja Barril De Barro · Coral Cálido"
+    },
+    "metalProject": {
+      "eyebrow": "METAL",
+      "imageAlt": "Vista aérea de un techo metálico de junta alzada bronce en una casa con piscina",
+      "specs": "Junta Alzada · Acabado Bronce"
+    },
+    "underlaymentProject": {
+      "eyebrow": "MEMBRANA",
+      "imageAlt": "Tragaluz de vidrio en una cubierta plana gris entre dos unidades de aire",
+      "specs": "Tragaluz · Cubierta Plana Sellada"
+    },
     "banner": {
       "title": "Materiales de Techado",
       "description": "En stock y listo para salir."
