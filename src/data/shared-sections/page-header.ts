@@ -50,7 +50,8 @@ export const pageHeaderData = {
         { key: "showcase.underlaymentProject", image: "/images/projects/project-19.webp" },
       ],
     },
-    bannerKey: "showcase.banner",
+    /* per variant: the catalog pitch everywhere, an advice pitch on the shop heroes */
+    bannerKey: { default: "showcase.banner", shop: "showcase.bannerShop" },
     /* route-aware CTA: the shop hero funnels to contact, every other hero to the shop */
     shopCta: { key: "action.shopNow", href: "/shop" },
     contactCta: { key: "action.getQuote", href: "#contact" },

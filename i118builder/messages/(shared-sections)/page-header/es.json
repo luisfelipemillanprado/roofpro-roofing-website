@@ -78,6 +78,10 @@
     "banner": {
       "title": "Materiales de Techado",
       "description": "En stock y listo para salir."
+    },
+    "bannerShop": {
+      "title": "¿Ayuda para Elegir?",
+      "description": "Háblanos de tu techo."
     }
   },
   "customers": "+{count} Clientes Satisfechos"
