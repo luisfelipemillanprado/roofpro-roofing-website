@@ -78,6 +78,10 @@
     "banner": {
       "title": "Roofing Materials",
       "description": "Stocked and ready to go."
+    },
+    "bannerShop": {
+      "title": "Need Help Choosing?",
+      "description": "Tell us about your roof."
     }
   },
   "customers": "{count}+ Satisfied Customers"
