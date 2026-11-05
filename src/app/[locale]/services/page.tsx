@@ -9,6 +9,7 @@ import { Services } from "@/shared-sections/services/components/organisms/Servic
 import { Pitch } from "@/shared-sections/pitch/components/Pitch";
 import { Testimonials } from "@/shared-sections/testimonials/components/organisms/Testimonials";
 import { Faq } from "@/shared-sections/faq/components/organisms/Faq";
+import { Showreel } from "@/shared-sections/showreel/components/organisms/Showreel";
 import { Products } from "@/shared-sections/products/components/Products";
 import { Contact } from "@/shared-sections/contact/components/organisms/Contact";
 
@@ -45,8 +46,9 @@ export default async function ServicesPage({ params }: Props) {
       <Pitch variant="process" tone="muted" />
       <Testimonials variant="contact" tone="base" group="services" />
       <Faq variant="services" />
-      <Products tone="base" limit={6} />
-      <Contact tone="muted" />
+      <Showreel />
+      <Products tone="muted" limit={6} />
+      <Contact tone="base" />
     </>
   );
 }

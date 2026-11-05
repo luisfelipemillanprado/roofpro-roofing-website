@@ -6,7 +6,6 @@ export const pageHeaderData = {
   images: {
     default: { src: "/images/hero/hero-1.webp", altKey: "imageAlt" },
     shop: { src: "/images/hero/hero-2.webp", altKey: "imageAltShop" },
-    areas: { src: "/images/hero/hero-3.webp", altKey: "imageAltAreas" },
   },
   /* availability badge: label by key + the city it names (from site) */
   badgeKey: "badge",
@@ -26,7 +25,7 @@ export const pageHeaderData = {
   },
   /* hero-side material teaser: three cards (central one links out) + a shop banner */
   showcase: {
-    /* per variant: product shots everywhere, finished projects on the shop heroes */
+    /* per variant: product shots everywhere, service work on the shop heroes */
     materials: {
       default: [
         {
@@ -45,9 +44,9 @@ export const pageHeaderData = {
         },
       ],
       shop: [
-        { key: "showcase.shinglesProject", image: "/images/projects/project-12.webp" },
-        { key: "showcase.metalProject", image: "/images/projects/project-3.webp", linked: true },
-        { key: "showcase.underlaymentProject", image: "/images/projects/project-19.webp" },
+        { key: "showcase.repairService", image: "/images/services/service-1.webp" },
+        { key: "showcase.stormService", image: "/images/services/service-2.webp", linked: true },
+        { key: "showcase.replacementService", image: "/images/services/service-5.webp" },
       ],
     },
     /* per variant: the catalog pitch everywhere, an advice pitch on the shop heroes */

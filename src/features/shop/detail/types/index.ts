@@ -34,7 +34,7 @@ export interface ProductGalleryProps {
   images: GalleryItem[];
   title: string;
   description: string;
-  zoomLabel: string;
+  expandLabel: string;
   closeLabel: string;
   previousLabel: string;
   nextLabel: string;

@@ -35,7 +35,6 @@ export default async function AreasPage({ params }: Props) {
         titleLead={t(pageHeaderData.titleLeadKey)}
         titleAccent={t(pageHeaderData.titleAccentKey)}
         description={t(pageHeaderData.descriptionKey)}
-        image="areas"
         secondaryCta="services"
       />
       <Marquee />

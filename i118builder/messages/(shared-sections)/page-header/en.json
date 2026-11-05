@@ -1,7 +1,6 @@
 {
   "imageAlt": "Modern two story home with a dark standing seam metal roof above a reflecting pool at dusk",
-  "imageAltShop": "Roofing supply warehouse with stacked shingles, underlayment rolls, sealant buckets and tool cases",
-  "imageAltAreas": "Modern two story home with a dark standing seam metal roof, balcony and garage at dusk",
+  "imageAltShop": "Roofing showroom stand with labeled metal panel and asphalt shingle samples beside tall windows",
   "badge": "24/7 SERVICE AVAILABLE · {city}",
   "pages": {
     "home": {
@@ -60,20 +59,20 @@
       "imageAlt": "DuPont Tyvek Protec synthetic underlayment unrolled down a warehouse aisle",
       "specs": "Moisture Protection · High Traction"
     },
-    "shinglesProject": {
-      "eyebrow": "SHINGLES",
-      "imageAlt": "Aerial view of a warm coral clay barrel tile roof on a single storey home",
-      "specs": "Clay Barrel Tile · Warm Coral Tone"
+    "repairService": {
+      "eyebrow": "REPAIR",
+      "imageAlt": "Gloved roofer lifting a dark gray shingle with a yellow roofing hammer",
+      "specs": "Precise Fix · Lasting Weather Seal"
     },
-    "metalProject": {
-      "eyebrow": "METAL",
-      "imageAlt": "Aerial view of a bronze standing seam metal roof on a poolside home",
-      "specs": "Standing Seam · Bronze Finish"
+    "stormService": {
+      "eyebrow": "STORM",
+      "imageAlt": "Gap in a gray shingle roof exposing black underlayment and bare wood sheathing",
+      "specs": "Rapid Response · Roof Secured"
     },
-    "underlaymentProject": {
-      "eyebrow": "UNDERLAYMENT",
-      "imageAlt": "Glass roof lantern on a grey flat membrane roof between two air units",
-      "specs": "Glass Lantern · Sealed Flat Roof"
+    "replacementService": {
+      "eyebrow": "REPLACEMENT",
+      "imageAlt": "Roofer fastening new gray shingles with an orange coil nailer over dark underlayment",
+      "specs": "New Shingles · Total Coverage"
     },
     "banner": {
       "title": "Roofing Materials",

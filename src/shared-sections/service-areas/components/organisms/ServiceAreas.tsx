@@ -4,7 +4,7 @@ import { SectionHeading } from "@/common/section-header/components/SectionHeadin
 import { Button } from "@/common/call-to-actions/components/Button";
 import { Container } from "@/common/container/components/Container";
 import { MosaicList } from "@/common/mosaic/components/MosaicList";
-import { ViewerProvider, ViewerZoomButton } from "@/common/image-viewer/components/ViewerProvider";
+import { ViewerProvider, ViewerExpandButton } from "@/common/image-viewer/components/ViewerProvider";
 import { OfficeMap } from "@/shared-sections/service-areas/components/molecules/OfficeMap";
 import { serviceAreasData } from "@/data/shared-sections/service-areas";
 import { company } from "@/data/site";
@@ -68,7 +68,7 @@ export const ServiceAreas = async ({ tone = "base" }: ServiceAreasProps) => {
                 />
               }
               renderAction={(card, index) => (
-                <ViewerZoomButton index={index} label={`${card.description} ${t("action.viewImage")}`} />
+                <ViewerExpandButton index={index} label={`${card.description} ${t("action.viewImage")}`} />
               )}
             />
           </ViewerProvider>

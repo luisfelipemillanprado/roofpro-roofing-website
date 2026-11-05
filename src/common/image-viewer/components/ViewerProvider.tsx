@@ -1,9 +1,9 @@
 "use client";
 
 import { createContext, use, useState } from "react";
-import { ZoomButton } from "@/common/image-viewer/components/ZoomButton";
+import { ExpandButton } from "@/common/image-viewer/components/ExpandButton";
 import { ImageViewer } from "@/common/image-viewer/components/ImageViewer";
-import type { ViewerProviderProps, ViewerZoomButtonProps } from "@/common/image-viewer/types";
+import type { ViewerProviderProps, ViewerExpandButtonProps } from "@/common/image-viewer/types";
 
 /* seam for the buttons: everything between them and this state is server rendered */
 const ViewerContext = createContext<(index: number) => void>(() => {});
@@ -36,8 +36,8 @@ export const ViewerProvider = ({
 };
 
 /* sits with the provider because a handler cannot cross from the server: it comes from the context */
-export const ViewerZoomButton = ({ index, label }: ViewerZoomButtonProps) => {
+export const ViewerExpandButton = ({ index, label }: ViewerExpandButtonProps) => {
   const open = use(ViewerContext);
 
-  return <ZoomButton label={label} onClick={() => open(index)} pulse />;
+  return <ExpandButton label={label} onClick={() => open(index)} pulse />;
 };

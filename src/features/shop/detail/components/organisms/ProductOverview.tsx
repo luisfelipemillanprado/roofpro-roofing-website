@@ -61,7 +61,7 @@ export const ProductOverview = async ({ product, tone = "base" }: ProductOvervie
               images={images}
               title={title}
               description={t(`items.${product.slug}.description`)}
-              zoomLabel={t(viewer.zoom)}
+              expandLabel={t(viewer.expand)}
               closeLabel={t(viewer.close)}
               previousLabel={t(viewer.previous)}
               nextLabel={t(viewer.next)}

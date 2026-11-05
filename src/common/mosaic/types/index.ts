@@ -4,7 +4,7 @@ export interface MosaicCardProps {
   image: string;
   title: string;
   description: string;
-  action: ReactNode; /* trailing control: arrow link (summary) or zoom button (viewer grid) */
+  action: ReactNode; /* trailing control: arrow link (summary) or expand button (viewer grid) */
   sizes: string; /* next/image sizes; featured vs stacked cells differ from lg up */
 }
 

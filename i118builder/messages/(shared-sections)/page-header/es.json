@@ -1,7 +1,6 @@
 {
   "imageAlt": "Casa moderna de dos plantas con techo metálico oscuro de junta alzada sobre una piscina al atardecer",
-  "imageAltShop": "Almacén de materiales de techado con tejas apiladas, rollos de membrana, cubetas de sellador y cajas de herramientas",
-  "imageAltAreas": "Casa moderna de dos plantas con techo metálico oscuro de junta alzada, balcón y garaje al atardecer",
+  "imageAltShop": "Expositor de techado con muestras etiquetadas de paneles metálicos y tejas asfálticas junto a ventanales",
   "badge": "24/7 SERVICIO DISPONIBLE · {city}",
   "pages": {
     "home": {
@@ -60,20 +59,20 @@
       "imageAlt": "Membrana sintética DuPont Tyvek Protec desenrollada por el pasillo de un almacén",
       "specs": "Protección Antihumedad · Alta Tracción"
     },
-    "shinglesProject": {
-      "eyebrow": "TEJAS DE ARCILLA",
-      "imageAlt": "Vista aérea de un techo de teja barril de barro coral en una casa de una planta",
-      "specs": "Teja Barril De Barro · Coral Cálido"
+    "repairService": {
+      "eyebrow": "REPARACIÓN",
+      "imageAlt": "Techero con guantes levantando una teja gris oscuro con un martillo amarillo",
+      "specs": "Arreglo Preciso · Sellado Duradero"
     },
-    "metalProject": {
-      "eyebrow": "METAL",
-      "imageAlt": "Vista aérea de un techo metálico de junta alzada bronce en una casa con piscina",
-      "specs": "Junta Alzada · Acabado Bronce"
+    "stormService": {
+      "eyebrow": "TORMENTA",
+      "imageAlt": "Hueco en un techo de tejas grises que deja ver la membrana negra y el tablero de madera",
+      "specs": "Respuesta Rápida · Techo Firme"
     },
-    "underlaymentProject": {
-      "eyebrow": "MEMBRANA",
-      "imageAlt": "Tragaluz de vidrio en una cubierta plana gris entre dos unidades de aire",
-      "specs": "Tragaluz · Cubierta Plana Sellada"
+    "replacementService": {
+      "eyebrow": "REEMPLAZO",
+      "imageAlt": "Techero fijando tejas grises nuevas con una clavadora naranja sobre membrana oscura",
+      "specs": "Tejas Nuevas · Cobertura Total"
     },
     "banner": {
       "title": "Materiales de Techado",

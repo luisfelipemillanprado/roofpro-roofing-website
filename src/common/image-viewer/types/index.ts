@@ -24,7 +24,7 @@ export interface ViewerControlProps {
   ref?: Ref<HTMLButtonElement>; /* focus target for the close control */
 }
 
-export interface ZoomButtonProps {
+export interface ExpandButtonProps {
   label: string;
   onClick: () => void;
   pulse?: boolean;
@@ -40,7 +40,7 @@ export interface ViewerProviderProps {
 }
 
 /* tile control wired to the provider: only the index and the label cross */
-export interface ViewerZoomButtonProps {
+export interface ViewerExpandButtonProps {
   index: number;
   label: string;
 }
