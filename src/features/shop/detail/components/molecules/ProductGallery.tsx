@@ -2,15 +2,15 @@
 
 import { useState } from "react";
 import { Media } from "@/common/media/components/Media";
-import { ViewerProvider, ViewerZoomButton } from "@/common/image-viewer/components/ViewerProvider";
+import { ViewerProvider, ViewerExpandButton } from "@/common/image-viewer/components/ViewerProvider";
 import type { ProductGalleryProps } from "@/features/shop/detail/types";
 
-/* main shot with a zoom control over a thumb strip that swaps it */
+/* main shot with an expand control over a thumb strip that swaps it */
 export const ProductGallery = ({
   images,
   title,
   description,
-  zoomLabel,
+  expandLabel,
   closeLabel,
   previousLabel,
   nextLabel,
@@ -32,7 +32,7 @@ export const ProductGallery = ({
         <div className="group relative aspect-square overflow-hidden rounded-media shadow-lg sm:aspect-4/3 lg:aspect-square">
           <Media src={images[active]!.src} alt={title} shape="fill" sizes="(max-width: 1024px) 100vw, 45vw" />
           <div className="absolute top-4 right-4">
-            <ViewerZoomButton index={active} label={zoomLabel} />
+            <ViewerExpandButton index={active} label={expandLabel} />
           </div>
         </div>
 

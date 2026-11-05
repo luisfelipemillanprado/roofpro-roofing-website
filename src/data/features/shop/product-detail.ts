@@ -20,9 +20,9 @@ export const productDetailData = {
     { key: "installation", icon: "drill" },
     { key: "warranty", icon: "fileCheck" },
   ],
-  /* gallery and viewer labels by key; zoom and thumb sit on the gallery's own controls */
+  /* gallery and viewer labels by key; expand and thumb sit on the gallery's own controls */
   viewer: {
-    zoom: "detail.viewImage",
+    expand: "detail.viewImage",
     thumb: "detail.thumb",
     close: "detail.close",
     previous: "detail.previous",

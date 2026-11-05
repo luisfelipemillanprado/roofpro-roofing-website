@@ -2,7 +2,7 @@ import { SectionHeading } from "@/common/section-header/components/SectionHeadin
 import { SectionWrapper } from "@/common/section-wrapper/components/SectionWrapper";
 import { Button } from "@/common/call-to-actions/components/Button";
 import { MosaicList } from "@/common/mosaic/components/MosaicList";
-import { ViewerProvider, ViewerZoomButton } from "@/common/image-viewer/components/ViewerProvider";
+import { ViewerProvider, ViewerExpandButton } from "@/common/image-viewer/components/ViewerProvider";
 import { ArrowLink } from "@/common/call-to-actions/components/ArrowLink";
 import { getTranslations } from "next-intl/server";
 import { projectsData } from "@/data/shared-sections/projects";
@@ -42,7 +42,7 @@ export const Projects = async ({ variant, tone = "muted", limit, offset = 0 }: P
             </div>
           </div>
 
-          {/* home/about: arrow link to the projects page; projects page: zoom button opens the viewer */}
+          {/* home/about: arrow link to the projects page; projects page: expand button opens the viewer */}
           {variant === "viewAll" ? (
             <MosaicList
               cards={cards}
@@ -64,7 +64,7 @@ export const Projects = async ({ variant, tone = "muted", limit, offset = 0 }: P
               <MosaicList
                 cards={cards}
                 renderAction={(card, index) => (
-                  <ViewerZoomButton index={index} label={`${card.description} ${t("action.viewImage")}`} />
+                  <ViewerExpandButton index={index} label={`${card.description} ${t("action.viewImage")}`} />
                 )}
               />
             </ViewerProvider>
