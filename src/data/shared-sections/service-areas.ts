@@ -12,12 +12,12 @@ export const serviceAreasData = {
   viewer: { close: "action.close", previous: "action.previous", next: "action.next" },
   /* office card photos linked to company.offices by key */
   officeImages: [
-    { key: "northMiami", image: "/images/offices/office-1.webp" },
-    { key: "downtownMiami", image: "/images/offices/office-2.webp" },
-    { key: "coralGables", image: "/images/offices/office-3.webp" },
-    { key: "miamiBeach", image: "/images/offices/office-4.webp" },
-    { key: "hialeah", image: "/images/offices/office-5.webp" },
-    { key: "westchester", image: "/images/offices/office-6.webp" },
+    { key: "northMiami", image: "/images/offices/north-miami.webp" },
+    { key: "downtownMiami", image: "/images/offices/downtown-miami.webp" },
+    { key: "coralGables", image: "/images/offices/coral-gables.webp" },
+    { key: "miamiBeach", image: "/images/offices/miami-beach.webp" },
+    { key: "hialeah", image: "/images/offices/hialeah.webp" },
+    { key: "westchester", image: "/images/offices/westchester.webp" },
   ],
   /* offices map: MapLibre style url (swap provider by changing it) + Miami-only geography */
   map: {

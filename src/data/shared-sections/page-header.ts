@@ -4,8 +4,8 @@ import { company } from "@/data/site";
 export const pageHeaderData = {
   /* hero backgrounds by variant: image path + its alt key */
   images: {
-    default: { src: "/images/hero/hero-1.webp", altKey: "imageAlt" },
-    shop: { src: "/images/hero/hero-2.webp", altKey: "imageAltShop" },
+    default: { src: "/images/hero/default.webp", altKey: "imageAlt" },
+    shop: { src: "/images/hero/shop.webp", altKey: "imageAltShop" },
   },
   /* availability badge: label by key + the city it names (from site) */
   badgeKey: "badge",
@@ -44,9 +44,9 @@ export const pageHeaderData = {
         },
       ],
       shop: [
-        { key: "showcase.repairService", image: "/images/services/service-1.webp" },
-        { key: "showcase.stormService", image: "/images/services/service-2.webp", linked: true },
-        { key: "showcase.replacementService", image: "/images/services/service-5.webp" },
+        { key: "showcase.repairService", image: "/images/services/roof-repair.webp" },
+        { key: "showcase.stormService", image: "/images/services/storm-damage-repair.webp", linked: true },
+        { key: "showcase.replacementService", image: "/images/services/roof-replacement.webp" },
       ],
     },
     /* per variant: the catalog pitch everywhere, an advice pitch on the shop heroes */
@@ -57,10 +57,10 @@ export const pageHeaderData = {
   },
   /* social proof: avatars + rating label by key + the count it names (from site) */
   avatars: [
-    "/images/avatars/avatar-1.webp",
-    "/images/avatars/avatar-7.webp",
-    "/images/avatars/avatar-3.webp",
-    "/images/avatars/avatar-8.webp",
+    "/images/avatars/paula.webp",
+    "/images/avatars/dennis.webp",
+    "/images/avatars/carmen.webp",
+    "/images/avatars/howard.webp",
   ],
   customersKey: "customers",
   customersCount: company.customersServed,

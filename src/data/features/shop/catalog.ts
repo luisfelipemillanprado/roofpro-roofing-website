@@ -3,7 +3,7 @@ export const shopCatalogData = {
   /* /shop category strip: chips render in this order, first one selected by default */
   categories: [
     { key: "shingles", image: "/images/categories/shingles.webp" },
-    { key: "metal", image: "/images/categories/metal-roofing.webp" },
+    { key: "metal", image: "/images/categories/metal.webp" },
     { key: "underlayment", image: "/images/categories/underlayment.webp" },
     { key: "flashing", image: "/images/categories/flashing.webp" },
     { key: "accessories", image: "/images/categories/accessories.webp" },
