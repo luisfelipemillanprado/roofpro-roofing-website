@@ -39,7 +39,7 @@
     },
     "lakeviewContemporary": {
       "title": "Techado Metálico",
-      "description": "Techo de junta alzada bronce."
+      "description": "Techo de junta alzada azul acero."
     },
     "northgateRanch": {
       "title": "Techado Metálico",
@@ -55,7 +55,7 @@
     },
     "blackpineEstate": {
       "title": "Techado Metálico",
-      "description": "Techo de teja metálica negra."
+      "description": "Techo de junta alzada negra."
     },
     "modernBlueMetal": {
       "title": "Techado Metálico",
@@ -67,11 +67,11 @@
     },
     "maroonMetal": {
       "title": "Techado Metálico",
-      "description": "Techo de teja metálica granate."
+      "description": "Techo de junta alzada granate."
     },
     "harborMetal": {
       "title": "Techado Metálico",
-      "description": "Techo de teja metálica gris."
+      "description": "Techo de junta alzada gris."
     },
     "ranchMetal": {
       "title": "Techado Metálico",
