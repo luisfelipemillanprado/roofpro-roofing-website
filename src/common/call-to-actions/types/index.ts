@@ -26,3 +26,9 @@ export interface SearchButtonProps {
   label: string;
   onClick: () => void;
 }
+
+/* Round icon button (renders <button>); opens a reel from its poster band */
+export interface PlayButtonProps {
+  label: string;
+  onClick: () => void;
+}
