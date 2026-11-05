@@ -3,10 +3,10 @@
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import { createPortal } from "react-dom";
-import { Play, X } from "lucide-react";
+import { X } from "lucide-react";
 import { blurs } from "@/data/blurs";
 import { MediaVideo } from "@/common/media-video/components/MediaVideo";
-import { PulseRing } from "@/common/animations/components/PulseRing";
+import { PlayButton } from "@/common/call-to-actions/components/PlayButton";
 import { ViewerControl } from "@/common/image-viewer/components/ViewerControl";
 import type { ShowreelPlayerProps } from "@/shared-sections/showreel/types";
 
@@ -50,15 +50,7 @@ export const ShowreelPlayer = ({
           blurDataURL={blurs.image}
           className="object-cover"
         />
-        <button
-          type="button"
-          aria-label={playLabel}
-          onClick={() => setOpen(true)}
-          className="relative isolate grid size-22 place-items-center rounded-full bg-secondary shadow-md transition-transform duration-300 hover:scale-90"
-        >
-          <PulseRing color="secondary" rounded />
-          <Play aria-hidden className="size-7 fill-white text-white" />
-        </button>
+        <PlayButton label={playLabel} onClick={() => setOpen(true)} />
       </div>
 
       {open &&
