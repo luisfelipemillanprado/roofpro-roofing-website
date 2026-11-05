@@ -13,8 +13,8 @@ import {
 import "maplibre-gl/dist/maplibre-gl.css";
 import type { OfficeMapProps } from "@/shared-sections/service-areas/types";
 
-/* worker + shared chunk are copied to public/maplibre by scripts/copy-maplibre-worker.mjs */
-setWorkerUrl("/maplibre/maplibre-gl-worker.mjs");
+/* turbopack emits the worker as a hashed asset; maplibre 6.13+ ships it self-contained */
+setWorkerUrl(new URL("maplibre-gl/dist/maplibre-gl-worker.mjs", import.meta.url).toString());
 
 /* light brand pass over the provider style: drop POI and house-number clutter */
 const HIDDEN_SOURCE_LAYERS = new Set(["poi", "housenumber"]);
