@@ -35,9 +35,9 @@
       "title": "Tragaluces Acristalados",
       "description": "Tragaluces de vidrio en plana."
     },
-    "bronzeSeam": {
-      "title": "Acabado Bronce",
-      "description": "Junta alzada bronce al sol."
+    "steelSeam": {
+      "title": "Acabado Acero",
+      "description": "Junta alzada en azul acero."
     },
     "terracottaSeam": {
       "title": "Acabado Terracota",
@@ -51,9 +51,9 @@
       "title": "Acabado Carbón",
       "description": "Junta alzada carbón sobre aleros."
     },
-    "blackStoneTile": {
-      "title": "Teja Negra",
-      "description": "Teja metálica negra con granulado."
+    "blackSeam": {
+      "title": "Acabado Negro",
+      "description": "Junta alzada negra sobre patio."
     },
     "navySeam": {
       "title": "Acabado Marino",
@@ -63,13 +63,13 @@
       "title": "Acabado Grafito",
       "description": "Junta alzada grafito muy limpia."
     },
-    "maroonStoneTile": {
-      "title": "Teja Granate",
-      "description": "Teja metálica granate con granulado."
+    "maroonSeam": {
+      "title": "Acabado Granate",
+      "description": "Junta alzada granate en limas."
     },
-    "greyStoneTile": {
-      "title": "Teja Gris",
-      "description": "Teja metálica gris con granulado."
+    "greySeam": {
+      "title": "Acabado Gris",
+      "description": "Junta alzada gris muy oscura."
     },
     "pewterSeam": {
       "title": "Acabado Peltre",

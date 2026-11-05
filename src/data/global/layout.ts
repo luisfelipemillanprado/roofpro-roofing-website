@@ -23,18 +23,18 @@ export const layoutData = {
     {
       key: "rcasf",
       label: "Roofing Contractors Association of South Florida",
-      image: "/images/certifications/certification-1.webp",
+      image: "/images/certifications/rcasf.webp",
     },
     {
       key: "gaf",
       label: "GAF Master Elite Certified Contractor",
-      image: "/images/certifications/certification-2.webp",
+      image: "/images/certifications/gaf.webp",
     },
-    { key: "google", label: "Google 5-Star Rating", image: "/images/certifications/certification-3.webp" },
+    { key: "google", label: "Google 5-Star Rating", image: "/images/certifications/google.webp" },
     {
       key: "homeAdvisor",
       label: "HomeAdvisor Screened & Approved",
-      image: "/images/certifications/certification-4.webp",
+      image: "/images/certifications/home-advisor.webp",
     },
   ] satisfies CertificationData[],
   navbar: {

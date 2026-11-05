@@ -3,9 +3,13 @@ import { company } from "@/data/site";
 /* About section: video + badge/contact + stats/points; text by key */
 export const aboutData = {
   /* video: ambient loop + poster still + its alt key */
-  video: { src: "/videos/video1/video1.webm", poster: "/videos/video1/poster.webp", altKey: "videoAlt" },
-  /* image: owner portrait shown on /about in place of the video */
-  image: { src: "/images/boss/boss.webp", altKey: "imageAlt" },
+  video: {
+    src: "/videos/introduction/video.webm",
+    poster: "/videos/introduction/poster.webp",
+    altKey: "videoAlt",
+  },
+  /* image: founder portrait shown on /about in place of the video */
+  image: { src: "/images/founder/founder.webp", altKey: "imageAlt" },
   /* badge + contact card: value from company, label by key */
   years: { key: "experience", value: `${company.yearsExperience}+` },
   call: { key: "callAnytime", number: company.phone },

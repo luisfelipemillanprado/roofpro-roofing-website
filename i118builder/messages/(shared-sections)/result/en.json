@@ -35,9 +35,9 @@
       "title": "Glass Skylights",
       "description": "Glass skylights on grey flat."
     },
-    "bronzeSeam": {
-      "title": "Bronze Finish",
-      "description": "Bronze standing seam under sun."
+    "steelSeam": {
+      "title": "Steel Finish",
+      "description": "Steel blue standing seam roof."
     },
     "terracottaSeam": {
       "title": "Terracotta Finish",
@@ -51,9 +51,9 @@
       "title": "Charcoal Finish",
       "description": "Charcoal standing seam over eaves."
     },
-    "blackStoneTile": {
-      "title": "Black Tile",
-      "description": "Black stone coated tile roof."
+    "blackSeam": {
+      "title": "Black Finish",
+      "description": "Black standing seam above courtyard."
     },
     "navySeam": {
       "title": "Navy Finish",
@@ -63,13 +63,13 @@
       "title": "Graphite Finish",
       "description": "Graphite standing seam very clean."
     },
-    "maroonStoneTile": {
-      "title": "Maroon Tile",
-      "description": "Maroon stone coated tile roof."
+    "maroonSeam": {
+      "title": "Maroon Finish",
+      "description": "Maroon standing seam on hips."
     },
-    "greyStoneTile": {
-      "title": "Grey Tile",
-      "description": "Grey stone coated tile roof."
+    "greySeam": {
+      "title": "Grey Finish",
+      "description": "Deep grey standing seam roof."
     },
     "pewterSeam": {
       "title": "Pewter Finish",
