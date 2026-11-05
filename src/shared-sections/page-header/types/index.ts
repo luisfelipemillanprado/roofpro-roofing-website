@@ -36,6 +36,6 @@ export interface PageHeaderProps {
   /* rotating ghost CTA target per page */
   secondaryCta: "services" | "projects" | "shop" | "work";
   /* background variant (paired src + alt); defaults to the shared image */
-  image?: "default" | "shop" | "areas";
+  image?: "default" | "shop";
   id?: string;
 }
