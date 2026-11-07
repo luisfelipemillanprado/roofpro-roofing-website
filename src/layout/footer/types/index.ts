@@ -24,8 +24,7 @@ export interface FooterCreditsProps {
   copyright: string;
   builtByLabel: string;
   builder: CreditLink;
-  privacy: CreditLink;
-  terms: CreditLink;
+  legal: FooterLinkItem[];
 }
 
 /* resolved link item for a footer column */

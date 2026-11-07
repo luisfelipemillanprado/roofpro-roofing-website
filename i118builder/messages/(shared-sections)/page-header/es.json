@@ -32,6 +32,16 @@
       "titleLead": "Zonas De",
       "titleAccent": "Servicio.",
       "description": "Atendemos hogares y negocios de Miami desde oficinas locales, con techado confiable, instalación experta, materiales duraderos y atención cercana."
+    },
+    "privacy": {
+      "titleLead": "Tus Datos",
+      "titleAccent": "Privados.",
+      "description": "Qué información solicitamos, qué detalles transmite tu navegador automáticamente, qué proveedores externos la reciben y durante cuánto tiempo conservamos."
+    },
+    "terms": {
+      "titleLead": "Términos",
+      "titleAccent": "De Uso.",
+      "description": "Qué promete realmente este sitio, hasta dónde comprometen precios y especificaciones publicadas, y qué acuerdo independiente respalda cada instalación."
     }
   },
   "action": {

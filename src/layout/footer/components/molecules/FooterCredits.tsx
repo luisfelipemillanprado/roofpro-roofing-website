@@ -1,8 +1,9 @@
 import { Text } from "@/common/text/components/Text";
+import { Link } from "@/i18n/navigation";
 import type { FooterCreditsProps } from "@/layout/footer/types";
 
 /* credits bar: copyright + builder credit left, legal links right */
-export const FooterCredits = ({ copyright, builtByLabel, builder, privacy, terms }: FooterCreditsProps) => (
+export const FooterCredits = ({ copyright, builtByLabel, builder, legal }: FooterCreditsProps) => (
   <div className="grid justify-items-center gap-3 py-6 sm:grid-flow-col sm:justify-between">
     {/* stacked below lg; one continued line from lg */}
     <div className="grid justify-items-center gap-1 sm:justify-items-start lg:grid-flow-col lg:items-center lg:justify-start lg:justify-items-center lg:gap-1.5">
@@ -14,13 +15,13 @@ export const FooterCredits = ({ copyright, builtByLabel, builder, privacy, terms
         </a>
       </div>
     </div>
-    <div className="grid grid-flow-col gap-6">
-      <a href={privacy.href}>
-        <Text as="span" size="body" tone="muted" text={privacy.label} />
-      </a>
-      <a href={terms.href}>
-        <Text as="span" size="body" tone="muted" text={terms.label} />
-      </a>
+    {/* flex, not grid: three labels have to wrap on a phone and grid would not let them */}
+    <div className="flex flex-wrap justify-center gap-x-6 gap-y-2">
+      {legal.map((link) => (
+        <Link key={link.key} href={link.href}>
+          <Text as="span" size="body" tone="muted" text={link.label} />
+        </Link>
+      ))}
     </div>
   </div>
 );

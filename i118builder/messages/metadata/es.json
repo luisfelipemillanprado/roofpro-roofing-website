@@ -24,6 +24,18 @@
     "areas": {
       "title": "Áreas de Servicio",
       "description": "Encuentra las oficinas de Roofpro en toda Miami en nuestro mapa interactivo, con equipos confiables de techado residencial y comercial siempre cerca de cada vecindario."
+    },
+    "privacy": {
+      "title": "Política de Privacidad",
+      "description": "Qué hace el sitio de Roofpro con tu información: el único campo que pide el formulario, por qué se lee tu IP, quién más ve una consulta y qué guarda el sitio en tu navegador."
+    },
+    "terms": {
+      "title": "Términos de Uso",
+      "description": "Los términos de uso del sitio de Roofpro: aquí no hay presupuestos, la tienda es un catálogo y no una caja, y un presupuesto escrito manda sobre cualquier trabajo."
+    },
+    "accessibility": {
+      "title": "Declaración de Accesibilidad",
+      "description": "Cómo construye Roofpro este sitio para lectores de pantalla, teclado y movimiento reducido, dónde se queda corto y cómo avisarnos si algo te bloquea."
     }
   }
 }

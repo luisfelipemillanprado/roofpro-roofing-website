@@ -7,11 +7,13 @@
   "builtBy": "Built by",
   "privacy": "Privacy Policy",
   "terms": "Terms of Service",
+  "accessibility": "Accessibility",
   "topLinks": {
     "home": "Home",
     "services": "Services",
     "shop": "Shop",
     "projects": "Projects",
+    "areas": "Service Areas",
     "about": "About",
     "contact": "Contact"
   },
