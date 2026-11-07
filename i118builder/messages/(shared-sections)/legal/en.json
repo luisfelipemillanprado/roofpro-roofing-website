@@ -132,8 +132,10 @@
       "title": "About the shop",
       "body": [
         "The shop is a catalogue, not a checkout. You cannot place an order or pay on this site, and nothing you do here reserves stock or commits either of us to a sale. Every product page sends you to the contact form.",
-        "Specifications, dimensions and images come from the manufacturers and can change without us knowing. Check the manufacturer's current documentation before you rely on a figure, and treat photographs as a guide to appearance rather than an exact match."
-      ]
+        "Check the manufacturer's current documentation before you rely on a figure, and treat photographs as a guide to appearance rather than an exact match.",
+        "Supplied by the manufacturers, and liable to change without us knowing:"
+      ],
+      "items": ["The specifications.", "The dimensions.", "The images."]
     },
     "work": {
       "title": "Work we carry out",
@@ -166,14 +168,21 @@
     "links": {
       "title": "Links we do not control",
       "body": [
-        "This site links out to suppliers, social accounts and messaging apps, and one page loads map imagery from an outside provider. We do not control any of them and we are not responsible for what they do or show."
+        "This site links out beyond itself. We do not control any of these and we are not responsible for what they do or show:"
+      ],
+      "items": [
+        "Suppliers we link to.",
+        "Social accounts.",
+        "Messaging apps.",
+        "Map imagery from an outside provider."
       ]
     },
     "availability": {
       "title": "Availability",
       "body": [
-        "We may change, pause or withdraw any part of this site at any time, including pages, prices and the products listed, and we are not obliged to keep anything here available."
-      ]
+        "We may change, pause or withdraw any part of this site at any time, and we are not obliged to keep anything here available. That includes:"
+      ],
+      "items": ["The pages.", "The prices.", "The products listed."]
     },
     "warranty": {
       "title": "The site is provided as it is",
