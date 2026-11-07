@@ -27,8 +27,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 export default async function AccessibilityPage({ params }: Props) {
   const { locale } = await params;
   setRequestLocale(locale as Locale);
-  /* the legal pages share the home hero: brand copy, not a page title */
-  const t = await getTranslations("page-header.pages.home");
+  const t = await getTranslations("page-header.pages.accessibility");
 
   return (
     <>

@@ -41,7 +41,12 @@
     "terms": {
       "titleLead": "Terms",
       "titleAccent": "Of Use.",
-      "description": "What this website promises, how far published prices and manufacturer specifications commit us, and which separate agreement actually governs installation."
+      "description": "What this website actually promises, how far published prices and manufacturer specifications commit us, and which separate agreement governs installation."
+    },
+    "accessibility": {
+      "titleLead": "Nobody",
+      "titleAccent": "Left Out.",
+      "description": "Keyboard navigation, screen readers, reduced motion and enlarged text, the accessibility standard behind them, our shortcoming, and reporting every barrier."
     }
   },
   "action": {

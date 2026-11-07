@@ -41,7 +41,12 @@
     "terms": {
       "titleLead": "Términos",
       "titleAccent": "De Uso.",
-      "description": "Qué promete realmente este sitio, hasta dónde comprometen precios y especificaciones publicadas, y qué acuerdo independiente respalda cada instalación."
+      "description": "Qué promete realmente este sitio, cuánto comprometen precios publicados y especificaciones del fabricante, y qué acuerdo independiente rige instalaciones."
+    },
+    "accessibility": {
+      "titleLead": "Nadie Sin",
+      "titleAccent": "Acceso.",
+      "description": "Navegación por teclado, lectores de pantalla, movimiento reducido y texto ampliado, estándar aplicado, nuestra limitación y cómo reportarnos barreras."
     }
   },
   "action": {

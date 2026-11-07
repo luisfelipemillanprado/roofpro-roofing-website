@@ -132,8 +132,10 @@
       "title": "Sobre la tienda",
       "body": [
         "La tienda es un catálogo, no una caja. En este sitio no se puede pedir ni pagar, y nada de lo que hagas aquí reserva existencias ni compromete a ninguna de las dos partes a una venta. Cada ficha de producto te lleva al formulario de contacto.",
-        "Las especificaciones, las medidas y las imágenes vienen de los fabricantes y pueden cambiar sin que lo sepamos. Consulta la documentación vigente del fabricante antes de fiarte de una cifra, y toma las fotografías como una guía de aspecto y no como una reproducción exacta."
-      ]
+        "Consulta la documentación vigente del fabricante antes de fiarte de una cifra, y toma las fotografías como una guía de aspecto y no como una reproducción exacta.",
+        "Lo que nos dan los fabricantes, y puede cambiar sin que lo sepamos:"
+      ],
+      "items": ["Las especificaciones.", "Las medidas.", "Las imágenes."]
     },
     "work": {
       "title": "Las obras que ejecutamos",
@@ -166,14 +168,21 @@
     "links": {
       "title": "Enlaces que no controlamos",
       "body": [
-        "Este sitio enlaza a proveedores, perfiles sociales y aplicaciones de mensajería, y una de sus páginas carga imágenes de mapa de un proveedor externo. No controlamos ninguno de ellos ni respondemos de lo que hagan o muestren."
+        "Este sitio enlaza fuera de sí mismo. No controlamos ninguno de estos ni respondemos de lo que hagan o muestren:"
+      ],
+      "items": [
+        "Los proveedores a los que enlazamos.",
+        "Los perfiles sociales.",
+        "Las aplicaciones de mensajería.",
+        "Los mapas de un proveedor externo."
       ]
     },
     "availability": {
       "title": "Disponibilidad",
       "body": [
-        "Podemos cambiar, pausar o retirar cualquier parte de este sitio en cualquier momento, incluidas páginas, precios y los productos listados, y no estamos obligados a mantener nada disponible."
-      ]
+        "Podemos cambiar, pausar o retirar cualquier parte de este sitio en cualquier momento, y no estamos obligados a mantener nada disponible. Eso incluye:"
+      ],
+      "items": ["Las páginas.", "Los precios.", "Los productos listados."]
     },
     "warranty": {
       "title": "El sitio se ofrece tal cual",
