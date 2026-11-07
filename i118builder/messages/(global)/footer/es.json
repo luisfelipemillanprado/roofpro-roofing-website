@@ -6,12 +6,14 @@
   "copyright": "© {year} {name}. Todos los derechos reservados.",
   "builtBy": "Desarrollado por",
   "privacy": "Política de Privacidad",
-  "terms": "Términos de Servicio",
+  "terms": "Términos de Uso",
+  "accessibility": "Accesibilidad",
   "topLinks": {
     "home": "Inicio",
     "services": "Servicios",
     "shop": "Tienda",
     "projects": "Proyectos",
+    "areas": "Zonas de Servicio",
     "about": "Nosotros",
     "contact": "Contacto"
   },

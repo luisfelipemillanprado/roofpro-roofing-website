@@ -59,6 +59,7 @@ export const layoutData = {
         { key: "services", href: "/services" },
         { key: "shop", href: "/shop" },
         { key: "projects", href: "/projects" },
+        { key: "areas", href: "/areas" },
         { key: "about", href: "/about" },
         { key: "contact", href: "/#contact" },
       ],
@@ -84,11 +85,12 @@ export const layoutData = {
       { key: "saturday", time: company.saturdayHours },
       { key: "sunday", time: company.sundayHours },
     ],
-    /* legal links: placeholder routes until the pages exist */
-    legal: {
-      privacy: { key: "privacy", href: "#" },
-      terms: { key: "terms", href: "#" },
-    },
+    /* legal links: the credits bar renders them in this order */
+    legal: [
+      { key: "privacy", href: "/privacy" },
+      { key: "terms", href: "/terms" },
+      { key: "accessibility", href: "/accessibility" },
+    ],
     /* site credit: key labels it; placeholder href until the real domain */
     builder: { key: "builtBy", name: "Remiux LLC", href: "#" },
   },

@@ -35,6 +35,8 @@ export const Footer = async () => {
     day: t(`hours.${row.key}`),
     time: row.time ?? t(contact.closedKey),
   }));
+  /* legal bar: route from data, label by key */
+  const legalItems = legal.map((link) => ({ key: link.key, href: link.href, label: t(link.key) }));
 
   return (
     <footer className="theme-dark bg-surface-muted text-foreground">
@@ -71,8 +73,7 @@ export const Footer = async () => {
             copyright={t("copyright", { year: new Date().getFullYear(), name })}
             builtByLabel={t(builder.key)}
             builder={{ label: builder.name, href: builder.href }}
-            privacy={{ label: t(legal.privacy.key), href: legal.privacy.href }}
-            terms={{ label: t(legal.terms.key), href: legal.terms.href }}
+            legal={legalItems}
           />
         </Container>
       </div>

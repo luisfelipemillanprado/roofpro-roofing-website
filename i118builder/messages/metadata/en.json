@@ -24,6 +24,18 @@
     "areas": {
       "title": "Service Areas",
       "description": "Find Roofpro's branch offices across Miami on an interactive map, with reliable residential and commercial roofing crews close to every neighborhood."
+    },
+    "privacy": {
+      "title": "Privacy Policy",
+      "description": "What the Roofpro website does with your information: the one field the contact form asks for, why your IP is read, who else sees an enquiry, and what the site stores in your browser."
+    },
+    "terms": {
+      "title": "Terms of Service",
+      "description": "The terms for using the Roofpro website: nothing here is a quote, the shop is a catalogue rather than a checkout, and a written estimate governs any job."
+    },
+    "accessibility": {
+      "title": "Accessibility Statement",
+      "description": "How Roofpro builds this site for screen readers, keyboards and reduced motion, where it still falls short, and how to tell us when something blocks you."
     }
   }
 }

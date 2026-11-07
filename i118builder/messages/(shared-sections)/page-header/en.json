@@ -32,6 +32,16 @@
       "titleLead": "Service",
       "titleAccent": "Zones.",
       "description": "Serving homes and businesses across Miami from our local offices with trusted roofing, expert craftsmanship, durable materials, and dependable service."
+    },
+    "privacy": {
+      "titleLead": "Privacy",
+      "titleAccent": "Policy.",
+      "description": "Information this website collects, details your browser transmits automatically, outside providers sometimes receiving it, and exactly how briefly everything survives."
+    },
+    "terms": {
+      "titleLead": "Terms Of",
+      "titleAccent": "Service.",
+      "description": "What this website promises, how far published prices and manufacturer specifications commit us, and which separate agreement actually governs installation."
     }
   },
   "action": {
