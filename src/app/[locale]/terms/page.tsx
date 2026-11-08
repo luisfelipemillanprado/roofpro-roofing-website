@@ -38,9 +38,9 @@ export default async function TermsPage({ params }: Props) {
         secondaryCta="shop"
       />
       <Marquee />
-      <Legal variant="terms" />
-      <Products limit={6} />
-      <Contact />
+      <Legal variant="terms" tone="base" />
+      <Products tone="muted" limit={6} />
+      <Contact tone="base" />
     </>
   );
 }

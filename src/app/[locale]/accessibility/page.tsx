@@ -38,9 +38,9 @@ export default async function AccessibilityPage({ params }: Props) {
         secondaryCta="shop"
       />
       <Marquee />
-      <Legal variant="accessibility" />
-      <Products limit={6} />
-      <Contact />
+      <Legal variant="accessibility" tone="base" />
+      <Products tone="muted" limit={6} />
+      <Contact tone="base" />
     </>
   );
 }

@@ -1,299 +1,305 @@
 {
   "privacy": {
-    "scope": {
-      "title": "What this covers",
-      "body": [
-        "This explains what the Roofpro website does with the information you give it and with the information your browser sends while you use it. It covers this website only.",
-        "Once you become a customer, the work we do together is covered by the agreement we sign with you rather than by this page.",
-        "Everything under this one address is covered, including the shop, which is a catalogue only. There is no app, no account and no login anywhere here, so there is nothing to sign up to."
-      ]
-    },
-    "collect": {
-      "title": "What we collect",
-      "body": [
-        "We do not build a profile of you and we do not try to work out who you are from any of it. Two kinds of information reach us:"
-      ],
-      "items": [
-        "What you type: the contact form asks for one thing, your email address. Nothing else on this site asks you to type anything about yourself, and we never ask for payment or card details here.",
-        "What your browser sends: like any website, ours receives the technical information your browser sends with every request, including your network address and the page you were on when you wrote to us."
-      ]
-    },
-    "use": {
-      "title": "Why we use it",
-      "body": [
-        "None of it is used for advertising. We do not sell it, we do not rent it, and we do not pass it to anyone who wants to market to you. Each piece has one purpose:"
-      ],
-      "items": [
-        "Your email address: to answer you.",
-        "The page you wrote from: it travels with your message so we know which service or product you were asking about.",
-        "The technical information: to keep the form working and to stop it being abused by automated traffic."
-      ]
-    },
-    "sharing": {
-      "title": "Who else sees it",
-      "body": ["Almost nothing leaves this site. These are the only exceptions:"],
-      "items": [
-        "The email provider: your message is delivered by an outside provider that handles the sending and nothing more. On our side, the people who answer enquiries read it.",
-        "The map provider: the map on the Service Areas page is drawn by an outside provider. When that map loads, your browser asks them for the imagery directly, so your network address reaches them. That is the only part of the site that involves anyone else, and it happens on that one page.",
-        "The law: we would hand information over if the law required it of us, and we would tell you unless we were forbidden to."
-      ]
-    },
-    "storage": {
-      "title": "Cookies and browser storage",
-      "body": [
-        "There is no analytics, no advertising network and no tracking pixel on this site. Nothing here records which pages you read or reports it to anyone, so there is no tracking for you to turn off.",
-        "Two small things are kept so the site opens the way you left it, and neither follows you anywhere else:"
-      ],
-      "items": [
-        "Your language: one cookie remembers whether you are reading in English or Spanish.",
-        "Your appearance: your choice of the light or dark appearance is kept by your own browser and never leaves your device."
-      ]
-    },
-    "security": {
-      "title": "How we protect it",
-      "body": [
-        "No system is perfect and we will not pretend otherwise. If something ever went wrong with information you had given us, we would tell you. What we do:"
-      ],
-      "items": [
-        "The site is served over an encrypted connection, so what you type into the form is encrypted on its way to us.",
-        "The form is protected against automated abuse.",
-        "The inbox that receives your message is reachable only by the people who need to answer it."
-      ]
-    },
-    "retention": {
-      "title": "How long it lasts",
-      "body": ["Each piece lasts a different length of time:"],
-      "items": [
-        "The technical information that arrives with your message is discarded almost immediately and is never written into a lasting record.",
-        "The message itself stays in our inbox while we deal with your enquiry, and afterwards for as long as we need a record of the work. If you ask us to delete it sooner, we will."
-      ]
-    },
-    "rights": {
-      "title": "Your choices and your rights",
-      "body": [
-        "Depending on where you live, the law may give you these rights formally, including under Florida and California privacy law. We apply them to anyone who asks rather than checking where you are first, and we will not treat you differently for asking. You can also simply not use the form, since nothing else on this site asks for your details.",
-        "Because the only thing we keep is the message you sent, this is usually a short conversation. Write to us and we will:"
-      ],
-      "items": ["Tell you what we hold about you.", "Correct it if it is wrong.", "Delete it."]
-    },
-    "thirdParty": {
-      "title": "Sites we link to",
-      "body": [
-        "This site links out to manufacturers, social accounts and messaging apps. Once you follow one of those links you are on someone else's site, under their rules, and this page no longer applies.",
-        "We choose who we link to, but we do not control what they do with your information. Read their policy if it matters to you.",
-        "We do not share anything about you with the places we link to. A link is just a link: it hands them nothing that we hold."
-      ]
-    },
-    "children": {
-      "title": "Children",
-      "body": [
-        "This site is meant for people arranging roofing work. It is not directed at children under thirteen and we do not knowingly collect anything from them. If you believe a child has sent us something, tell us and we will remove it.",
-        "The contact form is the only place anything can be sent from, and it asks for an email address and nothing else. If we find that a message came from a child, we delete it and the address with it, and we do not reply."
-      ]
-    },
-    "changes": {
-      "title": "Changes",
-      "body": [
-        "If what the site does with your information changes, this page changes with it. We do not keep a version history here and we do not send a separate notice, so the wording you are reading is simply the wording that applies today.",
-        "If the exact wording matters to you, keep your own copy. And if a change ever affected something we already hold about you, we would write to you rather than leave it on this page for you to find."
-      ]
-    },
-    "contact": {
-      "title": "Contact",
-      "body": [
-        "Questions about this policy, and any request about your own information, go to the email address in the footer of this page. It reaches the same people as the contact form.",
-        "Tell us what you are asking for and, if you want us to find or delete something, the address you wrote from. We ask for nothing more to prove who you are, because the only thing we would be handing back is a message you sent us yourself."
-      ]
+    "items": {
+      "scope": {
+        "title": "What this covers",
+        "lead": "This explains what the {name} website does with the information you give it and with the information your browser sends while you use it. It covers this website only.",
+        "body": [
+          "Once you become a customer, the work we do together is covered by the agreement we sign with you rather than by this page.",
+          "Everything under this one address is covered, including the shop, which is a catalogue only. There is no app, no account and no login anywhere here, so there is nothing to sign up to."
+        ]
+      },
+      "collect": {
+        "title": "What we collect",
+        "body": [
+          "We do not build a profile of you and we do not try to work out who you are from any of it. Two kinds of information reach us:"
+        ],
+        "bullets": [
+          "What you type: the contact form asks for one thing, your email address. Nothing else on this site asks you to type anything about yourself, and we never ask for payment or card details here.",
+          "What your browser sends: like any website, ours receives the technical information your browser sends with every request, including your network address and the page you were on when you wrote to us."
+        ]
+      },
+      "use": {
+        "title": "Why we use it",
+        "body": [
+          "None of it is used for advertising. We do not sell it, we do not rent it, and we do not pass it to anyone who wants to market to you. Each piece has one purpose:"
+        ],
+        "bullets": [
+          "Your email address: to answer you.",
+          "The page you wrote from: it travels with your message so we know which service or product you were asking about.",
+          "The technical information: to keep the form working and to stop it being abused by automated traffic."
+        ]
+      },
+      "sharing": {
+        "title": "Who else sees it",
+        "body": ["Almost nothing leaves this site. These are the only exceptions:"],
+        "bullets": [
+          "The email provider: your message is delivered by an outside provider that handles the sending and nothing more. On our side, the people who answer enquiries read it.",
+          "The map provider: the map on the Service Areas page is drawn by an outside provider. When that map loads, your browser asks them for the imagery directly, so your network address reaches them. That is the only part of the site that involves anyone else, and it happens on that one page.",
+          "The law: we would hand information over if the law required it of us, and we would tell you unless we were forbidden to."
+        ]
+      },
+      "storage": {
+        "title": "Cookies and browser storage",
+        "body": [
+          "There is no analytics, no advertising network and no tracking pixel on this site. Nothing here records which pages you read or reports it to anyone, so there is no tracking for you to turn off.",
+          "Two small things are kept so the site opens the way you left it, and neither follows you anywhere else:"
+        ],
+        "bullets": [
+          "Your language: one cookie remembers whether you are reading in English or Spanish.",
+          "Your appearance: your choice of the light or dark appearance is kept by your own browser and never leaves your device."
+        ]
+      },
+      "security": {
+        "title": "How we protect it",
+        "body": [
+          "No system is perfect and we will not pretend otherwise. If something ever went wrong with information you had given us, we would tell you. What we do:"
+        ],
+        "bullets": [
+          "The site is served over an encrypted connection, so what you type into the form is encrypted on its way to us.",
+          "The form is protected against automated abuse.",
+          "The inbox that receives your message is reachable only by the people who need to answer it."
+        ]
+      },
+      "retention": {
+        "title": "How long it lasts",
+        "body": ["Each piece lasts a different length of time:"],
+        "bullets": [
+          "The technical information that arrives with your message is discarded almost immediately and is never written into a lasting record.",
+          "The message itself stays in our inbox while we deal with your enquiry, and afterwards for as long as we need a record of the work. If you ask us to delete it sooner, we will."
+        ]
+      },
+      "rights": {
+        "title": "Your choices and your rights",
+        "lead": "Depending on where you live, the law may give you these rights formally, including under {state} and California privacy law. We apply them to anyone who asks rather than checking where you are first, and we will not treat you differently for asking. You can also simply not use the form, since nothing else on this site asks for your details.",
+        "body": [
+          "Because the only thing we keep is the message you sent, this is usually a short conversation. Write to us and we will:"
+        ],
+        "bullets": ["Tell you what we hold about you.", "Correct it if it is wrong.", "Delete it."]
+      },
+      "thirdParty": {
+        "title": "Sites we link to",
+        "body": [
+          "This site links out to manufacturers, social accounts and messaging apps. Once you follow one of those links you are on someone else's site, under their rules, and this page no longer applies.",
+          "We choose who we link to, but we do not control what they do with your information. Read their policy if it matters to you.",
+          "We do not share anything about you with the places we link to. A link is just a link: it hands them nothing that we hold."
+        ]
+      },
+      "children": {
+        "title": "Children",
+        "body": [
+          "This site is meant for people arranging roofing work. It is not directed at children under thirteen and we do not knowingly collect anything from them. If you believe a child has sent us something, tell us and we will remove it.",
+          "The contact form is the only place anything can be sent from, and it asks for an email address and nothing else. If we find that a message came from a child, we delete it and the address with it, and we do not reply."
+        ]
+      },
+      "changes": {
+        "title": "Changes",
+        "body": [
+          "If what the site does with your information changes, this page changes with it. We do not keep a version history here and we do not send a separate notice, so the wording you are reading is simply the wording that applies today.",
+          "If the exact wording matters to you, keep your own copy. And if a change ever affected something we already hold about you, we would write to you rather than leave it on this page for you to find."
+        ]
+      },
+      "contact": {
+        "title": "Contact",
+        "body": [
+          "Questions about this policy, and any request about your own information, go to the email address in the footer of this page. It reaches the same people as the contact form.",
+          "Tell us what you are asking for and, if you want us to find or delete something, the address you wrote from. We ask for nothing more to prove who you are, because the only thing we would be handing back is a message you sent us yourself."
+        ]
+      }
     }
   },
   "terms": {
-    "scope": {
-      "title": "What this site is for",
-      "body": [
-        "This site describes the roofing services we offer and the materials we work with. It is a place to look and a place to get in touch.",
-        "Nothing on it forms a contract between us."
-      ]
-    },
-    "acceptance": {
-      "title": "Accepting these terms",
-      "body": [
-        "Using this site means you accept these terms. If you do not accept them, please do not use it.",
-        "You should be old enough to enter into a contract where you live before you send us an enquiry about work."
-      ]
-    },
-    "estimates": {
-      "title": "Nothing here is a quote",
-      "body": [
-        "Prices, availability and timescales shown here are indicative and change without notice. A roof is priced after someone has seen it.",
-        "Only a written estimate agreed by both sides sets what a job costs and what it includes. Where this site and that estimate disagree, the estimate wins."
-      ]
-    },
-    "catalog": {
-      "title": "About the shop",
-      "body": [
-        "The shop is a catalogue, not a checkout. You cannot place an order or pay on this site, and nothing you do here reserves stock or commits either of us to a sale. Every product page sends you to the contact form.",
-        "Check the manufacturer's current documentation before you rely on a figure, and treat photographs as a guide to appearance rather than an exact match.",
-        "Supplied by the manufacturers, and liable to change without us knowing:"
-      ],
-      "items": ["The specifications.", "The dimensions.", "The images."]
-    },
-    "work": {
-      "title": "Work we carry out",
-      "body": [
-        "Roofing work runs under a separate signed agreement. This site is not part of that agreement and does not change it.",
-        "We work only where we are licensed and insured to do so. If you are outside the areas shown here, tell us and we will say plainly whether we can help.",
-        "The agreement sets out:"
-      ],
-      "items": ["The scope.", "The price.", "The schedule.", "The workmanship warranty."]
-    },
-    "use": {
-      "title": "How you may use this site",
-      "body": [
-        "Use it to find out about us and to get in touch. We may block access where the site is being misused. Please do not:"
-      ],
-      "items": [
-        "Try to break into it.",
-        "Overload it.",
-        "Copy it wholesale by automated means.",
-        "Use the contact form to send unsolicited marketing."
-      ]
-    },
-    "content": {
-      "title": "Content and names",
-      "body": [
-        "The text, photography and layout of this site are ours. Please do not copy them for your own commercial use.",
-        "Manufacturer and supplier names and logos belong to their owners. They appear here to say what we work with, not to suggest that they endorse us."
-      ]
-    },
-    "links": {
-      "title": "Links we do not control",
-      "body": [
-        "This site links out beyond itself. We do not control any of these and we are not responsible for what they do or show:"
-      ],
-      "items": [
-        "Suppliers we link to.",
-        "Social accounts.",
-        "Messaging apps.",
-        "Map imagery from an outside provider."
-      ]
-    },
-    "availability": {
-      "title": "Availability",
-      "body": [
-        "We may change, pause or withdraw any part of this site at any time, and we are not obliged to keep anything here available. That includes:"
-      ],
-      "items": ["The pages.", "The prices.", "The products listed."]
-    },
-    "warranty": {
-      "title": "The site is provided as it is",
-      "body": [
-        "We keep this site accurate and available as best we can, but we provide it as it stands. We do not promise that it is free of errors, complete, current, or reachable at any given moment.",
-        "That says nothing about the workmanship warranty on a job, which is set out in your agreement with us."
-      ]
-    },
-    "liability": {
-      "title": "Limits of liability",
-      "body": [
-        "To the extent the law allows, we are not liable for loss arising from relying on what is shown here rather than on a written estimate or on a manufacturer's own documentation.",
-        "Nothing in these terms limits any liability that cannot lawfully be limited."
-      ]
-    },
-    "law": {
-      "title": "Governing law and the rest",
-      "body": [
-        "These terms are governed by the laws of the State of Florida, and the courts of Miami-Dade County are the place for any dispute about them.",
-        "If part of these terms turns out to be unenforceable, the rest still stands. Together with any notice shown on the site itself, this is the whole of what governs your use of it."
-      ]
-    },
-    "changes": {
-      "title": "Changes",
-      "body": [
-        "We may revise these terms. Using the site after a revision means accepting it, and the wording on this page is always the wording that applies."
-      ]
-    },
-    "contact": {
-      "title": "Contact",
-      "body": ["Questions about these terms go to the email address in the footer of this page."]
+    "items": {
+      "scope": {
+        "title": "What this site is for",
+        "body": [
+          "This site describes the roofing services we offer and the materials we work with. It is a place to look and a place to get in touch.",
+          "Nothing on it forms a contract between us."
+        ]
+      },
+      "acceptance": {
+        "title": "Accepting these terms",
+        "body": [
+          "Using this site means you accept these terms. If you do not accept them, please do not use it.",
+          "You should be old enough to enter into a contract where you live before you send us an enquiry about work."
+        ]
+      },
+      "estimates": {
+        "title": "Nothing here is a quote",
+        "body": [
+          "Prices, availability and timescales shown here are indicative and change without notice. A roof is priced after someone has seen it.",
+          "Only a written estimate agreed by both sides sets what a job costs and what it includes. Where this site and that estimate disagree, the estimate wins."
+        ]
+      },
+      "catalog": {
+        "title": "About the shop",
+        "body": [
+          "The shop is a catalogue, not a checkout. You cannot place an order or pay on this site, and nothing you do here reserves stock or commits either of us to a sale. Every product page sends you to the contact form.",
+          "Check the manufacturer's current documentation before you rely on a figure, and treat photographs as a guide to appearance rather than an exact match.",
+          "Supplied by the manufacturers, and liable to change without us knowing:"
+        ],
+        "bullets": ["The specifications.", "The dimensions.", "The images."]
+      },
+      "work": {
+        "title": "Work we carry out",
+        "body": [
+          "Roofing work runs under a separate signed agreement. This site is not part of that agreement and does not change it.",
+          "We work only where we are licensed and insured to do so. If you are outside the areas shown here, tell us and we will say plainly whether we can help.",
+          "The agreement sets out:"
+        ],
+        "bullets": ["The scope.", "The price.", "The schedule.", "The workmanship warranty."]
+      },
+      "use": {
+        "title": "How you may use this site",
+        "body": [
+          "Use it to find out about us and to get in touch. We may block access where the site is being misused. Please do not:"
+        ],
+        "bullets": [
+          "Try to break into it.",
+          "Overload it.",
+          "Copy it wholesale by automated means.",
+          "Use the contact form to send unsolicited marketing."
+        ]
+      },
+      "content": {
+        "title": "Content and names",
+        "body": [
+          "The text, photography and layout of this site are ours. Please do not copy them for your own commercial use.",
+          "Manufacturer and supplier names and logos belong to their owners. They appear here to say what we work with, not to suggest that they endorse us."
+        ]
+      },
+      "links": {
+        "title": "Links we do not control",
+        "body": [
+          "This site links out beyond itself. We do not control any of these and we are not responsible for what they do or show:"
+        ],
+        "bullets": [
+          "Suppliers we link to.",
+          "Social accounts.",
+          "Messaging apps.",
+          "Map imagery from an outside provider."
+        ]
+      },
+      "availability": {
+        "title": "Availability",
+        "body": [
+          "We may change, pause or withdraw any part of this site at any time, and we are not obliged to keep anything here available. That includes:"
+        ],
+        "bullets": ["The pages.", "The prices.", "The products listed."]
+      },
+      "warranty": {
+        "title": "The site is provided as it is",
+        "body": [
+          "We keep this site accurate and available as best we can, but we provide it as it stands. We do not promise that it is free of errors, complete, current, or reachable at any given moment.",
+          "That says nothing about the workmanship warranty on a job, which is set out in your agreement with us."
+        ]
+      },
+      "liability": {
+        "title": "Limits of liability",
+        "body": [
+          "To the extent the law allows, we are not liable for loss arising from relying on what is shown here rather than on a written estimate or on a manufacturer's own documentation.",
+          "Nothing in these terms limits any liability that cannot lawfully be limited."
+        ]
+      },
+      "law": {
+        "title": "Governing law and the rest",
+        "lead": "These terms are governed by the laws of the State of {state}, and the courts of {county} County are the place for any dispute about them.",
+        "body": [
+          "If part of these terms turns out to be unenforceable, the rest still stands. Together with any notice shown on the site itself, this is the whole of what governs your use of it."
+        ]
+      },
+      "changes": {
+        "title": "Changes",
+        "body": [
+          "We may revise these terms. Using the site after a revision means accepting it, and the wording on this page is always the wording that applies."
+        ]
+      },
+      "contact": {
+        "title": "Contact",
+        "body": ["Questions about these terms go to the email address in the footer of this page."]
+      }
     }
   },
   "accessibility": {
-    "commitment": {
-      "title": "What we aim for",
-      "body": [
-        "We want this site to work for everyone, including people using a screen reader, a keyboard alone, voice control, or a browser set to larger text.",
-        "We treat a barrier as a defect to fix, not a preference to accommodate when it suits us.",
-        "By a barrier we mean anything that stops you doing here what someone else can do: a control you cannot reach, a label a screen reader cannot read, text that vanishes when you enlarge it."
-      ]
-    },
-    "standard": {
-      "title": "The standard we measure against",
-      "body": [
-        "We build against the Web Content Accessibility Guidelines, version 2.2, at level AA.",
-        "We believe this site largely meets that standard. We say largely rather than fully because one part of it falls short, and we name that part ourselves rather than leaving it for you to find.",
-        "AA is the level most public bodies require and the one that covers the barriers people actually hit. AAA adds requirements, such as sign language for every video, that we could not honestly claim to meet."
-      ]
-    },
-    "navigation": {
-      "title": "How you move through it",
-      "body": ["Getting from one part of a page to another should never depend on seeing it:"],
-      "items": [
-        "Pages are built from real landmarks and a heading order that does not skip levels, so a screen reader can move through them by structure rather than by guesswork.",
-        "Anything you can click you can also reach and operate with the keyboard, and the focus outline stays visible as you go. Dialogs move focus into themselves when they open, close on Escape, and hand focus back when they close."
-      ]
-    },
-    "presentation": {
-      "title": "How it looks and reads",
-      "body": ["What is on the page has to work without sight, without colour and at any text size:"],
-      "items": [
-        "Every control that shows only an icon carries a written label, and every image carries alternative text or is marked as decorative when it adds nothing to the page.",
-        "If your system asks for reduced motion, the animations here stop rather than merely slow down. Colour is never the only way something is marked, and the site ships in both a light and a dark appearance.",
-        "The layout holds at larger text sizes and on a narrow screen, without content being cut off or needing to be scrolled sideways."
-      ]
-    },
-    "testing": {
-      "title": "How we check",
-      "body": [
-        "Automated checking catches some things and misses others, so a person reads through as well, and we check again whenever a page changes. We go through pages:"
-      ],
-      "items": [
-        "With a keyboard alone.",
-        "With a screen reader.",
-        "With reduced motion on.",
-        "In both the light and the dark appearance.",
-        "In both languages.",
-        "At phone, tablet and desktop widths."
-      ]
-    },
-    "limits": {
-      "title": "Where it falls short",
-      "body": [
-        "The map of our offices on the Service Areas page comes from an outside provider and is drawn as a picture rather than as text, so a screen reader cannot read what is on it.",
-        "Every office shown on that map is also listed beside it as ordinary text, with its name and street address. Nothing on the map is only on the map, so if you cannot use it you lose nothing but the map itself.",
-        "We are not aware of other gaps, which is not the same as there being none."
-      ]
-    },
-    "alternatives": {
-      "title": "Another way in",
-      "body": [
-        "If any part of this site does not work for you, we will give you the same information another way, by email or over the phone, at no cost and without you having to explain why.",
-        "The contact details sit in the footer of every page. Tell us what you were trying to reach and we will send it in whatever form suits you.",
-        "That covers anything here:"
-      ],
-      "items": [
-        "A product specification.",
-        "An office address.",
-        "The detail of a service.",
-        "The text of this page."
-      ]
-    },
-    "feedback": {
-      "title": "Tell us",
-      "body": [
-        "If something here blocks you, write to the email address in the footer. The more specific you are, the faster we can fix it.",
-        "We aim to reply within a few working days, and to tell you what we are doing about it rather than only acknowledging the message.",
-        "Say in your message:"
-      ],
-      "items": ["Which page it was.", "What you were trying to do.", "What happened."]
+    "items": {
+      "commitment": {
+        "title": "What we aim for",
+        "body": [
+          "We want this site to work for everyone, including people using a screen reader, a keyboard alone, voice control, or a browser set to larger text.",
+          "We treat a barrier as a defect to fix, not a preference to accommodate when it suits us.",
+          "By a barrier we mean anything that stops you doing here what someone else can do: a control you cannot reach, a label a screen reader cannot read, text that vanishes when you enlarge it."
+        ]
+      },
+      "standard": {
+        "title": "The standard we measure against",
+        "lead": "We build against the Web Content Accessibility Guidelines, version {version}, at level {level}.",
+        "body": [
+          "We believe this site largely meets that standard. We say largely rather than fully because one part of it falls short, and we name that part ourselves rather than leaving it for you to find.",
+          "AA is the level most public bodies require and the one that covers the barriers people actually hit. AAA adds requirements, such as sign language for every video, that we could not honestly claim to meet."
+        ]
+      },
+      "navigation": {
+        "title": "How you move through it",
+        "body": ["Getting from one part of a page to another should never depend on seeing it:"],
+        "bullets": [
+          "Pages are built from real landmarks and a heading order that does not skip levels, so a screen reader can move through them by structure rather than by guesswork.",
+          "Anything you can click you can also reach and operate with the keyboard, and the focus outline stays visible as you go. Dialogs move focus into themselves when they open, close on Escape, and hand focus back when they close."
+        ]
+      },
+      "presentation": {
+        "title": "How it looks and reads",
+        "body": ["What is on the page has to work without sight, without colour and at any text size:"],
+        "bullets": [
+          "Every control that shows only an icon carries a written label, and every image carries alternative text or is marked as decorative when it adds nothing to the page.",
+          "If your system asks for reduced motion, the animations here stop rather than merely slow down. Colour is never the only way something is marked, and the site ships in both a light and a dark appearance.",
+          "The layout holds at larger text sizes and on a narrow screen, without content being cut off or needing to be scrolled sideways."
+        ]
+      },
+      "testing": {
+        "title": "How we check",
+        "body": [
+          "Automated checking catches some things and misses others, so a person reads through as well, and we check again whenever a page changes. We go through pages:"
+        ],
+        "bullets": [
+          "With a keyboard alone.",
+          "With a screen reader.",
+          "With reduced motion on.",
+          "In both the light and the dark appearance.",
+          "In both languages.",
+          "At phone, tablet and desktop widths."
+        ]
+      },
+      "limits": {
+        "title": "Where it falls short",
+        "body": [
+          "The map of our offices on the Service Areas page comes from an outside provider and is drawn as a picture rather than as text, so a screen reader cannot read what is on it.",
+          "Every office shown on that map is also listed beside it as ordinary text, with its name and street address. Nothing on the map is only on the map, so if you cannot use it you lose nothing but the map itself.",
+          "We are not aware of other gaps, which is not the same as there being none."
+        ]
+      },
+      "alternatives": {
+        "title": "Another way in",
+        "body": [
+          "If any part of this site does not work for you, we will give you the same information another way, by email or over the phone, at no cost and without you having to explain why.",
+          "The contact details sit in the footer of every page. Tell us what you were trying to reach and we will send it in whatever form suits you.",
+          "That covers anything here:"
+        ],
+        "bullets": [
+          "A product specification.",
+          "An office address.",
+          "The detail of a service.",
+          "The text of this page."
+        ]
+      },
+      "feedback": {
+        "title": "Tell us",
+        "body": [
+          "If something here blocks you, write to the email address in the footer. The more specific you are, the faster we can fix it.",
+          "We aim to reply within a few working days, and to tell you what we are doing about it rather than only acknowledging the message.",
+          "Say in your message:"
+        ],
+        "bullets": ["Which page it was.", "What you were trying to do.", "What happened."]
+      }
     }
   }
 }

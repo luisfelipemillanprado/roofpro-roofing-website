@@ -1,5 +1,5 @@
 import { IconBadge } from "@/common/icon-badge/components/IconBadge";
-import { CheckItem } from "@/common/check-item/components/CheckItem";
+import { CheckList } from "@/common/check-item/components/CheckList";
 import { Title } from "@/common/title/components/Title";
 import { Text } from "@/common/text/components/Text";
 import type { IncludedPanelProps } from "@/features/service-detail/types";
@@ -15,10 +15,6 @@ export const IncludedPanel = ({ icon, title, description, items }: IncludedPanel
       </div>
     </div>
     <div className="border-t border-line" />
-    <ul className="grid gap-4">
-      {items.map((text) => (
-        <CheckItem key={text} tone="muted" text={text} />
-      ))}
-    </ul>
+    <CheckList tone="muted" items={items} />
   </div>
 );

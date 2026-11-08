@@ -78,4 +78,7 @@ export const company = {
   sundayHours: null,
   /* floating contact: whatsapp deep link */
   whatsappHref: "https://wa.me/1234567890" /* placeholder number, digits only */,
+  /* legal: the jurisdiction the terms name and the courts that hear a dispute */
+  state: "Florida",
+  county: "Miami-Dade",
 };
