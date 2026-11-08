@@ -38,9 +38,9 @@ export default async function PrivacyPage({ params }: Props) {
         secondaryCta="shop"
       />
       <Marquee />
-      <Legal variant="privacy" />
-      <Products limit={6} />
-      <Contact />
+      <Legal variant="privacy" tone="base" />
+      <Products tone="muted" limit={6} />
+      <Contact tone="base" />
     </>
   );
 }

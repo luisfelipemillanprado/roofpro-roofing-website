@@ -1,301 +1,307 @@
 {
   "privacy": {
-    "scope": {
-      "title": "Qué cubre esto",
-      "body": [
-        "Aquí se explica qué hace el sitio web de Roofpro con la información que le das y con la que envía tu navegador mientras lo usas. Cubre solo este sitio web.",
-        "Cuando ya eres cliente, el trabajo que hacemos juntos se rige por el acuerdo que firmamos contigo, no por esta página.",
-        "Queda cubierto todo lo que cuelga de esta misma dirección, incluida la tienda, que es solo un catálogo. Aquí no hay aplicación, ni cuenta, ni acceso con contraseña, así que no hay nada a lo que registrarse."
-      ]
-    },
-    "collect": {
-      "title": "Qué recogemos",
-      "body": [
-        "No construimos un perfil tuyo ni intentamos averiguar quién eres a partir de nada de eso. Hasta nosotros llegan dos tipos de información:"
-      ],
-      "items": [
-        "Lo que escribes: el formulario de contacto pide una sola cosa, tu correo electrónico. Nada más en este sitio te pide escribir algo sobre ti, y aquí nunca te pedimos datos de pago ni de tarjeta.",
-        "Lo que envía tu navegador: como cualquier web, la nuestra recibe la información técnica que envía tu navegador en cada petición, incluidas tu dirección de red y la página en la que estabas al escribirnos."
-      ]
-    },
-    "use": {
-      "title": "Para qué lo usamos",
-      "body": [
-        "Nada de esto se usa para publicidad. No lo vendemos, no lo alquilamos y no se lo pasamos a nadie que quiera venderte algo. Cada dato tiene un único fin:"
-      ],
-      "items": [
-        "Tu correo electrónico: responderte.",
-        "La página desde la que escribiste: viaja con tu mensaje para saber por qué servicio o producto preguntabas.",
-        "La información técnica: que el formulario siga funcionando y que no lo abuse el tráfico automatizado."
-      ]
-    },
-    "sharing": {
-      "title": "Quién más lo ve",
-      "body": ["Casi nada sale de este sitio. Estas son las únicas excepciones:"],
-      "items": [
-        "El proveedor de correo: tu mensaje lo entrega un proveedor externo que se encarga del envío y de nada más. Por nuestra parte lo leen las personas que responden las consultas.",
-        "El proveedor de mapas: el mapa de la página de Zonas de Servicio lo dibuja un proveedor externo. Cuando ese mapa carga, tu navegador le pide las imágenes directamente, así que tu dirección de red llega hasta él. Es la única parte del sitio en la que interviene alguien más, y ocurre en esa única página.",
-        "La ley: entregaríamos información si la ley nos lo exigiera, y te lo diríamos salvo que se nos prohibiera hacerlo."
-      ]
-    },
-    "storage": {
-      "title": "Cookies y almacenamiento del navegador",
-      "body": [
-        "No hay analítica, ni red publicitaria, ni píxel de seguimiento en este sitio. Aquí nada registra qué páginas lees ni se lo cuenta a nadie, así que no hay seguimiento que desactivar.",
-        "Se guardan dos cosas pequeñas para que el sitio se abra como lo dejaste, y ninguna te sigue a ningún otro sitio:"
-      ],
-      "items": [
-        "Tu idioma: una cookie recuerda si lees en inglés o en español.",
-        "Tu apariencia: tu elección de apariencia clara u oscura la guarda tu propio navegador y nunca sale de tu dispositivo."
-      ]
-    },
-    "security": {
-      "title": "Cómo lo protegemos",
-      "body": [
-        "Ningún sistema es perfecto y no vamos a fingir lo contrario. Si algo fallara alguna vez con información que nos hubieras dado, te lo diríamos. Lo que hacemos:"
-      ],
-      "items": [
-        "El sitio se sirve por una conexión cifrada, así que lo que escribes en el formulario viaja cifrado hasta nosotros.",
-        "El formulario está protegido frente a abuso automatizado.",
-        "Al buzón que recibe tu mensaje solo llegan las personas que tienen que responderlo."
-      ]
-    },
-    "retention": {
-      "title": "Cuánto dura",
-      "body": ["Cada cosa dura un tiempo distinto:"],
-      "items": [
-        "La información técnica que llega con tu mensaje se descarta casi de inmediato y nunca se escribe en un registro duradero.",
-        "El mensaje en sí permanece en nuestro buzón mientras atendemos tu consulta, y después el tiempo que necesitemos dejar constancia del trabajo. Si nos pides que lo borremos antes, lo borramos."
-      ]
-    },
-    "rights": {
-      "title": "Tus opciones y tus derechos",
-      "body": [
-        "Según dónde vivas, la ley puede reconocerte estos derechos de forma expresa, incluidas las normas de privacidad de Florida y de California. Nosotros los aplicamos a quien los pida, sin comprobar antes dónde está, y no te trataremos distinto por pedirlo. También puedes simplemente no usar el formulario, porque nada más en este sitio te pide tus datos.",
-        "Como lo único que guardamos es el mensaje que enviaste, suele ser una conversación corta. Escríbenos y haremos esto:"
-      ],
-      "items": ["Decirte qué tenemos sobre ti.", "Corregirlo si está mal.", "Borrarlo."]
-    },
-    "thirdParty": {
-      "title": "Sitios a los que enlazamos",
-      "body": [
-        "Este sitio enlaza a fabricantes, perfiles sociales y aplicaciones de mensajería. En cuanto sigues uno de esos enlaces estás en el sitio de otra persona, bajo sus reglas, y esta página deja de aplicarse.",
-        "Elegimos a quién enlazamos, pero no controlamos qué hacen ellos con tu información. Si te importa, lee su política.",
-        "No compartimos nada tuyo con los sitios a los que enlazamos. Un enlace es solo un enlace: no les entrega nada de lo que nosotros guardamos."
-      ]
-    },
-    "children": {
-      "title": "Menores",
-      "body": [
-        "Este sitio está pensado para quien organiza un trabajo de techado. No se dirige a menores de trece años y no recogemos nada de ellos a sabiendas. Si crees que un menor nos ha enviado algo, dínoslo y lo eliminaremos.",
-        "El formulario de contacto es el único sitio desde el que se puede enviar algo, y solo pide un correo electrónico. Si descubrimos que un mensaje vino de un menor, lo borramos junto con la dirección y no respondemos."
-      ]
-    },
-    "changes": {
-      "title": "Cambios",
-      "body": [
-        "Si cambia lo que el sitio hace con tu información, esta página cambia con ello. Aquí no guardamos un historial de versiones ni enviamos un aviso aparte, así que lo que lees es sencillamente lo que se aplica hoy.",
-        "Si la redacción exacta te importa, guarda tu propia copia. Y si un cambio afectara alguna vez a algo que ya tenemos tuyo, te escribiríamos en vez de dejarlo en esta página para que lo descubras."
-      ]
-    },
-    "contact": {
-      "title": "Contacto",
-      "body": [
-        "Las dudas sobre esta política, y cualquier petición sobre tu propia información, van al correo que aparece en el pie de esta página. Llega a las mismas personas que el formulario de contacto.",
-        "Dinos qué estás pidiendo y, si quieres que busquemos o borremos algo, desde qué dirección escribiste. No te pedimos nada más para demostrar quién eres, porque lo único que te devolveríamos es un mensaje que nos enviaste tú."
-      ]
+    "items": {
+      "scope": {
+        "title": "Qué cubre esto",
+        "lead": "Aquí se explica qué hace el sitio web de {name} con la información que le das y con la que envía tu navegador mientras lo usas. Cubre solo este sitio web.",
+        "body": [
+          "Cuando ya eres cliente, el trabajo que hacemos juntos se rige por el acuerdo que firmamos contigo, no por esta página.",
+          "Queda cubierto todo lo que cuelga de esta misma dirección, incluida la tienda, que es solo un catálogo. Aquí no hay aplicación, ni cuenta, ni acceso con contraseña, así que no hay nada a lo que registrarse."
+        ]
+      },
+      "collect": {
+        "title": "Qué recogemos",
+        "body": [
+          "No construimos un perfil tuyo ni intentamos averiguar quién eres a partir de nada de eso. Hasta nosotros llegan dos tipos de información:"
+        ],
+        "bullets": [
+          "Lo que escribes: el formulario de contacto pide una sola cosa, tu correo electrónico. Nada más en este sitio te pide escribir algo sobre ti, y aquí nunca te pedimos datos de pago ni de tarjeta.",
+          "Lo que envía tu navegador: como cualquier web, la nuestra recibe la información técnica que envía tu navegador en cada petición, incluidas tu dirección de red y la página en la que estabas al escribirnos."
+        ]
+      },
+      "use": {
+        "title": "Para qué lo usamos",
+        "body": [
+          "Nada de esto se usa para publicidad. No lo vendemos, no lo alquilamos y no se lo pasamos a nadie que quiera venderte algo. Cada dato tiene un único fin:"
+        ],
+        "bullets": [
+          "Tu correo electrónico: responderte.",
+          "La página desde la que escribiste: viaja con tu mensaje para saber por qué servicio o producto preguntabas.",
+          "La información técnica: que el formulario siga funcionando y que no lo abuse el tráfico automatizado."
+        ]
+      },
+      "sharing": {
+        "title": "Quién más lo ve",
+        "body": ["Casi nada sale de este sitio. Estas son las únicas excepciones:"],
+        "bullets": [
+          "El proveedor de correo: tu mensaje lo entrega un proveedor externo que se encarga del envío y de nada más. Por nuestra parte lo leen las personas que responden las consultas.",
+          "El proveedor de mapas: el mapa de la página de Zonas de Servicio lo dibuja un proveedor externo. Cuando ese mapa carga, tu navegador le pide las imágenes directamente, así que tu dirección de red llega hasta él. Es la única parte del sitio en la que interviene alguien más, y ocurre en esa única página.",
+          "La ley: entregaríamos información si la ley nos lo exigiera, y te lo diríamos salvo que se nos prohibiera hacerlo."
+        ]
+      },
+      "storage": {
+        "title": "Cookies y almacenamiento del navegador",
+        "body": [
+          "No hay analítica, ni red publicitaria, ni píxel de seguimiento en este sitio. Aquí nada registra qué páginas lees ni se lo cuenta a nadie, así que no hay seguimiento que desactivar.",
+          "Se guardan dos cosas pequeñas para que el sitio se abra como lo dejaste, y ninguna te sigue a ningún otro sitio:"
+        ],
+        "bullets": [
+          "Tu idioma: una cookie recuerda si lees en inglés o en español.",
+          "Tu apariencia: tu elección de apariencia clara u oscura la guarda tu propio navegador y nunca sale de tu dispositivo."
+        ]
+      },
+      "security": {
+        "title": "Cómo lo protegemos",
+        "body": [
+          "Ningún sistema es perfecto y no vamos a fingir lo contrario. Si algo fallara alguna vez con información que nos hubieras dado, te lo diríamos. Lo que hacemos:"
+        ],
+        "bullets": [
+          "El sitio se sirve por una conexión cifrada, así que lo que escribes en el formulario viaja cifrado hasta nosotros.",
+          "El formulario está protegido frente a abuso automatizado.",
+          "Al buzón que recibe tu mensaje solo llegan las personas que tienen que responderlo."
+        ]
+      },
+      "retention": {
+        "title": "Cuánto dura",
+        "body": ["Cada cosa dura un tiempo distinto:"],
+        "bullets": [
+          "La información técnica que llega con tu mensaje se descarta casi de inmediato y nunca se escribe en un registro duradero.",
+          "El mensaje en sí permanece en nuestro buzón mientras atendemos tu consulta, y después el tiempo que necesitemos dejar constancia del trabajo. Si nos pides que lo borremos antes, lo borramos."
+        ]
+      },
+      "rights": {
+        "title": "Tus opciones y tus derechos",
+        "lead": "Según dónde vivas, la ley puede reconocerte estos derechos de forma expresa, incluidas las normas de privacidad de {state} y de California. Nosotros los aplicamos a quien los pida, sin comprobar antes dónde está, y no te trataremos distinto por pedirlo. También puedes simplemente no usar el formulario, porque nada más en este sitio te pide tus datos.",
+        "body": [
+          "Como lo único que guardamos es el mensaje que enviaste, suele ser una conversación corta. Escríbenos y haremos esto:"
+        ],
+        "bullets": ["Decirte qué tenemos sobre ti.", "Corregirlo si está mal.", "Borrarlo."]
+      },
+      "thirdParty": {
+        "title": "Sitios a los que enlazamos",
+        "body": [
+          "Este sitio enlaza a fabricantes, perfiles sociales y aplicaciones de mensajería. En cuanto sigues uno de esos enlaces estás en el sitio de otra persona, bajo sus reglas, y esta página deja de aplicarse.",
+          "Elegimos a quién enlazamos, pero no controlamos qué hacen ellos con tu información. Si te importa, lee su política.",
+          "No compartimos nada tuyo con los sitios a los que enlazamos. Un enlace es solo un enlace: no les entrega nada de lo que nosotros guardamos."
+        ]
+      },
+      "children": {
+        "title": "Menores",
+        "body": [
+          "Este sitio está pensado para quien organiza un trabajo de techado. No se dirige a menores de trece años y no recogemos nada de ellos a sabiendas. Si crees que un menor nos ha enviado algo, dínoslo y lo eliminaremos.",
+          "El formulario de contacto es el único sitio desde el que se puede enviar algo, y solo pide un correo electrónico. Si descubrimos que un mensaje vino de un menor, lo borramos junto con la dirección y no respondemos."
+        ]
+      },
+      "changes": {
+        "title": "Cambios",
+        "body": [
+          "Si cambia lo que el sitio hace con tu información, esta página cambia con ello. Aquí no guardamos un historial de versiones ni enviamos un aviso aparte, así que lo que lees es sencillamente lo que se aplica hoy.",
+          "Si la redacción exacta te importa, guarda tu propia copia. Y si un cambio afectara alguna vez a algo que ya tenemos tuyo, te escribiríamos en vez de dejarlo en esta página para que lo descubras."
+        ]
+      },
+      "contact": {
+        "title": "Contacto",
+        "body": [
+          "Las dudas sobre esta política, y cualquier petición sobre tu propia información, van al correo que aparece en el pie de esta página. Llega a las mismas personas que el formulario de contacto.",
+          "Dinos qué estás pidiendo y, si quieres que busquemos o borremos algo, desde qué dirección escribiste. No te pedimos nada más para demostrar quién eres, porque lo único que te devolveríamos es un mensaje que nos enviaste tú."
+        ]
+      }
     }
   },
   "terms": {
-    "scope": {
-      "title": "Para qué es este sitio",
-      "body": [
-        "Este sitio describe los servicios de techado que ofrecemos y los materiales con los que trabajamos. Es un lugar para mirar y para ponerse en contacto.",
-        "Nada de lo que hay en él forma un contrato entre nosotros."
-      ]
-    },
-    "acceptance": {
-      "title": "Aceptar estos términos",
-      "body": [
-        "Usar este sitio implica que aceptas estos términos. Si no los aceptas, te pedimos que no lo uses.",
-        "Antes de enviarnos una consulta sobre una obra, debes tener edad suficiente para contratar donde vives."
-      ]
-    },
-    "estimates": {
-      "title": "Aquí no hay presupuestos",
-      "body": [
-        "Los precios, la disponibilidad y los plazos que se muestran son orientativos y cambian sin aviso. Un techo se presupuesta después de que alguien lo haya visto.",
-        "Solo un presupuesto escrito y acordado por ambas partes fija lo que cuesta un trabajo y lo que incluye. Si este sitio y ese presupuesto no coinciden, manda el presupuesto."
-      ]
-    },
-    "catalog": {
-      "title": "Sobre la tienda",
-      "body": [
-        "La tienda es un catálogo, no una caja. En este sitio no se puede pedir ni pagar, y nada de lo que hagas aquí reserva existencias ni compromete a ninguna de las dos partes a una venta. Cada ficha de producto te lleva al formulario de contacto.",
-        "Consulta la documentación vigente del fabricante antes de fiarte de una cifra, y toma las fotografías como una guía de aspecto y no como una reproducción exacta.",
-        "Lo que nos dan los fabricantes, y puede cambiar sin que lo sepamos:"
-      ],
-      "items": ["Las especificaciones.", "Las medidas.", "Las imágenes."]
-    },
-    "work": {
-      "title": "Las obras que ejecutamos",
-      "body": [
-        "Las obras de techado se rigen por un acuerdo firmado aparte. Este sitio no forma parte de ese acuerdo ni lo modifica.",
-        "Trabajamos solo donde tenemos licencia y seguro para hacerlo. Si estás fuera de las zonas que se muestran aquí, dínoslo y te diremos claramente si podemos ayudarte.",
-        "El acuerdo fija:"
-      ],
-      "items": ["El alcance.", "El precio.", "El calendario.", "La garantía de mano de obra."]
-    },
-    "use": {
-      "title": "Cómo puedes usar este sitio",
-      "body": [
-        "Úsalo para conocernos y para ponerte en contacto. Podemos bloquear el acceso cuando se esté haciendo un mal uso del sitio. Te pedimos que no hagas esto:"
-      ],
-      "items": [
-        "Forzarlo.",
-        "Saturarlo.",
-        "Copiarlo en bloque por medios automáticos.",
-        "Usar el formulario para mandar publicidad no solicitada."
-      ]
-    },
-    "content": {
-      "title": "Contenido y nombres",
-      "body": [
-        "El texto, la fotografía y la maquetación de este sitio son nuestros. Te pedimos que no los copies para uso comercial propio.",
-        "Los nombres y logotipos de fabricantes y proveedores pertenecen a sus dueños. Aparecen aquí para decir con qué trabajamos, no para dar a entender que nos respaldan."
-      ]
-    },
-    "links": {
-      "title": "Enlaces que no controlamos",
-      "body": [
-        "Este sitio enlaza fuera de sí mismo. No controlamos ninguno de estos ni respondemos de lo que hagan o muestren:"
-      ],
-      "items": [
-        "Los proveedores a los que enlazamos.",
-        "Los perfiles sociales.",
-        "Las aplicaciones de mensajería.",
-        "Los mapas de un proveedor externo."
-      ]
-    },
-    "availability": {
-      "title": "Disponibilidad",
-      "body": [
-        "Podemos cambiar, pausar o retirar cualquier parte de este sitio en cualquier momento, y no estamos obligados a mantener nada disponible. Eso incluye:"
-      ],
-      "items": ["Las páginas.", "Los precios.", "Los productos listados."]
-    },
-    "warranty": {
-      "title": "El sitio se ofrece tal cual",
-      "body": [
-        "Mantenemos este sitio tan exacto y disponible como podemos, pero lo ofrecemos tal como está. No prometemos que esté libre de errores, ni completo, ni al día, ni accesible en un momento dado.",
-        "Eso no dice nada de la garantía de mano de obra de una obra, que se fija en tu acuerdo con nosotros."
-      ]
-    },
-    "liability": {
-      "title": "Límites de responsabilidad",
-      "body": [
-        "En la medida en que la ley lo permita, no respondemos de las pérdidas derivadas de fiarse de lo que aquí se muestra en lugar de un presupuesto escrito o de la documentación del propio fabricante.",
-        "Nada en estos términos limita una responsabilidad que legalmente no pueda limitarse."
-      ]
-    },
-    "law": {
-      "title": "Ley aplicable y lo demás",
-      "body": [
-        "Estos términos se rigen por las leyes del Estado de Florida, y los tribunales del condado de Miami-Dade son el lugar para cualquier disputa sobre ellos.",
-        "Si alguna parte de estos términos resultara inaplicable, el resto sigue en pie. Junto con cualquier aviso que se muestre en el propio sitio, esto es todo lo que rige tu uso de él."
-      ]
-    },
-    "changes": {
-      "title": "Cambios",
-      "body": [
-        "Podemos revisar estos términos. Seguir usando el sitio después de una revisión implica aceptarla, y la redacción de esta página es siempre la que se aplica."
-      ]
-    },
-    "contact": {
-      "title": "Contacto",
-      "body": ["Las dudas sobre estos términos van al correo que aparece en el pie de esta página."]
+    "items": {
+      "scope": {
+        "title": "Para qué es este sitio",
+        "body": [
+          "Este sitio describe los servicios de techado que ofrecemos y los materiales con los que trabajamos. Es un lugar para mirar y para ponerse en contacto.",
+          "Nada de lo que hay en él forma un contrato entre nosotros."
+        ]
+      },
+      "acceptance": {
+        "title": "Aceptar estos términos",
+        "body": [
+          "Usar este sitio implica que aceptas estos términos. Si no los aceptas, te pedimos que no lo uses.",
+          "Antes de enviarnos una consulta sobre una obra, debes tener edad suficiente para contratar donde vives."
+        ]
+      },
+      "estimates": {
+        "title": "Aquí no hay presupuestos",
+        "body": [
+          "Los precios, la disponibilidad y los plazos que se muestran son orientativos y cambian sin aviso. Un techo se presupuesta después de que alguien lo haya visto.",
+          "Solo un presupuesto escrito y acordado por ambas partes fija lo que cuesta un trabajo y lo que incluye. Si este sitio y ese presupuesto no coinciden, manda el presupuesto."
+        ]
+      },
+      "catalog": {
+        "title": "Sobre la tienda",
+        "body": [
+          "La tienda es un catálogo, no una caja. En este sitio no se puede pedir ni pagar, y nada de lo que hagas aquí reserva existencias ni compromete a ninguna de las dos partes a una venta. Cada ficha de producto te lleva al formulario de contacto.",
+          "Consulta la documentación vigente del fabricante antes de fiarte de una cifra, y toma las fotografías como una guía de aspecto y no como una reproducción exacta.",
+          "Lo que nos dan los fabricantes, y puede cambiar sin que lo sepamos:"
+        ],
+        "bullets": ["Las especificaciones.", "Las medidas.", "Las imágenes."]
+      },
+      "work": {
+        "title": "Las obras que ejecutamos",
+        "body": [
+          "Las obras de techado se rigen por un acuerdo firmado aparte. Este sitio no forma parte de ese acuerdo ni lo modifica.",
+          "Trabajamos solo donde tenemos licencia y seguro para hacerlo. Si estás fuera de las zonas que se muestran aquí, dínoslo y te diremos claramente si podemos ayudarte.",
+          "El acuerdo fija:"
+        ],
+        "bullets": ["El alcance.", "El precio.", "El calendario.", "La garantía de mano de obra."]
+      },
+      "use": {
+        "title": "Cómo puedes usar este sitio",
+        "body": [
+          "Úsalo para conocernos y para ponerte en contacto. Podemos bloquear el acceso cuando se esté haciendo un mal uso del sitio. Te pedimos que no hagas esto:"
+        ],
+        "bullets": [
+          "Forzarlo.",
+          "Saturarlo.",
+          "Copiarlo en bloque por medios automáticos.",
+          "Usar el formulario para mandar publicidad no solicitada."
+        ]
+      },
+      "content": {
+        "title": "Contenido y nombres",
+        "body": [
+          "El texto, la fotografía y la maquetación de este sitio son nuestros. Te pedimos que no los copies para uso comercial propio.",
+          "Los nombres y logotipos de fabricantes y proveedores pertenecen a sus dueños. Aparecen aquí para decir con qué trabajamos, no para dar a entender que nos respaldan."
+        ]
+      },
+      "links": {
+        "title": "Enlaces que no controlamos",
+        "body": [
+          "Este sitio enlaza fuera de sí mismo. No controlamos ninguno de estos ni respondemos de lo que hagan o muestren:"
+        ],
+        "bullets": [
+          "Los proveedores a los que enlazamos.",
+          "Los perfiles sociales.",
+          "Las aplicaciones de mensajería.",
+          "Los mapas de un proveedor externo."
+        ]
+      },
+      "availability": {
+        "title": "Disponibilidad",
+        "body": [
+          "Podemos cambiar, pausar o retirar cualquier parte de este sitio en cualquier momento, y no estamos obligados a mantener nada disponible. Eso incluye:"
+        ],
+        "bullets": ["Las páginas.", "Los precios.", "Los productos listados."]
+      },
+      "warranty": {
+        "title": "El sitio se ofrece tal cual",
+        "body": [
+          "Mantenemos este sitio tan exacto y disponible como podemos, pero lo ofrecemos tal como está. No prometemos que esté libre de errores, ni completo, ni al día, ni accesible en un momento dado.",
+          "Eso no dice nada de la garantía de mano de obra de una obra, que se fija en tu acuerdo con nosotros."
+        ]
+      },
+      "liability": {
+        "title": "Límites de responsabilidad",
+        "body": [
+          "En la medida en que la ley lo permita, no respondemos de las pérdidas derivadas de fiarse de lo que aquí se muestra en lugar de un presupuesto escrito o de la documentación del propio fabricante.",
+          "Nada en estos términos limita una responsabilidad que legalmente no pueda limitarse."
+        ]
+      },
+      "law": {
+        "title": "Ley aplicable y lo demás",
+        "lead": "Estos términos se rigen por las leyes del Estado de {state}, y los tribunales del condado de {county} son el lugar para cualquier disputa sobre ellos.",
+        "body": [
+          "Si alguna parte de estos términos resultara inaplicable, el resto sigue en pie. Junto con cualquier aviso que se muestre en el propio sitio, esto es todo lo que rige tu uso de él."
+        ]
+      },
+      "changes": {
+        "title": "Cambios",
+        "body": [
+          "Podemos revisar estos términos. Seguir usando el sitio después de una revisión implica aceptarla, y la redacción de esta página es siempre la que se aplica."
+        ]
+      },
+      "contact": {
+        "title": "Contacto",
+        "body": ["Las dudas sobre estos términos van al correo que aparece en el pie de esta página."]
+      }
     }
   },
   "accessibility": {
-    "commitment": {
-      "title": "Qué buscamos",
-      "body": [
-        "Queremos que este sitio funcione para todo el mundo, incluida la gente que usa lector de pantalla, solo teclado, control por voz o un navegador con el texto más grande.",
-        "Tratamos una barrera como un defecto que hay que arreglar, no como una preferencia que se atiende cuando conviene.",
-        "Por barrera entendemos cualquier cosa que te impida hacer aquí lo que otra persona sí puede: un control que no alcanzas, una etiqueta que un lector de pantalla no lee, texto que desaparece al agrandarlo."
-      ]
-    },
-    "standard": {
-      "title": "El estándar con el que nos medimos",
-      "body": [
-        "Construimos siguiendo las Pautas de Accesibilidad para el Contenido Web, versión 2.2, en nivel AA.",
-        "Creemos que este sitio cumple ese estándar en buena medida. Decimos en buena medida y no del todo porque una parte se queda corta, y esa parte la nombramos nosotros en vez de dejar que la descubras tú.",
-        "AA es el nivel que exigen la mayoría de organismos públicos y el que cubre las barreras reales. AAA añade requisitos, como lengua de signos en cada vídeo, que no podríamos afirmar que cumplimos."
-      ]
-    },
-    "navigation": {
-      "title": "Cómo te mueves por él",
-      "body": ["Ir de una parte de la página a otra nunca debería depender de verla:"],
-      "items": [
-        "Las páginas se construyen con regiones reales y un orden de encabezados que no se salta niveles, para que un lector de pantalla pueda recorrerlas por su estructura y no a tientas.",
-        "Todo lo que se puede pulsar se puede también alcanzar y manejar con el teclado, y el contorno de foco se mantiene visible mientras avanzas. Los diálogos llevan el foco dentro al abrirse, se cierran con Escape y lo devuelven al cerrarse."
-      ]
-    },
-    "presentation": {
-      "title": "Cómo se ve y se lee",
-      "body": [
-        "Lo que hay en la página tiene que funcionar sin vista, sin color y a cualquier tamaño de texto:"
-      ],
-      "items": [
-        "Todo control que solo muestra un icono lleva una etiqueta escrita, y toda imagen lleva texto alternativo o se marca como decorativa cuando no aporta nada.",
-        "Si tu sistema pide movimiento reducido, aquí las animaciones se detienen en vez de limitarse a ir despacio. El color nunca es la única forma de marcar algo, y el sitio viene en apariencia clara y oscura.",
-        "La maquetación aguanta con el texto más grande y en pantalla estrecha, sin que se corte el contenido ni haya que desplazarse en horizontal."
-      ]
-    },
-    "testing": {
-      "title": "Cómo lo comprobamos",
-      "body": [
-        "La comprobación automática detecta unas cosas y se le escapan otras, así que una persona las repasa también, y volvemos a comprobar cada vez que una página cambia. Recorremos las páginas así:"
-      ],
-      "items": [
-        "Solo con teclado.",
-        "Con lector de pantalla.",
-        "Con movimiento reducido activado.",
-        "En las dos apariencias.",
-        "En los dos idiomas.",
-        "En anchos de móvil, tableta y escritorio."
-      ]
-    },
-    "limits": {
-      "title": "Dónde se queda corto",
-      "body": [
-        "El mapa de nuestras oficinas en la página de Zonas de Servicio viene de un proveedor externo y se dibuja como imagen y no como texto, así que un lector de pantalla no puede leer lo que muestra.",
-        "Cada oficina que aparece en ese mapa está además a su lado como texto normal, con su nombre y su dirección. Nada del mapa está solo en el mapa, así que si no puedes usarlo no pierdes más que el mapa.",
-        "No conocemos otras carencias, lo cual no es lo mismo que no haberlas."
-      ]
-    },
-    "alternatives": {
-      "title": "Otra vía de acceso",
-      "body": [
-        "Si alguna parte de este sitio no te funciona, te damos la misma información por otra vía, por correo o por teléfono, sin coste y sin que tengas que explicar por qué.",
-        "Los datos de contacto están en el pie de todas las páginas. Dinos a qué intentabas llegar y te lo mandamos en el formato que te sirva.",
-        "Eso vale para cualquier cosa de aquí:"
-      ],
-      "items": [
-        "La ficha de un producto.",
-        "La dirección de una oficina.",
-        "El detalle de un servicio.",
-        "El texto de esta página."
-      ]
-    },
-    "feedback": {
-      "title": "Dínoslo",
-      "body": [
-        "Si algo de aquí te bloquea, escribe al correo del pie. Cuanto más concreto seas, antes lo arreglamos.",
-        "Procuramos responder en unos pocos días laborables, y decirte qué estamos haciendo al respecto en vez de solo acusar recibo.",
-        "Indica en tu mensaje:"
-      ],
-      "items": ["En qué página fue.", "Qué intentabas hacer.", "Qué pasó."]
+    "items": {
+      "commitment": {
+        "title": "Qué buscamos",
+        "body": [
+          "Queremos que este sitio funcione para todo el mundo, incluida la gente que usa lector de pantalla, solo teclado, control por voz o un navegador con el texto más grande.",
+          "Tratamos una barrera como un defecto que hay que arreglar, no como una preferencia que se atiende cuando conviene.",
+          "Por barrera entendemos cualquier cosa que te impida hacer aquí lo que otra persona sí puede: un control que no alcanzas, una etiqueta que un lector de pantalla no lee, texto que desaparece al agrandarlo."
+        ]
+      },
+      "standard": {
+        "title": "El estándar con el que nos medimos",
+        "lead": "Construimos siguiendo las Pautas de Accesibilidad para el Contenido Web, versión {version}, en nivel {level}.",
+        "body": [
+          "Creemos que este sitio cumple ese estándar en buena medida. Decimos en buena medida y no del todo porque una parte se queda corta, y esa parte la nombramos nosotros en vez de dejar que la descubras tú.",
+          "AA es el nivel que exigen la mayoría de organismos públicos y el que cubre las barreras reales. AAA añade requisitos, como lengua de signos en cada vídeo, que no podríamos afirmar que cumplimos."
+        ]
+      },
+      "navigation": {
+        "title": "Cómo te mueves por él",
+        "body": ["Ir de una parte de la página a otra nunca debería depender de verla:"],
+        "bullets": [
+          "Las páginas se construyen con regiones reales y un orden de encabezados que no se salta niveles, para que un lector de pantalla pueda recorrerlas por su estructura y no a tientas.",
+          "Todo lo que se puede pulsar se puede también alcanzar y manejar con el teclado, y el contorno de foco se mantiene visible mientras avanzas. Los diálogos llevan el foco dentro al abrirse, se cierran con Escape y lo devuelven al cerrarse."
+        ]
+      },
+      "presentation": {
+        "title": "Cómo se ve y se lee",
+        "body": [
+          "Lo que hay en la página tiene que funcionar sin vista, sin color y a cualquier tamaño de texto:"
+        ],
+        "bullets": [
+          "Todo control que solo muestra un icono lleva una etiqueta escrita, y toda imagen lleva texto alternativo o se marca como decorativa cuando no aporta nada.",
+          "Si tu sistema pide movimiento reducido, aquí las animaciones se detienen en vez de limitarse a ir despacio. El color nunca es la única forma de marcar algo, y el sitio viene en apariencia clara y oscura.",
+          "La maquetación aguanta con el texto más grande y en pantalla estrecha, sin que se corte el contenido ni haya que desplazarse en horizontal."
+        ]
+      },
+      "testing": {
+        "title": "Cómo lo comprobamos",
+        "body": [
+          "La comprobación automática detecta unas cosas y se le escapan otras, así que una persona las repasa también, y volvemos a comprobar cada vez que una página cambia. Recorremos las páginas así:"
+        ],
+        "bullets": [
+          "Solo con teclado.",
+          "Con lector de pantalla.",
+          "Con movimiento reducido activado.",
+          "En las dos apariencias.",
+          "En los dos idiomas.",
+          "En anchos de móvil, tableta y escritorio."
+        ]
+      },
+      "limits": {
+        "title": "Dónde se queda corto",
+        "body": [
+          "El mapa de nuestras oficinas en la página de Zonas de Servicio viene de un proveedor externo y se dibuja como imagen y no como texto, así que un lector de pantalla no puede leer lo que muestra.",
+          "Cada oficina que aparece en ese mapa está además a su lado como texto normal, con su nombre y su dirección. Nada del mapa está solo en el mapa, así que si no puedes usarlo no pierdes más que el mapa.",
+          "No conocemos otras carencias, lo cual no es lo mismo que no haberlas."
+        ]
+      },
+      "alternatives": {
+        "title": "Otra vía de acceso",
+        "body": [
+          "Si alguna parte de este sitio no te funciona, te damos la misma información por otra vía, por correo o por teléfono, sin coste y sin que tengas que explicar por qué.",
+          "Los datos de contacto están en el pie de todas las páginas. Dinos a qué intentabas llegar y te lo mandamos en el formato que te sirva.",
+          "Eso vale para cualquier cosa de aquí:"
+        ],
+        "bullets": [
+          "La ficha de un producto.",
+          "La dirección de una oficina.",
+          "El detalle de un servicio.",
+          "El texto de esta página."
+        ]
+      },
+      "feedback": {
+        "title": "Dínoslo",
+        "body": [
+          "Si algo de aquí te bloquea, escribe al correo del pie. Cuanto más concreto seas, antes lo arreglamos.",
+          "Procuramos responder en unos pocos días laborables, y decirte qué estamos haciendo al respecto en vez de solo acusar recibo.",
+          "Indica en tu mensaje:"
+        ],
+        "bullets": ["En qué página fue.", "Qué intentabas hacer.", "Qué pasó."]
+      }
     }
   }
 }

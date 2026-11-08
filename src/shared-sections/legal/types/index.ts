@@ -5,10 +5,11 @@ export interface LegalProps {
   tone?: "base" | "muted"; /* section surface; keeps page section alternation correct */
 }
 
-/* one resolved section: heading, lead-in paragraphs, then the bullets that close it */
+/* one translated section; lead is "" and bullets empty when that copy has none */
 interface LegalSectionItem {
   key: string;
   title: string;
+  lead: string;
   body: string[];
   bullets: string[];
 }
