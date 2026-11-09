@@ -12,6 +12,8 @@ interface ShowreelItem {
 export interface ShowreelPlayerProps {
   items: ShowreelItem[];
   closeLabel: string;
+  previousLabel: string;
+  nextLabel: string;
 }
 
 export interface ShowreelProps {
