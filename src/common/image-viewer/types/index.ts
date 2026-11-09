@@ -1,4 +1,4 @@
-import type { ReactNode, Ref } from "react";
+import type { ReactNode } from "react";
 
 /* one viewable image: full-bleed tile caption + lightbox slide */
 interface ViewerCard {
@@ -14,14 +14,6 @@ export interface ImageViewerProps {
   closeLabel: string;
   previousLabel: string;
   nextLabel: string;
-}
-
-export interface ViewerControlProps {
-  placement: "close" | "prev" | "next";
-  label: string;
-  icon: ReactNode;
-  onClick: () => void;
-  ref?: Ref<HTMLButtonElement>; /* focus target for the close control */
 }
 
 export interface ExpandButtonProps {
@@ -45,9 +37,8 @@ export interface ViewerExpandButtonProps {
   label: string;
 }
 
-/* the three viewer actions the keyboard drives */
-export interface ViewerKeys {
-  onClose: () => void;
+/* the two track actions the arrow keys drive */
+export interface ArrowKeys {
   onPrev: () => void;
   onNext: () => void;
 }

@@ -1,15 +1,15 @@
 import clsx from "clsx";
-import type { ViewerControlProps } from "@/common/image-viewer/types";
+import type { ModalControlProps } from "@/common/modal/types";
 
-/* placement within the viewer overlay */
-const placementClass: Record<ViewerControlProps["placement"], string> = {
+/* placement within the modal overlay */
+const placementClass: Record<ModalControlProps["placement"], string> = {
   close: "top-4 right-4",
   prev: "top-1/2 left-4 -translate-y-1/2",
   next: "top-1/2 right-4 -translate-y-1/2",
 };
 
 /* round overlay control: close / prev / next */
-export const ViewerControl = ({ ref, placement, label, icon, onClick }: ViewerControlProps) => (
+export const ModalControl = ({ ref, placement, label, icon, onClick }: ModalControlProps) => (
   <button
     ref={ref}
     type="button"
