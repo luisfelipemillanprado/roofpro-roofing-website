@@ -1,15 +1,14 @@
 import clsx from "clsx";
-import { useEffect, useRef } from "react";
-import { createPortal } from "react-dom";
-import { ChevronLeft, ChevronRight, X } from "lucide-react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Media } from "@/common/media/components/Media";
 import { Text } from "@/common/text/components/Text";
-import { ViewerControl } from "@/common/image-viewer/components/ViewerControl";
+import { Modal } from "@/common/modal/components/Modal";
+import { ModalControl } from "@/common/modal/components/ModalControl";
 import { useCarousel } from "@/utils/hooks/carousel/useCarousel";
-import { useKeyboard } from "@/utils/hooks/image-viewer/useKeyboard";
+import { useArrowKeys } from "@/utils/hooks/image-viewer/useArrowKeys";
 import type { ImageViewerProps } from "@/common/image-viewer/types";
 
-/* modal image viewer: backdrop, swipeable track, caption; portaled above the app shell */
+/* lightbox: a swipeable track and its caption, inside the shared dialog shell */
 export const ImageViewer = ({
   cards,
   startIndex,
@@ -18,7 +17,6 @@ export const ImageViewer = ({
   previousLabel,
   nextLabel,
 }: ImageViewerProps) => {
-  const closeRef = useRef<HTMLButtonElement>(null);
   /* a lightbox never advances on its own, and it opens on the tile that was clicked */
   const { emblaRef, selectedIndex, goToPrev, goToNext } = useCarousel({
     autoplay: false,
@@ -26,27 +24,13 @@ export const ImageViewer = ({
     align: "center",
   });
 
-  useKeyboard({ onClose, onPrev: goToPrev, onNext: goToNext });
+  useArrowKeys({ onPrev: goToPrev, onNext: goToNext });
 
-  /* the focus target is this dialog's own close button, so it stays here */
-  useEffect(() => {
-    closeRef.current?.focus();
-  }, []);
-
-  if (typeof document === "undefined") return null;
   const card = cards[selectedIndex];
   if (!card) return null;
 
-  return createPortal(
-    <div
-      role="dialog"
-      aria-modal="true"
-      aria-label={card.title}
-      className="theme-dark fixed inset-0 z-(--z-modal) grid place-items-center p-4"
-    >
-      {/* backdrop: click to close */}
-      <div onClick={onClose} className="absolute inset-0 bg-contrast/70 backdrop-blur-md" />
-
+  return (
+    <Modal label={card.title} closeLabel={closeLabel} onClose={onClose}>
       <figure className="relative grid w-full max-w-5xl justify-items-center gap-4">
         <div ref={emblaRef} className="w-full overflow-hidden">
           {/* embla's required shape; the gap is slide padding, which its resize observer can measure */}
@@ -76,27 +60,19 @@ export const ImageViewer = ({
         </figcaption>
       </figure>
 
-      {/* controls: paint above the image */}
-      <ViewerControl
-        ref={closeRef}
-        placement="close"
-        label={closeLabel}
-        icon={<X className="size-5 text-white" />}
-        onClick={onClose}
-      />
-      <ViewerControl
+      {/* siblings of the figure, or they would anchor to it instead of the viewport */}
+      <ModalControl
         placement="prev"
         label={previousLabel}
         icon={<ChevronLeft className="size-6 text-white" />}
         onClick={goToPrev}
       />
-      <ViewerControl
+      <ModalControl
         placement="next"
         label={nextLabel}
         icon={<ChevronRight className="size-6 text-white" />}
         onClick={goToNext}
       />
-    </div>,
-    document.body,
+    </Modal>
   );
 };
