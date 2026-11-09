@@ -10,6 +10,10 @@ export const routes = [
   ["shop-detail", "/shop/malarkey-smart-start"],
   ["projects", "/projects"],
   ["areas", "/areas"],
+  /* one Legal section serves the three, but each carries its own hero and column split */
+  ["privacy", "/privacy"],
+  ["terms", "/terms"],
+  ["accessibility", "/accessibility"],
 ] as const;
 
 /* localePrefix "as-needed": EN at /, ES under /es */

@@ -1,8 +1,23 @@
 {
-  "posterAlt": "Aerial view of a dark gray standing seam metal roof on a modern poolside home",
-  "videoAlt": "Drone reel of finished standing seam metal roofs across waterfront homes",
+  "items": {
+    "blue": {
+      "title": "Blue Standing Seam",
+      "description": "Poolside home seen from above.",
+      "videoAlt": "Drone reel of a blue standing seam metal roof over a poolside home"
+    },
+    "silver": {
+      "title": "Silver Standing Seam",
+      "description": "Two storeys among tall trees.",
+      "videoAlt": "Drone reel of a silver standing seam metal roof on a two storey home"
+    },
+    "graphite": {
+      "title": "Graphite Standing Seam",
+      "description": "Modern build with glass stair.",
+      "videoAlt": "Drone reel of a graphite standing seam metal roof on a modern home"
+    }
+  },
   "action": {
-    "play": "Play Our Roofing Reel",
+    "play": "Play Reel",
     "close": "Close"
   }
 }

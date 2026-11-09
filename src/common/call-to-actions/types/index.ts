@@ -27,8 +27,9 @@ export interface SearchButtonProps {
   onClick: () => void;
 }
 
-/* Round icon button (renders <button>); opens a reel from its poster band */
+/* Circular icon button (renders <button>); a card's trailing play affordance */
 export interface PlayButtonProps {
   label: string;
   onClick: () => void;
+  pulse?: boolean;
 }

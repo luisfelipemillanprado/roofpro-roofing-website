@@ -1,76 +1,64 @@
 "use client";
 
-import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import { createPortal } from "react-dom";
 import { X } from "lucide-react";
-import { blurs } from "@/data/blurs";
 import { MediaVideo } from "@/common/media-video/components/MediaVideo";
+import { MosaicList } from "@/common/mosaic/components/MosaicList";
 import { PlayButton } from "@/common/call-to-actions/components/PlayButton";
 import { ViewerControl } from "@/common/image-viewer/components/ViewerControl";
 import type { ShowreelPlayerProps } from "@/shared-sections/showreel/types";
 
-/* poster band + the dialog it opens; the reel is heavy, so it mounts on open and never on load */
-export const ShowreelPlayer = ({
-  poster,
-  posterAlt,
-  video,
-  videoAlt,
-  playLabel,
-  closeLabel,
-}: ShowreelPlayerProps) => {
-  const [open, setOpen] = useState(false);
+/* the mosaic plus the dialog its discs open; a reel is heavy, so none mounts until asked */
+export const ShowreelPlayer = ({ items, closeLabel }: ShowreelPlayerProps) => {
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
   const closeRef = useRef<HTMLButtonElement>(null);
+  const reel = openIndex === null ? undefined : items[openIndex];
 
   /* only escape: this dialog holds one reel, with no track to step through */
   useEffect(() => {
-    if (!open) return;
+    if (!reel) return;
     const onKey = (event: KeyboardEvent) => {
-      if (event.key === "Escape") setOpen(false);
+      if (event.key === "Escape") setOpenIndex(null);
     };
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
-  }, [open]);
+  }, [reel]);
 
   /* the focus target is the dialog's own close button, so it stays here */
   useEffect(() => {
-    if (open) closeRef.current?.focus();
-  }, [open]);
+    if (reel) closeRef.current?.focus();
+  }, [reel]);
 
   return (
     <>
-      {/* the disc alone is the control, so the poster keeps its own alt */}
-      <div className="relative grid aspect-video w-full place-items-center overflow-hidden rounded-card border border-line shadow-md">
-        <Image
-          src={poster}
-          alt={posterAlt}
-          fill
-          sizes="(min-width: 1536px) 1280px, 100vw"
-          placeholder="blur"
-          blurDataURL={blurs.image}
-          className="object-cover"
-        />
-        <PlayButton label={playLabel} onClick={() => setOpen(true)} />
-      </div>
+      {/* the disc opens the reel behind the index, so the clip comes from the card */}
+      <MosaicList
+        cards={items}
+        pattern="centered"
+        renderAction={(_card, index) => (
+          <PlayButton label={items[index]!.playLabel} onClick={() => setOpenIndex(index)} pulse />
+        )}
+      />
 
-      {open &&
+      {reel &&
         typeof document !== "undefined" &&
         createPortal(
           <div
             role="dialog"
             aria-modal="true"
-            aria-label={videoAlt}
+            aria-label={reel.videoAlt}
             className="theme-dark fixed inset-0 z-(--z-modal) grid place-items-center p-4"
           >
             {/* backdrop: click to close */}
             <div
-              onClick={() => setOpen(false)}
+              onClick={() => setOpenIndex(null)}
               className="absolute inset-0 bg-contrast/70 backdrop-blur-md"
             />
 
             {/* frame follows the 9:16 source, capped by the viewport so it never overflows */}
             <div className="relative aspect-9/16 h-[72svh] max-w-[88vw] overflow-hidden rounded-media shadow-md">
-              <MediaVideo src={video} poster={poster} alt={videoAlt} />
+              <MediaVideo src={reel.video} poster={reel.image} alt={reel.videoAlt} />
             </div>
 
             {/* controls: paint above the reel */}
@@ -79,7 +67,7 @@ export const ShowreelPlayer = ({
               placement="close"
               label={closeLabel}
               icon={<X className="size-5 text-white" />}
-              onClick={() => setOpen(false)}
+              onClick={() => setOpenIndex(null)}
             />
           </div>,
           document.body,

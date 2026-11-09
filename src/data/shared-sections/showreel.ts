@@ -1,10 +1,19 @@
-/* Showreel section: a poster band that opens the aerial reel in a dialog; text by key */
+/* Showreel section: one reel per card, poster + the clip its play disc opens; text by key */
 export const showreelData = {
-  /* vertical 9:16 reel + the still the band shows in its place */
-  video: { src: "/videos/showcase/video.webm", poster: "/videos/showcase/poster.webp" },
-  posterAltKey: "posterAlt",
-  videoAltKey: "videoAlt",
-  /* controls: i18n keys for the play trigger and the dialog's close */
+  /* the centered mosaic makes the last card the large one */
+  items: [
+    { key: "blue", image: "/videos/showcase/blue-seam.webp", video: "/videos/showcase/blue-seam.webm" },
+    {
+      key: "silver",
+      image: "/videos/showcase/silver-seam.webp",
+      video: "/videos/showcase/silver-seam.webm",
+    },
+    {
+      key: "graphite",
+      image: "/videos/showcase/graphite-seam.webp",
+      video: "/videos/showcase/graphite-seam.webm",
+    },
+  ],
   playKey: "action.play",
   closeKey: "action.close",
 } as const;

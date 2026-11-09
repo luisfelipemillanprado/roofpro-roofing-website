@@ -5,23 +5,32 @@ import { ShowreelPlayer } from "@/shared-sections/showreel/components/molecules/
 import { showreelData } from "@/data/shared-sections/showreel";
 import type { ShowreelProps } from "@/shared-sections/showreel/types";
 
-const { video, posterAltKey, videoAltKey, playKey, closeKey } = showreelData;
+const { items, playKey, closeKey } = showreelData;
 
-/* bare 16:9 band, section width rather than full bleed; no heading, the footage carries it */
+/* reel row, section width rather than full bleed; no heading, the footage carries it */
 export const Showreel = async ({ tone = "base" }: ShowreelProps) => {
   const t = await getTranslations("showreel");
+  const play = t(playKey);
+  /* data: order, poster and clip; text by key */
+  const reels = items.map((item) => {
+    /* the disc names its own reel, as the service arrow names its own card */
+    const title = t(`items.${item.key}.title`);
+
+    return {
+      key: item.key,
+      image: item.image,
+      video: item.video,
+      title,
+      description: t(`items.${item.key}.description`),
+      videoAlt: t(`items.${item.key}.videoAlt`),
+      playLabel: `${title} ${play}`,
+    };
+  });
 
   return (
     <SectionWrapper tone={tone}>
       <Container>
-        <ShowreelPlayer
-          poster={video.poster}
-          posterAlt={t(posterAltKey)}
-          video={video.src}
-          videoAlt={t(videoAltKey)}
-          playLabel={t(playKey)}
-          closeLabel={t(closeKey)}
-        />
+        <ShowreelPlayer items={reels} closeLabel={t(closeKey)} />
       </Container>
     </SectionWrapper>
   );

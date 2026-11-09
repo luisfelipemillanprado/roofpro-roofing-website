@@ -1,8 +1,23 @@
 {
-  "posterAlt": "Vista aérea de un techo metálico de junta alzada gris oscuro en una casa moderna con piscina",
-  "videoAlt": "Reel aéreo de techos metálicos de junta alzada terminados en casas frente al canal",
+  "items": {
+    "blue": {
+      "title": "Junta Alzada Azul",
+      "description": "Casa con piscina desde arriba.",
+      "videoAlt": "Reel aéreo de un techo metálico de junta alzada azul en una casa con piscina"
+    },
+    "silver": {
+      "title": "Junta Alzada Plata",
+      "description": "Dos plantas entre árboles altos.",
+      "videoAlt": "Reel aéreo de un techo metálico de junta alzada plata en una casa de dos plantas"
+    },
+    "graphite": {
+      "title": "Junta Alzada Grafito",
+      "description": "Obra moderna con escalera acristalada.",
+      "videoAlt": "Reel aéreo de un techo metálico de junta alzada grafito en una casa moderna"
+    }
+  },
   "action": {
-    "play": "Reproducir Nuestro Reel",
+    "play": "Reproducir Reel",
     "close": "Cerrar"
   }
 }
