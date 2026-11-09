@@ -15,5 +15,6 @@ export const showreelData = {
     },
   ],
   playKey: "action.play",
-  closeKey: "action.close",
+  /* reel viewer controls: labels by key */
+  viewer: { close: "action.close", previous: "action.previous", next: "action.next" },
 } as const;

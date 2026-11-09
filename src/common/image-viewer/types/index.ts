@@ -36,9 +36,3 @@ export interface ViewerExpandButtonProps {
   index: number;
   label: string;
 }
-
-/* the two track actions the arrow keys drive */
-export interface ArrowKeys {
-  onPrev: () => void;
-  onNext: () => void;
-}

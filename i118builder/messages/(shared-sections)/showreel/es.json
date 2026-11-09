@@ -18,6 +18,8 @@
   },
   "action": {
     "play": "Reproducir Reel",
-    "close": "Cerrar"
+    "close": "Cerrar",
+    "previous": "Reel Anterior",
+    "next": "Reel Siguiente"
   }
 }

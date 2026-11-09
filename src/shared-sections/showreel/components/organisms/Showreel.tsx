@@ -5,7 +5,7 @@ import { ShowreelPlayer } from "@/shared-sections/showreel/components/molecules/
 import { showreelData } from "@/data/shared-sections/showreel";
 import type { ShowreelProps } from "@/shared-sections/showreel/types";
 
-const { items, playKey, closeKey } = showreelData;
+const { items, playKey, viewer } = showreelData;
 
 /* reel row, section width rather than full bleed; no heading, the footage carries it */
 export const Showreel = async ({ tone = "base" }: ShowreelProps) => {
@@ -30,7 +30,12 @@ export const Showreel = async ({ tone = "base" }: ShowreelProps) => {
   return (
     <SectionWrapper tone={tone}>
       <Container>
-        <ShowreelPlayer items={reels} closeLabel={t(closeKey)} />
+        <ShowreelPlayer
+          items={reels}
+          closeLabel={t(viewer.close)}
+          previousLabel={t(viewer.previous)}
+          nextLabel={t(viewer.next)}
+        />
       </Container>
     </SectionWrapper>
   );
