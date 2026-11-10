@@ -1,7 +1,8 @@
 "use client";
 
 import { createContext, use, useState } from "react";
-import { ExpandButton } from "@/common/image-viewer/components/ExpandButton";
+import { Expand } from "lucide-react";
+import { IconButton } from "@/common/call-to-actions/components/IconButton";
 import { ImageViewer } from "@/common/image-viewer/components/ImageViewer";
 import type { ViewerProviderProps, ViewerExpandButtonProps } from "@/common/image-viewer/types";
 
@@ -39,5 +40,12 @@ export const ViewerProvider = ({
 export const ViewerExpandButton = ({ index, label }: ViewerExpandButtonProps) => {
   const open = use(ViewerContext);
 
-  return <ExpandButton label={label} onClick={() => open(index)} pulse />;
+  return (
+    <IconButton
+      icon={<Expand className="size-5 text-white" />}
+      label={label}
+      onClick={() => open(index)}
+      pulse
+    />
+  );
 };

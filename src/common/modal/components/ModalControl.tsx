@@ -1,11 +1,11 @@
 import clsx from "clsx";
 import type { ModalControlProps } from "@/common/modal/types";
 
-/* placement within the modal overlay */
+/* close pins to the dialog; the steps sit outside the figure, only where it leaves room beside it */
 const placementClass: Record<ModalControlProps["placement"], string> = {
-  close: "top-4 right-4",
-  prev: "top-1/2 left-4 -translate-y-1/2",
-  next: "top-1/2 right-4 -translate-y-1/2",
+  close: "fixed top-4 right-4",
+  prev: "xl:landscape:absolute xl:landscape:top-1/2 xl:landscape:-left-17 xl:landscape:-translate-y-1/2",
+  next: "xl:landscape:absolute xl:landscape:top-1/2 xl:landscape:-right-17 xl:landscape:-translate-y-1/2",
 };
 
 /* round overlay control: close / prev / next */
@@ -16,7 +16,9 @@ export const ModalControl = ({ ref, placement, label, icon, onClick }: ModalCont
     aria-label={label}
     onClick={onClick}
     className={clsx(
-      "absolute grid size-11 place-items-center rounded-full bg-white/10 transition-colors hover:bg-white/20",
+      "grid size-11 place-items-center rounded-full border bg-white/10 transition-colors hover:bg-white/20",
+      /* borrowed from the hero badges: 20% for the steps, 10% for close */
+      placement === "close" ? "border-white/10" : "border-white/20",
       placementClass[placement],
     )}
   >

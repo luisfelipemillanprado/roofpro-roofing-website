@@ -1,18 +1,13 @@
-import { blurs } from "@/data/blurs";
+import { Media } from "@/common/media/components/Media";
 import type { MediaVideoProps } from "@/common/media-video/types";
 
 /* muted autoplay loop that fills its frame; the parent owns the box and the clip */
-export const MediaVideo = ({ src, poster, alt }: MediaVideoProps) => (
+export const MediaVideo = ({ src, poster, alt, sizes }: MediaVideoProps) => (
   <div className="relative size-full">
-    {/* blurred placeholder until the poster and video paint over it */}
-    <div
-      aria-hidden
-      className="absolute inset-0 scale-110 bg-cover bg-center blur-xl"
-      style={{ backgroundImage: `url(${blurs.image})` }}
-    />
+    {/* the poster sits under the video, so it can go through next/image as the attribute cannot */}
+    <Media src={poster} alt={alt} shape="fill" sizes={sizes} />
     <video
       src={src}
-      poster={poster}
       aria-label={alt}
       autoPlay
       muted

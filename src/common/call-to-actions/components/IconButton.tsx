@@ -1,9 +1,8 @@
-import { Play } from "lucide-react";
 import { PulseRing } from "@/common/animations/components/PulseRing";
-import type { PlayButtonProps } from "@/common/call-to-actions/types";
+import type { IconButtonProps } from "@/common/call-to-actions/types";
 
-/* ArrowLink's twin for a card that opens a reel instead of navigating */
-export const PlayButton = ({ label, onClick, pulse = false }: PlayButtonProps) => (
+/* ArrowLink's button twin: a card's round affordance (needs a group parent for hover) */
+export const IconButton = ({ icon, label, onClick, pulse = false }: IconButtonProps) => (
   <button
     type="button"
     aria-label={label}
@@ -11,6 +10,6 @@ export const PlayButton = ({ label, onClick, pulse = false }: PlayButtonProps) =
     className="relative isolate grid size-10 place-items-center rounded-full bg-primary shadow-md transition-transform duration-300 group-hover:translate-x-1"
   >
     {pulse && <PulseRing color="primary" rounded />}
-    <Play className="size-5 fill-white text-white" />
+    {icon}
   </button>
 );

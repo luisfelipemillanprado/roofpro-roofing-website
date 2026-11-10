@@ -23,7 +23,7 @@ export const ImageViewer = ({
         src={cards[index]!.image}
         alt={cards[index]!.title}
         shape="showcase"
-        sizes="(max-width: 1024px) 70vw, 717px"
+        sizes="(max-width: 1024px) 70vw, 70vh"
       />
     )}
   />

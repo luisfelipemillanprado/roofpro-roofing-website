@@ -31,11 +31,12 @@ export const Modal = ({ label, closeLabel, onClose, children }: ModalProps) => {
       role="dialog"
       aria-modal="true"
       aria-label={label}
-      className="theme-dark fixed inset-0 z-(--z-modal) grid place-items-center p-4"
+      className="theme-dark fixed inset-0 z-(--z-modal) grid place-items-center overflow-y-auto p-4"
     >
-      <div onClick={onClose} className="absolute inset-0 bg-contrast/70 backdrop-blur-md" />
+      {/* fixed, not absolute: an absolute child of a scrolling dialog scrolls away with it */}
+      <div onClick={onClose} className="fixed inset-0 bg-contrast/70 backdrop-blur-md" />
 
-      {/* a control anchors to this fixed box, so any extra one is a child here, not of the content */}
+      {/* content owns its own controls; only close belongs to the shell, pinned past the scroll */}
       {children}
 
       <ModalControl
