@@ -267,8 +267,8 @@ i18n builder first, so a clean clone works without a separate build step.
 
 - **`pnpm knip`** flags unused files, dependencies and exports. Entry points (Next.js
   pages, `src/proxy.ts`, `src/i18n/request.ts`, the `i118builder`) are auto-detected;
-  [`knip.json`](knip.json) only adds ignores for `src/carousel/**`, `.claude/**`
-  (Claude Code tooling) and the embla dependencies.
+  [`knip.json`](knip.json) only adds ignores for `.claude/**` (Claude Code tooling) and the
+  suppliers slice (`src/shared-sections/suppliers/**`, `src/data/shared-sections/suppliers.ts`).
 - **`pnpm arch`** ([`.dependency-cruiser.cjs`](.dependency-cruiser.cjs)) validates the tier
   boundaries listed above plus no-circular and no-unresolvable, resolving `@/*` through
   `tsconfig.json`.
