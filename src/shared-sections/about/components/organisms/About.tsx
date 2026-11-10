@@ -41,7 +41,12 @@ export const About = async ({ variant, tone = "base" }: AboutProps) => {
                 shape="fill"
               />
             ) : (
-              <MediaVideo src={video.src} poster={video.poster} alt={t(video.altKey, { name })} />
+              <MediaVideo
+                src={video.src}
+                poster={video.poster}
+                alt={t(video.altKey, { name })}
+                sizes="(min-width: 1024px) 50vw, 100vw"
+              />
             )
           }
           badge={

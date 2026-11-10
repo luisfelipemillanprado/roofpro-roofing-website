@@ -1,3 +1,5 @@
+import type { ReactNode } from "react";
+
 /* Link button (renders <a>) */
 export type ButtonVariant = "primary" | "secondary" | "ghost";
 
@@ -27,8 +29,9 @@ export interface SearchButtonProps {
   onClick: () => void;
 }
 
-/* Circular icon button (renders <button>); a card's trailing play affordance */
-export interface PlayButtonProps {
+/* Circular icon button (renders <button>); the caller picks the glyph it wraps */
+export interface IconButtonProps {
+  icon: ReactNode;
   label: string;
   onClick: () => void;
   pulse?: boolean;

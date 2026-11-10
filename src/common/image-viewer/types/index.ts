@@ -16,12 +16,6 @@ export interface ImageViewerProps {
   nextLabel: string;
 }
 
-export interface ExpandButtonProps {
-  label: string;
-  onClick: () => void;
-  pulse?: boolean;
-}
-
 /* holds the open index for a grid whose tiles are rendered on the server */
 export interface ViewerProviderProps {
   cards: ViewerCard[];

@@ -17,9 +17,6 @@ importers:
       clsx:
         specifier: ^2.1.1
         version: 2.1.1
-      embla-carousel-autoplay:
-        specifier: 9.0.0-rc03
-        version: 9.0.0-rc03(embla-carousel@9.0.0-rc03)
       embla-carousel-react:
         specifier: 9.0.0-rc03
         version: 9.0.0-rc03(react@19.2.7)
@@ -1961,11 +1958,6 @@ packages:
 
   electron-to-chromium@1.5.370:
     resolution: {integrity: sha512-D5tSHJReAb/Kf3Hu9F/GO4lJuSWzEWHwvQ/kKSUP7pimNgvxkSKj+gUQhHpKKACwrin7rS3byU7IxreF56rl5g==}
-
-  embla-carousel-autoplay@9.0.0-rc03:
-    resolution: {integrity: sha512-zf3x+Z3MGQfyd6aRrk4XRpu6u7afb5shKvSlj4ZHQHQxjgNfrBj98bghZ0jaUlGKAmx4A/5FJ99MLthaJupoEQ==}
-    peerDependencies:
-      embla-carousel: 9.0.0-rc03
 
   embla-carousel-react@9.0.0-rc03:
     resolution: {integrity: sha512-9+WG2RjzdapJe9m/v6n8XTVbJE6Ed5e/ZmuNM0GzNh5hnhJ31HSwZrjXSkvh3x57yi6q2AeQglPqEb9K+i1RsA==}
@@ -5196,10 +5188,6 @@ snapshots:
   earcut@3.2.4: {}
 
   electron-to-chromium@1.5.370: {}
-
-  embla-carousel-autoplay@9.0.0-rc03(embla-carousel@9.0.0-rc03):
-    dependencies:
-      embla-carousel: 9.0.0-rc03
 
   embla-carousel-react@9.0.0-rc03(react@19.2.7):
     dependencies:
