@@ -9,6 +9,7 @@ import type { ModalProps } from "@/common/modal/types";
 /* dialog shell: portal, backdrop and close; mounting it is what opens it */
 export const Modal = ({ label, closeLabel, onClose, children }: ModalProps) => {
   const closeRef = useRef<HTMLButtonElement>(null);
+  const dialogRef = useRef<HTMLDivElement>(null);
 
   /* escape closes; the page lock is in globals.css, keyed on the two aria attributes below */
   useEffect(() => {
@@ -19,15 +20,26 @@ export const Modal = ({ label, closeLabel, onClose, children }: ModalProps) => {
     return () => window.removeEventListener("keydown", onKey);
   }, [onClose]);
 
-  /* the focus target is this dialog's own close control, so focus stays here */
+  /* focus lands on close and goes back to the opener; the page behind is inert while it is open */
   useEffect(() => {
+    const opener = document.activeElement;
+    /* inert is what aria-modal only promises: out of the tab order and out of the a11y tree */
+    const blocked = [...document.body.children].filter((element) => element !== dialogRef.current);
+    blocked.forEach((element) => element.setAttribute("inert", ""));
     closeRef.current?.focus();
+
+    /* released before the opener is focused, since inert would refuse the focus */
+    return () => {
+      blocked.forEach((element) => element.removeAttribute("inert"));
+      if (opener instanceof HTMLElement) opener.focus();
+    };
   }, []);
 
   if (typeof document === "undefined") return null;
 
   return createPortal(
     <div
+      ref={dialogRef}
       role="dialog"
       aria-modal="true"
       aria-label={label}

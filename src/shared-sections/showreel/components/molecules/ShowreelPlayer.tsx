@@ -42,13 +42,18 @@ export const ShowreelPlayer = ({ items, closeLabel, previousLabel, nextLabel }: 
             const reel = items[index]!;
 
             return (
-              /* 9:16 frame capped by the viewport; its 72svh is what the viewer's 81svh track doubles */
+              /* 9:16 frame capped by the viewport; the viewer's track doubles this same 72svh */
               <div className="relative aspect-9/16 h-[72svh] max-w-[88vw] overflow-hidden rounded-media border border-line shadow-md">
                 {/* only the slide in view holds a player; the rest stay on their poster */}
                 {selected ? (
-                  <MediaVideo src={reel.video} poster={reel.image} alt={reel.videoAlt} sizes="365px" />
+                  <MediaVideo
+                    src={reel.video}
+                    poster={reel.image}
+                    alt={reel.videoAlt}
+                    sizes="min(calc(72svh*9/16), 88vw)"
+                  />
                 ) : (
-                  <Media src={reel.image} alt={reel.title} shape="fill" sizes="365px" />
+                  <Media src={reel.image} alt={reel.title} shape="fill" sizes="min(calc(72svh*9/16), 88vw)" />
                 )}
               </div>
             );
