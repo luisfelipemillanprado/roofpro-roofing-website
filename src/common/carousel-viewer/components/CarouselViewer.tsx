@@ -9,10 +9,10 @@ import { useCarousel } from "@/utils/hooks/carousel/useCarousel";
 import { useArrowKeys } from "@/utils/hooks/keyboard/useArrowKeys";
 import type { CarouselViewerProps, ViewerFit } from "@/common/carousel-viewer/types";
 
-/* track sized off the viewport so slide and track scale together; 81 = a 72svh 9:16 frame, doubled */
+/* track sized off the viewport so slide and track scale together; tall is two 9:16 frames wide */
 const figureWidths: Record<ViewerFit, string> = {
   wide: "max-w-[min(64rem,100vh)]",
-  tall: "max-w-[81svh]",
+  tall: "max-w-[calc(72svh*9/8)]",
 };
 /* 70% leaves a peek at both edges; a portrait slide sizes itself from its own height */
 const slideWidths: Record<ViewerFit, string> = { wide: "flex-[0_0_70%]", tall: "flex-none" };
@@ -48,6 +48,8 @@ export const CarouselViewer = ({
               {slides.map((_, index) => (
                 <div
                   key={index}
+                  /* the neighbours only peek, so they are decoration until they are stepped to */
+                  aria-hidden={index !== selectedIndex}
                   className={clsx(
                     "min-w-0 pl-6 transition-opacity duration-200",
                     slideWidths[fit],
@@ -77,7 +79,8 @@ export const CarouselViewer = ({
           </div>
         </div>
 
-        <figcaption className="grid justify-items-center gap-1 text-center">
+        {/* live, so stepping is announced: it already holds the text and already changes */}
+        <figcaption aria-live="polite" className="grid justify-items-center gap-1 text-center">
           <Text as="span" size="body" weight="bold" text={slide.title} />
           <Text as="span" size="body" tone="muted" text={slide.description} />
         </figcaption>
