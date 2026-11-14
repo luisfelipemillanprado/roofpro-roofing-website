@@ -17,8 +17,8 @@ export const Coverage = async ({ tone = "base" }: CoverageProps) => {
   return (
     <SectionWrapper tone={tone}>
       <Container>
-        {/* stacked on phones for a readable window; one row from sm, so each gap axis serves one layout */}
-        <div className="grid gap-x-6 gap-y-5.25 sm:grid-cols-[auto_1fr] sm:items-center">
+        {/* stacked on phones, where side by side leaves the names window too narrow to read */}
+        <div className="grid gap-6 sm:grid-cols-[auto_1fr] sm:items-center">
           {/* gap-6 (not 5.25): a smaller half-leading here, so the optical gap matches a section heading */}
           <div className="grid gap-6 max-sm:justify-items-center sm:border-r sm:border-line sm:pr-6">
             <Eyebrow text={t("plus")} />
