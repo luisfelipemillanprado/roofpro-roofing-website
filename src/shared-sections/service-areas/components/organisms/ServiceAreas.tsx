@@ -10,16 +10,22 @@ import { serviceAreasData } from "@/data/shared-sections/service-areas";
 import { company } from "@/data/site";
 import type { ServiceAreasProps } from "@/shared-sections/service-areas/types";
 
-const { heading, ctaHref, viewer, officeImages, map } = serviceAreasData;
+const { heading, ctaHref, viewer, offices, map } = serviceAreasData;
 
 export const ServiceAreas = async ({ tone = "base" }: ServiceAreasProps) => {
   const t = await getTranslations("service-area");
-  /* office facts from company; name over address on the tile, photo linked by key */
-  const officeCards = company.offices.map((office) => ({
-    key: office.key,
-    image: officeImages.find((item) => item.key === office.key)!.image,
-    title: office.name,
-    description: office.address,
+  /* three sources joined by key: photo and pin here, branch name from company, address by i18n */
+  const branches = offices.map((office) => ({
+    ...office,
+    name: company.officeNames[office.key],
+    address: t(`offices.${office.key}.address`),
+  }));
+  /* the tile reads the same pair the pin does, as a title over its description */
+  const officeCards = branches.map(({ key, image, name, address }) => ({
+    key,
+    image,
+    title: name,
+    description: address,
   }));
 
   return (
@@ -57,7 +63,7 @@ export const ServiceAreas = async ({ tone = "base" }: ServiceAreasProps) => {
                   styleUrl={map.styleUrl}
                   view={map.view}
                   limit={map.limit}
-                  offices={company.offices}
+                  offices={branches}
                   labels={{
                     region: t(map.labels.region, { name: company.name }),
                     zoomIn: t(map.labels.zoomIn),

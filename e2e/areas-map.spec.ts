@@ -1,8 +1,8 @@
 import { test, expect, type Page } from "@playwright/test";
-import { company } from "../src/data/site";
+import { serviceAreasData } from "../src/data/shared-sections/service-areas";
 
 /* functional check of the interactive offices map: real style + tiles (network dependent) */
-const pinnedOffices = company.offices.filter((office) => office.position !== null).length;
+const pinnedOffices = serviceAreasData.offices.filter((office) => office.position !== null).length;
 
 const openMap = async (page: Page) => {
   await page.goto("/areas");

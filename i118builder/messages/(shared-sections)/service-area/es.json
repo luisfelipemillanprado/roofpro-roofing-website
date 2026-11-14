@@ -4,6 +4,26 @@
   "titleAccent": "Siempre En Tu Zona",
   "description": "Descubre las oficinas cercanas y conecta con especialistas confiables en techos que conocen tu comunidad, necesidades y requisitos específicos.",
   "mapAlt": "Mapa de las oficinas de {name} en Miami",
+  "offices": {
+    "northMiami": {
+      "address": "1250 NE 125th St, North Miami, FL"
+    },
+    "downtownMiami": {
+      "address": "100 NE 1st Ave, Miami, FL 33132"
+    },
+    "coralGables": {
+      "address": "1200 Ponce de Leon Blvd, FL 33134"
+    },
+    "miamiBeach": {
+      "address": "1688 Alton Rd, Miami Beach, FL"
+    },
+    "hialeah": {
+      "address": "1350 W 49th St, Hialeah, FL 33012"
+    },
+    "westchester": {
+      "address": "8900 SW 38th St, Miami, FL 33165"
+    }
+  },
   "map": {
     "zoomIn": "Acercar",
     "zoomOut": "Alejar",

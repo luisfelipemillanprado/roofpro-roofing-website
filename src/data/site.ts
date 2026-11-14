@@ -1,12 +1,9 @@
-/* office map pin as [latitude, longitude]; null renders no pin */
-type OfficePosition = readonly [lat: number, lng: number] | null;
-
 /* Locale-independent company facts, ordered by render top to bottom */
 export const company = {
   /* navbar: brand badge, name, contact phone */
   logo: "/images/logo/logo.webp",
   name: "Roofpro",
-  phone: "+123 456 7890",
+  phone: "(305) 628-9696",
   /* hero: availability badge city + social-proof rating count */
   city: "MIAMI, FL" /* hand-cased uppercase for the badge */,
   customersServed: 1500,
@@ -21,64 +18,61 @@ export const company = {
   /* pitch stats + testimonials badge: Google rating score and review count */
   googleScore: 4.9,
   googleReviews: 820,
-  /* footer brand: social profile URLs (placeholder until the real accounts exist) */
-  facebookHref: "#",
-  xHref: "#",
-  instagramHref: "#",
-  youtubeHref: "#",
-  /* footer contact: address + linked phone + linked email */
-  address: "1200 Biscayne Blvd, Miami, FL",
-  phoneHref: "tel:+1234567890",
-  email: "hello@roofpro.com",
-  emailHref: "mailto:hello@roofpro.com",
-  /* areas: physical branch offices in the Miami metro (name + street address; temporary placeholders) */
-  /* address tokens tuned so the six read at an even length (~30-33 chars) like service/project cards */
-  /* positions geocoded from those addresses (Nominatim); illustrative until real offices exist */
-  offices: [
-    {
-      key: "northMiami",
-      name: "North Miami",
-      address: "1250 NE 125th St, North Miami, FL",
-      position: [25.8905, -80.1733] as OfficePosition,
-    },
-    {
-      key: "downtownMiami",
-      name: "Downtown Miami",
-      address: "100 NE 1st Ave, Miami, FL 33132",
-      position: [25.7754, -80.1922] as OfficePosition,
-    },
-    {
-      key: "coralGables",
-      name: "Coral Gables",
-      address: "1200 Ponce de Leon Blvd, FL 33134",
-      position: [25.7603, -80.2594] as OfficePosition,
-    },
-    {
-      key: "miamiBeach",
-      name: "Miami Beach",
-      address: "1688 Alton Rd, Miami Beach, FL",
-      position: [25.7916, -80.1414] as OfficePosition,
-    },
-    {
-      key: "hialeah",
-      name: "Hialeah",
-      address: "1350 W 49th St, Hialeah, FL 33012",
-      position: [25.8665, -80.3102] as OfficePosition,
-    },
-    {
-      key: "westchester",
-      name: "Westchester",
-      address: "8900 SW 38th St, Miami, FL 33165",
-      position: [25.7347, -80.3398] as OfficePosition,
-    },
-  ],
-  /* footer hours: opening times (a null value means closed) */
-  weekdayHours: "8:00 AM – 7:00 PM",
-  saturdayHours: "9:00 AM – 4:00 PM",
-  sundayHours: null,
-  /* floating contact: whatsapp deep link */
-  whatsappHref: "https://wa.me/1234567890" /* placeholder number, digits only */,
+  /* areas: branch names by the key the section's photo and pin share */
+  officeNames: {
+    northMiami: "North Miami",
+    downtownMiami: "Downtown Miami",
+    coralGables: "Coral Gables",
+    miamiBeach: "Miami Beach",
+    hialeah: "Hialeah",
+    westchester: "Westchester",
+  },
+  /* coverage strip: areas served beyond the branch cities above; the strip uppercases them */
+  coverageAreas: {
+    doral: "Doral",
+    kendall: "Kendall",
+    homestead: "Homestead",
+    miamiGardens: "Miami Gardens",
+    aventura: "Aventura",
+    cutlerBay: "Cutler Bay",
+    northMiamiBeach: "North Miami Beach",
+    miamiLakes: "Miami Lakes",
+    palmettoBay: "Palmetto Bay",
+    pinecrest: "Pinecrest",
+    sunnyIslesBeach: "Sunny Isles Beach",
+    hialeahGardens: "Hialeah Gardens",
+    keyBiscayne: "Key Biscayne",
+    southMiami: "South Miami",
+    miamiSprings: "Miami Springs",
+    opaLocka: "Opa-locka",
+    sweetwater: "Sweetwater",
+    westMiami: "West Miami",
+    surfside: "Surfside",
+    miamiShores: "Miami Shores",
+    theHammocks: "The Hammocks",
+    tamiami: "Tamiami",
+    kendaleLakes: "Kendale Lakes",
+    floridaCity: "Florida City",
+  },
   /* legal: the jurisdiction the terms name and the courts that hear a dispute */
   state: "Florida",
   county: "Miami-Dade",
+  /* footer brand: the builder's own profiles stand in until the client's accounts exist */
+  facebookHref: "https://www.facebook.com/remiuxsoft",
+  xHref: "https://x.com/remiuxsoft",
+  instagramHref: "https://www.instagram.com/remiuxsoft",
+  youtubeHref: "https://www.youtube.com/@remiuxsoft",
+  /* footer contact: address + linked phone + linked email */
+  address: "300 NW 127 Ave, Miami, FL 33182",
+  phoneHref: "tel:+13056289696",
+  email: "info@designbuilderroofs.com",
+  emailHref: "mailto:info@designbuilderroofs.com",
+  /* footer hours: opening times (a null value means closed) */
+  weekdayHours: "7:00 AM – 4:00 PM",
+  saturdayHours: null,
+  sundayHours: null,
+  /* footer credits: the site the builder credit links to */
+  builderHref: "https://remiux.com",
+  /* floating contact: whatsapp deep link */
+  whatsappHref: "https://wa.me/13056289696" /* the builder's number, standing in */,
 };
