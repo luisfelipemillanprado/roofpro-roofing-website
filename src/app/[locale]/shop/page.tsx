@@ -6,6 +6,7 @@ import { PageHeader } from "@/shared-sections/page-header/components/organisms/P
 import { pageHeaderData } from "@/data/shared-sections/page-header";
 import { Marquee } from "@/shared-sections/marquee/components/organisms/Marquee";
 import { ShopCatalog } from "@/features/shop/catalog/components/organisms/ShopCatalog";
+import { Coverage } from "@/shared-sections/coverage/components/organisms/Coverage";
 import { Contact } from "@/shared-sections/contact/components/organisms/Contact";
 
 type Props = { params: Promise<{ locale: string }> };
@@ -39,7 +40,8 @@ export default async function ShopPage({ params }: Props) {
       />
       <Marquee />
       <ShopCatalog />
-      <Contact tone="muted" />
+      <Coverage tone="muted" />
+      <Contact />
     </>
   );
 }

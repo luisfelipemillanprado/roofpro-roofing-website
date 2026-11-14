@@ -183,7 +183,7 @@ every route, and `Pitch` renders three variants (`why-choose`, `process`, `value
 - **Service detail (`/services/[slug]`):** PageHeader → Marquee → ServiceOverview →
   ServiceProcess → FAQ → ServiceAreas → Products → Contact.
 - **Shop (`/shop`):** PageHeader → Marquee → ShopCatalog (search / category / filter /
-  sort) → Contact.
+  sort) → Coverage → Contact.
 - **Product detail (`/shop/[slug]`):** PageHeader → Marquee → ProductOverview → ProductInfo
   (description / specifications / features) → Results → Products → Contact.
 - **Projects (`/projects`):** PageHeader → Marquee → Projects → Testimonials → FAQ →
@@ -267,8 +267,7 @@ i18n builder first, so a clean clone works without a separate build step.
 
 - **`pnpm knip`** flags unused files, dependencies and exports. Entry points (Next.js
   pages, `src/proxy.ts`, `src/i18n/request.ts`, the `i118builder`) are auto-detected;
-  [`knip.json`](knip.json) only adds ignores for `.claude/**` (Claude Code tooling) and the
-  suppliers slice (`src/shared-sections/suppliers/**`, `src/data/shared-sections/suppliers.ts`).
+  [`knip.json`](knip.json) adds a single ignore, `.claude/**` (Claude Code tooling).
 - **`pnpm arch`** ([`.dependency-cruiser.cjs`](.dependency-cruiser.cjs)) validates the tier
   boundaries listed above plus no-circular and no-unresolvable, resolving `@/*` through
   `tsconfig.json`.

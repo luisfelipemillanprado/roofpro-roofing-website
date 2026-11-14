@@ -43,8 +43,8 @@
 
   /* Marquee (utility: animate-marquee) */
   --animate-marquee: marquee 28s linear infinite;
-  /* Suppliers strip (utility: animate-marquee-slow): wider track, longer loop for the same drift */
-  --animate-marquee-slow: marquee 56s linear infinite;
+  /* Coverage strip (utility: animate-marquee-slow): wider track, longer loop for the same drift */
+  --animate-marquee-slow: marquee 48s linear infinite;
   @keyframes marquee {
     from {
       transform: translateX(0);

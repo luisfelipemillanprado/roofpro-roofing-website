@@ -10,14 +10,18 @@ export const serviceAreasData = {
   ctaHref: { key: "action.contact", href: "#contact" },
   /* image viewer controls: labels by key */
   viewer: { close: "action.close", previous: "action.previous", next: "action.next" },
-  /* office card photos linked to company.offices by key */
-  officeImages: [
-    { key: "northMiami", image: "/images/offices/north-miami.webp" },
-    { key: "downtownMiami", image: "/images/offices/downtown-miami.webp" },
-    { key: "coralGables", image: "/images/offices/coral-gables.webp" },
-    { key: "miamiBeach", image: "/images/offices/miami-beach.webp" },
-    { key: "hialeah", image: "/images/offices/hialeah.webp" },
-    { key: "westchester", image: "/images/offices/westchester.webp" },
+  /* branch offices: card photo + map pin; name and address by key. Coordinates are placeholders */
+  offices: [
+    { key: "northMiami", image: "/images/offices/north-miami.webp", position: [25.8905, -80.1733] },
+    {
+      key: "downtownMiami",
+      image: "/images/offices/downtown-miami.webp",
+      position: [25.7754, -80.1922],
+    },
+    { key: "coralGables", image: "/images/offices/coral-gables.webp", position: [25.7603, -80.2594] },
+    { key: "miamiBeach", image: "/images/offices/miami-beach.webp", position: [25.7916, -80.1414] },
+    { key: "hialeah", image: "/images/offices/hialeah.webp", position: [25.8665, -80.3102] },
+    { key: "westchester", image: "/images/offices/westchester.webp", position: [25.7347, -80.3398] },
   ],
   /* offices map: MapLibre style url (swap provider by changing it) + Miami-only geography */
   map: {

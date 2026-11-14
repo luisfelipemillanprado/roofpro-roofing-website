@@ -9,7 +9,7 @@ const sizes: Record<TitleSize, string> = {
   section:
     "text-[clamp(1.875rem,0.675rem+5.3333vw,2.125rem)] sm:text-[clamp(2.2rem,1.99375rem+0.73vw,2.6875rem)] leading-[1.3]" /* fluid 30→34px (360→435vw), then 36.57px (sm) → 37.51px (md) → 39.38px (lg) → 41.24px (xl), 43px cap (~1521px) */,
   feature:
-    "text-[clamp(1.1875rem,0.5057rem+3.0303vw,1.25rem)] leading-[1.3]" /* fluid 19→20px, 360→393vw — service detail included panel, legal page section headings */,
+    "text-[clamp(1.1875rem,0.5057rem+3.0303vw,1.25rem)] leading-[1.3]" /* fluid 19→20px, 360→393vw — service detail included panel, legal page section headings, coverage lead-in */,
   card: "text-[clamp(1.15rem,0.91rem+1.0667vw,1.2rem)] leading-[1.3]" /* fluid 18.4→19.2px, 360→435vw — service, product, project and icon card titles */,
   panel:
     "text-[clamp(1rem,0.7rem+1.3333vw,1.0625rem)] leading-[1.3]" /* fluid 16→17px, 360→435vw — block headings inside the shop tabs */,
@@ -23,7 +23,7 @@ const tones: Record<TitleTone, string> = {
 };
 
 const weights: Record<TitleWeight, string> = {
-  bold: "font-bold" /* cards, micro titles */,
+  bold: "font-bold" /* cards, micro titles, coverage lead-in */,
   extrabold: "font-extrabold" /* hero, page, section headings */,
 };
 

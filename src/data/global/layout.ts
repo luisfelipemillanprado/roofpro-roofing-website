@@ -91,8 +91,8 @@ export const layoutData = {
       { key: "terms", href: "/terms" },
       { key: "accessibility", href: "/accessibility" },
     ],
-    /* site credit: key labels it; placeholder href until the real domain */
-    builder: { key: "builtBy", name: "Remiux LLC", href: "#" },
+    /* site credit: key labels it, href from company like every other link here */
+    builder: { key: "builtBy", name: "Remiux LLC", href: company.builderHref },
   },
   floatingContact: {
     name: company.name,

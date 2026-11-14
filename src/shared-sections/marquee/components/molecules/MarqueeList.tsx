@@ -12,27 +12,22 @@ const ICONS: Record<MarqueeIconKey, LucideIcon> = {
   wrench: Wrench,
 };
 
-/* repeated tracks keep the -50% loop seamless */
-export const MarqueeList = ({ items, copies }: MarqueeListProps) => (
-  <div className="grid w-max animate-marquee grid-flow-col items-center justify-start">
-    {Array.from({ length: copies }, (_, copy) => (
-      /* only the first copy is exposed to screen readers */
-      <div key={copy} aria-hidden={copy > 0} className="grid grid-flow-col items-center justify-start">
-        {items.map(({ key, icon, label }) => {
-          const Icon = ICONS[icon];
-          return (
-            <div key={key} className="grid grid-flow-col items-center justify-start gap-3 px-6">
-              <Icon className="size-5 text-white" aria-hidden />
-              {/* wrapper carries nowrap: Text exposes no className */}
-              <span className="whitespace-nowrap">
-                <Text as="span" size="caption" tone="white" weight="bold" tracking="wide" text={label} />
-              </span>
-              {/* dot separator between badges */}
-              <span className="ml-7 size-1.5 rounded-full bg-white/50" />
-            </div>
-          );
-        })}
-      </div>
-    ))}
-  </div>
+/* one copy of the badge row; MarqueeTrack repeats it to close the loop */
+export const MarqueeList = ({ items }: MarqueeListProps) => (
+  <>
+    {items.map(({ key, icon, label }) => {
+      const Icon = ICONS[icon];
+      return (
+        <div key={key} className="grid grid-flow-col items-center justify-start gap-3 px-6">
+          <Icon className="size-5 text-white" aria-hidden />
+          {/* nowrap guard; the wrapper also sets the row line box (+2px) */}
+          <span className="whitespace-nowrap">
+            <Text as="span" size="caption" tone="white" weight="bold" tracking="wide" text={label} />
+          </span>
+          {/* dot separator between badges */}
+          <span className="ml-7 size-1.5 rounded-full bg-white/50" />
+        </div>
+      );
+    })}
+  </>
 );

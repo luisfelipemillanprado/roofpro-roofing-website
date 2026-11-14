@@ -1,4 +1,5 @@
 import { getTranslations } from "next-intl/server";
+import { MarqueeTrack } from "@/common/animations/components/MarqueeTrack";
 import { MarqueeList } from "@/shared-sections/marquee/components/molecules/MarqueeList";
 import { marqueeData } from "@/data/shared-sections/marquee";
 
@@ -15,7 +16,9 @@ export const Marquee = async () => {
 
   return (
     <div className="overflow-hidden bg-primary py-4">
-      <MarqueeList items={badges} copies={trackCopies} />
+      <MarqueeTrack copies={trackCopies} speed="base">
+        <MarqueeList items={badges} />
+      </MarqueeTrack>
     </div>
   );
 };
