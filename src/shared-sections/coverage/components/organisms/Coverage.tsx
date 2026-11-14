@@ -17,10 +17,12 @@ export const Coverage = async ({ tone = "base" }: CoverageProps) => {
   return (
     <SectionWrapper tone={tone}>
       <Container>
-        <div className="grid grid-cols-[auto_1fr] items-center gap-6">
-          {/* fixed block: the count is the list length, so the copy never states a stale figure */}
-          <div className="grid gap-1 border-r border-line pr-6">
+        {/* stacked on phones for a readable window; one row from sm, so each gap axis serves one layout */}
+        <div className="grid gap-x-6 gap-y-5.25 sm:grid-cols-[auto_1fr] sm:items-center">
+          {/* gap-6 (not 5.25): a smaller half-leading here, so the optical gap matches a section heading */}
+          <div className="grid gap-6 max-sm:justify-items-center sm:border-r sm:border-line sm:pr-6">
             <Eyebrow text={t("plus")} />
+            {/* the count is the list length, so the copy never states a stale figure */}
             <Title as="h2" size="feature" weight="bold" text={t("areas", { count: areas.length })} />
           </div>
           {/* clipped track, both edges faded so names arrive and leave without a hard cut */}
