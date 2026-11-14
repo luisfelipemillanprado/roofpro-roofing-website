@@ -10,5 +10,4 @@ interface MarqueeItem {
 
 export interface MarqueeListProps {
   items: MarqueeItem[];
-  copies: number;
 }

@@ -1,4 +1,4 @@
 {
   "$schema": "https://unpkg.com/knip@6/schema.json",
-  "ignore": [".claude/**", "src/shared-sections/suppliers/**", "src/data/shared-sections/suppliers.ts"]
+  "ignore": [".claude/**"]
 }

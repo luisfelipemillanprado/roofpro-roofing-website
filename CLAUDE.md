@@ -34,7 +34,7 @@ content-wiring model, theming, and scripts** — do not duplicate the README.
 - Formatting is Prettier (`.prettierrc.mjs`, printWidth 110, with
   `prettier-plugin-tailwindcss` class sorting); ESLint uses the flat config; lint-staged
   runs both on staged files at commit. Match the surrounding style so nothing reformats on
-  commit. Knip is configured by `knip.json` (ignores `.claude/**` and the suppliers slice).
+  commit. Knip is configured by `knip.json` (its only ignore is `.claude/**`).
 - Commit messages follow **Conventional Commits**, enforced by **commitlint** via the
   `commit-msg` **Husky** hook. Commit/push only when explicitly asked.
 
