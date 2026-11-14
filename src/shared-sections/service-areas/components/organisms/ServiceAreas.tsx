@@ -14,12 +14,8 @@ const { heading, ctaHref, viewer, offices, map } = serviceAreasData;
 
 export const ServiceAreas = async ({ tone = "base" }: ServiceAreasProps) => {
   const t = await getTranslations("service-area");
-  /* three sources joined by key: photo and pin here, branch name from company, address by i18n */
-  const branches = offices.map((office) => ({
-    ...office,
-    name: company.officeNames[office.key],
-    address: t(`offices.${office.key}.address`),
-  }));
+  /* two sources joined by key: photo and pin here, name and address from company */
+  const branches = offices.map((office) => ({ ...office, ...company.offices[office.key] }));
   /* the tile reads the same pair the pin does, as a title over its description */
   const officeCards = branches.map(({ key, image, name, address }) => ({
     key,
