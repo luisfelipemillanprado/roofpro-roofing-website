@@ -2,6 +2,7 @@
 export const brandsData = {
   /* loop track copies; keep even for the -50% restart */
   trackCopies: 2,
+  /* the organism splits these in two: keep each half wider than the 1280px container or the loop shows its seam */
   items: [
     { key: "theCompanyStore", label: "The Company Store", image: "/images/brands/the-company-store.webp" },
     { key: "vissani", label: "Vissani", image: "/images/brands/vissani.webp" },
