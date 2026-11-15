@@ -43,7 +43,7 @@
 
   /* Marquee (utility: animate-marquee) */
   --animate-marquee: marquee 28s linear infinite;
-  /* Coverage strip (utility: animate-marquee-slow): wider track, longer loop for the same drift */
+  /* Brands strip (utility: animate-marquee-slow): a longer loop, so the logos drift gently */
   --animate-marquee-slow: marquee 48s linear infinite;
   @keyframes marquee {
     from {

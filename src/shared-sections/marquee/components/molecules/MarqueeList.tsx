@@ -12,7 +12,7 @@ const ICONS: Record<MarqueeIconKey, LucideIcon> = {
   wrench: Wrench,
 };
 
-/* one copy of the badge row; MarqueeTrack repeats it to close the loop */
+/* one copy of the badge row; LoopTrack repeats it to close the loop */
 export const MarqueeList = ({ items }: MarqueeListProps) => (
   <>
     {items.map(({ key, icon, label }) => {
