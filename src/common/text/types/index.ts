@@ -1,5 +1,5 @@
 export type TextSize = "subhead" | "lead" | "body" | "caption" | "note" | "label";
-export type TextTone = "default" | "muted" | "white" | "primary";
+export type TextTone = "default" | "muted" | "white" | "primary" | "accent";
 export type TextWeight = "medium" | "semibold" | "bold";
 export type TextTracking = "wide" | "subtle";
 

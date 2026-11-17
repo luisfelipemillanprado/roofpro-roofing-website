@@ -39,7 +39,7 @@ export const Footer = async () => {
   const legalItems = legal.map((link) => ({ key: link.key, href: link.href, label: t(link.key) }));
 
   return (
-    <footer className="theme-dark bg-surface-muted text-foreground">
+    <footer className="theme-dark bg-gunmetal text-foreground">
       <Container>
         <div className="grid grid-cols-2 gap-x-8 gap-y-12 py-16 lg:grid-cols-[1.4fr_1fr_1fr_1.2fr] lg:gap-12 lg:py-20">
           {/* brand full-width on mobile; shares the first row with links from sm */}

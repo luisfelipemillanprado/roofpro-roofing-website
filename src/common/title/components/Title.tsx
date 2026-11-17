@@ -28,7 +28,7 @@ const weights: Record<TitleWeight, string> = {
 };
 
 const accentTones: Record<TitleAccentTone, string> = {
-  primary: "text-primary" /* the common case */,
+  primary: "text-heading-accent" /* the common case: gold in dark, ochre in light */,
   faint: "text-white/35" /* hero accent */,
 };
 
