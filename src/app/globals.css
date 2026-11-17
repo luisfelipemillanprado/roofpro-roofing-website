@@ -118,6 +118,7 @@
   --color-foreground-muted: var(--foreground-muted); /* secondary text */
   --color-line: var(--line); /* borders & dividers */
   --color-shade: var(--shade); /* shadow color (shadow-shade) */
+  --color-heading: var(--heading); /* heading lead: Title's default tone */
   --color-heading-accent: var(--heading-accent); /* section heading accent: title span + eyebrow */
 
   /* Radius per role — large surfaces 20px (off-scale), small & interior 2xl (16px) */
@@ -139,6 +140,7 @@
   --foreground-muted: var(--color-slate); /* secondary text */
   --line: color-mix(in oklab, var(--color-white) 9%, transparent); /* borders & dividers */
   --shade: var(--color-onyx); /* shadows */
+  --heading: var(--color-white); /* heading lead, same white as --foreground */
   --heading-accent: var(--color-amber); /* heading accent, same gold as --primary */
 }
 
@@ -152,6 +154,7 @@
   --foreground-muted: var(--color-stone); /* secondary text */
   --line: var(--color-mist); /* borders & dividers */
   --shade: var(--color-onyx); /* shadows */
+  --heading: var(--color-eclipse); /* neutral black, blacker than the navy body text */
   --heading-accent: var(--color-amber-ochre); /* darker gold: the vivid one washes out here */
 }
 
