@@ -5,7 +5,7 @@ import type { AvatarProps } from "@/common/avatar/types";
 /* circular 44px avatar with blur (rating stack) */
 export const Avatar = ({ src, alt, bordered = false }: AvatarProps) => (
   <span
-    className={`relative size-11 shrink-0 overflow-hidden rounded-full ${bordered ? "border border-contrast" : ""}`}
+    className={`relative size-11 shrink-0 overflow-hidden rounded-full ${bordered ? "border border-primary" : ""}`}
   >
     <Image
       src={src}
