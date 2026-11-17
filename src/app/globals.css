@@ -12,6 +12,7 @@
   --color-citrine: oklch(0.85 0.2015 100); /* limited-stock dot (bg-citrine) */
   --color-cinnabar: oklch(0.7 0.2015 25.331); /* out-of-stock dot (bg-cinnabar) */
   --color-onyx: oklch(0.2047 0.0121 237.38); /* → --shade (shadows) */
+  --color-eclipse: oklch(0.221 0.0015 197.05); /* neutral black chrome: contact chip + navbar controls */
   --color-white: oklch(1 0 0); /* → --foreground/--line (dark), --surface-panel (light), text on fills */
 
   /* Neutrals — dark theme */
