@@ -17,7 +17,8 @@ const tones: Record<TextTone, string> = {
     "text-foreground" /* navy/white per theme — phone, mobile menu, shop sort label and chosen option */,
   muted: "text-foreground-muted" /* slate/stone — descriptions (most common), unchosen sort options */,
   white: "text-white" /* badges over dark imagery (hero, marquee) */,
-  primary: "text-primary" /* accent labels — categories, eyebrows */,
+  primary: "text-primary" /* accent labels — icon card highlights */,
+  accent: "text-heading-accent" /* section eyebrows — darker gold in light */,
 };
 
 const weights: Record<TextWeight, string> = {
