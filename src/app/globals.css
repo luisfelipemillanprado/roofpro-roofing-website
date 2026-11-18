@@ -295,15 +295,15 @@ html:has([role="dialog"][aria-modal="true"]) {
 @utility overlay-contact-side {
   background-image: linear-gradient(
     to right,
-    color-mix(in oklab, var(--color-eclipse) 82%, transparent),
-    color-mix(in oklab, var(--color-eclipse) 52%, transparent) 50%,
-    color-mix(in oklab, var(--color-eclipse) 8%, transparent)
+    color-mix(in oklab, var(--color-eclipse) 81%, transparent),
+    color-mix(in oklab, var(--color-eclipse) 50%, transparent) 50%,
+    color-mix(in oklab, var(--color-eclipse) 6%, transparent)
   );
 }
 @utility overlay-contact-bottom {
   background-image: linear-gradient(
     to top,
-    color-mix(in oklab, var(--color-eclipse) 50%, transparent),
+    color-mix(in oklab, var(--color-eclipse) 48%, transparent),
     transparent 50%
   );
 }
