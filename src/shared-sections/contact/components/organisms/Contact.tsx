@@ -17,7 +17,7 @@ export const Contact = async ({ tone = "base" }: ContactProps) => {
     <SectionWrapper id="contact" tone={tone}>
       <Container>
         <div className="theme-dark relative isolate overflow-hidden rounded-card border border-line bg-contrast px-5 py-12 sm:p-10">
-          {/* background: image + hero scrims (side + bottom) */}
+          {/* background: image + contact scrims (side + bottom) */}
           <div className="absolute inset-0 z-(--z-behind)">
             <Image
               src={image}
@@ -28,8 +28,8 @@ export const Contact = async ({ tone = "base" }: ContactProps) => {
               blurDataURL={blurs.image}
               className="object-cover"
             />
-            <div className="absolute inset-0 overlay-hero-side" />
-            <div className="absolute inset-0 overlay-hero-bottom" />
+            <div className="absolute inset-0 overlay-contact-side" />
+            <div className="absolute inset-0 overlay-contact-bottom" />
           </div>
 
           <div className="grid max-w-2xl gap-8">
