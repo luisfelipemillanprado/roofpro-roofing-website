@@ -291,19 +291,19 @@ html:has([role="dialog"][aria-modal="true"]) {
     transparent 50%
   );
 }
-/* Contact scrims — same ramps on their own tokens: the panel crops its photo far harder */
+/* Contact scrims — the copy sits in the left third, so the right opens up for the photo */
 @utility overlay-contact-side {
   background-image: linear-gradient(
     to right,
-    color-mix(in oklab, var(--color-eclipse) 88%, transparent),
-    color-mix(in oklab, var(--color-eclipse) 74%, transparent) 50%,
-    color-mix(in oklab, var(--color-eclipse) 44%, transparent)
+    color-mix(in oklab, var(--color-eclipse) 84%, transparent),
+    color-mix(in oklab, var(--color-eclipse) 56%, transparent) 50%,
+    color-mix(in oklab, var(--color-eclipse) 12%, transparent)
   );
 }
 @utility overlay-contact-bottom {
   background-image: linear-gradient(
     to top,
-    color-mix(in oklab, var(--color-eclipse) 70%, transparent),
+    color-mix(in oklab, var(--color-eclipse) 55%, transparent),
     transparent 50%
   );
 }
