@@ -281,13 +281,13 @@ html:has([role="dialog"][aria-modal="true"]) {
     to right,
     color-mix(in oklab, var(--color-eclipse) 88%, transparent),
     color-mix(in oklab, var(--color-eclipse) 74%, transparent) 50%,
-    color-mix(in oklab, var(--color-eclipse) 44%, transparent)
+    color-mix(in oklab, var(--color-eclipse) 30%, transparent)
   );
 }
 @utility overlay-hero-bottom {
   background-image: linear-gradient(
     to top,
-    color-mix(in oklab, var(--color-eclipse) 70%, transparent),
+    color-mix(in oklab, var(--color-eclipse) 60%, transparent),
     transparent 50%
   );
 }
