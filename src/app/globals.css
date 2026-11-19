@@ -6,7 +6,7 @@
   --color-amber-vivid: oklch(0.7552 0.1253 80.01); /* → --amber at ≥1024px (desktop) */
   --color-amber: oklch(0.78 0.1 72); /* → --primary (accent, mobile base) */
   --color-amber-deep: oklch(0.6864 0.0941 67.81); /* → --secondary (section button bg) */
-  --color-amber-ochre: oklch(0.5768 0.1189 82.04); /* #9c7100 → --heading-accent (light), at the gamut edge */
+  --color-amber-ochre: oklch(0.5845 0.1205 81.85); /* #9f7300 → --heading-accent (light), at the 3.0 floor */
   --color-peach: oklch(0.8789 0.0479 51.54); /* → --primary-light (soft accent) */
   --color-malachite: oklch(0.761 0.2015 149.74); /* WhatsApp FAB (bg-malachite) + in-stock and hero dots */
   --color-citrine: oklch(0.85 0.2015 100); /* limited-stock dot (bg-citrine) */
