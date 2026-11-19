@@ -14,7 +14,7 @@ export const ProfileSplit = ({
     {/* image side */}
     <div className="relative">
       {/* frame owns the form: square 1:1, 4:3 on tablet, square again from lg */}
-      <div className="aspect-square overflow-hidden rounded-media shadow-lg sm:aspect-4/3 lg:aspect-square">
+      <div className="aspect-square overflow-hidden rounded-media border border-line shadow-lg sm:aspect-4/3 lg:aspect-square">
         {media}
       </div>
 

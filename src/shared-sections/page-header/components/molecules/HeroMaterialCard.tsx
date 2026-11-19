@@ -19,7 +19,7 @@ export const HeroMaterialCard = ({ item, position, href, linkAria }: HeroMateria
     <Media src={item.image} alt={item.imageAlt} shape="fill" sizes="272px" />
     <div className="pointer-events-none absolute inset-0 overlay-card-bottom" />
     <div className="absolute inset-x-0 top-0 p-3">
-      <span className="inline-grid grid-flow-col items-center gap-2 rounded-badge border border-white/20 bg-contrast/70 px-2.5 py-1">
+      <span className="inline-grid grid-flow-col items-center gap-2 rounded-badge border border-line-chip bg-contrast/70 px-2.5 py-1">
         <LiveDot color="malachite" />
         <Text
           as="span"

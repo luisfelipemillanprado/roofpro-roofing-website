@@ -16,7 +16,8 @@ export const Contact = async ({ tone = "base" }: ContactProps) => {
   return (
     <SectionWrapper id="contact" tone={tone}>
       <Container>
-        <div className="theme-dark relative isolate overflow-hidden rounded-card border border-line bg-contrast px-5 py-12 sm:p-10">
+        {/* border outside the theme-dark pin so --line follows the page theme */}
+        <div className="relative isolate overflow-hidden rounded-card border border-line px-5 py-12 sm:p-10">
           {/* background: image + contact scrims (side + bottom) */}
           <div className="absolute inset-0 z-(--z-behind)">
             <Image
@@ -32,7 +33,7 @@ export const Contact = async ({ tone = "base" }: ContactProps) => {
             <div className="absolute inset-0 overlay-contact-bottom" />
           </div>
 
-          <div className="grid max-w-2xl gap-8">
+          <div className="theme-dark grid max-w-2xl gap-8">
             <SectionHeading
               size="banner"
               align="left"
