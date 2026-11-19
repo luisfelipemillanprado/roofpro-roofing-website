@@ -17,8 +17,8 @@ export const ModalControl = ({ ref, placement, label, icon, onClick }: ModalCont
     onClick={onClick}
     className={clsx(
       "grid size-11 place-items-center rounded-full border bg-white/10 transition-colors hover:bg-white/20",
-      /* borrowed from the hero badges: 20% for the steps, 10% for close */
-      placement === "close" ? "border-white/10" : "border-white/20",
+      /* close sits quieter than the steps it flanks */
+      placement === "close" ? "border-line-glass" : "border-line-chip",
       placementClass[placement],
     )}
   >

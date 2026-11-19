@@ -24,7 +24,7 @@ export const HeroShowcase = async ({ cta, variant }: HeroShowcaseProps) => {
     <div className="grid gap-11 justify-self-end">
       {/* card link shares the banner CTA destination, so it shares its label too */}
       <HeroMaterialCards items={items} href={cta.href} linkAria={cta.label} />
-      <div className="grid grid-cols-[auto_auto_auto_auto] items-center gap-5 justify-self-center rounded-badge border border-white/10 bg-white/5 px-6 py-5">
+      <div className="grid grid-cols-[auto_auto_auto_auto] items-center gap-5 justify-self-center rounded-badge border border-line-glass bg-white/5 px-6 py-5">
         {/* shop heroes invite a message; every other hero still points at the catalog */}
         {variant === "shop" ? (
           <MailPen aria-hidden className="size-7 text-primary" />

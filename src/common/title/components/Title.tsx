@@ -18,7 +18,7 @@ const sizes: Record<TitleSize, string> = {
 };
 
 const tones: Record<TitleTone, string> = {
-  default: "text-foreground" /* theme-aware navy/white */,
+  default: "text-foreground" /* theme-aware: white in dark, neutral black in light */,
   white: "text-white" /* forced white off theme-dark — titles over images */,
 };
 

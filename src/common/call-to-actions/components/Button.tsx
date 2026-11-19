@@ -8,7 +8,7 @@ import type { ButtonProps, ButtonVariant } from "@/common/call-to-actions/types"
 const variants: Record<ButtonVariant, string> = {
   primary: "bg-primary" /* main CTA — navbar quote, hero, highlighted plan */,
   secondary: "bg-secondary" /* section CTAs — most common */,
-  ghost: "border border-white/30 bg-white/5 hover:bg-white/15" /* over hero imagery */,
+  ghost: "border border-line-control bg-white/5 hover:bg-white/15" /* over hero imagery */,
 };
 
 export const Button = ({ href, children, variant = "primary", pulse = false }: ButtonProps) => {

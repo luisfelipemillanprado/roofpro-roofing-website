@@ -70,7 +70,7 @@ export const EmailForm = ({
         value={email}
         onChange={(e) => setEmail(e.target.value)}
         placeholder={emailPlaceholder}
-        className="rounded-full border border-white/30 bg-white/5 px-6 py-4 text-sm text-white outline-none placeholder:text-white/50 focus-visible:border-primary-light focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-light"
+        className="rounded-full border border-line-control bg-white/5 px-6 py-4 text-sm text-white outline-none placeholder:text-white/50 focus-visible:border-primary-light focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-light"
       />
       {/* honeypot: hidden from users and assistive tech, a lure for bots */}
       <input

@@ -12,6 +12,7 @@
   --color-citrine: oklch(0.85 0.2015 100); /* limited-stock dot (bg-citrine) */
   --color-cinnabar: oklch(0.7 0.2015 25.331); /* out-of-stock dot (bg-cinnabar) */
   --color-onyx: oklch(0.2047 0.0121 237.38); /* → --shade (shadows) */
+  --color-eclipse: oklch(0.221 0.0015 197.05); /* neutral black: light-theme text + dark chrome */
   --color-white: oklch(1 0 0); /* → --foreground/--line (dark), --surface-panel (light), text on fills */
 
   /* Neutrals — dark theme */
@@ -23,9 +24,8 @@
   --color-slate: oklch(0.8 0.027 255.6); /* → --foreground-muted (dark) */
 
   /* Neutrals — light theme */
-  --color-navy: oklch(0.2024 0.0252 256.48); /* → --foreground (light text) */
   --color-stone: oklch(0.4837 0.0276 259.8); /* → --foreground-muted (light), tracks the surfaces down */
-  --color-mist: oklch(0.855 0.0054 106.51); /* → --line (light), stays under --surface-muted */
+  --color-sky: oklch(0.7673 0.124 249.41); /* → --line (light) at 30%: tints rather than draws */
   --color-linen: oklch(0.94 0.0022 255); /* → --surface-base (light) */
   --color-cream: oklch(0.895 0.0025 255); /* → --surface-muted (light) */
 
@@ -35,6 +35,10 @@
   --color-primary-foreground: var(--color-white); /* text on primary/accent fills */
   --color-secondary: var(--color-amber-deep); /* secondary button fill (section CTAs) */
   --color-contrast: var(--color-graphite); /* dark fills: CTA, viewer, gradient scrims */
+  /* Edges on imagery or a dark fill — theme-independent; --line is the surface separator */
+  --color-line-glass: color-mix(in oklab, var(--color-white) 10%, transparent); /* wide translucent panels */
+  --color-line-chip: color-mix(in oklab, var(--color-white) 20%, transparent); /* chips, raised pieces */
+  --color-line-control: color-mix(in oklab, var(--color-white) 30%, transparent); /* interactive controls */
 
   /* Typography — --font-sans applied to <html> by Preflight */
   --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
@@ -116,6 +120,7 @@
   --color-foreground: var(--foreground); /* main text */
   --color-foreground-muted: var(--foreground-muted); /* secondary text */
   --color-line: var(--line); /* borders & dividers */
+  --color-line-neutral: var(--line-neutral); /* bare outlines: same surface on both sides */
   --color-shade: var(--shade); /* shadow color (shadow-shade) */
   --color-heading-accent: var(--heading-accent); /* section heading accent: title span + eyebrow */
 
@@ -137,6 +142,7 @@
   --foreground: var(--color-white); /* main text */
   --foreground-muted: var(--color-slate); /* secondary text */
   --line: color-mix(in oklab, var(--color-white) 9%, transparent); /* borders & dividers */
+  --line-neutral: var(--line); /* untinted here already; only light needs its own */
   --shade: var(--color-onyx); /* shadows */
   --heading-accent: var(--color-amber); /* heading accent, same gold as --primary */
 }
@@ -147,9 +153,11 @@
   --surface-base: var(--color-linen); /* page + section background */
   --surface-panel: var(--color-white); /* cards & panels */
   --surface-muted: var(--color-cream); /* alternating sections, footer */
-  --foreground: var(--color-navy); /* main text */
+  --foreground: var(--color-eclipse); /* main text */
   --foreground-muted: var(--color-stone); /* secondary text */
-  --line: var(--color-mist); /* borders & dividers */
+  --line: color-mix(in oklab, var(--color-sky) 30%, transparent); /* borders & dividers */
+  /* no fill behind it: the blue tint would read as a highlight, a warm grey as a cast */
+  --line-neutral: color-mix(in oklab, var(--color-eclipse) 14%, transparent);
   --shade: var(--color-onyx); /* shadows */
   --heading-accent: var(--color-amber-ochre); /* darker gold: the vivid one washes out here */
 }
@@ -279,15 +287,31 @@ html:has([role="dialog"][aria-modal="true"]) {
 @utility overlay-hero-side {
   background-image: linear-gradient(
     to right,
-    color-mix(in oklab, var(--color-contrast) 88%, transparent),
-    color-mix(in oklab, var(--color-contrast) 74%, transparent) 50%,
-    color-mix(in oklab, var(--color-contrast) 44%, transparent)
+    color-mix(in oklab, var(--color-eclipse) 86%, transparent),
+    color-mix(in oklab, var(--color-eclipse) 72%, transparent) 50%,
+    color-mix(in oklab, var(--color-eclipse) 28%, transparent)
   );
 }
 @utility overlay-hero-bottom {
   background-image: linear-gradient(
     to top,
-    color-mix(in oklab, var(--color-contrast) 70%, transparent),
+    color-mix(in oklab, var(--color-eclipse) 60%, transparent),
+    transparent 50%
+  );
+}
+/* Contact scrims — the copy sits in the left third, so the right opens up for the photo */
+@utility overlay-contact-side {
+  background-image: linear-gradient(
+    to right,
+    color-mix(in oklab, var(--color-eclipse) 80%, transparent),
+    color-mix(in oklab, var(--color-eclipse) 48%, transparent) 50%,
+    color-mix(in oklab, var(--color-eclipse) 4%, transparent)
+  );
+}
+@utility overlay-contact-bottom {
+  background-image: linear-gradient(
+    to top,
+    color-mix(in oklab, var(--color-eclipse) 46%, transparent),
     transparent 50%
   );
 }
