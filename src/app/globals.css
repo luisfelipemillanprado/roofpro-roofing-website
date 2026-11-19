@@ -26,9 +26,9 @@
   /* Neutrals — light theme */
   --color-stone: oklch(0.4837 0.0276 259.8); /* → --foreground-muted (light), tracks the surfaces down */
   --color-sky: oklch(0.7673 0.124 249.41); /* → --line (light) at 30%: tints rather than draws */
-  --color-linen: oklch(0.94 0.0022 255); /* → --surface-base (light) */
+  --color-paper: oklch(0.9879 0.0029 264.54); /* #fafbfd → --surface-base (light) */
+  --color-linen: oklch(0.94 0.0022 255); /* → --surface-muted (light) */
   --color-chalk: oklch(0.9167 0.004 286.32); /* #e3e3e6 → --surface-chip (light) */
-  --color-cream: oklch(0.8848 0.0018 247.84); /* #d8d9da → --surface-muted (light), as low as AA allows */
 
   /* Static semantic roles — theme-switching ones in @theme inline */
   --color-primary: var(--color-amber); /* accent: buttons, links, eyebrow, icons */
@@ -154,9 +154,9 @@
 /* Light theme */
 .light {
   color-scheme: light;
-  --surface-base: var(--color-linen); /* page + section background */
+  --surface-base: var(--color-paper); /* page + section background */
   --surface-panel: var(--color-white); /* cards & panels */
-  --surface-muted: var(--color-cream); /* alternating sections, footer */
+  --surface-muted: var(--color-linen); /* alternating sections, footer */
   --surface-chip: var(--color-chalk); /* icon chips: lighter than the muted bands they never share */
   --foreground: var(--color-eclipse); /* main text */
   --foreground-muted: var(--color-stone); /* secondary text */
