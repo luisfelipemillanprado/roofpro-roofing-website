@@ -28,7 +28,7 @@
   --color-sky: oklch(0.7673 0.124 249.41); /* → --line (light) at 30%: tints rather than draws */
   --color-linen: oklch(0.94 0.0022 255); /* → --surface-base (light) */
   --color-chalk: oklch(0.9167 0.004 286.32); /* #e3e3e6 → --surface-chip (light) */
-  --color-cream: oklch(0.8956 0.007 247.9); /* #d9dde1 → --surface-muted (light), cool not concrete */
+  --color-cream: oklch(0.8968 0.014 247.98); /* #d6dee6 → --surface-muted (light), chroma a phone can lift */
 
   /* Static semantic roles — theme-switching ones in @theme inline */
   --color-primary: var(--color-amber); /* accent: buttons, links, eyebrow, icons */
