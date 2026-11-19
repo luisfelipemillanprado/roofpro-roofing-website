@@ -126,12 +126,13 @@
   --color-shade: var(--shade); /* shadow color (shadow-shade) */
   --color-heading-accent: var(--heading-accent); /* section heading accent: title span + eyebrow */
 
-  /* Radius per role — large surfaces 20px (off-scale), small & interior 2xl (16px) */
+  /* Radius per role — surfaces 20px (off-scale), small & interior 2xl, short pieces xl */
   --radius-card: 1.25rem; /* content cards */
   --radius-badge: var(--radius-2xl); /* small info chips & badges */
   --radius-panel: var(--radius-2xl); /* panels, menus, stat rows, empty states */
   --radius-media: 1.25rem; /* image & media containers */
   --radius-control: var(--radius-2xl); /* interactive square controls (toggle, FAB) */
+  --radius-pill: var(--radius-xl); /* label pills: too short for a badge radius to read flat */
 }
 
 /* Dark theme (default); .theme-dark pins it on a subtree (navbar) */
