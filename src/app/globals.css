@@ -27,6 +27,7 @@
   --color-stone: oklch(0.4837 0.0276 259.8); /* → --foreground-muted (light), tracks the surfaces down */
   --color-sky: oklch(0.7673 0.124 249.41); /* → --line (light) at 30%: tints rather than draws */
   --color-linen: oklch(0.94 0.0022 255); /* → --surface-base (light) */
+  --color-chalk: oklch(0.9167 0.004 286.32); /* #e3e3e6 → --surface-chip (light) */
   --color-cream: oklch(0.895 0.0025 255); /* → --surface-muted (light) */
 
   /* Static semantic roles — theme-switching ones in @theme inline */
@@ -116,7 +117,8 @@
 @theme inline {
   --color-surface-base: var(--surface-base); /* page + section base background */
   --color-surface-panel: var(--surface-panel); /* cards/panels: testimonials, navbar, form controls */
-  --color-surface-muted: var(--surface-muted); /* alternating sections, footer, muted chips */
+  --color-surface-muted: var(--surface-muted); /* alternating sections, footer */
+  --color-surface-chip: var(--surface-chip); /* icon chip inside a filled card */
   --color-foreground: var(--foreground); /* main text */
   --color-foreground-muted: var(--foreground-muted); /* secondary text */
   --color-line: var(--line); /* borders & dividers */
@@ -139,6 +141,7 @@
   --surface-base: var(--color-night); /* page + section background */
   --surface-panel: var(--color-steel); /* cards & panels */
   --surface-muted: var(--color-charcoal); /* alternating sections, footer */
+  --surface-chip: var(--surface-muted); /* icon chips: the muted surface carries them here */
   --foreground: var(--color-white); /* main text */
   --foreground-muted: var(--color-slate); /* secondary text */
   --line: color-mix(in oklab, var(--color-white) 9%, transparent); /* borders & dividers */
@@ -153,6 +156,7 @@
   --surface-base: var(--color-linen); /* page + section background */
   --surface-panel: var(--color-white); /* cards & panels */
   --surface-muted: var(--color-cream); /* alternating sections, footer */
+  --surface-chip: var(--color-chalk); /* icon chips: lighter than the muted bands they never share */
   --foreground: var(--color-eclipse); /* main text */
   --foreground-muted: var(--color-stone); /* secondary text */
   --line: color-mix(in oklab, var(--color-sky) 30%, transparent); /* borders & dividers */

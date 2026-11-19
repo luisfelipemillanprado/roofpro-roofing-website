@@ -79,10 +79,10 @@ const iconSizes: Record<IconBadgeSize, string> = {
   feature: "size-7",
 };
 
-/* chip background per tone */
+/* chip background per tone; only the loose one carries an edge, a card lends its own */
 const tones: Record<IconBadgeTone, string> = {
-  muted: "bg-surface-muted" /* default on light cards */,
-  panel: "bg-surface-panel" /* stat rows */,
+  muted: "bg-surface-chip" /* default on light cards */,
+  panel: "border border-line bg-surface-panel" /* stat rows, loose on a section */,
 };
 
 export const IconBadge = ({ icon, size, tone }: IconBadgeProps) => {
