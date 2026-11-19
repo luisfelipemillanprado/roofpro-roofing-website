@@ -5,6 +5,9 @@ Project decisions, historical context, and pending work. Conventions live in
 
 ## Current Project State
 
+- The visual e2e suite covers the **dark theme only**: `src/app/layout.tsx` sets
+  `defaultTheme: "dark"` with `enableSystem: false`, so Playwright's `colorScheme: "light"`
+  reaches the form controls but never the app. Light-theme changes need a browser pass.
 - Footer privacy and terms links are still placeholders until those pages exist.
 - `ServiceAreas` ships both as the `/areas` page and as a section on service detail pages.
 - The contact `EmailForm` posts to `src/app/api/contact/route.ts` (Node.js runtime), which
@@ -37,6 +40,19 @@ Project decisions, historical context, and pending work. Conventions live in
 
 ## Important Decisions
 
+- **Edges are a six-token system**, picked by what sits on each side of the line, never by
+  opacity. `--line` is the surface separator (white 9% dark, sky 30% light — a tint, so a
+  card edge reads as an edge). `--line-neutral` is for a bare panel with no fill behind it
+  (about stats row, shop spec strip), where that tint would read as a highlight. The three
+  static ones never switch theme and live on imagery or a dark fill: `--color-line-glass`
+  (10%, wide translucent panels), `--color-line-chip` (20%, chips and raised pieces),
+  `--color-line-control` (30%, interactive controls).
+- **A border on a `.theme-dark` subtree belongs outside the pin.** `.theme-dark` redefines
+  `--line`, so a bordered element that pins it gets the dark line in _both_ themes. Put the
+  border on the wrapper and pin `theme-dark` on the content (see `Contact.tsx`).
+- An opaque `background-color` hides a translucent border: `background-clip` defaults to
+  `border-box`, so the element's own fill composites under its border instead of the
+  backdrop. This is why the `Contact` panel's border was invisible until `bg-contrast` went.
 - `PageHeader` is the shared hero band used across routes.
 - Detail routes use fixed slugs from `src/data/` with `generateStaticParams` and
   `dynamicParams = false`.
