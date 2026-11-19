@@ -47,6 +47,11 @@ Project decisions, historical context, and pending work. Conventions live in
   static ones never switch theme and live on imagery or a dark fill: `--color-line-glass`
   (10%, wide translucent panels), `--color-line-chip` (20%, chips and raised pieces),
   `--color-line-control` (30%, interactive controls).
+- **Radius is six roles and no raw values.** `card`/`media` 20px (off-scale), `badge`/
+  `panel`/`control` 16px, `pill` 12px. `src/` holds no bare `rounded-xl`/`lg`/`md`; the last
+  one (the mobile menu trigger) was folded into `control` on 2026-11-19. Pick the role by
+  what the thing _is_, not by the value that happens to match: a short label pill reads far
+  rounder than a card at the same radius, so `pill` exists for pieces under ~40px tall.
 - **A border on a `.theme-dark` subtree belongs outside the pin.** `.theme-dark` redefines
   `--line`, so a bordered element that pins it gets the dark line in _both_ themes. Put the
   border on the wrapper and pin `theme-dark` on the content (see `Contact.tsx`).
