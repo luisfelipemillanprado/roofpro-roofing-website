@@ -7,6 +7,8 @@
   --color-amber: oklch(0.78 0.1 72); /* → --primary (accent, mobile base) */
   --color-amber-deep: oklch(0.6864 0.0941 67.81); /* → --secondary (section button bg) */
   --color-amber-ochre: oklch(0.5845 0.1205 81.85); /* #9f7300 → --heading-accent (light), at the 3.0 floor */
+  --color-pewter: oklch(0.4865 0.007 239.94); /* #5c6063 → --color-pill-chip, carries the white check */
+  --color-ash: oklch(0.5288 0.0068 239.92); /* #686c6f → --surface-chip (light), a notch softer */
   --color-peach: oklch(0.8789 0.0479 51.54); /* → --primary-light (soft accent) */
   --color-malachite: oklch(0.761 0.2015 149.74); /* WhatsApp FAB (bg-malachite) + in-stock and hero dots */
   --color-citrine: oklch(0.85 0.2015 100); /* limited-stock dot (bg-citrine) */
@@ -25,9 +27,7 @@
 
   /* Neutrals — light theme */
   --color-stone: oklch(0.4837 0.0276 259.8); /* → --foreground-muted (light), tracks the surfaces down */
-  --color-sky: oklch(0.7673 0.124 249.41); /* → --line (light) at 30%: tints rather than draws */
   --color-linen: oklch(0.94 0.0022 255); /* → --surface-base (light) */
-  --color-chalk: oklch(0.9167 0.004 286.32); /* #e3e3e6 → --surface-chip (light) */
   --color-cream: oklch(0.8838 0.0053 247.88); /* #d6d9dc → --surface-muted (light), as low as AA allows */
 
   /* Static semantic roles — theme-switching ones in @theme inline */
@@ -36,6 +36,7 @@
   --color-primary-foreground: var(--color-white); /* text on primary/accent fills */
   --color-secondary: var(--color-amber-deep); /* secondary button fill (section CTAs) */
   --color-contrast: var(--color-graphite); /* dark fills: CTA, viewer, gradient scrims */
+  --color-pill-chip: var(--color-pewter); /* the label pill's check square, same in both themes */
   /* Edges on imagery or a dark fill — theme-independent; --line is the surface separator */
   --color-line-glass: color-mix(in oklab, var(--color-white) 10%, transparent); /* wide translucent panels */
   --color-line-chip: color-mix(in oklab, var(--color-white) 20%, transparent); /* chips, raised pieces */
@@ -122,7 +123,7 @@
   --color-foreground: var(--foreground); /* main text */
   --color-foreground-muted: var(--foreground-muted); /* secondary text */
   --color-line: var(--line); /* borders & dividers */
-  --color-line-neutral: var(--line-neutral); /* bare outlines: same surface on both sides */
+  --color-line-neutral: var(--line-neutral); /* the untinted line, where the gold would read wrong */
   --color-shade: var(--shade); /* shadow color (shadow-shade) */
   --color-heading-accent: var(--heading-accent); /* section heading accent: title span + eyebrow */
 
@@ -157,11 +158,11 @@
   --surface-base: var(--color-linen); /* page + section background */
   --surface-panel: var(--color-white); /* cards & panels */
   --surface-muted: var(--color-cream); /* alternating sections, footer */
-  --surface-chip: var(--color-chalk); /* icon chips: lighter than the muted bands they never share */
+  --surface-chip: var(--color-ash); /* past the gold's own lightness, so the icon reads again */
   --foreground: var(--color-eclipse); /* main text */
   --foreground-muted: var(--color-stone); /* secondary text */
-  --line: color-mix(in oklab, var(--color-sky) 30%, transparent); /* borders & dividers */
-  /* no fill behind it: the blue tint would read as a highlight, a warm grey as a cast */
+  --line: color-mix(in oklab, var(--color-amber-vivid) 30%, transparent); /* borders & dividers */
+  /* a tint of the text: the gold line would read as a highlight on a bare panel or a pill */
   --line-neutral: color-mix(in oklab, var(--color-eclipse) 14%, transparent);
   --shade: var(--color-onyx); /* shadows */
   --heading-accent: var(--color-amber-ochre); /* darker gold: the vivid one washes out here */
@@ -324,8 +325,8 @@ html:has([role="dialog"][aria-modal="true"]) {
 @utility overlay-card-bottom {
   background-image: linear-gradient(
     to top,
-    color-mix(in oklab, var(--color-contrast) 86%, transparent),
-    color-mix(in oklab, var(--color-contrast) 52%, transparent) 36%,
+    color-mix(in oklab, var(--color-contrast) 76%, transparent),
+    color-mix(in oklab, var(--color-contrast) 48%, transparent) 36%,
     transparent 60%
   );
 }
