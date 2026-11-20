@@ -325,8 +325,8 @@ html:has([role="dialog"][aria-modal="true"]) {
 @utility overlay-card-bottom {
   background-image: linear-gradient(
     to top,
-    color-mix(in oklab, var(--color-contrast) 86%, transparent),
-    color-mix(in oklab, var(--color-contrast) 52%, transparent) 36%,
+    color-mix(in oklab, var(--color-contrast) 76%, transparent),
+    color-mix(in oklab, var(--color-contrast) 48%, transparent) 36%,
     transparent 60%
   );
 }
