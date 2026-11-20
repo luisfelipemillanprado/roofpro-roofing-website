@@ -27,7 +27,6 @@
 
   /* Neutrals — light theme */
   --color-stone: oklch(0.4837 0.0276 259.8); /* → --foreground-muted (light), tracks the surfaces down */
-  --color-sky: oklch(0.7673 0.124 249.41); /* → --line (light) at 30%: tints rather than draws */
   --color-linen: oklch(0.94 0.0022 255); /* → --surface-base (light) */
   --color-cream: oklch(0.8838 0.0053 247.88); /* #d6d9dc → --surface-muted (light), as low as AA allows */
 
@@ -124,7 +123,7 @@
   --color-foreground: var(--foreground); /* main text */
   --color-foreground-muted: var(--foreground-muted); /* secondary text */
   --color-line: var(--line); /* borders & dividers */
-  --color-line-neutral: var(--line-neutral); /* bare outlines: same surface on both sides */
+  --color-line-neutral: var(--line-neutral); /* the untinted line, where the gold would read wrong */
   --color-shade: var(--shade); /* shadow color (shadow-shade) */
   --color-heading-accent: var(--heading-accent); /* section heading accent: title span + eyebrow */
 
@@ -162,8 +161,8 @@
   --surface-chip: var(--color-ash); /* past the gold's own lightness, so the icon reads again */
   --foreground: var(--color-eclipse); /* main text */
   --foreground-muted: var(--color-stone); /* secondary text */
-  --line: color-mix(in oklab, var(--color-sky) 30%, transparent); /* borders & dividers */
-  /* no fill behind it: the blue tint would read as a highlight, a warm grey as a cast */
+  --line: color-mix(in oklab, var(--color-amber-vivid) 30%, transparent); /* borders & dividers */
+  /* a tint of the text: the gold line would read as a highlight on a bare panel or a pill */
   --line-neutral: color-mix(in oklab, var(--color-eclipse) 14%, transparent);
   --shade: var(--color-onyx); /* shadows */
   --heading-accent: var(--color-amber-ochre); /* darker gold: the vivid one washes out here */
