@@ -54,7 +54,7 @@ export const MobileMenu = ({ navLinks, menuId, toggleMenuLabel }: MobileMenuProp
           onClick={handleCloseOptions}
           className={clsx(
             "fixed inset-x-0 top-header z-(--z-overlay) h-dvh transition-colors duration-150 lg:hidden",
-            isOpen ? "bg-eclipse/70 backdrop-blur-md" : "bg-transparent",
+            isOpen ? "bg-contrast/70 backdrop-blur-md" : "bg-transparent",
           )}
         >
           <div

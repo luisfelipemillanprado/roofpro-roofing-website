@@ -293,15 +293,15 @@ html:has([role="dialog"][aria-modal="true"]) {
 @utility overlay-hero-side {
   background-image: linear-gradient(
     to right,
-    color-mix(in oklab, var(--color-eclipse) 86%, transparent),
-    color-mix(in oklab, var(--color-eclipse) 72%, transparent) 50%,
-    color-mix(in oklab, var(--color-eclipse) 28%, transparent)
+    color-mix(in oklab, var(--color-contrast) 86%, transparent),
+    color-mix(in oklab, var(--color-contrast) 72%, transparent) 50%,
+    color-mix(in oklab, var(--color-contrast) 28%, transparent)
   );
 }
 @utility overlay-hero-bottom {
   background-image: linear-gradient(
     to top,
-    color-mix(in oklab, var(--color-eclipse) 60%, transparent),
+    color-mix(in oklab, var(--color-contrast) 60%, transparent),
     transparent 50%
   );
 }
@@ -309,15 +309,15 @@ html:has([role="dialog"][aria-modal="true"]) {
 @utility overlay-contact-side {
   background-image: linear-gradient(
     to right,
-    color-mix(in oklab, var(--color-eclipse) 80%, transparent),
-    color-mix(in oklab, var(--color-eclipse) 48%, transparent) 50%,
-    color-mix(in oklab, var(--color-eclipse) 4%, transparent)
+    color-mix(in oklab, var(--color-contrast) 80%, transparent),
+    color-mix(in oklab, var(--color-contrast) 48%, transparent) 50%,
+    color-mix(in oklab, var(--color-contrast) 4%, transparent)
   );
 }
 @utility overlay-contact-bottom {
   background-image: linear-gradient(
     to top,
-    color-mix(in oklab, var(--color-eclipse) 46%, transparent),
+    color-mix(in oklab, var(--color-contrast) 46%, transparent),
     transparent 50%
   );
 }
@@ -325,8 +325,8 @@ html:has([role="dialog"][aria-modal="true"]) {
 @utility overlay-card-bottom {
   background-image: linear-gradient(
     to top,
-    color-mix(in oklab, var(--color-contrast) 76%, transparent),
-    color-mix(in oklab, var(--color-contrast) 48%, transparent) 36%,
+    color-mix(in oklab, var(--color-contrast) 68%, transparent),
+    color-mix(in oklab, var(--color-contrast) 44%, transparent) 36%,
     transparent 60%
   );
 }
