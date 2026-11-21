@@ -22,7 +22,14 @@ export const IconCard = ({ icon, title, description, highlights }: IconCardProps
           text={highlights.label}
         />
         <Text as="span" size="caption" tone="muted" text="•" />
-        <Text as="span" size="caption" tone="primary" tracking="subtle" text={highlights.accent} />
+        <Text
+          as="span"
+          size="caption"
+          tone="primary"
+          weight="bold"
+          tracking="subtle"
+          text={highlights.accent}
+        />
       </div>
     )}
   </article>

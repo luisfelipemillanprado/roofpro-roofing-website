@@ -8,7 +8,7 @@
   --color-amber-deep: oklch(0.6864 0.0941 67.81); /* → --secondary (section button bg) */
   --color-amber-ochre: oklch(0.5845 0.1205 81.85); /* #9f7300 → --heading-accent (light), at the 3.0 floor */
   --color-pewter: oklch(0.4865 0.007 239.94); /* #5c6063 → --color-pill-chip, carries the white check */
-  --color-ash: oklch(0.5288 0.0068 239.92); /* #686c6f → --surface-chip (light), a notch softer */
+  --color-ash: oklch(0.6177 0.0066 239.88); /* #828689 → --surface-chip (light), a notch softer */
   --color-peach: oklch(0.8789 0.0479 51.54); /* → --primary-light (soft accent) */
   --color-malachite: oklch(0.761 0.2015 149.74); /* WhatsApp FAB (bg-malachite) + in-stock and hero dots */
   --color-citrine: oklch(0.85 0.2015 100); /* limited-stock dot (bg-citrine) */
@@ -120,6 +120,7 @@
   --color-surface-panel: var(--surface-panel); /* cards/panels: testimonials, navbar, form controls */
   --color-surface-muted: var(--surface-muted); /* alternating sections, footer */
   --color-surface-chip: var(--surface-chip); /* icon chip inside a filled card */
+  --color-quote-mark: var(--quote-mark); /* the decorative quote glyph on a testimonial */
   --color-foreground: var(--foreground); /* main text */
   --color-foreground-muted: var(--foreground-muted); /* secondary text */
   --color-line: var(--line); /* borders & dividers */
@@ -144,6 +145,7 @@
   --surface-panel: var(--color-steel); /* cards & panels */
   --surface-muted: var(--color-charcoal); /* alternating sections, footer */
   --surface-chip: var(--surface-muted); /* icon chips: the muted surface carries them here */
+  --quote-mark: var(--surface-muted); /* unchanged here: only the light theme wanted it louder */
   --foreground: var(--color-white); /* main text */
   --foreground-muted: var(--color-slate); /* secondary text */
   --line: color-mix(in oklab, var(--color-white) 9%, transparent); /* borders & dividers */
@@ -159,6 +161,7 @@
   --surface-panel: var(--color-white); /* cards & panels */
   --surface-muted: var(--color-cream); /* alternating sections, footer */
   --surface-chip: var(--color-ash); /* past the gold's own lightness, so the icon reads again */
+  --quote-mark: var(--color-pewter); /* the pills' slate, so the glyph stops disappearing */
   --foreground: var(--color-eclipse); /* main text */
   --foreground-muted: var(--color-stone); /* secondary text */
   --line: color-mix(in oklab, var(--color-amber-vivid) 30%, transparent); /* borders & dividers */
@@ -293,15 +296,15 @@ html:has([role="dialog"][aria-modal="true"]) {
 @utility overlay-hero-side {
   background-image: linear-gradient(
     to right,
-    color-mix(in oklab, var(--color-eclipse) 86%, transparent),
-    color-mix(in oklab, var(--color-eclipse) 72%, transparent) 50%,
-    color-mix(in oklab, var(--color-eclipse) 28%, transparent)
+    color-mix(in oklab, var(--color-contrast) 86%, transparent),
+    color-mix(in oklab, var(--color-contrast) 72%, transparent) 50%,
+    color-mix(in oklab, var(--color-contrast) 28%, transparent)
   );
 }
 @utility overlay-hero-bottom {
   background-image: linear-gradient(
     to top,
-    color-mix(in oklab, var(--color-eclipse) 60%, transparent),
+    color-mix(in oklab, var(--color-contrast) 60%, transparent),
     transparent 50%
   );
 }
@@ -309,15 +312,15 @@ html:has([role="dialog"][aria-modal="true"]) {
 @utility overlay-contact-side {
   background-image: linear-gradient(
     to right,
-    color-mix(in oklab, var(--color-eclipse) 80%, transparent),
-    color-mix(in oklab, var(--color-eclipse) 48%, transparent) 50%,
-    color-mix(in oklab, var(--color-eclipse) 4%, transparent)
+    color-mix(in oklab, var(--color-contrast) 80%, transparent),
+    color-mix(in oklab, var(--color-contrast) 48%, transparent) 50%,
+    color-mix(in oklab, var(--color-contrast) 4%, transparent)
   );
 }
 @utility overlay-contact-bottom {
   background-image: linear-gradient(
     to top,
-    color-mix(in oklab, var(--color-eclipse) 46%, transparent),
+    color-mix(in oklab, var(--color-contrast) 46%, transparent),
     transparent 50%
   );
 }
@@ -325,8 +328,8 @@ html:has([role="dialog"][aria-modal="true"]) {
 @utility overlay-card-bottom {
   background-image: linear-gradient(
     to top,
-    color-mix(in oklab, var(--color-contrast) 76%, transparent),
-    color-mix(in oklab, var(--color-contrast) 48%, transparent) 36%,
+    color-mix(in oklab, var(--color-contrast) 68%, transparent),
+    color-mix(in oklab, var(--color-contrast) 44%, transparent) 36%,
     transparent 60%
   );
 }

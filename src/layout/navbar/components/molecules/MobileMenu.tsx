@@ -42,7 +42,7 @@ export const MobileMenu = ({ navLinks, menuId, toggleMenuLabel }: MobileMenuProp
         aria-controls={menuId}
         aria-label={toggleMenuLabel}
         onClick={isOpen ? handleCloseOptions : handleOpenOptions}
-        className="grid size-11 place-items-center rounded-control bg-eclipse lg:hidden"
+        className="grid size-11 place-items-center rounded-control border border-line bg-eclipse lg:hidden"
       >
         {isOpen ? <X className="size-5 text-white" /> : <Menu className="size-5 text-white" />}
       </button>
@@ -54,7 +54,7 @@ export const MobileMenu = ({ navLinks, menuId, toggleMenuLabel }: MobileMenuProp
           onClick={handleCloseOptions}
           className={clsx(
             "fixed inset-x-0 top-header z-(--z-overlay) h-dvh transition-colors duration-150 lg:hidden",
-            isOpen ? "bg-eclipse/70 backdrop-blur-md" : "bg-transparent",
+            isOpen ? "bg-contrast/70 backdrop-blur-md" : "bg-transparent",
           )}
         >
           <div
