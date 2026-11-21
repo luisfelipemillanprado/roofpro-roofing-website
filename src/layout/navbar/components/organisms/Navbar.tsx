@@ -35,7 +35,7 @@ export const Navbar = async () => {
           <div className="grid grid-flow-col items-center gap-2 sm:gap-2.5 lg:gap-3">
             {/* phone — xl only */}
             <div className="hidden items-center gap-2 xl:grid xl:grid-flow-col">
-              <span className="grid size-9 place-items-center rounded-full bg-eclipse">
+              <span className="grid size-9 place-items-center rounded-full border border-line bg-eclipse">
                 <Phone className="size-4 text-primary" />
               </span>
               <Text as="span" size="body" tone="default" weight="semibold" text={navbar.phone} />
