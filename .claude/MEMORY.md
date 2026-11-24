@@ -40,13 +40,18 @@ Project decisions, historical context, and pending work. Conventions live in
 
 ## Important Decisions
 
-- **Edges are a six-token system**, picked by what sits on each side of the line, never by
-  opacity. `--line` is the surface separator (white 9% dark, sky 30% light — a tint, so a
-  card edge reads as an edge). `--line-neutral` is for a bare panel with no fill behind it
-  (about stats row, shop spec strip), where that tint would read as a highlight. The three
-  static ones never switch theme and live on imagery or a dark fill: `--color-line-glass`
-  (10%, wide translucent panels), `--color-line-chip` (20%, chips and raised pieces),
-  `--color-line-control` (30%, interactive controls).
+- **Edges are a five-token system**, picked by what sits on each side of the line, never by
+  opacity. `--line` is the surface separator (white 9% dark, **the brand gold at 30%** in
+  light — a tint, so a card edge reads as an edge). `--line-neutral` is the untinted twin,
+  for anywhere the gold would read as a highlight (about stats row, shop spec strip, the
+  About pills). The three static ones never switch theme and live on imagery or a dark
+  fill: `--color-line-glass` (10%, wide translucent panels), `--color-line-chip` (20%,
+  chips and raised pieces), `--color-line-control` (30%, interactive controls).
+- **A gold icon on a grey chip has a valley, not a slope.** The gold sits at lightness
+  0.78, so darkening a chip from near-white walks _toward_ it and the icon loses contrast
+  as the chip gains presence, bottoming out around `#b4b4b9`. Past that the icon reads
+  lighter than the chip and recovers. Chips live on the far side now (`--color-pewter`
+  `#5c6063` for the pill's check, `--color-ash` `#828689` for the card chips).
 - **Radius is six roles and no raw values.** `card`/`media` 20px (off-scale), `badge`/
   `panel`/`control` 16px, `pill` 12px. `src/` holds no bare `rounded-xl`/`lg`/`md`; the last
   one (the mobile menu trigger) was folded into `control` on 2026-11-19. Pick the role by
