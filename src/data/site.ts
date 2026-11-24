@@ -32,16 +32,16 @@ export const company = {
   /* legal: the jurisdiction the terms name and the courts that hear a dispute */
   state: "Florida",
   county: "Miami-Dade",
-  /* footer brand: the builder's own profiles stand in until the client's accounts exist */
-  facebookHref: "https://www.facebook.com/remiuxsoft",
-  xHref: "https://x.com/remiuxsoft",
-  instagramHref: "https://www.instagram.com/remiuxsoft",
-  youtubeHref: "https://www.youtube.com/@remiuxsoft",
+  /* footer brand: the roofpro profiles, reserved names until the accounts exist */
+  facebookHref: "https://www.facebook.com/roofpro",
+  xHref: "https://x.com/roofpro",
+  instagramHref: "https://www.instagram.com/roofpro/",
+  youtubeHref: "https://www.youtube.com/@roofpro",
   /* footer contact: address + linked phone + linked email */
   address: "300 NW 127 Ave, Miami, FL 33182",
   phoneHref: "tel:+13056289696",
-  email: "info@designbuilderroofs.com",
-  emailHref: "mailto:info@designbuilderroofs.com",
+  email: "info@roofpro.com",
+  emailHref: "mailto:info@roofpro.com",
   /* footer hours: 24h opening and closing times, formatted per locale; null means closed */
   weekdayHours: { open: "07:00", close: "16:00" },
   saturdayHours: null,
@@ -49,5 +49,5 @@ export const company = {
   /* footer credits: the site the builder credit links to */
   builderHref: "https://remiux.com",
   /* floating contact: whatsapp deep link */
-  whatsappHref: "https://wa.me/13056289696" /* the builder's number, standing in */,
+  whatsappHref: "https://wa.me/13052069717",
 };
