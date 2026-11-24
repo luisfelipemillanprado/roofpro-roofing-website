@@ -1,4 +1,4 @@
-import { getTranslations } from "next-intl/server";
+import { getFormatter, getTranslations } from "next-intl/server";
 import { Title } from "@/common/title/components/Title";
 import { Container } from "@/common/container/components/Container";
 import { FooterBrand } from "@/layout/footer/components/molecules/FooterBrand";
@@ -6,16 +6,22 @@ import { FooterLinks } from "@/layout/footer/components/molecules/FooterLinks";
 import { FooterContact } from "@/layout/footer/components/molecules/FooterContact";
 import { FooterHours } from "@/layout/footer/components/molecules/FooterHours";
 import { FooterCredits } from "@/layout/footer/components/molecules/FooterCredits";
+import { CurrentYear } from "@/layout/footer/components/atoms/CurrentYear";
 import { layoutData } from "@/data/global/layout";
 import { company } from "@/data/site";
+import { servicesData } from "@/data/shared-sections/services";
 
 const { certifications } = layoutData;
 const { topLinks, services, contact, hours, legal, builder } = layoutData.footer;
 const { name, address, phone, phoneHref, email, emailHref } = company;
 
+/* a 24h "HH:MM" as a utc instant, so only the clock time reaches the formatter */
+const atTime = (time: string) => new Date(`1970-01-01T${time}:00Z`);
+
 export const Footer = async () => {
   const t = await getTranslations("footer");
   const tService = await getTranslations("service");
+  const format = await getFormatter();
 
   /* top links: route from data, label by key */
   const topLinkItems = topLinks.items.map((link) => ({
@@ -23,17 +29,24 @@ export const Footer = async () => {
     href: link.href,
     label: t(`topLinks.${link.key}`),
   }));
-  /* services column: href from the footer data, label reused from the service namespace */
-  const serviceItems = services.items.map((item) => ({
-    key: item.key,
-    href: item.href,
-    label: tService(`items.${item.key}.title`),
-  }));
-  /* hours: day label by key; a null time means closed */
+  /* services column: route from the service's own slug, label reused from the service namespace */
+  const serviceItems = services.items.flatMap((item) => {
+    const service = servicesData.items.find((entry) => entry.key === item.key);
+    return service
+      ? [{ key: item.key, href: `/services/${service.slug}`, label: tService(`items.${item.key}.title`) }]
+      : [];
+  });
+  /* hours: day label by key; the range in the locale's own clock (12h en, 24h es); null means closed */
   const hourItems = hours.map((row) => ({
     key: row.key,
     day: t(`hours.${row.key}`),
-    time: row.time ?? t(contact.closedKey),
+    time: row.time
+      ? format.dateTimeRange(atTime(row.time.open), atTime(row.time.close), {
+          hour: "numeric",
+          minute: "2-digit",
+          timeZone: "UTC",
+        })
+      : t(contact.closedKey),
   }));
   /* legal bar: route from data, label by key */
   const legalItems = legal.map((link) => ({ key: link.key, href: link.href, label: t(link.key) }));
@@ -70,7 +83,7 @@ export const Footer = async () => {
       <div className="border-t border-line">
         <Container>
           <FooterCredits
-            copyright={t("copyright", { year: new Date().getFullYear(), name })}
+            copyright={t.rich("copyright", { name, year: () => <CurrentYear /> })}
             builtByLabel={t(builder.key)}
             builder={{ label: builder.name, href: builder.href }}
             legal={legalItems}

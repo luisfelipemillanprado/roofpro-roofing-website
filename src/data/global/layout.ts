@@ -64,17 +64,17 @@ export const layoutData = {
         { key: "contact", href: "/#contact" },
       ],
     },
-    /* services column: labels reuse the service namespace titles */
+    /* services column: the services it lists, in order; label and route come from the service data */
     services: {
       titleKey: "servicesTitle",
       items: [
-        { key: "repair", href: "/services/roof-repair" },
-        { key: "replacement", href: "/services/roof-replacement" },
-        { key: "storm", href: "/services/storm-damage-repair" },
-        { key: "inspections", href: "/services/roof-inspections" },
-        { key: "gutters", href: "/services/gutters" },
-        { key: "commercial", href: "/services/commercial-roofing" },
-        { key: "residential", href: "/services/residential-roofing" },
+        { key: "repair" },
+        { key: "replacement" },
+        { key: "storm" },
+        { key: "inspections" },
+        { key: "gutters" },
+        { key: "commercial" },
+        { key: "residential" },
       ],
     },
     /* contact column: closedKey labels the null-time hours row */

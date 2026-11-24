@@ -42,8 +42,8 @@ export const company = {
   phoneHref: "tel:+13056289696",
   email: "info@designbuilderroofs.com",
   emailHref: "mailto:info@designbuilderroofs.com",
-  /* footer hours: opening times (a null value means closed) */
-  weekdayHours: "7:00 AM – 4:00 PM",
+  /* footer hours: 24h opening and closing times, formatted per locale; null means closed */
+  weekdayHours: { open: "07:00", close: "16:00" },
   saturdayHours: null,
   sundayHours: null,
   /* footer credits: the site the builder credit links to */

@@ -3,7 +3,7 @@
   "topLinksTitle": "TOP LINKS",
   "servicesTitle": "OUR SERVICES",
   "contactTitle": "GET IN TOUCH",
-  "copyright": "© {year} {name}. All rights reserved.",
+  "copyright": "© <year></year> {name}. All rights reserved.",
   "builtBy": "Built by",
   "privacy": "Privacy Policy",
   "terms": "Terms of Use",
