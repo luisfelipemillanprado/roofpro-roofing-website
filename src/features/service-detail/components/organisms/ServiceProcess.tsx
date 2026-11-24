@@ -14,11 +14,11 @@ const { process, stats, ctaHref } = serviceDetailData;
 export const ServiceProcess = async ({ serviceKey, tone = "base" }: ServiceProcessProps) => {
   const t = await getTranslations("service-detail");
 
-  /* stats: brand chips, same for every service */
+  /* stats: value from data, label by key */
   const statItems = stats.map((stat) => ({
     key: stat.key,
     icon: stat.icon,
-    value: t(`stats.${stat.key}.value`),
+    value: stat.value,
     label: t(`stats.${stat.key}.label`),
   }));
 
