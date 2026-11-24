@@ -3,15 +3,14 @@ import { notFound } from "next/navigation";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { routing, type Locale } from "@/i18n/routing";
-import { routeMetadata } from "@/i18n/metadata";
+import { metadataFacts, routeMetadata } from "@/i18n/metadata";
 import { Providers } from "@/app/Providers";
 import { Navbar } from "@/layout/navbar/components/organisms/Navbar";
 import { Footer } from "@/layout/footer/components/organisms/Footer";
 import { FloatingContact } from "@/layout/floating-contact/components/organisms/FloatingContact";
+import { company } from "@/data/site";
 import { inter, jakarta } from "@/app/styles/fonts";
 import "../globals.css";
-
-const siteUrl = "https://roofpro.example.com";
 
 type Props = {
   children: React.ReactNode;
@@ -41,12 +40,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   });
 
   return {
-    metadataBase: new URL(siteUrl),
+    metadataBase: new URL(company.siteUrl),
     title: {
       default: t("title"),
       template: t("titleTemplate"),
     },
-    description: t("description"),
+    description: t("description", metadataFacts),
     keywords: [
       "roofing",
       "roof repair",
@@ -55,14 +54,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       "residential roofing",
       "energy efficient roofing",
     ],
-    authors: [{ name: "Roofpro" }],
-    twitter: {
-      card: "summary_large_image",
-      title: t("ogTitle"),
-      description: t("ogDescription"),
-    },
+    authors: [{ name: company.name }],
     robots: { index: true, follow: true },
-    /* home canonical/alternates/og:url; pages override with their own route */
+    /* home canonical, alternates and brand share card; pages override with their own route */
     ...(await routeMetadata(locale as Locale, "/")),
   };
 }

@@ -30,11 +30,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const product = items.find((item) => item.slug === slug);
   if (!product) return {};
   const t = await getTranslations({ locale: locale as Locale, namespace: "shop-page" });
-  return {
+  /* the page copy feeds both the head and its share card */
+  const copy = {
     title: t(`items.${product.slug}.title`),
     description: t(`items.${product.slug}.description`),
-    ...(await routeMetadata(locale as Locale, `/shop/${slug}`)),
   };
+  return { ...copy, ...(await routeMetadata(locale as Locale, `/shop/${slug}`, copy)) };
 }
 
 export default async function ProductDetailPage({ params }: Props) {

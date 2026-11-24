@@ -30,11 +30,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const service = items.find((item) => item.slug === slug);
   if (!service) return {};
   const t = await getTranslations({ locale: locale as Locale, namespace: "service" });
-  return {
-    title: t(`items.${service.key}.title`),
-    description: t(`items.${service.key}.description`),
-    ...(await routeMetadata(locale as Locale, `/services/${slug}`)),
-  };
+  /* the page copy feeds both the head and its share card */
+  const copy = { title: t(`items.${service.key}.title`), description: t(`items.${service.key}.description`) };
+  return { ...copy, ...(await routeMetadata(locale as Locale, `/services/${slug}`, copy)) };
 }
 
 export default async function ServiceDetailPage({ params }: Props) {

@@ -1,5 +1,7 @@
 /* Locale-independent company facts, ordered by render top to bottom */
 export const company = {
+  /* metadata: canonical base url for every canonical, hreflang and og:url */
+  siteUrl: "https://roofpro-roofing-website.vercel.app",
   /* navbar: brand badge, name, contact phone */
   logo: "/images/logo/logo.webp",
   name: "Roofpro",
