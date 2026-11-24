@@ -90,12 +90,18 @@ messages/{en,es}.json            # GENERATED (gitignored) — never edit by hand
 
 src/
   app/
-    layout.tsx                   # <html>, fonts, viewport, <Providers> (theme)
-    Providers.tsx                # next-themes provider, above [locale]
-    SyncLocale.tsx               # syncs <html lang> on the client
+    global-not-found.tsx         # 404 for unmatched urls (experimental.globalNotFound)
+    Providers.tsx                # next-themes provider
     globals.css                  # design tokens + base layer + custom utilities
+    styles/fonts.ts              # font definitions, shared by the root layout and the global 404
+    styles/og-fonts/             # Jakarta + Inter as ttf (and their OFL) for the share card
+    robots.ts                    # robots.txt: all but /api/, points at the sitemap
+    sitemap.ts                   # localized sitemap from the nav, legal, service and product data
     [locale]/
-      layout.tsx                 # locale guard, metadata, floating contact
+      layout.tsx                 # root layout: <html lang>, fonts, viewport, theme, metadata, shell
+      not-found.tsx              # localized 404 inside the shell
+      opengraph-image.tsx        # per-locale share card (1200x630 png), bypassed by the proxy
+      [...rest]/page.tsx         # unknown paths in a locale → notFound(), 404 title + noindex
       page.tsx                   # Home                → /            (and /es)
       services/page.tsx          # Services            → /services
       services/[slug]/page.tsx   # Service detail      → /services/:slug   (SSG)
@@ -305,7 +311,7 @@ If you invoke `tsc` directly, run `pnpm i18n:build` first so the generated `mess
   (navbar links, footer columns, floating-contact actions).
 - **Brand colors / fonts:** edit the `@theme` block in
   [`src/app/globals.css`](src/app/globals.css) and the fonts in
-  [`src/app/layout.tsx`](src/app/layout.tsx).
+  [`src/app/[locale]/layout.tsx`](src/app/[locale]/layout.tsx).
 - **Photography:** drop `.webp` images into `public/images/` and update the paths in
   `src/data/`. Output formats (AVIF/WebP) are configured in
   [`next.config.ts`](next.config.ts).
