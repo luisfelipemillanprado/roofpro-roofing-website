@@ -5,6 +5,7 @@
   "toggleMenu": "Abrir menú",
   "selectLanguage": "Seleccionar idioma",
   "toggleTheme": "Cambiar tema",
+  "logoLabel": "Inicio de {name}",
   "links": {
     "home": "Inicio",
     "services": "Servicios",

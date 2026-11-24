@@ -42,9 +42,10 @@ These are not yet consistent in the codebase — always verify them on interacti
   visible; a color-only border change on a dark surface is weak. `EmailForm` is the reference
   fix — a `focus-visible:outline-2 outline-offset-2` ring.
 - **Dialog keyboard completeness:** `ProjectViewer` moves focus in and handles `Escape` but
-  does **not** trap `Tab` inside or restore focus to the trigger on close. `MobileMenu` uses
-  `role="dialog"` but has **no** `aria-modal`, no `aria-label`, no focus move, and no
-  `Escape` handler — verify these before shipping menu/dialog changes.
+  does **not** trap `Tab` inside or restore focus to the trigger on close. `MobileMenu` is a
+  disclosure (trigger with `aria-expanded`/`aria-controls`, no dialog role): `Escape` closes it
+  and returns focus to the trigger, but focus does not move into the panel on open — verify
+  before shipping menu changes.
 - **Overlay close targets:** backdrop close handlers are `div` + `onClick`; confirm a
   keyboard path to close exists (`Escape` or a focusable button).
 - **`aria-current`:** navigation links do not mark the active page; check when touching nav.

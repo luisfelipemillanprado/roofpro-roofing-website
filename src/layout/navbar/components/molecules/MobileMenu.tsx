@@ -1,6 +1,6 @@
 "use client";
 
-import type { MouseEvent } from "react";
+import { useEffect, useRef, type MouseEvent } from "react";
 import { Menu, X, Home, Info, Wrench, Images, Package, MapPin } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 import clsx from "clsx";
@@ -30,13 +30,27 @@ export const MobileMenu = ({ navLinks, menuId, toggleMenuLabel }: MobileMenuProp
     open: handleOpenOptions,
     close: handleCloseOptions,
   } = useEnterExit(ANIMATION_MS);
+  const triggerRef = useRef<HTMLButtonElement>(null);
 
   /* keep clicks inside the panel from closing via the overlay */
   const handlePropagateOptions = (e: MouseEvent) => e.stopPropagation();
 
+  /* escape closes and hands focus back to the trigger, as the disclosure pattern asks */
+  useEffect(() => {
+    if (!isOpen) return;
+    const onKey = (event: KeyboardEvent) => {
+      if (event.key !== "Escape") return;
+      handleCloseOptions();
+      triggerRef.current?.focus();
+    };
+    document.addEventListener("keydown", onKey);
+    return () => document.removeEventListener("keydown", onKey);
+  }, [isOpen, handleCloseOptions]);
+
   return (
     <>
       <button
+        ref={triggerRef}
         type="button"
         aria-expanded={isOpen}
         aria-controls={menuId}

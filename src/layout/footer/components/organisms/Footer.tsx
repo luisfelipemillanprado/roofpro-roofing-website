@@ -52,7 +52,7 @@ export const Footer = async () => {
 
           {/* Contact + hours: full-width under the two link cols until sm */}
           <div className="col-span-2 grid content-start justify-items-center gap-5 sm:col-span-1 sm:justify-items-start">
-            <Title as="h4" size="micro" weight="bold" tracking text={t(contact.titleKey)} />
+            <Title as="h2" size="micro" weight="bold" tracking text={t(contact.titleKey)} />
             <FooterContact
               address={address}
               phone={phone}

@@ -17,6 +17,7 @@ export const SortDropdown = ({ label, value, options, onChange }: SortDropdownPr
     close: handleCloseOptions,
   } = useEnterExit(ANIMATION_MS);
   const root = useRef<HTMLDivElement>(null);
+  const trigger = useRef<HTMLButtonElement>(null);
   const id = useId();
   const current = options.find((option) => option.value === value)!;
 
@@ -26,8 +27,18 @@ export const SortDropdown = ({ label, value, options, onChange }: SortDropdownPr
     const onPointer = (event: PointerEvent) => {
       if (!root.current?.contains(event.target as Node)) handleCloseOptions();
     };
+    /* escape closes and hands focus back to the trigger */
+    const onKey = (event: KeyboardEvent) => {
+      if (event.key !== "Escape") return;
+      handleCloseOptions();
+      trigger.current?.focus();
+    };
     document.addEventListener("pointerdown", onPointer);
-    return () => document.removeEventListener("pointerdown", onPointer);
+    document.addEventListener("keydown", onKey);
+    return () => {
+      document.removeEventListener("pointerdown", onPointer);
+      document.removeEventListener("keydown", onKey);
+    };
   }, [isOpen, handleCloseOptions]);
 
   return (
@@ -46,6 +57,7 @@ export const SortDropdown = ({ label, value, options, onChange }: SortDropdownPr
         className="relative"
       >
         <button
+          ref={trigger}
           id={`${id}-trigger`}
           type="button"
           aria-expanded={isOpen}
