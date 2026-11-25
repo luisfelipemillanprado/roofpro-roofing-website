@@ -23,7 +23,7 @@ export const Projects = async ({ variant, tone = "muted", limit, offset = 0 }: P
   }));
 
   return (
-    <SectionWrapper id="projects" tone={tone} backdrop="contours">
+    <SectionWrapper id="projects" tone={tone} backdrop="shingles">
       <Container>
         <div className="grid gap-13">
           <div className="grid justify-items-center gap-6 md:max-xl:mr-5 md:max-xl:grid-cols-[1fr_auto] md:max-xl:items-center md:max-xl:justify-items-stretch md:max-xl:gap-x-6">

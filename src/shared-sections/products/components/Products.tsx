@@ -36,7 +36,7 @@ export const Products = async ({ tone = "muted", limit }: ProductsProps) => {
     }));
 
   return (
-    <SectionWrapper id="products" tone={tone} backdrop="contours">
+    <SectionWrapper id="products" tone={tone} backdrop="shingles">
       <Container>
         <div className="grid gap-13">
           <div className="grid justify-items-center gap-6 md:max-xl:mr-5 md:max-xl:grid-cols-[1fr_auto] md:max-xl:items-center md:max-xl:justify-items-stretch md:max-xl:gap-x-6">
