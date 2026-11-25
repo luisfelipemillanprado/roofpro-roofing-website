@@ -39,7 +39,7 @@ export const ShopCatalog = async ({ tone = "base" }: ShopCatalogProps) => {
   const sortItems = sortOrder.map((value) => ({ value, label: t(`sort.${value}`) }));
 
   return (
-    <SectionWrapper id="catalog" tone={tone}>
+    <SectionWrapper id="catalog" tone={tone} backdrop="tiles">
       <Container>
         <ShopBrowser
           items={items}

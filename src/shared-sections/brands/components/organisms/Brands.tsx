@@ -11,7 +11,7 @@ const half = Math.ceil(items.length / 2);
 
 /* bare brand strip: no heading on purpose, the logos carry the section */
 export const Brands = ({ tone = "base" }: BrandsProps) => (
-  <SectionWrapper tone={tone}>
+  <SectionWrapper tone={tone} backdrop="contours">
     <Container>
       {/* logos ship light for the dark default; one flip here beats one per logo */}
       <div className="grid gap-12 in-[.light]:invert">

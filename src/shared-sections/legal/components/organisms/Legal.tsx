@@ -29,7 +29,7 @@ export const Legal = async ({ variant, tone = "base" }: LegalProps) => {
   }));
 
   return (
-    <SectionWrapper tone={tone}>
+    <SectionWrapper tone={tone} backdrop="contours">
       <Container>
         {/* full container width: the two columns need it to keep a readable measure */}
         <article>
