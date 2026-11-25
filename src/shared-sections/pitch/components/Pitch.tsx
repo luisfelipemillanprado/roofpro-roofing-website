@@ -31,7 +31,7 @@ export const Pitch = async ({ variant, tone = "base" }: PitchProps) => {
   }));
 
   return (
-    <SectionWrapper tone={tone}>
+    <SectionWrapper tone={tone} backdrop="tiles">
       <Container>
         <PitchWrapper
           heading={

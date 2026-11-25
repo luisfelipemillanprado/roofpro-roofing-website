@@ -1,6 +1,6 @@
 "use client";
 
-import { useId, useState } from "react";
+import { useId, useState, type KeyboardEvent } from "react";
 import { Text } from "@/common/text/components/Text";
 import type { TabsProps } from "@/common/tabs/types";
 
@@ -8,12 +8,31 @@ export const Tabs = ({ label, tabs }: TabsProps) => {
   const id = useId();
   const [active, setActive] = useState(tabs[0]!.key);
 
+  /* wai-aria tabs: arrows wrap, home and end jump; the tab gains focus and activates */
+  const onKeyDown = (event: KeyboardEvent<HTMLDivElement>) => {
+    const index = tabs.findIndex((tab) => tab.key === active);
+    const targets: Record<string, number> = {
+      ArrowRight: (index + 1) % tabs.length,
+      ArrowLeft: (index - 1 + tabs.length) % tabs.length,
+      Home: 0,
+      End: tabs.length - 1,
+    };
+    const next = tabs[targets[event.key] ?? -1];
+    if (!next) return;
+    event.preventDefault();
+    setActive(next.key);
+    const tab = document.getElementById(`${id}-tab-${next.key}`);
+    tab?.focus();
+    tab?.scrollIntoView({ inline: "nearest", block: "nearest" });
+  };
+
   return (
     <div className="grid gap-6">
       {/* the track hugs its segments and scrolls inside itself once the labels outgrow the column */}
       <div
         role="tablist"
         aria-label={label}
+        onKeyDown={onKeyDown}
         className="grid w-fit max-w-full scroll-p-1 scrollbar-none grid-flow-col justify-start overflow-x-auto rounded-full border border-line bg-surface-panel p-1"
       >
         {tabs.map(({ key, label }, index) => (
@@ -24,6 +43,8 @@ export const Tabs = ({ label, tabs }: TabsProps) => {
             role="tab"
             aria-selected={active === key}
             aria-controls={`${id}-panel-${key}`}
+            /* roving tabindex: tab reaches the chosen one, the arrows do the rest */
+            tabIndex={active === key ? 0 : -1}
             /* a tap never scrolls its container, so the chosen one brings itself into view */
             onClick={(event) => {
               setActive(key);

@@ -1,5 +1,7 @@
 /* Locale-independent company facts, ordered by render top to bottom */
 export const company = {
+  /* metadata: canonical base url for every canonical, hreflang and og:url */
+  siteUrl: "https://roofpro-roofing-website.vercel.app",
   /* navbar: brand badge, name, contact phone */
   logo: "/images/logo/logo.webp",
   name: "Roofpro",
@@ -30,22 +32,22 @@ export const company = {
   /* legal: the jurisdiction the terms name and the courts that hear a dispute */
   state: "Florida",
   county: "Miami-Dade",
-  /* footer brand: the builder's own profiles stand in until the client's accounts exist */
-  facebookHref: "https://www.facebook.com/remiuxsoft",
-  xHref: "https://x.com/remiuxsoft",
-  instagramHref: "https://www.instagram.com/remiuxsoft",
-  youtubeHref: "https://www.youtube.com/@remiuxsoft",
+  /* footer brand: the roofpro profiles, reserved names until the accounts exist */
+  facebookHref: "https://www.facebook.com/roofpro",
+  xHref: "https://x.com/roofpro",
+  instagramHref: "https://www.instagram.com/roofpro/",
+  youtubeHref: "https://www.youtube.com/@roofpro",
   /* footer contact: address + linked phone + linked email */
   address: "300 NW 127 Ave, Miami, FL 33182",
   phoneHref: "tel:+13056289696",
-  email: "info@designbuilderroofs.com",
-  emailHref: "mailto:info@designbuilderroofs.com",
-  /* footer hours: opening times (a null value means closed) */
-  weekdayHours: "7:00 AM – 4:00 PM",
+  email: "info@roofpro.com",
+  emailHref: "mailto:info@roofpro.com",
+  /* footer hours: 24h opening and closing times, formatted per locale; null means closed */
+  weekdayHours: { open: "07:00", close: "16:00" },
   saturdayHours: null,
   sundayHours: null,
   /* footer credits: the site the builder credit links to */
   builderHref: "https://remiux.com",
   /* floating contact: whatsapp deep link */
-  whatsappHref: "https://wa.me/13056289696" /* the builder's number, standing in */,
+  whatsappHref: "https://wa.me/13052069717",
 };

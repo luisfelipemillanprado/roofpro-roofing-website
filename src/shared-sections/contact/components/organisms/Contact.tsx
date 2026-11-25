@@ -14,7 +14,7 @@ export const Contact = async ({ tone = "base" }: ContactProps) => {
   const t = await getTranslations("contact");
 
   return (
-    <SectionWrapper id="contact" tone={tone}>
+    <SectionWrapper id="contact" tone={tone} backdrop="coils">
       <Container>
         {/* border outside the theme-dark pin so --line follows the page theme */}
         <div className="relative isolate overflow-hidden rounded-card border border-line px-5 py-12 sm:p-10">

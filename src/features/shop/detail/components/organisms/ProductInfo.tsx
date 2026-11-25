@@ -50,7 +50,7 @@ export const ProductInfo = async ({ product, tone = "base" }: ProductInfoProps) 
   }));
 
   return (
-    <SectionWrapper id="product-info" tone={tone}>
+    <SectionWrapper id="product-info" tone={tone} backdrop="contours">
       <Container>
         {/* info row: same split, gutter and card grid as the pitch band */}
         <div className="grid items-start gap-13 lg:grid-cols-[0.9fr_1.1fr]">

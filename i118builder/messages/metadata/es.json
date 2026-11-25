@@ -1,13 +1,13 @@
 {
   "title": "Roofpro — Servicios de Techado de Calidad, Duraderos y Confiables",
   "titleTemplate": "%s | Roofpro",
-  "description": "Roofpro ofrece soluciones de techado duraderas, energéticamente eficientes y confiables para propiedades residenciales y comerciales, respaldadas por más de 25 años de experiencia y más de 1,500 proyectos completados.",
+  "description": "Roofpro ofrece soluciones de techado duraderas, energéticamente eficientes y confiables para propiedades residenciales y comerciales, respaldadas por más de {years} años de experiencia y más de {projects} proyectos completados.",
   "ogTitle": "Roofpro — Servicios de Techado de Calidad, Duraderos y Confiables",
-  "ogDescription": "Creamos techos con precisión y cuidado. Más de 25 años de experiencia protegiendo hogares y negocios.",
+  "ogDescription": "Creamos techos con precisión y cuidado. Más de {years} años de experiencia protegiendo hogares y negocios.",
   "pages": {
     "about": {
       "title": "Nosotros",
-      "description": "Conoce Roofpro: más de 25 años de experiencia en techado confiable y duradero, un equipo de profesionales licenciados y valores que guían cada proyecto que realizamos."
+      "description": "Conoce Roofpro: más de {years} años de experiencia en techado confiable y duradero, un equipo de profesionales licenciados y valores que guían cada proyecto que realizamos."
     },
     "services": {
       "title": "Servicios de Techado",

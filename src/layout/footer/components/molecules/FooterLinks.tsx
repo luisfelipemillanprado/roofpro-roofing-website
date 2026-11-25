@@ -7,7 +7,7 @@ import type { FooterLinksProps } from "@/layout/footer/types";
 /* one footer link column: micro title + hover-arrow links */
 export const FooterLinks = ({ title, links }: FooterLinksProps) => (
   <div className="grid content-start justify-items-center gap-5 sm:justify-items-start">
-    <Title as="h4" size="micro" weight="bold" tracking text={title} />
+    <Title as="h2" size="micro" weight="bold" tracking text={title} />
     <ul className="grid w-full gap-3">
       {links.map((link) => (
         <li key={link.key}>

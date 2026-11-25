@@ -36,7 +36,7 @@ codebase. New or edited components must keep them; auditing existing ones is the
   input `type` and `required` where applicable.
 - **Dialogs follow the viewer pattern:** `role="dialog"` + `aria-modal="true"` +
   `aria-label`, move focus into the dialog on open, lock body scroll, and close on `Escape`.
-- **`<html lang>` tracks the active locale** (kept in sync by `SyncLocale`); do not hardcode
-  a language.
+- **`<html lang>` tracks the active locale**: the root layout `[locale]/layout.tsx` renders
+  `lang={locale}` server-side, so the static HTML is already right; do not hardcode a language.
 - **Images** follow the images rule (meaningful `alt`, or the parent conveys the meaning) —
   see `.claude/rules/images.md`.

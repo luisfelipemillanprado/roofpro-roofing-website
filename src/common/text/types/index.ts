@@ -1,3 +1,5 @@
+import type { ReactNode } from "react";
+
 export type TextSize = "subhead" | "lead" | "body" | "caption" | "note" | "label";
 export type TextTone = "default" | "muted" | "white" | "primary" | "accent";
 export type TextWeight = "medium" | "semibold" | "bold";
@@ -10,7 +12,7 @@ export interface TextProps {
   weight?: TextWeight;
   tracking?: TextTracking;
   truncate?: boolean;
-  text: string;
+  text: ReactNode; /* a string, or rich text from t.rich (the footer copyright) */
 }
 
 export type TextNumberSize = "base" | "price" | "stat" | "headline" | "display";

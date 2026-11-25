@@ -12,15 +12,12 @@
   },
   "stats": {
     "years": {
-      "value": "25+",
       "label": "Years Experience"
     },
     "projects": {
-      "value": "1.5k+",
       "label": "Roofs Completed"
     },
     "licensed": {
-      "value": "100%",
       "label": "Licensed & Insured"
     }
   },

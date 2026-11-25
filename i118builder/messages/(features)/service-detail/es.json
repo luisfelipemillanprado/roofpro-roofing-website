@@ -12,15 +12,12 @@
   },
   "stats": {
     "years": {
-      "value": "25+",
       "label": "Años de Experiencia"
     },
     "projects": {
-      "value": "1.5k+",
       "label": "Techos Completados"
     },
     "licensed": {
-      "value": "100%",
       "label": "Licencia y Seguro"
     }
   },

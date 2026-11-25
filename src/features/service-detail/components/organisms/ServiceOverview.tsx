@@ -24,7 +24,7 @@ export const ServiceOverview = async ({ serviceKey, tone = "base" }: ServiceOver
   const ideal = t.raw(`items.${item.key}.ideal`) as string[];
 
   return (
-    <SectionWrapper id="service-detail" tone={tone}>
+    <SectionWrapper id="service-detail" tone={tone} backdrop="structure">
       <Container>
         <div className="grid gap-19">
           {/* Image side with badge + contact overlays */}

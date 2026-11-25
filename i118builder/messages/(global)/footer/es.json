@@ -3,7 +3,7 @@
   "topLinksTitle": "ENLACES",
   "servicesTitle": "SERVICIOS",
   "contactTitle": "CONTACTO",
-  "copyright": "© {year} {name}. Todos los derechos reservados.",
+  "copyright": "© <year></year> {name}. Todos los derechos reservados.",
   "builtBy": "Desarrollado por",
   "privacy": "Política de Privacidad",
   "terms": "Términos de Uso",

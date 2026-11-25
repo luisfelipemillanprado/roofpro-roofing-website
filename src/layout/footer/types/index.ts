@@ -1,3 +1,5 @@
+import type { ReactNode } from "react";
+
 /* certification trust badge from the data layer; label is the image alt */
 export interface CertificationData {
   key: string;
@@ -21,7 +23,7 @@ interface CreditLink {
 }
 
 export interface FooterCreditsProps {
-  copyright: string;
+  copyright: ReactNode; /* rich text: the year is a live component */
   builtByLabel: string;
   builder: CreditLink;
   legal: FooterLinkItem[];

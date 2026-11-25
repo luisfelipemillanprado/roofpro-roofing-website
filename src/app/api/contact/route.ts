@@ -18,9 +18,10 @@ type ContactPayload = {
   elapsedMs?: unknown;
 };
 
+/* last entry: appended by Traefik from the connection; earlier ones are client-supplied */
 function clientIp(request: Request): string {
   const forwarded = request.headers.get("x-forwarded-for");
-  return forwarded?.split(",")[0]?.trim() || "unknown";
+  return forwarded?.split(",").at(-1)?.trim() || "unknown";
 }
 
 /* CSRF guard: browsers set Origin on cross-site POSTs, so require our own host */
@@ -76,7 +77,8 @@ export async function POST(request: Request) {
 
   /* honeypot + time-trap: accept silently so bots get no signal to adapt */
   const trippedHoneypot = typeof payload.contact_time === "string" && payload.contact_time.length > 0;
-  const tooFast = typeof payload.elapsedMs === "number" && payload.elapsedMs < MIN_ELAPSED_MS;
+  /* the form always sends the elapsed time, so a missing or non-numeric one is a script too */
+  const tooFast = typeof payload.elapsedMs !== "number" || payload.elapsedMs < MIN_ELAPSED_MS;
   if (trippedHoneypot || tooFast) {
     return Response.json({ ok: true });
   }

@@ -12,6 +12,10 @@ const nextConfig: NextConfig = {
   images: {
     formats: ["image/avif", "image/webp"],
   },
+  experimental: {
+    /* root layout sits under [locale], so unmatched urls need app/global-not-found.tsx */
+    globalNotFound: true,
+  },
 };
 
 const withNextIntl = createNextIntlPlugin("./src/i18n/request.ts");

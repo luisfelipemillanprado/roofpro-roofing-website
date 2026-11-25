@@ -9,7 +9,15 @@ export interface ProvidersProps {
   themeProps?: ThemeProviderProps;
 }
 
-/* Above [locale]: theme survives locale switch */
+/* theme provider; the choice persists in localStorage across locales */
 export const Providers = ({ children, themeProps }: ProvidersProps) => {
-  return <NextThemesProvider {...themeProps}>{children}</NextThemesProvider>;
+  return (
+    <NextThemesProvider
+      {...themeProps}
+      /* next docs InlineScript: runs from the server html, inert when the client renders it */
+      scriptProps={{ type: typeof window === "undefined" ? "text/javascript" : "text/plain" }}
+    >
+      {children}
+    </NextThemesProvider>
+  );
 };

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import type { Locale } from "@/i18n/routing";
-import { routeMetadata } from "@/i18n/metadata";
+import { metadataFacts, routeMetadata } from "@/i18n/metadata";
 import { PageHeader } from "@/shared-sections/page-header/components/organisms/PageHeader";
 import { pageHeaderData } from "@/data/shared-sections/page-header";
 import { Marquee } from "@/shared-sections/marquee/components/organisms/Marquee";
@@ -21,11 +21,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     locale: locale as Locale,
     namespace: "metadata.pages.about",
   });
-  return {
-    title: t("title"),
-    description: t("description"),
-    ...(await routeMetadata(locale as Locale, "/about")),
-  };
+  /* the page copy feeds both the head and its share card */
+  const copy = { title: t("title"), description: t("description", metadataFacts) };
+  return { ...copy, ...(await routeMetadata(locale as Locale, "/about", copy)) };
 }
 
 export default async function AboutPage({ params }: Props) {

@@ -5,22 +5,26 @@ Project decisions, historical context, and pending work. Conventions live in
 
 ## Current Project State
 
-- The visual e2e suite covers the **dark theme only**: `src/app/layout.tsx` sets
+- The visual e2e suite covers the **dark theme only**: `src/app/[locale]/layout.tsx` sets
   `defaultTheme: "dark"` with `enableSystem: false`, so Playwright's `colorScheme: "light"`
   reaches the form controls but never the app. Light-theme changes need a browser pass.
 - Footer privacy and terms links are still placeholders until those pages exist.
 - `ServiceAreas` ships both as the `/areas` page and as a section on service detail pages.
 - The contact `EmailForm` posts to `src/app/api/contact/route.ts` (Node.js runtime), which
   sends via Amazon SES and is bot-hardened (honeypot, time-trap, origin check, in-memory
-  rate limit). It is a dev no-op until `AWS_REGION`/`SES_FROM`/`CONTACT_TO` are set and an
-  SES identity is verified; the rate limit should move to Upstash/Vercel KV for production.
+  rate limit). It needs `AWS_REGION`/`SES_FROM`/`CONTACT_TO` plus AWS credentials in every
+  environment (SES is configured on AWS; production runs on a VPS, not Vercel); without
+  them the API answers 502, never a fake success.
 
 ## Placeholder client data (needs real values before launch)
 
-- Social profile hrefs (`facebook`, `x`, `instagram`, `youtube`), the `builder` credit
-  href, and the WhatsApp number (`whatsappHref`) are all `#`/sample placeholders.
+- Contact data is the real company's (designbuilderroofs.com) under the Roofpro brand: phone,
+  WhatsApp (305) 206-9717, address and hours are real; the email `info@roofpro.com` and the
+  four `roofpro` social handles are the brand's names and may not exist yet.
 - Company facts in `src/data/site.ts` (name, phone, email, address, figures) are template
   sample values. See the README "Customizing for the Client" section for where to edit.
+- `company.siteUrl` is the Vercel domain `https://roofpro-roofing-website.vercel.app` for
+  now; it feeds `metadataBase`, so a custom domain only changes that one value.
 
 ## Pending work
 

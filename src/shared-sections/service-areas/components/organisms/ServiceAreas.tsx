@@ -25,7 +25,7 @@ export const ServiceAreas = async ({ tone = "base" }: ServiceAreasProps) => {
   }));
 
   return (
-    <SectionWrapper id="service-areas" tone={tone}>
+    <SectionWrapper id="service-areas" tone={tone} backdrop="structure">
       <Container>
         <div className="grid gap-13">
           <div className="grid justify-items-center gap-6 md:max-xl:mr-5 md:max-xl:grid-cols-[1fr_auto] md:max-xl:items-center md:max-xl:justify-items-stretch md:max-xl:gap-x-6">

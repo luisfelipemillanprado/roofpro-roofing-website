@@ -5,6 +5,6 @@ import { routing } from "./i18n/routing";
 export default createMiddleware(routing);
 
 export const config = {
-  /* every path except api, Next internals and static files */
-  matcher: "/((?!api|_next|_vercel|.*\\..*).*)",
+  /* every path except api, Next internals, static files and the og image route (next-intl docs) */
+  matcher: "/((?!api|_next|_vercel|.*/opengraph-image|.*\\..*).*)",
 };

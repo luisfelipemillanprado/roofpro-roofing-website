@@ -28,7 +28,7 @@ export const About = async ({ variant, tone = "base" }: AboutProps) => {
   const pointItems = points[variant].map((point) => ({ key: point.key, label: t(`points.${point.key}`) }));
 
   return (
-    <SectionWrapper id="about" tone={tone}>
+    <SectionWrapper id="about" tone={tone} backdrop="structure">
       <Container>
         <ProfileSplit
           media={

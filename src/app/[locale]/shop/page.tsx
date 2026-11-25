@@ -17,11 +17,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     locale: locale as Locale,
     namespace: "metadata.pages.shop",
   });
-  return {
-    title: t("title"),
-    description: t("description"),
-    ...(await routeMetadata(locale as Locale, "/shop")),
-  };
+  /* the page copy feeds both the head and its share card */
+  const copy = { title: t("title"), description: t("description") };
+  return { ...copy, ...(await routeMetadata(locale as Locale, "/shop", copy)) };
 }
 
 export default async function ShopPage({ params }: Props) {

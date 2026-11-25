@@ -19,11 +19,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     locale: locale as Locale,
     namespace: "metadata.pages.projects",
   });
-  return {
-    title: t("title"),
-    description: t("description"),
-    ...(await routeMetadata(locale as Locale, "/projects")),
-  };
+  /* the page copy feeds both the head and its share card */
+  const copy = { title: t("title"), description: t("description") };
+  return { ...copy, ...(await routeMetadata(locale as Locale, "/projects", copy)) };
 }
 
 export default async function ProjectsPage({ params }: Props) {

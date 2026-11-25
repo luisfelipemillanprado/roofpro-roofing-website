@@ -58,6 +58,11 @@ function buildNestedObject(routeSegments: string[], content: JsonObject): JsonOb
   );
 }
 
+/* one-shot build fails the command, never stale messages; watch keeps running */
+function failBuild() {
+  if (!isWatch) process.exitCode = 1;
+}
+
 function build() {
   mkdirSync(OUTPUT_DIR, { recursive: true });
   const jsonFiles = collectJsonFiles(BUILDER_MESSAGES_DIR);
@@ -75,6 +80,7 @@ function build() {
       if (!isJsonObject(parsedContent)) {
         const relativePath = relative(BUILDER_MESSAGES_DIR, filePath);
         console.error(`[i18n-build] ✘ JSON root must be an object in ${relativePath} — skipping build`);
+        failBuild();
         return;
       }
 
@@ -82,6 +88,7 @@ function build() {
     } catch {
       const relativePath = relative(BUILDER_MESSAGES_DIR, filePath);
       console.error(`[i18n-build] ✘ JSON parse error in ${relativePath} — skipping build`);
+      failBuild();
       return;
     }
 
