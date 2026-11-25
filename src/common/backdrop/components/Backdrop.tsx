@@ -25,6 +25,11 @@ const looks: Record<BackdropPattern, BackdropLook> = {
     strength: "opacity-3 in-[.light]:opacity-5",
     cover: "mask-top mask-repeat-y mask-size-[1224px_auto] lg:mask-size-[max(100%,1944px)_auto]",
   },
+  /* footer only, always dark: one strength; a single roof cut-out sitting on the bottom-left corner */
+  roof: {
+    strength: "opacity-6",
+    cover: "mask-bottom-left mask-no-repeat mask-size-[430px_auto] lg:mask-size-[810px_auto]",
+  },
 };
 
 /* template artwork in the text color, so it follows the theme; the page css keeps it to every other section */
