@@ -290,6 +290,11 @@ html:has([role="dialog"][aria-modal="true"]) {
   .faq-accordion[open]::details-content {
     block-size: auto;
   }
+
+  /* Section backdrops alternate down the page: odd ones carry their art, the even ones between stay plain */
+  main > :nth-child(even of [data-backdrop]) [data-backdrop-layer="cover"] {
+    display: none;
+  }
 }
 
 /* Hero scrims (contrast) — side for copy legibility, bottom seats the section */
