@@ -1,5 +1,5 @@
-/* the template artwork a section paints behind its content */
-export type BackdropPattern = "structure" | "shingles" | "tiles" | "coils";
+/* the template artwork a section (or the footer) paints behind its content */
+export type BackdropPattern = "structure" | "shingles" | "tiles" | "pantiles" | "roof";
 
 export interface BackdropProps {
   pattern: BackdropPattern;

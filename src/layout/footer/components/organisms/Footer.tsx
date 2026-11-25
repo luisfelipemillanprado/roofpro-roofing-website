@@ -1,6 +1,7 @@
 import { getFormatter, getTranslations } from "next-intl/server";
 import { Title } from "@/common/title/components/Title";
 import { Container } from "@/common/container/components/Container";
+import { Backdrop } from "@/common/backdrop/components/Backdrop";
 import { FooterBrand } from "@/layout/footer/components/molecules/FooterBrand";
 import { FooterLinks } from "@/layout/footer/components/molecules/FooterLinks";
 import { FooterContact } from "@/layout/footer/components/molecules/FooterContact";
@@ -52,7 +53,8 @@ export const Footer = async () => {
   const legalItems = legal.map((link) => ({ key: link.key, href: link.href, label: t(link.key) }));
 
   return (
-    <footer className="theme-dark bg-surface-muted text-foreground">
+    <footer className="theme-dark relative isolate overflow-clip bg-surface-muted text-foreground">
+      <Backdrop pattern="roof" />
       <Container>
         <div className="grid grid-cols-2 gap-x-8 gap-y-12 py-16 lg:grid-cols-[1.4fr_1fr_1fr_1.2fr] lg:gap-12 lg:py-20">
           {/* brand full-width on mobile; shares the first row with links from sm */}
