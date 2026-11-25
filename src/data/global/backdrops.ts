@@ -3,6 +3,6 @@ export const backdropsData = {
   structure: "/images/backdrops/structure.webp",
   shingles: "/images/backdrops/shingles.webp",
   tiles: "/images/backdrops/tiles.webp",
-  coils: "/images/backdrops/coils.webp",
+  pantiles: "/images/backdrops/pantiles.webp",
   roof: "/images/backdrops/roof.webp",
 } as const;

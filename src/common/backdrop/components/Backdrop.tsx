@@ -20,10 +20,10 @@ const looks: Record<BackdropPattern, BackdropLook> = {
     strength: "opacity-3 in-[.light]:opacity-6",
     cover: "mask-repeat mask-size-[197px_auto] lg:mask-size-[313px_auto]",
   },
-  /* foot crossfaded into its head, so it repeats down without a seam */
-  coils: {
-    strength: "opacity-3 in-[.light]:opacity-5",
-    cover: "mask-top mask-repeat-y mask-size-[1224px_auto] lg:mask-size-[max(100%,1944px)_auto]",
+  /* one exact period: two tiles across (the tile pitch falls between pixels), one course down */
+  pantiles: {
+    strength: "opacity-3 in-[.light]:opacity-6",
+    cover: "mask-repeat mask-size-[253px_auto] lg:mask-size-[401px_auto]",
   },
   /* footer only, always dark: one strength; a single roof cut-out sitting on the bottom-left corner */
   roof: {
