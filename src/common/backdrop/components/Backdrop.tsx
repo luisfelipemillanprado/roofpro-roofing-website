@@ -3,13 +3,28 @@ import { backdropsData } from "@/data/global/backdrops";
 import type { BackdropLook, BackdropPattern, BackdropProps } from "@/common/backdrop/types";
 
 /* per artwork: strength by theme (dark reads louder) and how it covers the section */
+/* fixed scales (0.85x mobile, 1.35x desktop), so a tall section never zooms the art */
 const looks: Record<BackdropPattern, BackdropLook> = {
-  /* the framework thins out to the right in the photo: mirrored so it opens toward the left */
-  structure: { strength: "opacity-3 in-[.light]:opacity-5", cover: "-scale-x-100 mask-cover mask-top" },
-  /* a seamless tile at its own size: stretched to cover, the grain would blur */
-  shingles: { strength: "opacity-3 in-[.light]:opacity-6", cover: "mask-repeat" },
-  tiles: { strength: "opacity-3 in-[.light]:opacity-6", cover: "mask-cover mask-center" },
-  coils: { strength: "opacity-3 in-[.light]:opacity-5", cover: "mask-cover mask-center" },
+  /* foot crossfaded into its head, so it repeats down without a seam; mirrored so the framework opens left */
+  structure: {
+    strength: "opacity-3 in-[.light]:opacity-5",
+    cover: "-scale-x-100 mask-top mask-repeat-y mask-size-[1224px_auto] lg:mask-size-[max(100%,1944px)_auto]",
+  },
+  /* 2 tabs wide, scaled down from the photo, whose tabs read too large */
+  shingles: {
+    strength: "opacity-3 in-[.light]:opacity-6",
+    cover: "mask-repeat mask-size-[214px_auto] lg:mask-size-[333px_auto]",
+  },
+  /* one exact period: 3 tiles by 2 courses */
+  tiles: {
+    strength: "opacity-3 in-[.light]:opacity-6",
+    cover: "mask-repeat mask-size-[197px_auto] lg:mask-size-[313px_auto]",
+  },
+  /* foot crossfaded into its head, so it repeats down without a seam */
+  coils: {
+    strength: "opacity-3 in-[.light]:opacity-5",
+    cover: "mask-top mask-repeat-y mask-size-[1224px_auto] lg:mask-size-[max(100%,1944px)_auto]",
+  },
 };
 
 /* template artwork in the text color, so it follows the theme; the page css keeps it to every other section */

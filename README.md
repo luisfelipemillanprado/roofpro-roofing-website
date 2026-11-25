@@ -122,7 +122,7 @@ src/
     site.ts                      # company facts (company)
     blurs.ts                     # blur placeholders for next/image
     global/layout.ts             # navbar / footer / floating-contact shell data
-    global/backdrops.ts          # section backdrop masks (webp textures)
+    global/backdrops.ts          # section backdrop masks (webp textures, tiled at a fixed scale)
     shared-sections/<section>.ts # per-section metadata (icons, image paths, keys)
     pages/<route>.ts             # route-specific section data (service-detail)
     features/shop/<file>.ts      # shop catalog + product-detail data
