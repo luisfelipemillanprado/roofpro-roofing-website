@@ -6,7 +6,8 @@ import type { BackdropLook, BackdropPattern, BackdropProps } from "@/common/back
 const looks: Record<BackdropPattern, BackdropLook> = {
   /* the framework thins out to the right in the photo: mirrored so it opens toward the left */
   structure: { strength: "opacity-3 in-[.light]:opacity-5", cover: "-scale-x-100 mask-cover mask-top" },
-  contours: { strength: "opacity-3 in-[.light]:opacity-6", cover: "mask-cover mask-center" },
+  /* a seamless tile at its own size: stretched to cover, the grain would blur */
+  shingles: { strength: "opacity-3 in-[.light]:opacity-6", cover: "mask-repeat" },
   tiles: { strength: "opacity-3 in-[.light]:opacity-6", cover: "mask-cover mask-center" },
   coils: { strength: "opacity-3 in-[.light]:opacity-5", cover: "mask-cover mask-center" },
 };
@@ -16,7 +17,7 @@ export const Backdrop = ({ pattern }: BackdropProps) => (
   <div
     aria-hidden="true"
     data-backdrop-layer="cover"
-    className={`pointer-events-none absolute inset-0 z-(--z-behind) bg-foreground mask-(--backdrop) mask-no-repeat ${looks[pattern].strength} ${looks[pattern].cover}`}
+    className={`pointer-events-none absolute inset-0 z-(--z-behind) bg-foreground mask-(--backdrop) ${looks[pattern].strength} ${looks[pattern].cover}`}
     style={{ "--backdrop": `url(${backdropsData[pattern]})` } as CSSProperties}
   />
 );
