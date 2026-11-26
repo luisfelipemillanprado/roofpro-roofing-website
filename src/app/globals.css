@@ -1,5 +1,8 @@
 @import "tailwindcss";
 
+/* Light theme variant (light:); dark is the default, so it needs none */
+@custom-variant light (&:where(.light, .light *));
+
 @theme {
   /* Neutrals — shared (dark & light theme) */
   --color-night: oklch(0.243 0.014 239.25); /* → --surface-base (dark) */

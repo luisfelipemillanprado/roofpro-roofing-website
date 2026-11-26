@@ -14,7 +14,7 @@ export const Brands = ({ tone = "base" }: BrandsProps) => (
   <SectionWrapper tone={tone} backdrop="shingles">
     <Container>
       {/* logos ship light for the dark default; one flip here beats one per logo */}
-      <div className="grid gap-12 in-[.light]:invert">
+      <div className="grid gap-12 light:invert">
         {/* clipped track, both edges faded so logos arrive and leave without a hard cut */}
         <div className="overflow-hidden mask-x-from-95% mask-x-to-100%">
           <LoopTrack copies={trackCopies} speed="slow">

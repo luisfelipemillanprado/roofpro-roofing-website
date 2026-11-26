@@ -217,7 +217,7 @@ Theming is CSS-first in [`src/app/globals.css`](src/app/globals.css):
   `text-foreground-muted`, `border-line`, `bg-primary`…).
 - **Dark is the default** — the roles are defined on `:root` (and `.theme-dark`, which pins
   dark on a subtree such as the navbar); `.light` overrides the runtime variables. The
-  `dark:` variant is defined with `@custom-variant`.
+  `light:` variant is defined with `@custom-variant` (dark needs none).
 - Base resets live in `@layer base`, component classes in `@layer components`, and custom
   utilities (e.g. hero overlays) are declared with `@utility`.
 
