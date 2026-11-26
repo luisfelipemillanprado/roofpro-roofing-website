@@ -7,7 +7,7 @@ import { Container } from "@/common/container/components/Container";
 export const HeroWrapper = ({ children, image, imageAlt, id }: HeroWrapperProps) => (
   <section id={id} className="theme-dark relative isolate overflow-hidden">
     {/* Background */}
-    <div className="absolute inset-0 z-(--z-behind)">
+    <div className="absolute inset-0 z-behind">
       <Image
         src={image}
         alt={imageAlt}

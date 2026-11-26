@@ -218,6 +218,8 @@ Theming is CSS-first in [`src/app/globals.css`](src/app/globals.css):
 - **Dark is the default** — the roles are defined on `:root` (and `.theme-dark`, which pins
   dark on a subtree such as the navbar); `.light` overrides the runtime variables. The
   `light:` variant is defined with `@custom-variant` (dark needs none).
+- The layering scale is `--z-index-*` under `@theme`, used as `z-behind`, `z-dropdown`,
+  `z-overlay` and `z-modal`.
 - Base resets live in `@layer base`, component classes in `@layer components`, and custom
   utilities (e.g. hero overlays) are declared with `@utility`.
 

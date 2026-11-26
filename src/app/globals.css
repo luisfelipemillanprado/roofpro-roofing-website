@@ -48,6 +48,12 @@
   /* Header height — navbar + mobile-menu offset */
   --spacing-header: 4.5rem;
 
+  /* Layering scale (utilities: z-behind, z-dropdown, z-overlay, z-modal) */
+  --z-index-behind: -10; /* decorative/scrim layer behind content in an isolate context */
+  --z-index-dropdown: 30; /* popovers & dropdown panels */
+  --z-index-overlay: 50; /* fixed chrome: navbar, mobile menu, floating contact */
+  --z-index-modal: 60; /* dialogs above everything (image viewer) */
+
   /* Marquee (utility: animate-marquee) */
   --animate-marquee: marquee 28s linear infinite;
   /* Brands strip (utility: animate-marquee-slow): a longer loop, so the logos drift gently */
@@ -180,14 +186,6 @@
   @variant lg {
     --color-amber: var(--color-amber-vivid);
   }
-}
-
-/* Layering scale (theme-independent) — use via z-(--z-*) */
-:root {
-  --z-behind: -10; /* decorative/scrim layer behind content in an isolate context */
-  --z-dropdown: 30; /* popovers & dropdown panels */
-  --z-overlay: 50; /* fixed chrome: navbar, mobile menu, floating contact */
-  --z-modal: 60; /* dialogs above everything (image viewer) */
 }
 
 /* Base element styles (cascade layer so utilities can override) */

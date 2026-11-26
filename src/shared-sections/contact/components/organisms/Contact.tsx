@@ -19,7 +19,7 @@ export const Contact = async ({ tone = "base" }: ContactProps) => {
         {/* border outside the theme-dark pin so --line follows the page theme */}
         <div className="relative isolate overflow-hidden rounded-card border border-line px-5 py-12 sm:p-10">
           {/* background: image + contact scrims (side + bottom) */}
-          <div className="absolute inset-0 z-(--z-behind)">
+          <div className="absolute inset-0 z-behind">
             <Image
               src={image}
               alt={t("imageAlt")}

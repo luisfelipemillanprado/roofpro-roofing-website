@@ -83,7 +83,7 @@ export const SortDropdown = ({ label, value, options, onChange }: SortDropdownPr
             id={`${id}-panel`}
             style={{ transitionDuration: `${ANIMATION_MS}ms` }}
             className={clsx(
-              "absolute top-full right-0 z-(--z-dropdown) mt-2 grid w-max min-w-full gap-1 rounded-badge border border-line bg-surface-panel p-2 shadow-lg shadow-shade/40 transition-all ease-in-out",
+              "absolute top-full right-0 z-dropdown mt-2 grid w-max min-w-full gap-1 rounded-badge border border-line bg-surface-panel p-2 shadow-lg shadow-shade/40 transition-all ease-in-out",
               /* no clicks on the way out: it is still mounted while it fades */
               isOpen ? "translate-y-0 opacity-100" : "pointer-events-none -translate-y-1 opacity-0",
             )}

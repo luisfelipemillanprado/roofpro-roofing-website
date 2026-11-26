@@ -20,7 +20,7 @@ export const Backdrop = ({ pattern }: BackdropProps) => (
   <div
     aria-hidden="true"
     data-backdrop-layer
-    className={`pointer-events-none absolute inset-0 z-(--z-behind) bg-foreground ${pattern === "roof" ? "opacity-6" : "opacity-4 light:opacity-7"} ${masks[pattern]}`}
+    className={`pointer-events-none absolute inset-0 z-behind bg-foreground ${pattern === "roof" ? "opacity-6" : "opacity-4 light:opacity-7"} ${masks[pattern]}`}
     style={{ maskImage: `url(${backdropsData[pattern]})` }}
   />
 );
