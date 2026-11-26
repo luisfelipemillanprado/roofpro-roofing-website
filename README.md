@@ -312,7 +312,7 @@ If you invoke `tsc` directly, run `pnpm i18n:build` first so the generated `mess
   (navbar links, footer columns, floating-contact actions).
 - **Brand colors / fonts:** edit the `@theme` block in
   [`src/app/globals.css`](src/app/globals.css) and the fonts in
-  [`src/app/[locale]/layout.tsx`](src/app/[locale]/layout.tsx).
+  [`src/app/styles/fonts.ts`](src/app/styles/fonts.ts).
 - **Photography:** drop `.webp` images into `public/images/` and update the paths in
   `src/data/`. Output formats (AVIF/WebP) are configured in
   [`next.config.ts`](next.config.ts).

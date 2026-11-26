@@ -42,10 +42,6 @@
   --color-line-chip: color-mix(in oklab, var(--color-white) 20%, transparent); /* chips, raised pieces */
   --color-line-control: color-mix(in oklab, var(--color-white) 30%, transparent); /* interactive controls */
 
-  /* Typography — --font-sans applied to <html> by Preflight */
-  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
-  --font-display: var(--font-jakarta), ui-sans-serif, system-ui, sans-serif;
-
   /* Header height — navbar + mobile-menu offset */
   --spacing-header: 4.5rem;
 
@@ -114,8 +110,13 @@
   }
 }
 
-/* Inline roles (var() references) — theme-switching colors, then per-role radius */
+/* Inline roles (var() references) — next/font families, theme-switching colors, per-role radius */
 @theme inline {
+  /* Typography — next/font variables; --font-sans applied to <html> by Preflight */
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-jakarta), ui-sans-serif, system-ui, sans-serif;
+
+  /* Theme-switching colors — the runtime roles below, per theme */
   --color-surface-base: var(--surface-base); /* page + section base background */
   --color-surface-panel: var(--surface-panel); /* cards/panels: testimonials, navbar, form controls */
   --color-surface-muted: var(--surface-muted); /* alternating sections, footer */
@@ -172,8 +173,8 @@
 }
 
 /* Mobile amber; the desktop amber from lg+ */
-@media (min-width: 64rem) {
-  :root {
+:root {
+  @variant lg {
     --color-amber: var(--color-amber-vivid);
   }
 }
@@ -228,8 +229,8 @@ html:has([role="dialog"][aria-modal="true"]) {
   scrollbar-gutter: stable; /* the gutter stays, or the fixed chrome jumps by a scrollbar */
 }
 /* the menu's lock lives in the query that hides the menu, so the two can never disagree */
-@media (width < theme(--breakpoint-lg)) {
-  html:has([data-mobile-menu]) {
+html:has([data-mobile-menu]) {
+  @variant max-lg {
     overflow: hidden;
     scrollbar-gutter: stable;
   }
