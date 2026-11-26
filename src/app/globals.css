@@ -227,6 +227,12 @@
   ::-webkit-scrollbar-thumb:hover {
     background: var(--color-primary);
   }
+  /* Firefox lacks the pseudo-elements: the standard colors only, so Chrome keeps the rules above */
+  @supports not selector(::-webkit-scrollbar) {
+    html {
+      scrollbar-color: var(--color-slate-deep) var(--color-charcoal);
+    }
+  }
 }
 
 /* Page lock — outside any layer, and keyed on the panel itself so no state can contradict it */
