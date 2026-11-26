@@ -45,7 +45,7 @@ const lightenStyle = (_previous: StyleSpecification | undefined, next: StyleSpec
 /* fit margin so a pin near the edge keeps its 44px head inside the frame */
 const FIT_PADDING = { top: 48, right: 16, bottom: 24, left: 16 };
 
-/* brand pin: graphite drop with an amber core, since the style paints roads amber */
+/* brand pin: contrast drop with an amber core, since the style paints roads amber */
 const PIN_SVG =
   '<svg viewBox="0 0 24 32" aria-hidden="true" class="h-8 w-6 drop-shadow-md"><path class="fill-contrast" d="M12 0C5.4 0 0 5.2 0 11.6 0 20.3 12 32 12 32s12-11.7 12-20.4C24 5.2 18.6 0 12 0Z"/><circle cx="12" cy="11.5" r="4.5" class="fill-primary"/></svg>';
 

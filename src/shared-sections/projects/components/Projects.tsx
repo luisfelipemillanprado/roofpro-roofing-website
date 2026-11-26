@@ -1,4 +1,4 @@
-import { SectionHeading } from "@/common/section-header/components/SectionHeading";
+import { SectionHeader } from "@/common/section-header/components/SectionHeader";
 import { SectionWrapper } from "@/common/section-wrapper/components/SectionWrapper";
 import { Button } from "@/common/call-to-actions/components/Button";
 import { MosaicList } from "@/common/mosaic/components/MosaicList";
@@ -26,21 +26,16 @@ export const Projects = async ({ variant, tone = "muted", limit, offset = 0 }: P
     <SectionWrapper id="projects" tone={tone} backdrop="shingles">
       <Container>
         <div className="grid gap-13">
-          <div className="grid justify-items-center gap-6 md:max-xl:mr-5 md:max-xl:grid-cols-[1fr_auto] md:max-xl:items-center md:max-xl:justify-items-stretch md:max-xl:gap-x-6">
-            <SectionHeading
-              align="center"
-              flushFrom="md"
-              eyebrow={t(heading.eyebrow)}
-              title={t(heading.titleLead)}
-              accent={t(heading.titleAccent)}
-              description={t(heading.description)}
-            />
-            <div className="mt-2 md:max-xl:mt-0">
-              <Button href={ctaHref[variant].href} variant="secondary" pulse>
-                {t(ctaHref[variant].key)}
-              </Button>
-            </div>
-          </div>
+          <SectionHeader
+            eyebrow={t(heading.eyebrow)}
+            title={t(heading.titleLead)}
+            accent={t(heading.titleAccent)}
+            description={t(heading.description)}
+          >
+            <Button href={ctaHref[variant].href} variant="secondary" pulse>
+              {t(ctaHref[variant].key)}
+            </Button>
+          </SectionHeader>
 
           {/* home/about: arrow link to the projects page; projects page: expand button opens the viewer */}
           {variant === "viewAll" ? (
