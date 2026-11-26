@@ -210,7 +210,8 @@ any unknown slug 404s. There is no free-form slug generation.
 
 Theming is CSS-first in [`src/app/globals.css`](src/app/globals.css):
 
-- Brand colors are **primitives** declared as `--color-<name>` under `@theme`.
+- Brand colors are **primitives** declared as `--color-<name>` under `@theme`; the default
+  Tailwind palette is reset (`--color-*: initial`), so only the project's colors exist.
 - Runtime semantic roles (`--surface-base`, `--surface-panel`, `--surface-muted`,
   `--foreground`, `--foreground-muted`, `--line`) reference those primitives; `@theme inline`
   aliases them to generated color utilities (`bg-surface-panel`, `text-foreground`,

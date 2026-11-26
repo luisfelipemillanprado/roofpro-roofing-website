@@ -4,6 +4,9 @@
 @custom-variant light (&:where(.light, .light *));
 
 @theme {
+  /* Project palette only: the default Tailwind colors are off */
+  --color-*: initial;
+
   /* Neutrals — shared (dark & light theme) */
   --color-night: oklch(0.243 0.014 239.25); /* → --surface-base (dark) */
   --color-amber-vivid: oklch(0.7552 0.1253 80.01); /* → --amber at ≥1024px (desktop) */
