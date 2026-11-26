@@ -1,6 +1,6 @@
 /* section and footer backdrops: the mask each pattern paints in the text color */
 export const backdropsData = {
-  structure: "/images/backdrops/structure.webp",
+  architectural: "/images/backdrops/architectural.webp",
   shingles: "/images/backdrops/shingles.webp",
   tiles: "/images/backdrops/tiles.webp",
   pantiles: "/images/backdrops/pantiles.webp",

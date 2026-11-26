@@ -5,10 +5,10 @@ import type { BackdropLook, BackdropPattern, BackdropProps } from "@/common/back
 /* per artwork: strength by theme (dark reads louder) and how it covers the section */
 /* fixed scales (0.85x mobile, 1.35x desktop), so a tall section never zooms the art */
 const looks: Record<BackdropPattern, BackdropLook> = {
-  /* foot crossfaded into its head, so it repeats down without a seam; mirrored so the framework opens left */
-  structure: {
-    strength: "opacity-3 in-[.light]:opacity-5",
-    cover: "-scale-x-100 mask-top mask-repeat-y mask-size-[1224px_auto] lg:mask-size-[max(100%,1944px)_auto]",
+  /* six courses cut on their joints; courses sized like the shingles */
+  architectural: {
+    strength: "opacity-3 in-[.light]:opacity-6",
+    cover: "mask-repeat mask-size-[330px_auto] lg:mask-size-[516px_auto]",
   },
   /* 2 tabs wide, scaled down from the photo, whose tabs read too large */
   shingles: {

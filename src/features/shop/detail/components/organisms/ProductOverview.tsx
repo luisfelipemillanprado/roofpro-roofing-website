@@ -53,7 +53,7 @@ export const ProductOverview = async ({ product, tone = "base" }: ProductOvervie
   }));
 
   return (
-    <SectionWrapper id="product" tone={tone} backdrop="structure">
+    <SectionWrapper id="product" tone={tone} backdrop="architectural">
       <Container>
         <ProductSplit
           media={
