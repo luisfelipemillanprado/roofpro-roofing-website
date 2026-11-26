@@ -221,6 +221,9 @@ Theming is CSS-first in [`src/app/globals.css`](src/app/globals.css):
   `light:` variant is defined with `@custom-variant` (dark needs none).
 - The layering scale is `--z-index-*` under `@theme`, used as `z-behind`, `z-dropdown`,
   `z-overlay` and `z-modal`.
+- The type scale is `@theme` too: fluid `--text-*` sizes, `--leading-heading` and
+  `--tracking-wide` / `--tracking-subtle`, read by `Title`, `Text` and `TextNumber`
+  (`text-body`, `leading-heading`, `tracking-wide`…).
 - Base resets live in `@layer base`, component classes in `@layer components`, and custom
   utilities (e.g. hero overlays) are declared with `@utility`.
 

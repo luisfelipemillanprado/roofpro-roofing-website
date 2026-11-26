@@ -2,19 +2,13 @@ import clsx from "clsx";
 import type { TitleProps, TitleSize, TitleTone, TitleWeight, TitleAccentTone } from "@/common/title/types";
 
 const sizes: Record<TitleSize, string> = {
-  display:
-    "text-[3.375rem] sm:text-[clamp(4.5625rem,3.5rem+2.734375vw,6rem)] leading-none" /* 54px, then fluid 73.5px (sm) → 77px (md) → 84px (lg) → 91px (xl), 96px cap (~1463px) — hero h1 */,
-  banner:
-    "text-[clamp(1.875rem,0.375rem+6.6667vw,2.25rem)] lg:text-5xl leading-[1.3]" /* fluid 30→36px, 360→450vw, 48px (lg) — CTA banner h2 */,
-  section:
-    "text-[clamp(1.875rem,0.675rem+5.3333vw,2.125rem)] sm:text-[clamp(2.2rem,1.99375rem+0.73vw,2.6875rem)] leading-[1.3]" /* fluid 30→34px (360→435vw), then 36.57px (sm) → 37.51px (md) → 39.38px (lg) → 41.24px (xl), 43px cap (~1521px) */,
-  feature:
-    "text-[clamp(1.1875rem,0.5057rem+3.0303vw,1.25rem)] leading-[1.3]" /* fluid 19→20px, 360→393vw — service detail included panel, legal page section headings */,
-  card: "text-[clamp(1.15rem,0.91rem+1.0667vw,1.2rem)] leading-[1.3]" /* fluid 18.4→19.2px, 360→435vw — service, product, project and icon card titles */,
-  panel:
-    "text-[clamp(1rem,0.7rem+1.3333vw,1.0625rem)] leading-[1.3]" /* fluid 16→17px, 360→435vw — block headings inside the shop tabs */,
-  micro:
-    "text-[clamp(0.95625rem,0.83625rem+0.5333vw,0.98125rem)] leading-[1.3]" /* fluid 15.3→15.7px, 360→435vw — footer columns */,
+  display: "text-display sm:text-display-sm leading-none" /* hero h1 */,
+  banner: "text-banner lg:text-5xl leading-heading" /* 48px from lg — CTA banner h2 */,
+  section: "text-section sm:text-section-sm leading-heading" /* section headings */,
+  feature: "text-feature leading-heading" /* service detail included panel, legal page section headings */,
+  card: "text-card leading-heading" /* service, product, project and icon card titles */,
+  panel: "text-subhead leading-heading" /* block headings inside the shop tabs */,
+  micro: "text-body leading-heading" /* footer columns */,
 };
 
 const tones: Record<TitleTone, string> = {
@@ -49,7 +43,7 @@ export const Title = ({
       sizes[size],
       tones[tone],
       weights[weight],
-      tracking && "tracking-[0.126rem]",
+      tracking && "tracking-wide",
       truncate && "truncate",
     )}
   >

@@ -53,6 +53,27 @@
   /* Header height — navbar + mobile-menu offset */
   --spacing-header: 4.5rem;
 
+  /* Type scale — fluid sizes for Title, Text and TextNumber; the line height stays with each variant */
+  --text-label: clamp(0.7625rem, 0.6125rem + 0.6667vw, 0.79375rem); /* 12.2→12.7px, 360→435vw */
+  --text-note: clamp(0.825rem, 0.675rem + 0.6667vw, 0.85625rem); /* 13.2→13.7px, 360→435vw */
+  --text-caption: clamp(0.8375rem, 0.6575rem + 0.8vw, 0.875rem); /* 13.4→14px, 360→435vw */
+  --text-body: clamp(0.95625rem, 0.83625rem + 0.5333vw, 0.98125rem); /* 15.3→15.7px, 360→435vw */
+  --text-lead: clamp(0.95625rem, 0.74625rem + 0.9333vw, 1rem); /* 15.3→16px, 360→435vw */
+  --text-subhead: clamp(1rem, 0.7rem + 1.3333vw, 1.0625rem); /* 16→17px, 360→435vw */
+  --text-price: clamp(1.125rem, 0.4432rem + 3.0303vw, 1.1875rem); /* 18→19px, 360→393vw */
+  --text-card: clamp(1.15rem, 0.91rem + 1.0667vw, 1.2rem); /* 18.4→19.2px, 360→435vw */
+  --text-feature: clamp(1.1875rem, 0.5057rem + 3.0303vw, 1.25rem); /* 19→20px, 360→393vw */
+  --text-headline: clamp(1.5rem, 6.6667vw, 1.625rem); /* 24→26px */
+  --text-figure: clamp(1.75rem, -0.9773rem + 12.1212vw, 2rem); /* 28→32px, 360→393vw */
+  --text-banner: clamp(1.875rem, 0.375rem + 6.6667vw, 2.25rem); /* 30→36px, 360→450vw */
+  --text-section: clamp(1.875rem, 0.675rem + 5.3333vw, 2.125rem); /* 30→34px, 360→435vw */
+  --text-section-sm: clamp(2.2rem, 1.99375rem + 0.73vw, 2.6875rem); /* from sm: 36.57→43px, cap ~1521px */
+  --text-display: 3.375rem; /* 54px below sm */
+  --text-display-sm: clamp(4.5625rem, 3.5rem + 2.734375vw, 6rem); /* from sm: 73.5px → 96px cap (~1463px) */
+  --leading-heading: 1.3; /* every title but the hero */
+  --tracking-wide: 0.126rem; /* 2px, replacing the default wide: eyebrows, badges, footer titles */
+  --tracking-subtle: 0.0625rem; /* 1px: short labels */
+
   /* Layering scale (utilities: z-behind, z-dropdown, z-overlay, z-modal) */
   --z-index-behind: -10; /* decorative/scrim layer behind content in an isolate context */
   --z-index-dropdown: 30; /* popovers & dropdown panels */
