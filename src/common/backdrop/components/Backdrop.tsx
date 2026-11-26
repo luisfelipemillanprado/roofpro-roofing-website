@@ -1,43 +1,26 @@
-import type { CSSProperties } from "react";
 import { backdropsData } from "@/data/global/backdrops";
-import type { BackdropLook, BackdropPattern, BackdropProps } from "@/common/backdrop/types";
+import type { BackdropPattern, BackdropProps } from "@/common/backdrop/types";
 
-/* per artwork: strength by theme (dark reads louder) and how it covers the section */
-/* fixed scales (0.85x mobile, 1.35x desktop), so a tall section never zooms the art */
-const looks: Record<BackdropPattern, BackdropLook> = {
-  /* six courses cut on their joints; courses sized like the shingles */
-  architectural: {
-    strength: "opacity-4 in-[.light]:opacity-7",
-    cover: "mask-repeat mask-size-[330px_auto] lg:mask-size-[516px_auto]",
-  },
-  /* 2 tabs wide, scaled down from the photo, whose tabs read too large */
-  shingles: {
-    strength: "opacity-4 in-[.light]:opacity-7",
-    cover: "mask-repeat mask-size-[214px_auto] lg:mask-size-[333px_auto]",
-  },
-  /* one exact period: 3 tiles by 2 courses */
-  tiles: {
-    strength: "opacity-4 in-[.light]:opacity-7",
-    cover: "mask-repeat mask-size-[197px_auto] lg:mask-size-[313px_auto]",
-  },
+/* per artwork: mask size and repeat; fixed pixel sizes, so a tall section never zooms the art */
+const masks: Record<BackdropPattern, string> = {
+  /* six courses cut on their joints */
+  architectural: "mask-repeat mask-size-[330px_auto] lg:mask-size-[516px_auto]",
+  /* two tabs across, six courses down */
+  shingles: "mask-repeat mask-size-[214px_auto] lg:mask-size-[333px_auto]",
+  /* one exact period: three tiles by two courses */
+  tiles: "mask-repeat mask-size-[197px_auto] lg:mask-size-[313px_auto]",
   /* one exact period: two tiles across (the tile pitch falls between pixels), one course down */
-  pantiles: {
-    strength: "opacity-4 in-[.light]:opacity-7",
-    cover: "mask-repeat mask-size-[253px_auto] lg:mask-size-[401px_auto]",
-  },
-  /* footer only, always dark: one strength; a single roof cut-out sitting on the bottom-left corner */
-  roof: {
-    strength: "opacity-6",
-    cover: "mask-bottom-left mask-no-repeat mask-size-[430px_auto] lg:mask-size-[810px_auto]",
-  },
+  pantiles: "mask-repeat mask-size-[253px_auto] lg:mask-size-[401px_auto]",
+  /* a single roof cut-out on the footer's bottom-left corner */
+  roof: "mask-bottom-left mask-no-repeat mask-size-[430px_auto] lg:mask-size-[810px_auto]",
 };
 
-/* template artwork in the text color, so it follows the theme; the page css keeps it to every other section */
+/* artwork painted in the text color, so it follows the theme; the page css keeps it to every other section */
 export const Backdrop = ({ pattern }: BackdropProps) => (
   <div
     aria-hidden="true"
-    data-backdrop-layer="cover"
-    className={`pointer-events-none absolute inset-0 z-(--z-behind) bg-foreground mask-(--backdrop) ${looks[pattern].strength} ${looks[pattern].cover}`}
-    style={{ "--backdrop": `url(${backdropsData[pattern]})` } as CSSProperties}
+    data-backdrop-layer
+    className={`pointer-events-none absolute inset-0 z-(--z-behind) bg-foreground ${pattern === "roof" ? "opacity-6" : "opacity-4 in-[.light]:opacity-7"} ${masks[pattern]}`}
+    style={{ maskImage: `url(${backdropsData[pattern]})` }}
   />
 );

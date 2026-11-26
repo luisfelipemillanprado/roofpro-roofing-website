@@ -292,7 +292,7 @@ html:has([role="dialog"][aria-modal="true"]) {
   }
 
   /* Section backdrops alternate down the page: odd ones carry their art, the even ones between stay plain */
-  main > :nth-child(even of [data-backdrop]) [data-backdrop-layer="cover"] {
+  main > :nth-child(even of [data-backdrop]) > [data-backdrop-layer] {
     display: none;
   }
 }
