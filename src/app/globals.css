@@ -7,31 +7,33 @@
   /* Project palette only: the default Tailwind colors are off */
   --color-*: initial;
 
-  /* Neutrals — shared (dark & light theme) */
-  --color-night: oklch(0.243 0.014 239.25); /* → --surface-base (dark) */
+  /* Brand — the amber family and its soft tint */
   --color-amber-vivid: oklch(0.7552 0.1253 80.01); /* → --amber at ≥1024px (desktop) */
   --color-amber: oklch(0.78 0.1 72); /* → --primary (accent, mobile base) */
   --color-amber-deep: oklch(0.6864 0.0941 67.81); /* → --secondary (section button bg) */
   --color-amber-ochre: oklch(0.5845 0.1205 81.85); /* #9f7300 → --heading-accent (light), at the 3.0 floor */
-  --color-pewter: oklch(0.4865 0.007 239.94); /* #5c6063 → --color-pill-chip, carries the white check */
-  --color-ash: oklch(0.6177 0.0066 239.88); /* #828689 → --surface-chip (light), a notch softer */
   --color-peach: oklch(0.8789 0.0479 51.54); /* → --primary-light (soft accent) */
+
+  /* Status — WhatsApp, stock and live dots */
   --color-malachite: oklch(0.761 0.2015 149.74); /* WhatsApp FAB (bg-malachite) + in-stock and hero dots */
   --color-citrine: oklch(0.85 0.2015 100); /* limited-stock dot (bg-citrine) */
   --color-cinnabar: oklch(0.7 0.2015 25.331); /* out-of-stock dot (bg-cinnabar) */
-  --color-onyx: oklch(0.2047 0.0121 237.38); /* → --shade (shadows) */
+
+  /* Neutrals — shared (dark & light theme) */
+  --color-onyx: oklch(0.2047 0.0121 237.38); /* → --shade (shadows) + --contrast (dark fills) */
   --color-eclipse: oklch(0.221 0.0015 197.05); /* neutral black: light-theme text + dark chrome */
+  --color-pewter: oklch(0.4865 0.007 239.94); /* #5c6063 → --color-pill-chip, carries the white check */
   --color-white: oklch(1 0 0); /* → --foreground/--line (dark), --surface-panel (light), text on fills */
 
   /* Neutrals — dark theme */
-  /* graphite == onyx today; unify later */
-  --color-graphite: oklch(0.2047 0.0121 237.38); /* → --contrast (dark fills) */
+  --color-night: oklch(0.243 0.014 239.25); /* → --surface-base (dark) */
   --color-charcoal: oklch(0.2183 0.0133 243.53); /* → --surface-muted (dark) + scrollbar track */
   --color-steel: oklch(0.2954 0.0237 246.15); /* → --surface-panel (dark) */
   --color-slate-deep: oklch(0.3262 0.024 243.72); /* → scrollbar thumb */
   --color-slate: oklch(0.8 0.027 255.6); /* → --foreground-muted (dark) */
 
   /* Neutrals — light theme */
+  --color-ash: oklch(0.6177 0.0066 239.88); /* #828689 → --surface-chip (light), a notch softer */
   --color-stone: oklch(0.4837 0.0276 259.8); /* → --foreground-muted (light), tracks the surfaces down */
   --color-linen: oklch(0.94 0.0022 255); /* → --surface-base (light) */
   --color-cream: oklch(0.8838 0.0053 247.88); /* #d6d9dc → --surface-muted (light), as low as AA allows */
@@ -41,7 +43,7 @@
   --color-primary-light: var(--color-peach); /* CTA input focus (EmailForm) */
   --color-primary-foreground: var(--color-white); /* text on primary/accent fills */
   --color-secondary: var(--color-amber-deep); /* secondary button fill (section CTAs) */
-  --color-contrast: var(--color-graphite); /* dark fills: CTA, viewer, gradient scrims */
+  --color-contrast: var(--color-onyx); /* dark fills: CTA, viewer, gradient scrims */
   --color-pill-chip: var(--color-pewter); /* the label pill's check square, same in both themes */
   /* Edges on imagery or a dark fill — theme-independent; --line is the surface separator */
   --color-line-glass: color-mix(in oklab, var(--color-white) 10%, transparent); /* wide translucent panels */
