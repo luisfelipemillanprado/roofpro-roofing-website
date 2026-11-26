@@ -1,6 +1,12 @@
 @import "tailwindcss";
 
+/* Light theme variant (light:); dark is the default, so it needs none */
+@custom-variant light (&:where(.light, .light *));
+
 @theme {
+  /* Project palette only: the default Tailwind colors are off */
+  --color-*: initial;
+
   /* Neutrals — shared (dark & light theme) */
   --color-night: oklch(0.243 0.014 239.25); /* → --surface-base (dark) */
   --color-amber-vivid: oklch(0.7552 0.1253 80.01); /* → --amber at ≥1024px (desktop) */
@@ -42,12 +48,14 @@
   --color-line-chip: color-mix(in oklab, var(--color-white) 20%, transparent); /* chips, raised pieces */
   --color-line-control: color-mix(in oklab, var(--color-white) 30%, transparent); /* interactive controls */
 
-  /* Typography — --font-sans applied to <html> by Preflight */
-  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
-  --font-display: var(--font-jakarta), ui-sans-serif, system-ui, sans-serif;
-
   /* Header height — navbar + mobile-menu offset */
   --spacing-header: 4.5rem;
+
+  /* Layering scale (utilities: z-behind, z-dropdown, z-overlay, z-modal) */
+  --z-index-behind: -10; /* decorative/scrim layer behind content in an isolate context */
+  --z-index-dropdown: 30; /* popovers & dropdown panels */
+  --z-index-overlay: 50; /* fixed chrome: navbar, mobile menu, floating contact */
+  --z-index-modal: 60; /* dialogs above everything (image viewer) */
 
   /* Marquee (utility: animate-marquee) */
   --animate-marquee: marquee 28s linear infinite;
@@ -114,8 +122,13 @@
   }
 }
 
-/* Inline roles (var() references) — theme-switching colors, then per-role radius */
+/* Inline roles (var() references) — next/font families, theme-switching colors, per-role radius */
 @theme inline {
+  /* Typography — next/font variables; --font-sans applied to <html> by Preflight */
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-jakarta), ui-sans-serif, system-ui, sans-serif;
+
+  /* Theme-switching colors — the runtime roles below, per theme */
   --color-surface-base: var(--surface-base); /* page + section base background */
   --color-surface-panel: var(--surface-panel); /* cards/panels: testimonials, navbar, form controls */
   --color-surface-muted: var(--surface-muted); /* alternating sections, footer */
@@ -172,18 +185,10 @@
 }
 
 /* Mobile amber; the desktop amber from lg+ */
-@media (min-width: 64rem) {
-  :root {
+:root {
+  @variant lg {
     --color-amber: var(--color-amber-vivid);
   }
-}
-
-/* Layering scale (theme-independent) — use via z-(--z-*) */
-:root {
-  --z-behind: -10; /* decorative/scrim layer behind content in an isolate context */
-  --z-dropdown: 30; /* popovers & dropdown panels */
-  --z-overlay: 50; /* fixed chrome: navbar, mobile menu, floating contact */
-  --z-modal: 60; /* dialogs above everything (image viewer) */
 }
 
 /* Base element styles (cascade layer so utilities can override) */
@@ -228,8 +233,8 @@ html:has([role="dialog"][aria-modal="true"]) {
   scrollbar-gutter: stable; /* the gutter stays, or the fixed chrome jumps by a scrollbar */
 }
 /* the menu's lock lives in the query that hides the menu, so the two can never disagree */
-@media (width < theme(--breakpoint-lg)) {
-  html:has([data-mobile-menu]) {
+html:has([data-mobile-menu]) {
+  @variant max-lg {
     overflow: hidden;
     scrollbar-gutter: stable;
   }
@@ -268,6 +273,10 @@ html:has([role="dialog"][aria-modal="true"]) {
 
   [data-reveal] {
     opacity: 0;
+    /* no script, no observer: the content shows as is */
+    @variant noscript {
+      opacity: 1;
+    }
   }
   [data-reveal].is-visible {
     animation: reveal-fade-up 0.6s cubic-bezier(0.22, 1, 0.36, 1) both;
@@ -292,7 +301,7 @@ html:has([role="dialog"][aria-modal="true"]) {
   }
 
   /* Section backdrops alternate down the page: odd ones carry their art, the even ones between stay plain */
-  main > :nth-child(even of [data-backdrop]) [data-backdrop-layer="cover"] {
+  main > :nth-child(even of [data-backdrop]) > [data-backdrop-layer] {
     display: none;
   }
 }

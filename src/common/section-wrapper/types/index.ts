@@ -7,5 +7,5 @@ export interface SectionWrapperProps {
   children: ReactNode;
   tone?: SectionWrapperTone;
   id?: string;
-  backdrop?: BackdropPattern /* template texture behind the content, on every other section */;
+  backdrop?: BackdropPattern /* texture behind the content; the page shows it on every other section */;
 }

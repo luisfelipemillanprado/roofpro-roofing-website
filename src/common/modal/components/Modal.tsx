@@ -43,7 +43,7 @@ export const Modal = ({ label, closeLabel, onClose, children }: ModalProps) => {
       role="dialog"
       aria-modal="true"
       aria-label={label}
-      className="theme-dark fixed inset-0 z-(--z-modal) grid place-items-center overflow-y-auto p-4"
+      className="theme-dark fixed inset-0 z-modal grid place-items-center overflow-y-auto p-4"
     >
       {/* fixed, not absolute: an absolute child of a scrolling dialog scrolls away with it */}
       <div onClick={onClose} className="fixed inset-0 bg-contrast/70 backdrop-blur-md" />

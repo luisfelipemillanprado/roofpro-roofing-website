@@ -17,8 +17,8 @@ export const ThemeToggle = () => {
       className="group grid size-10 place-items-center rounded-control border border-line bg-eclipse"
     >
       {/* both icons, css picks: same markup on server and client */}
-      <Sun className="size-4.5 text-foreground transition-colors group-hover:text-primary in-[.light]:hidden" />
-      <Moon className="hidden size-4.5 text-foreground transition-colors group-hover:text-primary in-[.light]:block" />
+      <Sun className="size-4.5 text-foreground transition-colors group-hover:text-primary light:hidden" />
+      <Moon className="hidden size-4.5 text-foreground transition-colors group-hover:text-primary light:block" />
     </button>
   );
 };

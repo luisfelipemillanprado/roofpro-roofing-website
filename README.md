@@ -210,14 +210,17 @@ any unknown slug 404s. There is no free-form slug generation.
 
 Theming is CSS-first in [`src/app/globals.css`](src/app/globals.css):
 
-- Brand colors are **primitives** declared as `--color-<name>` under `@theme`.
+- Brand colors are **primitives** declared as `--color-<name>` under `@theme`; the default
+  Tailwind palette is reset (`--color-*: initial`), so only the project's colors exist.
 - Runtime semantic roles (`--surface-base`, `--surface-panel`, `--surface-muted`,
   `--foreground`, `--foreground-muted`, `--line`) reference those primitives; `@theme inline`
   aliases them to generated color utilities (`bg-surface-panel`, `text-foreground`,
   `text-foreground-muted`, `border-line`, `bg-primary`…).
 - **Dark is the default** — the roles are defined on `:root` (and `.theme-dark`, which pins
   dark on a subtree such as the navbar); `.light` overrides the runtime variables. The
-  `dark:` variant is defined with `@custom-variant`.
+  `light:` variant is defined with `@custom-variant` (dark needs none).
+- The layering scale is `--z-index-*` under `@theme`, used as `z-behind`, `z-dropdown`,
+  `z-overlay` and `z-modal`.
 - Base resets live in `@layer base`, component classes in `@layer components`, and custom
   utilities (e.g. hero overlays) are declared with `@utility`.
 
@@ -312,7 +315,7 @@ If you invoke `tsc` directly, run `pnpm i18n:build` first so the generated `mess
   (navbar links, footer columns, floating-contact actions).
 - **Brand colors / fonts:** edit the `@theme` block in
   [`src/app/globals.css`](src/app/globals.css) and the fonts in
-  [`src/app/[locale]/layout.tsx`](src/app/[locale]/layout.tsx).
+  [`src/app/styles/fonts.ts`](src/app/styles/fonts.ts).
 - **Photography:** drop `.webp` images into `public/images/` and update the paths in
   `src/data/`. Output formats (AVIF/WebP) are configured in
   [`next.config.ts`](next.config.ts).
