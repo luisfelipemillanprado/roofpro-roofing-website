@@ -7,22 +7,22 @@ import type { BackdropLook, BackdropPattern, BackdropProps } from "@/common/back
 const looks: Record<BackdropPattern, BackdropLook> = {
   /* six courses cut on their joints; courses sized like the shingles */
   architectural: {
-    strength: "opacity-3 in-[.light]:opacity-6",
+    strength: "opacity-4 in-[.light]:opacity-7",
     cover: "mask-repeat mask-size-[330px_auto] lg:mask-size-[516px_auto]",
   },
   /* 2 tabs wide, scaled down from the photo, whose tabs read too large */
   shingles: {
-    strength: "opacity-3 in-[.light]:opacity-6",
+    strength: "opacity-4 in-[.light]:opacity-7",
     cover: "mask-repeat mask-size-[214px_auto] lg:mask-size-[333px_auto]",
   },
   /* one exact period: 3 tiles by 2 courses */
   tiles: {
-    strength: "opacity-3 in-[.light]:opacity-6",
+    strength: "opacity-4 in-[.light]:opacity-7",
     cover: "mask-repeat mask-size-[197px_auto] lg:mask-size-[313px_auto]",
   },
   /* one exact period: two tiles across (the tile pitch falls between pixels), one course down */
   pantiles: {
-    strength: "opacity-3 in-[.light]:opacity-6",
+    strength: "opacity-4 in-[.light]:opacity-7",
     cover: "mask-repeat mask-size-[253px_auto] lg:mask-size-[401px_auto]",
   },
   /* footer only, always dark: one strength; a single roof cut-out sitting on the bottom-left corner */
