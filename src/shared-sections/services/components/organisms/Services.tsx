@@ -24,7 +24,7 @@ export const Services = async ({ variant, tone = "muted", limit }: ServicesProps
   const viewDetails = t("action.viewDetails");
 
   return (
-    <SectionWrapper id="services" tone={tone} backdrop="architectural">
+    <SectionWrapper id="services" tone={tone} backdrop="shingles">
       <Container>
         <div className="grid gap-13">
           <SectionHeader

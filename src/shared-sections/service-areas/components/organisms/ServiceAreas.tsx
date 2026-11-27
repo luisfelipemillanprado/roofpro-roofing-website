@@ -25,7 +25,7 @@ export const ServiceAreas = async ({ tone = "base" }: ServiceAreasProps) => {
   }));
 
   return (
-    <SectionWrapper id="service-areas" tone={tone} backdrop="architectural">
+    <SectionWrapper id="service-areas" tone={tone} backdrop="shingles">
       <Container>
         <div className="grid gap-13">
           <SectionHeader
