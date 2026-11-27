@@ -92,7 +92,7 @@ export const breadcrumbJsonLd = async (
   };
 };
 
-/* a shop item and its offer; its card rating stays out until it comes from real reviews */
+/* a shop item, its offer and the rating its page shows */
 export const productJsonLd = (
   locale: Locale,
   product: ShopProduct,
@@ -105,6 +105,7 @@ export const productJsonLd = (
   image: [product.image, ...product.gallery].map((src) => `${company.siteUrl}${src}`),
   sku: product.sku,
   brand: { "@type": "Brand", name: product.brand },
+  aggregateRating: { "@type": "AggregateRating", ratingValue: product.rating, reviewCount: product.reviews },
   offers: {
     "@type": "Offer",
     url: absoluteUrl(`/shop/${product.slug}`, locale),

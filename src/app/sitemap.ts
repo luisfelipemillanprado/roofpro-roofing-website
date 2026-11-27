@@ -13,12 +13,13 @@ const hrefs = [
   ...shopProductsData.items.map((product) => `/shop/${product.slug}`),
 ];
 
-/* localized sitemap: one entry per route, each listing its url in every locale */
+/* localized sitemap: every route in every locale, each entry listing all its versions and the default */
 export default function sitemap(): MetadataRoute.Sitemap {
-  return hrefs.map((href) => ({
-    url: absoluteUrl(href, routing.defaultLocale),
-    alternates: {
-      languages: Object.fromEntries(routing.locales.map((locale) => [locale, absoluteUrl(href, locale)])),
-    },
-  }));
+  return hrefs.flatMap((href) => {
+    const languages = {
+      ...Object.fromEntries(routing.locales.map((locale) => [locale, absoluteUrl(href, locale)])),
+      "x-default": absoluteUrl(href, routing.defaultLocale),
+    };
+    return routing.locales.map((locale) => ({ url: absoluteUrl(href, locale), alternates: { languages } }));
+  });
 }
