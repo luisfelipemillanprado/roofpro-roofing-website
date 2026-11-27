@@ -3,8 +3,8 @@ import type { BackdropPattern, BackdropProps } from "@/common/backdrop/types";
 
 /* per artwork: mask size and repeat; fixed pixel sizes, so a tall section never zooms the art */
 const masks: Record<BackdropPattern, string> = {
-  /* six courses cut on their joints */
-  architectural: "mask-repeat mask-size-[330px_auto] lg:mask-size-[516px_auto]",
+  /* one exact period: two octagonal tabs by two courses */
+  architectural: "mask-repeat mask-size-[132px_138px] lg:mask-size-[207px_216px]",
   /* two tabs across, six courses down */
   shingles: "mask-repeat mask-size-[214px_auto] lg:mask-size-[333px_auto]",
   /* one exact period: three tiles by two courses, at 90% height so the tiles sit a touch lower */
