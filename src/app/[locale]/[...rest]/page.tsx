@@ -5,7 +5,7 @@ import type { Locale } from "@/i18n/routing";
 
 type Props = { params: Promise<{ locale: string }> };
 
-/* the 404 head, since a not-found file takes no metadata; noindex replaces the layout's index */
+/* the 404 head, since a not-found file takes no metadata; noindex keeps it out of search */
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale: locale as Locale, namespace: "not-found" });

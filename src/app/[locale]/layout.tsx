@@ -48,16 +48,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       template: t("titleTemplate"),
     },
     description: t("description", metadataFacts),
-    keywords: [
-      "roofing",
-      "roof repair",
-      "roof installation",
-      "commercial roofing",
-      "residential roofing",
-      "energy efficient roofing",
-    ],
     authors: [{ name: company.name }],
-    robots: { index: true, follow: true },
     /* home canonical, alternates and brand share card; pages override with their own route */
     ...(await routeMetadata(locale as Locale, "/")),
   };
