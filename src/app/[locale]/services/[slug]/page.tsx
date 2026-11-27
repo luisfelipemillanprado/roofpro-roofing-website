@@ -3,6 +3,8 @@ import { notFound } from "next/navigation";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import type { Locale } from "@/i18n/routing";
 import { routeMetadata } from "@/i18n/metadata";
+import { breadcrumbJsonLd } from "@/i18n/structured-data";
+import { JsonLd } from "@/common/json-ld/components/JsonLd";
 import { PageHeader } from "@/shared-sections/page-header/components/organisms/PageHeader";
 import { Marquee } from "@/shared-sections/marquee/components/organisms/Marquee";
 import { ServiceOverview } from "@/features/service-detail/components/organisms/ServiceOverview";
@@ -49,6 +51,12 @@ export default async function ServiceDetailPage({ params }: Props) {
 
   return (
     <>
+      <JsonLd
+        data={await breadcrumbJsonLd(locale as Locale, "/services", {
+          name: t(`items.${service.key}.title`),
+          href: `/services/${slug}`,
+        })}
+      />
       <PageHeader
         titleLead={t(`items.${service.key}.titleLead`)}
         titleAccent={t(`items.${service.key}.titleAccent`)}

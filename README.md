@@ -131,6 +131,7 @@ src/
     request.ts                   # getRequestConfig (loads the generated messages)
     navigation.ts                # locale-aware Link / usePathname / useRouter
     metadata.ts                  # locale-aware page metadata helpers
+    structured-data.ts           # schema.org JSON-LD: the business, the site, products, breadcrumbs
   proxy.ts                       # Next.js 16 middleware (next-intl routing)
   global.d.ts                    # augments next-intl with the generated en.json shape
 ```

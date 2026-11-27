@@ -1,5 +1,7 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import type { Locale } from "@/i18n/routing";
+import { websiteJsonLd } from "@/i18n/structured-data";
+import { JsonLd } from "@/common/json-ld/components/JsonLd";
 import { PageHeader } from "@/shared-sections/page-header/components/organisms/PageHeader";
 import { Marquee } from "@/shared-sections/marquee/components/organisms/Marquee";
 import { About } from "@/shared-sections/about/components/organisms/About";
@@ -23,6 +25,7 @@ export default async function Home({ params }: Props) {
 
   return (
     <>
+      <JsonLd data={websiteJsonLd(locale as Locale)} />
       {/* shared hero band with the home's own copy and anchor */}
       <PageHeader
         id="home"

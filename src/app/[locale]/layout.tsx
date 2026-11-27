@@ -4,6 +4,8 @@ import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { getMessages, getTranslations, setRequestLocale } from "next-intl/server";
 import { routing, type Locale } from "@/i18n/routing";
 import { metadataFacts, routeMetadata } from "@/i18n/metadata";
+import { businessJsonLd } from "@/i18n/structured-data";
+import { JsonLd } from "@/common/json-ld/components/JsonLd";
 import { Providers } from "@/app/Providers";
 import { Navbar } from "@/layout/navbar/components/organisms/Navbar";
 import { Footer } from "@/layout/footer/components/organisms/Footer";
@@ -83,6 +85,7 @@ export default async function LocaleLayout({ children, params }: Props) {
       className={`${inter.variable} ${jakarta.variable}`}
     >
       <body className="antialiased">
+        <JsonLd data={await businessJsonLd(locale)} />
         <Providers
           themeProps={{
             attribute: "class",

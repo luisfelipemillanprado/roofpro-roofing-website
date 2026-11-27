@@ -37,8 +37,8 @@ export const company = {
   xHref: "https://x.com/roofpro",
   instagramHref: "https://www.instagram.com/roofpro/",
   youtubeHref: "https://www.youtube.com/@roofpro",
-  /* footer contact: address + linked phone + linked email */
-  address: "300 NW 127 Ave, Miami, FL 33182",
+  /* footer contact: address (in parts, as structured data reads it) + linked phone + linked email */
+  address: { street: "300 NW 127 Ave", city: "Miami", region: "FL", postalCode: "33182", country: "US" },
   phoneHref: "tel:+13056289696",
   email: "info@roofpro.com",
   emailHref: "mailto:info@roofpro.com",

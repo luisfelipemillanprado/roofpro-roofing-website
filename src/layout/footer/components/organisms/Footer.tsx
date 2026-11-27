@@ -69,7 +69,7 @@ export const Footer = async () => {
           <div className="col-span-2 grid content-start justify-items-center gap-5 sm:col-span-1 sm:justify-items-start">
             <Title as="h2" size="micro" weight="bold" tracking text={t(contact.titleKey)} />
             <FooterContact
-              address={address}
+              address={`${address.street}, ${address.city}, ${address.region} ${address.postalCode}`}
               phone={phone}
               phoneHref={phoneHref}
               email={email}
