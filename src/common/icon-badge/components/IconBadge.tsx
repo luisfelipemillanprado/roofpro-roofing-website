@@ -81,7 +81,8 @@ const iconSizes: Record<IconBadgeSize, string> = {
 
 /* chip background per tone; only the loose one carries an edge, a card lends its own */
 const tones: Record<IconBadgeTone, string> = {
-  muted: "bg-surface-chip" /* default on light cards */,
+  card: "bg-card-chip" /* content cards: the dark chip, the About pills' slate in light */,
+  muted: "bg-surface-chip" /* the included checklist panel */,
   panel: "border border-line bg-surface-panel" /* stat rows, loose on a section */,
 };
 

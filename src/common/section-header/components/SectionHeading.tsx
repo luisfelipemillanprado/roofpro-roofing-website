@@ -41,7 +41,9 @@ export const SectionHeading = ({
       {/* title sets the width; description wraps within it, never wider */}
       <div
         className={clsx(
-          "grid w-fit gap-5.25 sm:max-w-113 lg:max-w-126",
+          "grid w-fit gap-5.25 sm:max-w-113",
+          /* the banner title grows to 48px at lg, where its two lines need ~600px */
+          size === "banner" ? "lg:max-w-150" : "lg:max-w-126",
           /* the copy hugs the start; only a centered heading hands the row its alignment back */
           "justify-self-start",
           isCenter && "sm:justify-self-auto",

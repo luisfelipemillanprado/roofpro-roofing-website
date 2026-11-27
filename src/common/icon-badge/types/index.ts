@@ -31,7 +31,7 @@ export type IconBadgeKey =
   | "truckElectric";
 
 export type IconBadgeSize = "stat" | "feature";
-export type IconBadgeTone = "muted" | "panel";
+export type IconBadgeTone = "card" | "muted" | "panel";
 
 export interface IconBadgeProps {
   icon: IconBadgeKey;

@@ -155,7 +155,8 @@
   --color-surface-base: var(--surface-base); /* page + section base background */
   --color-surface-panel: var(--surface-panel); /* cards/panels: testimonials, navbar, form controls */
   --color-surface-muted: var(--surface-muted); /* alternating sections, footer */
-  --color-surface-chip: var(--surface-chip); /* icon chip inside a filled card */
+  --color-surface-chip: var(--surface-chip); /* icon chip inside a filled panel */
+  --color-card-chip: var(--card-chip); /* icon chip on a content card */
   --color-quote-mark: var(--quote-mark); /* the decorative quote glyph on a testimonial */
   --color-foreground: var(--foreground); /* main text */
   --color-foreground-muted: var(--foreground-muted); /* secondary text */
@@ -181,6 +182,7 @@
   --surface-panel: var(--color-steel); /* cards & panels */
   --surface-muted: var(--color-charcoal); /* alternating sections, footer */
   --surface-chip: var(--surface-muted); /* icon chips: the muted surface carries them here */
+  --card-chip: var(--surface-chip); /* unchanged here: only the light theme takes the pills' slate */
   --quote-mark: var(--surface-muted); /* unchanged here: only the light theme wanted it louder */
   --foreground: var(--color-white); /* main text */
   --foreground-muted: var(--color-slate); /* secondary text */
@@ -197,6 +199,7 @@
   --surface-panel: var(--color-white); /* cards & panels */
   --surface-muted: var(--color-cream); /* alternating sections, footer */
   --surface-chip: var(--color-ash); /* past the gold's own lightness, so the icon reads again */
+  --card-chip: var(--color-pill-chip); /* the About pills' slate, so the gold icon reads */
   --quote-mark: var(--color-pewter); /* the pills' slate, so the glyph stops disappearing */
   --foreground: var(--color-eclipse); /* main text */
   --foreground-muted: var(--color-stone); /* secondary text */
