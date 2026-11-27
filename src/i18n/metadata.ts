@@ -44,7 +44,11 @@ export const routeMetadata = async (locale: Locale, href: string, copy?: RouteCo
   return {
     alternates: {
       canonical: url,
-      languages: Object.fromEntries(routing.locales.map((l) => [l, getPathname({ href, locale: l })])),
+      languages: {
+        ...Object.fromEntries(routing.locales.map((l) => [l, getPathname({ href, locale: l })])),
+        /* the default-locale url, as the proxy's Link header already names it */
+        "x-default": getPathname({ href, locale: routing.defaultLocale }),
+      },
     },
     openGraph: {
       type: "website",
