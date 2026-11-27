@@ -52,7 +52,11 @@ export const routeMetadata = async (locale: Locale, href: string, copy?: RouteCo
       title,
       description,
       siteName: company.name,
-      locale,
+      /* og wants language_TERRITORY: each locale of the US business */
+      locale: `${locale}_${company.address.country}`,
+      alternateLocale: routing.locales
+        .filter((l) => l !== locale)
+        .map((l) => `${l}_${company.address.country}`),
       images,
     },
     twitter: {
