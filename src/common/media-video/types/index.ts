@@ -4,3 +4,7 @@ export interface MediaVideoProps {
   alt: string;
   sizes: string; /* next/image sizes for the poster layered under the video */
 }
+
+export interface VideoLoopProps {
+  src: string;
+}
