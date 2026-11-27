@@ -32,8 +32,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const service = items.find((item) => item.slug === slug);
   if (!service) return {};
   const t = await getTranslations({ locale: locale as Locale, namespace: "service" });
-  /* the page copy feeds both the head and its share card */
-  const copy = { title: t(`items.${service.key}.title`), description: t(`items.${service.key}.description`) };
+  const tm = await getTranslations({ locale: locale as Locale, namespace: "metadata.pages.serviceDetail" });
+  const td = await getTranslations({ locale: locale as Locale, namespace: "service-detail" });
+  /* the service with its city for the title, the page intro for the description; both feed the share card */
+  const copy = {
+    title: tm("title", { service: t(`items.${service.key}.title`) }),
+    description: td(`items.${service.key}.intro`),
+  };
   return { ...copy, ...(await routeMetadata(locale as Locale, `/services/${slug}`, copy)) };
 }
 
