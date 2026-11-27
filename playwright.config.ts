@@ -20,6 +20,8 @@ export default defineConfig({
     trace: "on-first-retry",
   },
   expect: {
+    /* a tall full-page shot needs two matching captures; 5s runs out under parallel load */
+    timeout: 15_000,
     toHaveScreenshot: {
       /* freeze CSS animations/transitions at capture time only */
       animations: "disabled",

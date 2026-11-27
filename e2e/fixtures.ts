@@ -34,21 +34,23 @@ export const visit = async (page: Page, path: string) => {
   await page.goto(path);
   await scrollThroughPage(page);
   await waitForImages(page);
+  /* back to the top, so the fixed navbar is painted where a visitor first sees it */
+  await page.evaluate(() => window.scrollTo({ top: 0, behavior: "instant" }));
 };
 
-/* scroll top-to-bottom to trigger lazy-loaded images, then return to top */
+/* scroll top-to-bottom to trigger lazy-loaded images; instant, as the page css scrolls smoothly */
 const scrollThroughPage = async (page: Page) => {
   await page.evaluate(
     () =>
       new Promise<void>((resolve) => {
         let y = 0;
         const step = () => {
-          window.scrollTo(0, y);
+          window.scrollTo({ top: y, behavior: "instant" });
           y += window.innerHeight;
           if (y < document.body.scrollHeight) requestAnimationFrame(step);
           else {
             /* land on the true bottom so footer images trigger their lazy load */
-            window.scrollTo(0, document.body.scrollHeight);
+            window.scrollTo({ top: document.body.scrollHeight, behavior: "instant" });
             resolve();
           }
         };
