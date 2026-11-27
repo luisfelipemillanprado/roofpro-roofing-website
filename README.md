@@ -172,6 +172,10 @@ i118builder/messages/  →  i118builder/index.ts  →  messages/{en,es}.json  �
 - Rebuild with `pnpm i18n:build` (one-shot) or `pnpm dev` (watch mode). The builder is
   wired ahead of `next build`, and next-intl loads the generated file for the active locale
   via [`src/i18n/request.ts`](src/i18n/request.ts).
+- **Only the `navbar` messages reach the browser:** the root layout hands
+  `NextIntlClientProvider` that one namespace, since the theme and language toggles are the
+  only client components that translate. Server components read every namespace; a new
+  client component that translates must add its namespace there.
 - **To add a locale:** add the `<locale>.json` sources under `i118builder/messages/`
   (mirroring the existing folder structure) and register the locale in
   [`src/i18n/routing.ts`](src/i18n/routing.ts).
