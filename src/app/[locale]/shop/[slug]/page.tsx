@@ -3,6 +3,8 @@ import { notFound } from "next/navigation";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import type { Locale } from "@/i18n/routing";
 import { routeMetadata } from "@/i18n/metadata";
+import { breadcrumbJsonLd, productJsonLd } from "@/i18n/structured-data";
+import { JsonLd } from "@/common/json-ld/components/JsonLd";
 import { PageHeader } from "@/shared-sections/page-header/components/organisms/PageHeader";
 import { pageHeaderData } from "@/data/shared-sections/page-header";
 import { Marquee } from "@/shared-sections/marquee/components/organisms/Marquee";
@@ -47,9 +49,22 @@ export default async function ProductDetailPage({ params }: Props) {
   if (!product) notFound();
 
   const t = await getTranslations("page-header.pages.shop");
+  const tp = await getTranslations("shop-page");
 
   return (
     <>
+      <JsonLd
+        data={productJsonLd(locale as Locale, product, {
+          name: tp(`items.${product.slug}.title`),
+          description: tp(`items.${product.slug}.description`),
+        })}
+      />
+      <JsonLd
+        data={await breadcrumbJsonLd(locale as Locale, "/shop", {
+          name: tp(`items.${product.slug}.title`),
+          href: `/shop/${slug}`,
+        })}
+      />
       {/* shop hero verbatim, only the ghost CTA swaps to a way back to the catalog */}
       <PageHeader
         image="shop"

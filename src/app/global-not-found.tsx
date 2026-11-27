@@ -21,7 +21,8 @@ export default function GlobalNotFound() {
   return (
     <html lang={locale} className={`${inter.variable} ${jakarta.variable}`}>
       <body className="antialiased">
-        <NextIntlClientProvider locale={locale}>
+        {/* no client component here reads copy, so no messages travel */}
+        <NextIntlClientProvider locale={locale} messages={null}>
           <main>
             <NotFound />
           </main>

@@ -1,8 +1,8 @@
 {
-  "title": "Roofpro — Servicios de Techado de Calidad, Duraderos y Confiables",
+  "title": "Roofpro — Techado de Calidad y Confiable en Miami, FL",
   "titleTemplate": "%s | Roofpro",
   "description": "Roofpro ofrece soluciones de techado duraderas, energéticamente eficientes y confiables para propiedades residenciales y comerciales, respaldadas por más de {years} años de experiencia y más de {projects} proyectos completados.",
-  "ogTitle": "Roofpro — Servicios de Techado de Calidad, Duraderos y Confiables",
+  "ogTitle": "Roofpro — Techado de Calidad y Confiable en Miami, FL",
   "ogDescription": "Creamos techos con precisión y cuidado. Más de {years} años de experiencia protegiendo hogares y negocios.",
   "pages": {
     "about": {
@@ -10,8 +10,11 @@
       "description": "Conoce Roofpro: más de {years} años de experiencia en techado confiable y duradero, un equipo de profesionales licenciados y valores que guían cada proyecto que realizamos."
     },
     "services": {
-      "title": "Servicios de Techado",
+      "title": "Servicios de Techado en Miami, FL",
       "description": "Descubre la gama completa de servicios de techado residencial y comercial de Roofpro: reparaciones, instalaciones, sistemas de alta eficiencia, canaletas y más, todos respaldados por garantía de mano de obra."
+    },
+    "serviceDetail": {
+      "title": "{service} en Miami, FL"
     },
     "projects": {
       "title": "Nuestros Proyectos",

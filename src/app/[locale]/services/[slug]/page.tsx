@@ -3,6 +3,8 @@ import { notFound } from "next/navigation";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import type { Locale } from "@/i18n/routing";
 import { routeMetadata } from "@/i18n/metadata";
+import { breadcrumbJsonLd } from "@/i18n/structured-data";
+import { JsonLd } from "@/common/json-ld/components/JsonLd";
 import { PageHeader } from "@/shared-sections/page-header/components/organisms/PageHeader";
 import { Marquee } from "@/shared-sections/marquee/components/organisms/Marquee";
 import { ServiceOverview } from "@/features/service-detail/components/organisms/ServiceOverview";
@@ -30,8 +32,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const service = items.find((item) => item.slug === slug);
   if (!service) return {};
   const t = await getTranslations({ locale: locale as Locale, namespace: "service" });
-  /* the page copy feeds both the head and its share card */
-  const copy = { title: t(`items.${service.key}.title`), description: t(`items.${service.key}.description`) };
+  const tm = await getTranslations({ locale: locale as Locale, namespace: "metadata.pages.serviceDetail" });
+  const td = await getTranslations({ locale: locale as Locale, namespace: "service-detail" });
+  /* the service with its city for the title, the page intro for the description; both feed the share card */
+  const copy = {
+    title: tm("title", { service: t(`items.${service.key}.title`) }),
+    description: td(`items.${service.key}.intro`),
+  };
   return { ...copy, ...(await routeMetadata(locale as Locale, `/services/${slug}`, copy)) };
 }
 
@@ -49,6 +56,12 @@ export default async function ServiceDetailPage({ params }: Props) {
 
   return (
     <>
+      <JsonLd
+        data={await breadcrumbJsonLd(locale as Locale, "/services", {
+          name: t(`items.${service.key}.title`),
+          href: `/services/${slug}`,
+        })}
+      />
       <PageHeader
         titleLead={t(`items.${service.key}.titleLead`)}
         titleAccent={t(`items.${service.key}.titleAccent`)}

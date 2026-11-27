@@ -10,6 +10,10 @@ export const metadataFacts = {
   projects: company.projectsCompleted.toLocaleString("en-US"),
 };
 
+/* a route's absolute url in one locale: sitemap entries and structured data */
+export const absoluteUrl = (href: string, locale: Locale) =>
+  `${company.siteUrl}${getPathname({ href, locale })}`;
+
 /* the [locale]/opengraph-image card: its size and alt, shared with the route that draws it */
 export const shareImage = { size: { width: 1200, height: 630 }, alt: company.name };
 
