@@ -31,7 +31,7 @@ export const ServiceProcess = async ({ serviceKey, tone = "base" }: ServiceProce
   }));
 
   return (
-    <SectionWrapper tone={tone} backdrop="tiles">
+    <SectionWrapper tone={tone} backdrop="octagonal">
       <Container>
         <PitchWrapper
           heading={

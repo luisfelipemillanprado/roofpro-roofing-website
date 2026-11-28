@@ -23,7 +23,7 @@ export const Results = async ({ category, tone = "base", limit }: ResultsProps) 
   }));
 
   return (
-    <SectionWrapper id="results" tone={tone} backdrop="tiles">
+    <SectionWrapper id="results" tone={tone} backdrop="octagonal">
       <Container>
         <div className="grid gap-13">
           <SectionHeader

@@ -28,7 +28,7 @@ export const Showreel = async ({ tone = "base" }: ShowreelProps) => {
   });
 
   return (
-    <SectionWrapper tone={tone} backdrop="tiles">
+    <SectionWrapper tone={tone} backdrop="octagonal">
       <Container>
         <ShowreelPlayer
           items={reels}
