@@ -12,7 +12,7 @@ import { Container } from "@/common/container/components/Container";
 const { heading, ctaHref, featured } = productsData;
 const { items } = shopProductsData;
 
-export const Products = async ({ tone = "muted", limit }: ProductsProps) => {
+export const Products = async ({ tone = "muted", limit, backdrop = "shingles" }: ProductsProps) => {
   const t = await getTranslations("products");
   const tShop = await getTranslations("shop-page");
   /* teaser of the shop catalog: product data and labels read from the shop on purpose */
@@ -36,7 +36,7 @@ export const Products = async ({ tone = "muted", limit }: ProductsProps) => {
     }));
 
   return (
-    <SectionWrapper id="products" tone={tone} backdrop="shingles">
+    <SectionWrapper id="products" tone={tone} backdrop={backdrop}>
       <Container>
         <div className="grid gap-13">
           <SectionHeader

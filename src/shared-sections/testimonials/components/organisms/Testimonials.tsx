@@ -10,7 +10,12 @@ import { Container } from "@/common/container/components/Container";
 
 const { heading, ctaHref, rating, google, items } = testimonialsData;
 
-export const Testimonials = async ({ variant, tone = "muted", group }: TestimonialsProps) => {
+export const Testimonials = async ({
+  variant,
+  tone = "muted",
+  group,
+  backdrop = "shingles",
+}: TestimonialsProps) => {
   const t = await getTranslations("testimonial");
   /* data: the page's group set (avatar + order); text by key */
   const cards = items[group].map((testimonial) => ({
@@ -22,7 +27,7 @@ export const Testimonials = async ({ variant, tone = "muted", group }: Testimoni
   }));
 
   return (
-    <SectionWrapper id="testimonials" tone={tone} backdrop="shingles">
+    <SectionWrapper id="testimonials" tone={tone} backdrop={backdrop}>
       <Container>
         <div className="grid gap-13">
           <SectionHeader

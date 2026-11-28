@@ -1,9 +1,12 @@
+import type { BackdropPattern } from "@/common/backdrop/types";
+
 type TestimonialGroup = "company" | "services" | "projects" | "about";
 
 export interface TestimonialsProps {
   variant: "viewAll" | "contact";
   tone?: "base" | "muted"; /* section surface; keeps page section alternation correct */
   group: TestimonialGroup; /* which testimonial set this page renders */
+  backdrop?: BackdropPattern; /* section art; a page sets it to keep its backdrop order */
 }
 
 export interface TestimonialCardProps {
