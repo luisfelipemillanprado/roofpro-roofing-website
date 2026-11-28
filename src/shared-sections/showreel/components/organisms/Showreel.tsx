@@ -8,7 +8,7 @@ import type { ShowreelProps } from "@/shared-sections/showreel/types";
 const { items, playKey, viewer } = showreelData;
 
 /* reel row, section width rather than full bleed; no heading, the footage carries it */
-export const Showreel = async ({ tone = "base" }: ShowreelProps) => {
+export const Showreel = async ({ tone = "base", backdrop = "octagonal" }: ShowreelProps) => {
   const t = await getTranslations("showreel");
   const play = t(playKey);
   /* data: order, poster and clip; text by key */
@@ -28,7 +28,7 @@ export const Showreel = async ({ tone = "base" }: ShowreelProps) => {
   });
 
   return (
-    <SectionWrapper tone={tone} backdrop="octagonal">
+    <SectionWrapper tone={tone} backdrop={backdrop}>
       <Container>
         <ShowreelPlayer
           items={reels}

@@ -42,9 +42,9 @@ export default async function ServicesPage({ params }: Props) {
       <Marquee />
       <Services variant="contact" tone="base" />
       <Pitch variant="process" tone="muted" />
-      <Testimonials variant="contact" tone="base" group="services" />
+      <Testimonials variant="contact" tone="base" group="services" backdrop="octagonal" />
       <Faq variant="services" />
-      <Showreel />
+      <Showreel backdrop="interlocking" />
       <Products tone="muted" limit={6} />
       <Contact tone="base" />
     </>

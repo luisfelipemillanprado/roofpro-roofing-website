@@ -1,3 +1,5 @@
+import type { BackdropPattern } from "@/common/backdrop/types";
+
 /* one resolved reel: the card face plus the clip its disc opens, every label server side */
 interface ShowreelItem {
   key: string;
@@ -18,4 +20,5 @@ export interface ShowreelPlayerProps {
 
 export interface ShowreelProps {
   tone?: "base" | "muted"; /* section surface; keeps page section alternation correct */
+  backdrop?: BackdropPattern; /* section art; a page sets it to keep its backdrop order */
 }
