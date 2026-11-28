@@ -19,7 +19,7 @@ export const Faq = async ({ variant, tone = "muted" }: FaqProps) => {
   }));
 
   return (
-    <SectionWrapper id="faq" tone={tone} backdrop="tiles">
+    <SectionWrapper id="faq" tone={tone} backdrop="octagonal">
       <Container>
         <div className="grid gap-13">
           <SectionHeader
