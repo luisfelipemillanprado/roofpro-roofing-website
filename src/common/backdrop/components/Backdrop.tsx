@@ -5,6 +5,8 @@ import type { BackdropPattern, BackdropProps } from "@/common/backdrop/types";
 const masks: Record<BackdropPattern, string> = {
   /* one exact period: two octagonal tabs by two courses */
   octagonal: "mask-repeat mask-size-[132px_138px] lg:mask-size-[207px_216px]",
+  /* one exact period: two interlocking tiles by two courses */
+  interlocking: "mask-repeat mask-size-[156px_138px] lg:mask-size-[244px_216px]",
   /* two tabs across, six courses down */
   shingles: "mask-repeat mask-size-[214px_auto] lg:mask-size-[333px_auto]",
   /* one exact period: two tiles across (the tile pitch falls between pixels), one course down */
