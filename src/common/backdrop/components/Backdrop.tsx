@@ -11,8 +11,8 @@ const masks: Record<BackdropPattern, string> = {
   shingles: "mask-repeat mask-size-[214px_auto] lg:mask-size-[333px_auto]",
   /* one exact period: two tiles across (the tile pitch falls between pixels), one course down */
   pantiles: "mask-repeat mask-size-[253px_auto] lg:mask-size-[401px_auto]",
-  /* a single roof cut-out on the footer's bottom-left corner */
-  roof: "mask-bottom-left mask-no-repeat mask-size-[430px_auto] lg:mask-size-[810px_auto]",
+  /* a single roof cut-out on the footer's bottom-left corner, 20% taller than drawn so it climbs higher */
+  roof: "mask-bottom-left mask-no-repeat mask-size-[430px_360px] lg:mask-size-[810px_678px]",
 };
 
 /* artwork painted in the text color, so it follows the theme; the page css keeps it to every other section */
